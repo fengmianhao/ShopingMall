@@ -1,0 +1,35 @@
+<graph caption='The Analyse the rate of the success' PYAxisName='Person Number' SYAxisName='Target'
+ numberPrefix='' showvalues='0'  numDivLines='4' formatNumberScale='0' decimalPrecision='0'
+anchorSides='10' anchorRadius='3' anchorBorderColor='009900'>
+<categories>
+<category name='UUSD' />
+<category name='MMS' />
+<category name='IVR' />
+<category name='WAP PUSH' />
+<category name='SMS' />
+</categories>
+<dataset seriesName='Spread' color='03F8F8' showValues='0'>
+<set value='60601.34' />
+<set value='55148.82' />
+<set value='63372.76' />
+<set value='75407.15' />
+<set value='85999.68' />
+</dataset>
+
+<dataset seriesName='Success' color='EDDF00' showValues='0'>
+<set value='23601.34' />
+<set value='35148.82' />
+<set value='45372.76' />
+<set value='60407.15' />
+<set value='84105.68' />
+</dataset>
+
+
+<dataset seriesName='Target' color='FF1100' showValues='0' parentYAxis='S' >
+<set value='39' />
+<set value='63' />
+<set value='75' />
+<set value='80' />
+<set value='98' />
+</dataset>
+</graph>

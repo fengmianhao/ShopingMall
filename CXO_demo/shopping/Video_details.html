@@ -1,0 +1,1222 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=portalONE,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=portalONE name=Description>
+<META content="MSHTML 6.00.2900.5880" name=GENERATOR></HEAD>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+ <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ');
+</script>
+<![endif]-->
+<title>PortalONE</title>
+<style type="text/css">
+.video_ul{ width:100%}
+.video_ul li{ width:81px; height:130px; margin:0 0px 8px 0; overflow:hidden; padding:0 5px 0 11px; float:left; text-align:center;}
+.video_ul img{ width:81px; height:106px; display:block}
+
+.video_info{}
+.video_info_left{ float:left; width:240px; font-size:11px; margin:5px 15px 0 10px; display:inline;}
+.video_info_left p{ padding-top:10px; line-height:20px}
+.video_info_left img{ display:block}
+.video_info_right{ float:left; width:480px;}
+.video_info_right_top{ height:40px; padding-top:4px}
+.video_info_right_top h2{ float:left; width:215px;font-size:24px; color:#cc6600; font-weight:bold; line-height:28px}
+.video_info_total{ float:right; width:260px}
+.video_number{ font-size:24px; color:#ff7f00}
+.limit_width{ width:125px}
+.text_right span img{ margin-top:8px}
+.video_detail_list{ margin-left:15px}
+.video_detail_list li{ float:left; width:200px; padding:0 15px}
+.video_detail_list img{ width:200px; height:150px}
+
+.video_detail_img{ background:url(images/tvseries_details_bg.jpg) no-repeat left top; width:160px; height:220px; padding:7px 0 0 8px; margin-left:30px;}
+</style>
+</head>
+
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<body class="body_bg" onunload=ext()>
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html" class="focus">Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+		<div class="sub_nav">
+		    <div class="sub_nav_left">Position:  <a href="Video.html">Video</a> &nbsp;&gt;&nbsp;<strong id="downloadName">ICE 3 AGE</strong></div>
+
+        </div>
+        <div id="leftColumnPage">
+            <div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style=" margin-top:-10px; *margin-top:0; width:760px;">
+                   <div class="video_info">
+                   
+                       <div class="video_info">
+                           <div class="video_info_left">
+                            <div class="video_detail_img"><img src="images/ice3.jpg" /></div>
+                            <p><strong>Screenplay: </strong>
+                                    Quentin Tarantino</p>
+                                <p><strong>Directed by: </strong>
+                                los Saldanha / Mike Thurmeier</p> 
+                                <p><strong>Starring:</strong> 
+                                 Eunice Cho  / Karen Disher  / Harrison Fahn / Maile Flanagan / Jason Fricchione / Simon Pegg</p>
+                                <p><strong>Region:</strong> 
+                                United States</p>
+                                <p><strong>Release Date:</strong> 
+                                2009-07-01 <a href="#">More</a> </p>
+                                <p><strong>Language:</strong> 
+                                English</p>
+                           </div>
+                       </div>
+                       <div class="video_info_right">
+                           <div class="video_info_right_top">
+                               <h2>ICE 3 AGE</h2>
+                               <table width="100%" border="0" cellspacing="0" cellpadding="0" class="video_info_total">
+                                <tr>
+                                    <td nowrap="nowrap">Total:&nbsp;</td>
+                                    <td class="video_number">9.5&nbsp;</td>
+                                    <td nowrap="nowrap"><div class="grade_empty">
+                                        <div class="grade_full grade_3"></div>
+                                    </div></td>
+                                    <td width="100%">&nbsp;(<a  class="scores_cls">1245</a> hits)</td>
+									<td style="display:none;"><span id="downloadPrice">$2.5</span></td>
+                                </tr>
+                                </table>
+                                </div>
+                                <div style=" width:478px; height:360px; overflow:hidden;  position:relative; border:1px solid #ccc; border-bottom:0; z-index:1; background:#000000;">
+                                	
+									<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="480" height="360">
+                    <param name="allowScriptAccess" value="sameDomain">
+                    <param name="movie" value="flash/sony.swf">
+                    <param name="quality" value="high">
+                   <param name="wmode" value="transparent">
+				    <embed src="flash/sony.swf" quality="high" bgcolor="#000000" width="480" height="360" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent"  /> 
+</object>
+                                    
+									<object id="MediaPlayers" width=480 height=410 classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,5,715" standby="Loading Microsoft Windows Media Player components..." type="application/x-oleobject" style="visibility:hidden;  height:360px; position:absolute; left:0; top:0;">
+                                     <param name="Volume" value="-3856">
+                                     <param name="FileName" value="ice_3_age.wmv"> 
+                                     <param name="AutoStart" value=0>  
+                                     <param name="wmode" value="transparent">
+
+                                    <param name="AutoRewind" value="0">
+                                    <param name="ShowControls" value="0">
+                                    <param name="ShowPositionControls" value="0">
+                                    <param name="ShowAudioControls" value="0"> <!--音量-->
+                                    <param name="ShowTracker" value="0">
+                                    <param name="ShowDisplay" value="0">
+                                    <param name="ShowStatusBar" value="0">
+                                    <param name="ShowGotoBar" value="0">
+                                    <param name="ShowCaptioning" value="0">
+                                   <param name="Mute" value="0">
+                                    
+                                    <param name="AnimationAtStart" value="0">
+                                    <param name="TransparentAtStart" value="0">
+                                    <param name="AllowChangeDisplaySize" value="0">
+                                    <param name="AllowScan" value="0">
+                                    <param name="EnableContextMenu" value="0">
+                                    <param name="ClickToPlay" value="1">
+								 </object>
+                              
+                             </div>
+                                                       
+                           <!--大播放器代码开始-->
+                            <div id="bigPlayer" class="player_big_box">
+                                <!--这里放视频插件，如果是音频，可以把插件高度设为0-->
+                                <div id="bigPlayerControlBox">
+                                    <a href="#none" class="big_player_play" id="bigPlayerPlayBtn" onclick="playPauseMeida(this);"></a> <a href="#none" class="big_player_stop" id="bigPlayerStopBtn"></a>
+                                <!--播放暂停按钮及停止播放按钮-->
+                                    <div id="bigPlayerNowTime"><span id="bigPlayerNowTimeText">00:00</span></div>
+                                    <!--播放的当前进度时间-->
+                                    <div id="bigPlayerLoadingBar">
+                                        <!--进度条，可拉动控制媒体插件-->
+                                        <div id="bigPlayerSliderBlock" class="big_slider_normal" onmouseover="this.className='big_slider_focus'" onmouseout="this.className='big_slider_normal'" onmouseup="this.className='big_slider_normal'" onmousedown="loadingSlider(event,this,'bigPlayerSliderBarCurrent','bigPlayerSliderBarDefault');" style="left:0; margin-left:-2px"></div>
+                                        <div id="bigPlayerSliderBarDefault"></div>
+                                        <div id="bigPlayerSliderBarCurrent"></div>
+                                    </div>
+                                    <span id="bigPlayerTotalTime" class="big_player_total"></span>
+                                    <div class="big_player_right">
+                                        <div id="bigPlayerVolumnControl" class="big_player_volumn" onclick="silenceVolumn(this,'bigPlayerVolumnAuto');"></div>
+                                        <!--静音放音按钮-->
+                                        <div id="bigPlayerVolumnAuto">
+                                            <!--手动调节音量按钮-->
+                                            <p class="volumnWrapper" onclick="volumnControl(this,event,'bigPlayerVolumnControl')"><img src="skin/default/images/player/big_volumn_yellow_1.gif" /><img src="skin/default/images/player/big_volumn_yellow_2.gif" /><img src="skin/default/images/player/big_volumn_yellow_3.gif" /><img src="skin/default/images/player/big_volumn_grey_4.gif" /><img src="skin/default/images/player/big_volumn_grey_5.gif" /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--大播放器代码结束-->
+                            <div style="padding:12px 0 0 0; height:30px">
+                                <table width="160" border="0" cellspacing="0" cellpadding="0" style="float:left; ">
+                                    <tr>
+                                        <td nowrap="nowrap">Rating:</td>
+                                        <td width="100%"><p class="starWrapper" onmouseover="rate(this,event)"><img src="skin/default/images/grade_grey_star_left.gif" /><img src="skin/default/images/grade_grey_star_right.gif" /><img src="skin/default/images/grade_grey_star_left.gif" /><img src="skin/default/images/grade_grey_star_right.gif" /><img src="skin/default/images/grade_grey_star_left.gif" /><img src="skin/default/images/grade_grey_star_right.gif" /><img src="skin/default/images/grade_grey_star_left.gif" /><img src="skin/default/images/grade_grey_star_right.gif" /><img src="skin/default/images/grade_grey_star_left.gif" /><img src="skin/default/images/grade_grey_star_right.gif" /></p></td>
+                                        </tr>
+                                </table>
+                                <table width="300" border="0" cellspacing="0" cellpadding="0" class="info_table" style=" float:right">
+                                <tr>
+                                    <td align="right"><a href="#none"><img src="images/icon_collection.gif" width="18" height="15" border="0" align="absmiddle" style="margin-right: 4px;" />Collection</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#none"   id="present_btn"><img src="images/icon_present.gif" width="16" height="18" border="0" align="absmiddle" style="margin-right: 4px;" />Present</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#none"  id="recomend_btn"><img src="images/icon_recommand.gif" width="13" height="16" border="0" align="absmiddle" style="margin-right: 4px;" />Recommend</a></td>
+                                </tr>
+                            </table>
+                            </div>
+                            
+                            <ul onclick="btnAct(0);" id="download_but" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="float:left; margin-right:20px; width:120px">
+                                <li class="btn_left"></li>
+                                <li class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Download</li>
+                                <li class="btn_right"></li>
+                                <li class="nofloat"></li>
+                            </ul>
+										
+                            <ul onclick="btnAct(0);lightBoxOn('operatePop','Downlad');" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="float:left; width:130px; visibility:hidden">
+                                <li class="btn_left"></li>
+                                <li class="btn_center"><img src="images/btn_icon_buy.gif" width="16" height="16" border="0" align="absmiddle" /> Add to Cart</li>
+                                <li class="btn_right"></li>
+                                <li class="nofloat"></li>
+                            </ul>
+                       </div>
+                       <div class="nofloat"></div>
+                   </div>
+                   <div class="column_split"></div>
+                    <div class="column_top">
+                    	<div class="column_title"><h1>Description</h1></div>
+                        <div class="nofloat"></div>
+                    </div>
+                    <div class="column_content">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_table">
+                            <tr>
+                                <td>It is playing golf, but unlucky stunned by the pole
+ </td>
+                            </tr>
+                        </table>
+                	</div>
+                    <div class="column_split"></div>
+					<div class="column_top">
+                    	<div class="column_title"><h1>Photos</h1></div>
+                        <div></div>
+                        <div class="nofloat"></div>
+                        <div>
+                        	<ul class="video_detail_list">
+                                <li><img src="images/theIce1.jpg" /></li>
+                                <li><img src="images/theIce2.jpg" /></li>
+                                <li><img src="images/theIce3.jpg" /></li>
+                            </ul>
+                            <div class="nofloat"></div>
+                        </div>
+                    </div>
+                    <div class="column_split"></div>
+                    <div class="column_top">
+                    	<div class="column_title"><h1>New Comments</h1></div>
+                        <div class="column_title_right">
+                       	<img src="images/icon_comments.gif" width="29" height="22" border="0" align="absmiddle" style="margin-right: 8px;" /><a href="#commentsmessage">I want to comment</a>&nbsp;&nbsp;&nbsp;&nbsp;Total: <span class="text_action">1592</span></div>
+                        <div class="nofloat"></div>
+                    </div>
+                    <div id="commentsList">
+                    	 <div class="comments_normal">
+                        	<div class="comments_inner">
+                            	<div class="comments_content">
+                                	<div class="inner_padding">
+                                        <div class="comments_content_top">
+                                            <div class="comments_nikename"><a href="#">Genirri lily</a></div>
+                                            <div class="comments_info">Feb 11, 2008</div>
+                                            <div class="nofloat"></div>
+                                        </div>
+                                        <div class="comments_message"> I want to say is that,to love them forever!</div>
+                                    </div>
+                                </div>
+                            	<div class="comments_corner"></div>
+                                <div class="comments_face"><img src="images/movie_small_3.jpg" width="54" height="54" border="0" /></div>
+                                <div class="nofloat"></div>
+                            </div>
+                        </div>
+                        <div class="comments_fuscous">
+                        	<div class="comments_inner">
+                            	<div class="comments_content">
+                                	<div class="inner_padding">
+                                        <div class="comments_content_top">
+                                            <div class="comments_nikename"><a href="#">Jane</a></div>
+                                            <div class="comments_info">Feb 11, 2008</div>
+                                            <div class="nofloat"></div>
+                                        </div>
+                                        <div class="comments_message"> Love them forever! </div>
+                                    </div>
+                                </div>
+                            	<div class="comments_corner"></div>
+                                <div class="comments_face"><img src="images/movie_small_1.jpg" width="54" height="54" border="0" /></div>
+                                <div class="nofloat"></div>
+                            </div>
+                        </div>
+                        <div class="comments_normal">
+                        	<div class="comments_inner">
+                            	<div class="comments_content">
+                                	<div class="inner_padding">
+                                        <div class="comments_content_top">
+                                            <div class="comments_nikename"><a href="#">SaiNan</a></div>
+                                            <div class="comments_info">Feb 11, 2008</div>
+                                            <div class="nofloat"></div>
+                                        </div>
+                                        <div class="comments_message">I love it so much,it is very nice</div>
+                                    </div>
+                                </div>
+                            	<div class="comments_corner"></div>
+                                <div class="comments_face"><img src="images/sale_pic5.jpg" width="54" height="54" border="0" /></div>
+                                <div class="nofloat"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column_split"></div>
+                    <div class="column_top">
+                    	<div class="column_title" ><h1>I want to comment</h1></div>
+                        <div class="nofloat"></div>
+                    </div>
+                    <div class="column_content">
+                    	<div id="commentsNew">
+                        <p style="margin:3px 0 3px 10px;"><strong>vance (<span style="color:#F60;">13875521001</span>)</strong></p>
+                            <div class="nofloat"></div>
+                            <div class="comments_message_txtarea">
+                                <textarea name="commentsmessage" id="commentsmessage" class="textarea_normal" style="width: 725px; height: 100px;">The ice 3 age is so funny!</textarea>
+                            </div>
+                            <ul class="horilist_ul">
+                            	<li class="horilist_name">Validate Code:</li>
+                                <li class="horilist_compo" style="_padding-right:0px;"><input type="text" name="username" id="validate_code" value="kJa8" size="5" class="input_text_normal" /></li>
+                                <li class="horilist_name" style="padding-top: 1px;"><img src="images/vcode.gif" width="65" height="21" /></li>
+                            </ul>
+                            <div class="nofloat"></div>
+                            <div>
+                            	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" id="submit_btn">
+                                    <li class="btn_left" id="1"></li>
+                                    <li class="btn_center">Submit</li>
+                                    <li class="btn_right"></li>
+                                    <li class="nofloat"></li>
+                                </ul>
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+    	</div>
+        <div id="rightColumnPage">
+        	<div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="width:215px;">
+                	<div class="normal_title"><h1>You May Like</h1></div>
+                    <div class="act_list">
+                        <ul class="act_list_ul video_ul">
+                            <li><a href="#"><img src="images/vedio_right_pc1.jpg" />Machine 9</a></li>
+                            <li><a href="#"><img src="images/video_pc12.jpg" />Naked Sins</a></li>
+                            <li><a href="#"><img src="images/video_pc9.jpg" />Malibu Eyes</a></li>
+                            <li><a href="#"><img src="images/video_pc13.jpg" />Shark</a></li>
+                            <li><a href="#"><img src="images/video_pc4.jpg" />The Young Victoria</a></li>
+                            <li><a href="#"><img src="images/video_pc22.jpg" />Visitors</a></li>
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+        		</div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+            
+            <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style="215px;">
+                        <div class="normal_title"><h1>Hot Movie</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul">
+                                <li class="news_detail" style="height:60px"> <img src="images/movie_small_8.jpg" width="50" height="50" class="fixpng" />
+                                    <div class="fl" style="width:120px"> <a href="#">Shark</a>
+                                        <p><img src="skin/default/images/xingxing.gif" style=" margin-right:0"/><img src="skin/default/images/xingxing.gif" style=" margin-right:0" /><img src="skin/default/images/xingxing.gif" style=" margin-right:0" /><img src="skin/default/images/xingxing.gif" style=" margin-right:0" /><img src="skin/default/images/xingxing.gif" style=" margin-right:0" /></p>
+                                    </div>
+                                </li>
+                                <li class="text_right"><a href="#" class="limit_width">2. The Lovely Bones </a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">3. Daybreakers</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">4. The Wolfman</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">5. Splinter</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">6. The Kung Fu Mummy</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">7. Live The Dream</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">8. Slammed</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                    <li class="text_right"><a href="#" class="limit_width">9. Born 2B Gangsta?</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn"  flag="columnBtn" />
+                </div>
+            
+          
+        </div>
+        <div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu" >
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!-- 弹出窗口代码开始 -->
+<!-- 1 弹出窗口框架代码-->
+<div id="lightBox" style="display:none;">
+    <div id="lightBoxMask">
+        <iframe id="lightBoxIfra" name="lightBoxIfra" frameborder="0" border="0"></iframe>
+    </div>
+    <div id="lightBoxBg"></div>
+    <div id="lightBoxContainer">
+        <div id="lightBoxHeader">
+            <div id="lightBoxHeaderLeft">
+                <div id="popwinTitle">Title</div>
+            </div>
+            <div id="lightBoxHeaderCenter"></div>
+            <div id="lightBoxHeaderRight">
+                <div id="popwinTools">
+                    <div class="popwin_icon_close"><img src="images/icon_closewin.gif" width="19" height="19" border="0" onclick="lightBoxOff();" /></div>
+                </div>
+                </div>
+        </div>
+        <div id="lightBoxBody">
+            <div id="lightBoxBodyLeft"></div>
+            <div id="lightBoxBodyCenter"></div>
+            <div id="lightBoxBodyRight"></div>
+        </div>
+        <div id="lightBoxFooter">
+            <div id="lightBoxFooterLeft"></div>
+            <div id="lightBoxFooterCenter"></div>
+            <div id="lightBoxFooterRight"></div>
+        </div>
+    </div>
+</div>
+<!-- 
+2 弹出窗口内容代码
+  2.1 窗口内容可以是多个
+  2.2 每个内容代码分配一个ID，如：setting
+  2.3 调用lightBoxOn()时传入内容ID，如：lightBoxOn('setting');
+-->
+
+<style type="text/css">
+.pop_div_con{ position:absolute; left:30%; top:38%; z-index:9999}
+.leftUp{ background-image: url(skin/default/images/popwin_header_left.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:37px;}
+.rightUp{background-image: url(skin/default/images/popwin_header_right.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_right.png', sizingMethod='scale'); *background: transparent !important;width:16px; height:37px;}
+.centerUp{background: url(skin/default/images/popwin_header_center.png)  repeat-x; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_center.png', sizingMethod='scale'); *background: transparent !important; height:37px; overflow:hidden; 
+cursor:move; position:relative;}
+.leftCenter_pop{ background:url(skin/default/images/popwin_body_left.png) repeat-y !important  ; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_body_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:380px; }
+.rightCenter_pop{background: url(skin/default/images/popwin_body_right.png) repeat-y !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_body_right.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:380px; }
+.leftDown{background-image: url(skin/default/images/popwin_footer_left.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:16px;}
+.centerDown{background: url(skin/default/images/popwin_footer_center.png) repeat-x; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_center.png', sizingMethod='scale'); *background: transparent !important; height:16px;}
+.rightDown{background-image: url(skin/default/images/popwin_footer_right.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_right.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:16px;}
+.center_center{ background:#f3f3f3; width:300px; height:380px; position:relative;}
+.centerUp img{float:right;cursor:pointer; margin-top:10px; }
+.centerUp p{ color:#669; margin-top:10px; display:inline; float:left; font-size:15px; font-weight:bold; }
+</style>
+
+  
+	
+    <div class="pop_div_con" id="downloadPop_out_div" style="display:none;">
+    <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+      <tr>
+        <td ><div class="leftUp"></div></td>
+        <td ><div class="centerUp"><p>Download</p><img src="images/icon_closewin.gif" name="downloadPop_out_div" /></div></td>
+        <td ><div class="rightUp"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftCenter_pop" style="height:150px;"></div></td>
+        <td ><div class="center_center" style="width:380px; height:150px;"><div class="setmenu" id="downLoadPop" style="display: block; width: 370px; overflow:hidden; height:140px; ">
+		
+		<!--<table border="0" cellspacing="0" cellpadding="0"  id="downLoad_table0"  style="margin-left:40px;">
+        <tr>
+            <td class="vlist_name" colspan="3" >&nbsp;&nbsp;Please select payment type：</td>
+         </tr>
+        <tr>
+             <td class="vlist_form"><input type="radio"  name="charge" disabled="disabled" />E-Wallet </td>     
+ 			  <td class="vlist_form"> <input type="radio"  name="charge" checked="checked"/>Communication Fee</td> 
+			  <td class="vlist_form"><input type="radio" name="charge"  disabled="disabled"/>Point</td>
+        </tr>
+       
+		<tr>
+           <td  colspan="3" >
+				<div class="btn_group" style="padding:20px 0 0 65px;" >
+                	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="down_next"  onmouseout="btnOut(this);" class="btn_div_normal">
+                        <li class="btn_left"></li>
+                        <li class="btn_center" >&nbsp;Next&nbsp;</li>
+                        <li class="btn_right"></li>
+                    </ul>
+                    <ul onclick="btnAct(0);" onmouseover="btnOver(this);"  id="down_cancel"onmouseout="btnOut(this);" class="btn_div_normal">
+                        <li class="btn_left"></li>
+                        <li class="btn_center " >Cancel</li>
+                        <li class="btn_right"></li>
+                    </ul>
+                </div> 
+              	</td>
+        </tr>
+    </table>-->
+		
+        <!--<table border="0" cellspacing="0" cellpadding="0"  id="downLoad_table1" style="margin-left:40px; display:none; ">
+            <tr>
+                <td class="vlist_name" width="45">Name:</td>
+                <td class="vlist_txt" width="250">ICE 3 AGE</td>
+            </tr>
+        
+            <tr>
+                <td class="vlist_name">Download Method:</td>
+                <td class="vlist_form">
+                <input type="radio"  name="downLoad" checked="checked"/>WAP Push  <input type="radio"  name="downLoad" disabled="disabled"/>SMS
+                   </td>
+            </tr>
+           
+            <tr>
+                <td  colspan="2">
+                    <div class="btn_group" style="padding:30px 0 0 65px;" >
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="downLoad_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center presentClose" id="downLoad_cancel">Cancel</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                    </div> 
+                    </td>
+            </tr>
+        </table>-->
+        <div style=" padding:5px 30px 50px 40px; " id="downLoad_table2">
+                <p  style="padding:0 0 15px 0;"><strong>Operation successful.</strong> </p>
+                <p >The download link has been sent to your mobile phone, please check it.</p>
+                <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="downLoad_close" onmouseout="btnOut(this);" class="btn_div_normal" style="margin:25px 30px 50px 110px;">
+                    <li class="btn_left"></li>
+                    <li class="btn_center presentClose" >Close</li>
+                    <li class="btn_right"></li>
+                </ul>
+            
+        </div>
+    </div></div></td>
+        <td ><div class="rightCenter_pop" style="height:150px;"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftDown"></div></td>
+        <td ><div class="centerDown"></div></td>
+        <td ><div class="rightDown"></div></td>
+      </tr>
+    </table>
+    
+    </div>
+    
+    <div class="pop_div_con" id="presentPop_out_div" style="display:none;">
+    <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+      <tr>
+        <td ><div class="leftUp"></div></td>
+        <td ><div class="centerUp"><p>Present to Friend</p><img src="images/icon_closewin.gif" name="presentPop_out_div" /></div></td>
+        <td ><div class="rightUp"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftCenter_pop" style="height:180px;"></div></td>
+        <td ><div class="center_center" style="width:390px; height:180px;"><div class="setmenu" id="presentPop" style="width: 390px;">
+        <table border="0" cellspacing="0" cellpadding="0"  id="first_table">
+            <tr>
+                <td class="vlist_name" width="140">Friend Number:</td>
+                <td class="vlist_txt" width="250"><input type="text" name="username1" id="present2phone" value="13569869999" size="22" class="input_text_normal " style="width: 230px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+            </tr>
+              <tr>
+                <td class="vlist_name"></td>
+                <td  style="color:#CCC;">Use "," among the phone numbers</td>
+            </tr>
+            <tr>
+                <td class="vlist_name">Message:</td>
+                <td class="vlist_form"><textarea style="width:250px; height:50px" class="msg_text" id="present_msg"  >This is a nice video!</textarea>
+                 </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2">
+                    <div class="btn_group" style="margin-left:110px;">
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="prenset_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center presentClose" id="present_cancel">Cancel</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                    </div> 
+                    </td>
+            </tr>
+        </table>
+        <div style="display:none; padding:20px 30px 50px 55px;" id="sencond_table">
+                <p  style="padding:0 0 15px 0;"><strong>Operation successful.</strong> </p>
+                <p >The content is presented to your friend.  </p>
+                <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="present_close" onmouseout="btnOut(this);" class="btn_div_normal" style="margin:30px 30px 50px 100px;">
+                    <li class="btn_left"></li>
+                    <li class="btn_center presentClose" >Close</li>
+                    <li class="btn_right"></li>
+                </ul>
+            
+        </div>
+    </div></div></td>
+        <td ><div class="rightCenter_pop" style="height:180px;"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftDown"></div></td>
+        <td ><div class="centerDown"></div></td>
+        <td ><div class="rightDown"></div></td>
+      </tr>
+    </table>
+    
+    </div> 
+     
+    <div class="pop_div_con" id="recommentPop_out_div" style="display:none;">
+    <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+      <tr>
+        <td ><div class="leftUp"></div></td>
+        <td ><div class="centerUp"><p>Recommended to Friend</p><img src="images/icon_closewin.gif" name="recommentPop_out_div" /></div></td>
+        <td ><div class="rightUp"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftCenter_pop" style="height:180px;"></div></td>
+        <td ><div class="center_center" style="width:390px; height:180px;"><div class="setmenu" id="recommendedPop" style="width: 390px;">
+        <table border="0" cellspacing="0" cellpadding="0"  id="recommend_first_table">
+            <tr>
+                <td class="vlist_name" width="140">Friend Number:</td>
+                <td class="vlist_txt" width="250"><input type="text" name="username1" id="recommend2phone" value="13569869999" size="22" class="input_text_normal " style="width: 230px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+            </tr>
+              <tr>
+                <td class="vlist_name"></td>
+                <td  style="color:#CCC;">Use "," among the phone numbers</td>
+            </tr>
+            <tr>
+                <td class="vlist_name">Message:</td>
+                <td class="vlist_form"><textarea  style="width:250px; height:50px" class="msg_text" id="recommend_msg">This is a nice video!</textarea>
+                 </td>
+            </tr>
+           
+            <tr>
+                <td class="vlist_name" colspan="2">
+                    <div class="btn_group" style="margin-left:110px;">
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="recommend_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal">
+                            <li class="btn_left"></li>
+                            <li class="btn_center presentClose" id="present_cancel">Cancel</li>
+                            <li class="btn_right"></li>
+                        </ul>
+                    </div> 
+                    </td>
+            </tr>
+        </table>
+        <div style="display:none; padding:20px 30px 50px 55px;" id="recommend_sencond_table">
+                <p  style="padding:0 0 15px 0;"><strong>Operation successful.</strong> </p>
+                <p >The content is recommended  to your friend.  </p>
+                <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="present_close" onmouseout="btnOut(this);" class="btn_div_normal" style="margin:30px 30px 50px 100px;">
+                    <li class="btn_left"></li>
+                    <li class="btn_center presentClose" >Close</li>
+                    <li class="btn_right"></li>
+                </ul>
+            
+        </div>
+    </div></div></td>
+        <td ><div class="rightCenter_pop" style="height:180px;"></div></td>
+      </tr>
+      <tr>
+        <td ><div class="leftDown"></div></td>
+        <td ><div class="centerDown"></div></td>
+        <td ><div class="rightDown"></div></td>
+      </tr>
+    </table>
+    
+    </div>
+  
+<!-- 弹出窗口代码结束 -->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+
+
+<!-- 弹出窗口代码开始 -->
+<!-- 1 弹出窗口框架代码-->
+<div id="lightBox" style="display:none; z-index:9999;">
+    <div id="lightBoxMask">
+        <iframe id="lightBoxIfra" name="lightBoxIfra" frameborder="0" border="0"></iframe>
+    </div>
+    <div id="lightBoxBg"></div>
+    <div id="lightBoxContainer" style="z-index:5000">
+        <div id="lightBoxHeader">
+            <div id="lightBoxHeaderLeft">
+                <div id="popwinTitle">Title</div>
+            </div>
+            <div id="lightBoxHeaderCenter"></div>
+            <div id="lightBoxHeaderRight">
+                <div id="popwinTools">
+                    <div class="popwin_icon_close"><img src="images/icon_closewin.gif" width="19" height="19" border="0" onclick="lightBoxOff();" /></div>
+                </div>
+            </div>
+        </div>
+        <div id="lightBoxBody">
+            <div id="lightBoxBodyLeft"></div>
+            <div id="lightBoxBodyCenter"></div>
+            <div id="lightBoxBodyRight"></div>
+        </div>
+        <div id="lightBoxFooter">
+            <div id="lightBoxFooterLeft"></div>
+            <div id="lightBoxFooterCenter"></div>
+            <div id="lightBoxFooterRight"></div>
+        </div>
+    </div>
+</div>
+
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+
+</body>
+</html>
+<link type="text/css" href="js/ui.all.css" rel="stylesheet" />
+<!--<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+ <script src="js/main.js" type="text/javascript"></script>
+ <script type="text/javascript" src="js/downList.js"></script> 
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.draggable.js"></script>-->
+
+<script type="text/javascript" src="" id="JqueryJs"></script>   
+<script type="text/javascript" src="" id="mainJs"></script>   
+<script type="text/javascript" src="" id="downListJs"></script>   
+<script type="text/javascript" src="" id="uiCoreJs"></script>
+<script type="text/javascript" src="" id="uiDraggableJs"></script>
+<script type="text/javascript">
+ //时间间隔变量
+   var separated = 1000;
+   //延迟加载Js   
+   setTimeout(function(){
+       document.getElementById('JqueryJs').src="js/jquery-1.3.2.min.js";
+	   document.getElementById('mainJs').src="js/main.js";
+	   document.getElementById('downListJs').src="js/downList.js";
+	   document.getElementById('uiCoreJs').src="js/ui.core.js";
+	   document.getElementById('uiDraggableJs').src="js/ui.draggable.js";
+	   
+
+	
+	$(function(){
+				confirmCurrentUser()
+				$('.user_show li').mouseout(function(){
+						 confirmCurrentUser();	
+				});
+				registerReply()
+				//registerDownPresentRecommend()
+			   
+			 //打分效果,只执行一次
+	$(".starWrapper").one('click',function(){
+					$(".scores_cls").text(1246);				
+					 });  
+			   });
+	 
+		   var  Player=document.getElementById("MediaPlayers");  
+		   var  RemTime = document.getElementById("bigPlayerNowTimeText");//显示当前视频时间的对象 
+		$(function(){
+				 
+				 $(document).unload(function(){//离开本页就关闭音乐
+						  $("#bigPlayerStopBtn").click();
+								 });
+				 
+				   window.setTimeout(function(){
+						  $("#bigPlayerPlayBtn").click();				  
+						  $("#adervister_con").css("visibility","hidden"); 
+						  $("#MediaPlayers").css("visibility","visible"); 
+						  Player.play();
+					   },7000);
+			   
+			   
+						$("#bigPlayerPlayBtn").click(function(){//暂停 播放控制
+							if($(this).hasClass("big_player_pause")){
+							Player.play();	
+							}else{
+							Player.pause();	
+							}});
+					
+					$("#bigPlayerStopBtn").click(function(){//停止控制
+						Player.stop();
+						$("#bigPlayerPlayBtn").removeClass("big_player_pause");
+						$("#bigPlayerPlayBtn").addClass("big_player_play");
+						$("#bigPlayerSliderBarCurrent").width(0);
+						$("#bigPlayerSliderBlock").css("left",0);
+						 RemTime.innerHTML="00:00";
+						 });
+					var current_volume = Player.Volume;//当前的音量
+					
+					$("#bigPlayerVolumnControl").click(function(){       //音量控制
+						if($(this).hasClass("big_player_silence")){  //如果它当前为静音
+						Player.volume = -9640;						
+						}else{ //有音量时                             
+						Player.Volume =current_volume;
+						}});
+					
+					//手动控制音量 <!–音量大小,负值表示是当前音量的减值,值自动会取绝对值,最大为0,最小为-9640,最大0–>
+					$(".volumnWrapper").click(function(){
+							var yellowNums = 0;							   
+							$(this).find("img").each(function(){
+								if(this.src.indexOf("yellow")>=0){
+								yellowNums +=1;	
+							}});
+						 //  $('#MediaPlayers').find('param:eq(0)').attr('value',yellowNums*20)
+							 switch(yellowNums){
+							  case 1:Player.Volume=-7752;break;
+							  case 2:Player.Volume=-5784;break;
+							  case 3:Player.Volume=-3856;break;
+							  case 4:Player.Volume=-1928;break;
+							  case 5:Player.Volume=0;break;
+							 }
+						 
+						});
+	
+				  //对进度条的事件
+				  $("#bigPlayerSliderBlock").mousedown(function(){
+					$(this).attr("setp1","yes");
+				   }).mousemove(function(){
+					   if($(this).attr("setp1")){
+						$(this).attr("setp2","yes");   
+					  }
+				   });
+				  //进度条动作第三部
+				  $("#bigPlayerSliderBlock").mouseup(function(){
+						if($("#bigPlayerSliderBlock").attr("setp2")){//可以计算当前的百分比					
+		Player.currentPosition =($("#bigPlayerSliderBarCurrent").width()/$("#bigPlayerSliderBarDefault").width())*Player.duration; 
+							}
+					});
+				  
+		
+	  var minutes=0,second=0;
+	  //Player.duration=300;
+	  var intervalTime=180*1000*(1/$("#bigPlayerSliderBarDefault").width());
+	 setInterval(function(){
+						// if(!$("#bigPlayerPlayBtn").hasClass("big_player_play")){ 
+						 document.getElementById("bigPlayerTotalTime").innerHTML='02:58';//视频总的时间的字串设置
+						  if((document.getElementById("bigPlayerPlayBtn").className.indexOf("big_player_pause")>-1)){
+							if($("#bigPlayerSliderBarCurrent").width()<=$("#bigPlayerSliderBarDefault").width()-3){
+									var formatTime=parseInt(Player.currentPosition);
+									if(formatTime<10){
+										 RemTime.innerHTML='00:0'+formatTime;
+									}else if(formatTime>=10&&formatTime<60){
+										RemTime.innerHTML='00:'+formatTime;
+									}else if(formatTime>60){
+										minutes = parseInt(formatTime/60);
+										if(minutes<10){
+										RemTime.innerHTML='0'+minutes+':'+getSecMin(formatTime-minutes*60);
+										}else{
+										RemTime.innerHTML= minutes+':'+getSecMin(formatTime-minutes*60)	;
+										 }
+									} 
+							// RemTime.innerHTML=parseInt(Player.currentPosition);//改变当前的时间
+							   $("#bigPlayerSliderBarCurrent").width($("#bigPlayerSliderBarCurrent").width()+1);
+							   $("#bigPlayerSliderBlock").css("left",$("#bigPlayerSliderBarCurrent").width()); 	
+							}else{
+								Player.stop();
+								Player.currentPosition=0; 
+								$("#bigPlayerPlayBtn").removeClass("big_player_pause");
+								$("#bigPlayerPlayBtn").addClass("big_player_play");
+								$("#bigPlayerSliderBarCurrent").width(0);
+								$("#bigPlayerSliderBlock").css("left",0);
+								 RemTime.innerHTML="00:00";
+								} 
+							 }
+						 },(intervalTime==0?600:intervalTime));		
+	
+				function getSecMin(obj){
+					if(obj<10){
+						return '0'+obj;
+						}
+					if(obj>10&&obj<60){
+						return obj;
+						}	
+					if(obj>60){
+						return obj-parseInt(obj/60)*60;
+						}	
+					}
+				 
+	// download present recomend Close Img
+	   $(".pop_div_con").draggable();
+			$(".centerUp img").live('click',function(){
+			 if(this.name="downloadPop_out_div"){
+				  $("#downLoad_close").click();
+			} 
+			
+			if(this.name="presentPop_out_div"){
+				$(".presentClose").click();
+			}  
+			   if(this.name="recommentPop_out_div"){
+				 $(".presentClose").click();
+			  }
+			
+			});
+	
+		
+	
+		  $("#download_but").click(function(){
+				$("#downloadPop_out_div").show();							
+											});
+	
+	if(connect){
+			  MYAvtiveX.getOnlineFriend();
+			}	
+	
+	  //downLoadJs
+			   $("#downLoad_close").click(function(){
+			//	$("#downLoad_table1").hide();				   
+				$("#downLoad_table2").show();	
+				 if(connect){
+				   MYAvtiveX.getOnlineFriend();
+				    MYAvtiveX.sendDownLoad(onlineFriend.split(',')[0],$("#downloadName").text(),$("#downloadPrice").text());
+					  
+					  if(onlineFriend.split(',')[1] != ""){
+						 MYAvtiveX.sendDownLoad(onlineFriend.split(',')[1],$("#downloadName").text(),$("#downloadPrice").text());  
+					  }		
+					 }
+				});
+			   
+  				$("#downLoad_close,#down_cancel,#downLoad_cancel").click(function(){
+					 $('#downloadPop_out_div').hide();
+ 					//$("#downLoad_table0").show();	
+ 			   }); 
+		      
+			  $('#down_next').click(function(){
+			      $('#downLoad_table0,#downLoad_table2').hide();
+				  $('#downLoad_table1').show();
+			  })
+			  
+			   			  
+				 //presentJs
+			   
+			   $("#prenset_ok").click(function(){
+				$("#first_table").hide();				   
+				$("#sencond_table").show();	
+				//如果与cxo连接 
+				 if(connect){
+				 MYAvtiveX.getOnlineFriend();
+					 MYAvtiveX.sendTo(onlineFriend.split(',')[0],$('#present_msg').val(),5);
+					 if(onlineFriend.split(',')[1] != ""){
+					  MYAvtiveX.sendTo(onlineFriend.split(',')[1],$('#present_msg').val(),5);
+					 }
+				  }
+				});
+			   
+			   $(".popwin_icon_close").click(function(){
+				$("#first_table").show();				   
+				$("#sencond_table").hide(); });
+			   
+			  $(".presentClose").click(function(){
+					$("#presentPop_out_div").hide();
+					//$("#presentPop").hide();
+					$("#first_table").show();	
+					$("#sencond_table").hide();
+						
+			  }); 	
+			  
+			  $("#present_btn").click(function(){
+					$("#presentPop_out_div").show();	
+				 if(connect){
+				   MYAvtiveX.getOnlineFriend();
+			  }						   
+											   });
+				
+			//  recommend_Js
+			  
+			   $("#recommend_ok").click(function(){
+				$("#recommend_first_table").hide();				   
+				$("#recommend_sencond_table").show();	
+				 //如果与cxo连接 
+				 if(connect){
+				 MYAvtiveX.getOnlineFriend();
+					 MYAvtiveX.sendTo(onlineFriend.split(',')[0],$('#recommend_msg').val(),6);
+					 if(onlineFriend.split(',')[1] != ""){
+					 MYAvtiveX.sendTo(onlineFriend.split(',')[1],$('#recommend_msg').val(),6);
+					 }
+				  }
+				
+				});
+			   
+			   $(".popwin_icon_close").click(function(){
+				$("#recommend_first_table").show();				   
+				$("#recommend_sencond_table").hide(); });
+			   
+			  $(".presentClose").click(function(){
+					
+					$("#recommentPop_out_div").hide();
+					//$("#recommendedPop").hide();
+					$("#recommend_first_table").show();	
+					$("#recommend_sencond_table").hide();
+			  }); 
+	
+	  $("#recomend_btn").click(function(){
+				$("#recommentPop_out_div").show();	
+				  if(connect){
+					   MYAvtiveX.getOnlineFriend();
+				  }							
+										});
+	
+				   });
+		
+		  //处理评论 使用cookie实现
+		   //定义cookie里面的数据使用 $% 隔开,cookie名为 'comment'+currentUser 
+		   var theComment=readCookie('comment'+currentUser,'');
+		   if(theComment!=''){
+			  updateCommentFromMobile(theComment.split('$%')[0],theComment.split('$%')[1])
+		   }
+   
+   },separated)
+    </script>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   updateCommentFromMobile(arr[arr.length-2].split('$*')[2],arr[arr.length-2].split('$*')[0]);	  
+</SCRIPT>
+
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyOnlineFriendPhone(phone)>
+    if(phone==''){
+	  phone=myPhone1;
+	}
+    onlineFriend = phone;
+	$('#present2phone,#recommend2phone').val(phone)
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+</SCRIPT>

@@ -1,0 +1,7 @@
+<graph caption='Advertisment Click Rate Statistic' xAxisName='Month' yAxisName='Units' decimalPrecision='0' formatNumberScale='0'>
+<set name='Jan' value='20000' color='CFD8F8' />
+<set name='Feb' value='54700' color='E6BC0F' />
+<set name='Mar' value='37100' color='8BBC30' />
+<set name='Apr' value='20000' color='FC8E48'/>
+<set name='May' value='36100' color='808E80'/>
+</graph>

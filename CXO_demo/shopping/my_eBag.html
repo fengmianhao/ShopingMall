@@ -1,0 +1,1054 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=portalONE,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=portalONE name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+<link href="skin/default/css/communication.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr,.func_1 ,.func_2 ,.func_3,.func_4 ,.telehpoto,.Qlink_list ,.Qlink_ico,.user_show,.fixpng ');
+</script>
+<![endif]-->
+<style type="text/css">
+.manage_rss{ float:right; padding:6px 15px 0 0; text-align:right; width:430px}
+.manage_rss a:hover{ text-decoration:none}
+.rss_ul{ margin-left:10px; width:600px}
+.rss_ul li{ padding-left:25px; margin-bottom:10px; background:url(images/rss.gif) no-repeat 0 5px;}
+.rss_ul strong a{ font-size:14px; display:block; padding:5px 0}
+.rss_ul p{ padding-bottom:6px; color:#666666}
+.rss_ul p a{ color:#bbbbbb}
+
+ .bottomStat{ background:#d8e9ec; height:50px; width:100%;border:1px solid #ccc;}
+ .bottomStat li{ display:inline; margin:0 5px; float:left;}
+ .bottomIcon{ width:460px;}
+ .bottomIcon img{ margin:10px 15px;}
+</style>
+
+ <title>self_Service</title>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+  <body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+			<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html" >Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+    	<div class="sub_nav">
+            <div class="nofloat"></div>
+        </div>
+        
+        <div id="selfServiceLeft">
+        	<div id="selfServiceLeftInner" class="left_content">
+              <div >
+               <table  border="0" cellpadding="0" cellspacing="10" class="user159">
+                  <tr>
+                    <td> <img src="images/middleVance.jpg" width="70" height="70" /></td>
+                    <td><ul >
+                  <li>vance</li>
+                  <li>13875521001</li>
+                  <li>Points: 1330</li>
+                    </ul>
+                     </td>
+                  </tr>
+                 </table>
+                 <table  border="0" cellpadding="0" cellspacing="10" style="display:none;" class="user158">
+                  <tr>
+                    <td> <img src="images/philip.jpg" width="70" height="70" /></td>
+                    <td><ul >
+                  <li>huawei</li>
+                  <li>13875521002</li>
+                  <li>Points: 1250</li>
+                    </ul></td>
+                  </tr>
+                  
+                </table>
+             </div>
+             <ul id="leftmenu" class="leftmenu_ul">
+ 				   <li onclick="switchLeftmenu(0);location.href='my_eBag.html'">My Eletronic Wallet</li>
+                  <li onclick="switchLeftmenu(1);location.href='self_Service.html'">My Information</li>
+                  <li onclick="switchLeftmenu(2);location.href='my_rss.html'">My RSS</li>
+                  <li onclick="switchLeftmenu(3);location.href='my_subscriptions.html'">My Subscriptions</li>
+                  <li onclick="switchLeftmenu(4);location.href='my_favorites.html'">My Favorites</li>
+                  <li onclick="switchLeftmenu(5);location.href='my_booking.html'">My Booking</li>
+                  <li onclick="switchLeftmenu(6);location.href='my_log.html'">My Operation Log</li> 
+				  <li onclick="location.href='NetDisk.html'">My NetDisk </li>
+                  <li onclick="location.href='Channel.html'">My Channel</li> 
+        	    </ul>
+       			<div id="leftmenuOn"></div> 
+       
+             </div>
+        	<div id="leftFooter" class="left_footer"></div>
+        </div>
+        
+        <div id="selfSevericeRight">
+        	<div class="circle_corner_box">
+                <div class="circle_corner_top">
+
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center circle_tab" style="width:760px;_width:745px;">
+				 <style type="text/css">
+				    .titleDiv{  font-size:16px; font-weight:bold; }
+					.detailTab{border-bottom:1px solid #ccc; border-top:1px solid #ccc; margin:5px 0;}
+					.detailTab td{ padding:5px 10px; }
+					.history{ font-weight:bold; margin:5px 10px;}
+					.tabMenu{ background:url(images/mainNav_bg.gif) repeat-x; height:30px;}
+					.tabMenu ul{ margin-left:20px;}
+					.tabMenu ul li{ display:inline; float:left; border-left:1px solid #eaeaea; line-height:30px;  }
+					.tabMenu ul li a{ color:#eaeaea; text-decoration:none; display:block; padding:5px 16px 0; height:25px;font-weight:bold;}
+					.tabMenu ul li a:hover{ background:none repeat scroll 0 0 #eaeaea; color:#000 ; font-weight:bold;}
+					.curTabItem{ background:none repeat scroll 0 0 #eaeaea; color:#000 !important; font-weight:bold;}
+				 </style>
+				    <div class="titleDiv">My Eletronic Wallet</div>  
+				     <table width="100%" border="0" cellpadding="0" cellspacing="0" class="detailTab">
+						  <tr>
+							<td><strong>Account</strong>: 166845013 </td>
+							<td ><strong>Balance</strong>: <span id="curCharge">562.02</span>$</td>
+							<td rowspan="2">
+							     <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal accountRecharge" style="margin-left:10px">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">Recharge</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+							
+							</td>
+							<td rowspan="2">
+							<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="margin-left:10px">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">Modify</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>	
+							</td>
+						  </tr>
+						  <tr>
+							<td><strong>Points</strong>:1330 </td>
+							<td><strong>Bound Phone</strong>:13875521001 </td>
+							
+ 						  </tr>
+						</table>
+                    <p class="history">History</p>
+				    
+                	<!--<div class="tab">
+                        <div class="tab_bg_left"></div>
+                        <div class="tab_bg_right"></div>
+                        <div class="tab_bg_center">
+                            <ul class="tab_title_on" id="firstTabTitle1">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Digital Mall<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+                            <ul class="tab_title_normal" id="firstTabTitle2">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Bus<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+                            <ul class="tab_title_normal" id="firstTabTitle3">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Hotel<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+							<ul class="tab_title_normal" id="firstTabTitle4">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Communication Fee<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+							
+							<ul class="tab_title_normal" id="firstTabTitle5">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Water Fee<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+							
+							<ul class="tab_title_normal" id="firstTabTitle6">
+                                <li class="tab_title_left"></li>
+                                <li class="tab_title_center">Electricity Fee<span></span></li>
+                                <li class="tab_title_right"></li>
+                            </ul>
+                            
+                       	</div>
+                        <div class="nofloat"></div>
+                	</div>-->
+					
+					<div class="tabMenu">
+					      <ul>
+						      <li ><a href="javascript:void(0)" class="curTabItem">Digital Mall</a></li>
+							  <li><a href="javascript:void(0)">Bus</a></li>
+							  <li><a href="javascript:void(0)">Hotel</a></li>
+							  <li><a href="javascript:void(0)">Communication Fee</a> </li>
+							  <li><a href="javascript:void(0)">Water Fee</a></li>
+							  <li style="border-right:1px solid #eaeaea;"><a href="javascript:void(0)">Electricity Fee</a></li>
+						  </ul>
+					</div>
+					   <div class="column_content02" >
+                        <div id="firstTabContent1">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;">
+                                <tr height="35">
+                                <td class="flist_name02">Start time:</td>
+								<td class="flist_content02">
+									<ul class="datechooser" style="width: 127px;">
+										<li class="datechooser_input">
+											<div class="datachooser_inner">
+												<input type="text" name="starttime" id="starttime" value="" />
+											</div>
+										</li>
+										<li class="datechooser_icon"></li>
+									</ul>
+								</td>
+								<td class="flist_name02">End time:</td>
+								<td class="flist_content02">
+									<ul class="datechooser" style="width: 127px;">
+										<li class="datechooser_input">
+											<div class="datachooser_inner">
+												<input type="text" name="endtime" id="endtime" value="" />
+											</div>
+										</li>
+										<li class="datechooser_icon"></li>
+									</ul>
+								</td>
+								
+								<td colspan="6" align="right">
+                                    <input type="button" value="Search" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" />
+								</td>
+                                </tr>
+                               
+                            </table>
+                            
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="datagrid">
+                                <thead>
+                                    <tr>
+                                        <th width="15%">Amount</th>
+                                        <th width="20%">Name</th>
+                                        <th width="25%">Source</th>
+                                        <th width="24%">Date</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td><a href="#">$3.00</a></td>
+                                    <td>Plants vs Zombies</td>
+                                    <td>Popcap Games</td>
+                                    <td>2010-04-11  19:00</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">$5.00</a></td>
+                                    <td>Scarborough Fair</td>
+                                    <td>SONY</td>
+                                    <td>2010-01-25  13:20</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">$6.00</a></td>
+                                    <td>Angry Birds</td>
+                                    <td>Rovio Mobile</td>
+                                    <td>2010-1-12  12:30</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">$3.00</a></td>
+                                    <td>ICE 3 AGE</td>
+                                    <td>20th Century Fox</td>
+                                    <td>2009-10-21  19:44</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">$4.00</a></td>
+                                    <td>The Life of Santa Claus</td>
+                                    <td>Lyman Frank Baum</td>
+                                    <td>2009-10-09  22:10</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">$8.00</a></td>
+                                    <td>UC Browser</td>
+                                    <td>UC Mobile Ltd</td>
+                                    <td>2009-08-31  21:30</td>
+                                   </tr>
+                            </table>
+                            <div class="pagenation">
+                                <a href="#">Prev</a>
+                                <a href="#" class="num_on">1</a>
+                                <a href="#" class="num">2</a>
+                                <a href="#" class="num">3</a>
+                                <a href="#" class="num">4</a>
+                                <a href="#" class="num">5</a>
+                                <a href="#">Next</a>
+                            </div>
+                        </div>
+                        <div id="firstTabContent2">
+                        	
+                        </div>
+                        <div id="firstTabContent3">
+                        	
+                        </div>
+                    </div>
+                    
+                    <div class="nofloat"></div>
+				
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+        </div>
+		<div class="nofloat"></div>
+	</div>
+	
+	<div>
+	 <ul class="bottomStat">  
+	   <li><img src="images/small_lady.jpg" width="50" height="51"/></li>
+	   <li style="width:230px;">
+	   <div style="margin:7px 0; display:inline;"><a href="#" style="display:inline; float:left;"  id="onlineName">vance</a>
+	      <p class="text_bold" onclick="showPopSelect(this,'userDefineColumnList','p_statu',98,0,130);"  style="margin-left:30px; float:left;" ><span style="color:#339966; cursor:pointer" id="p_statu" class="arrow_down"><img src="images/icon_list_friend1.png" align="absmiddle"/>Online</span></p>
+                   <div id="userDefineColumnList" style="display:none;">
+                        <ul class="selectItems" id="status">
+                            <li style="overflow:hidden" id="staut_0"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend1.jpg" align="absmiddle" /> Online</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_1"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend2.jpg" align="absmiddle" /> Busy</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_2"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend3.jpg" align="absmiddle" /> Away</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_3"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend4.jpg" align="absmiddle" /> Offline</span></span></a></li>
+                         </ul>
+                    </div>
+	   
+	   </div>
+	   <div class="nofloat"></div>
+	   <p>Today is so cool,I like it!</p>
+	   </li>
+ 
+	   <li  class="bottomIcon">
+	       <a href="#"> <img src="images/pone.png" /></a> <a href="#" name="smsPop_out_div"><img src="images/message.png" /></a> <a href="#" name="EmailPop_out_div"><img src="images/email.png" /></a
+	   ></li>
+	   <li style="width:170px; padding:13px;"><a href="Onebox.html"><img src="images/message.png"  align="top" />Unread message(1)</a></li>
+	 </ul>
+	 <div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>                        
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+<style type="text/css">
+ .setp1{ text-align:left; padding-top:20px; }
+ .setp2 table { margin:5px 30px; }
+ .setp3{ padding-top:10px;}
+</style>
+<div class="pop_div_con" id="account" style="display:none; margin-left:-165px" >
+<table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+  <tr>
+    <td class="leftUp"></td>
+    <td class="centerUp"><div ><p id="titleName">Recharge</p><img src="images/icon_closewin.gif"  id="accountImg" /></div></td>
+    <td  class="rightUp"></td>
+  </tr>
+  <tr>
+    <td   height="180"><div class="leftCenter_pop" style=" height:180px;"></div></td>
+    <td  width="400" height="180" ><div class="center_center" style=" width:400px; height:180px;" >
+	        <div class="setp1"  style="display:block">
+			   <p  style="margin-bottom:10px;">Method：<input type="radio"  name="selectType"  checked="checked" id="bank"/>Credit Card <input type="radio" name="selectType" id="recharge"  disabled="disabled"/>Prepaid Card</p>
+			    <p style="color:#555;">Tips: You can also go to recharge at our business hall</p>
+				
+				  <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal rechargeOk" style=" display:inline; float:left; margin-left:100px; margin-top:20px;">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+										
+				<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal JustCancel" style=" display:inline;float:left;margin-left:30px;margin-top:20px;">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">Cancel</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+					<div class="nofloat"></div>					
+			</div>
+	          
+			<div class="setp2" style="display:none">
+			  <table width="100%" border="0" cellpadding="0" cellspacing="5">
+			  <tr>
+				<td width="130" align="right">Card type:</td>
+				<td width="250">
+				<select  style="width:182px">
+				<option>VISA</option>
+				<option>MasterCard</option>
+				<option>AMEX</option>
+				<option>UnionPay</option>
+				</select></td>
+			  </tr>
+			  <tr>
+				<td align="right">Card Number:</td>
+				<td><input type="text" value="4392251702543250"  style="width:180px"/></td>
+			  </tr>
+			  <tr>
+				<td align="right">Card Security Code:</td>
+				<td><input type="text" value="560"  style="width:180px"/></td>
+			  </tr>
+			 
+			  <tr>
+				<td align="right">Amount:</td>
+				<td><input type="text" value="100"  style="width:180px" id="rechargeMoney"/>$</td>
+			  </tr>
+			  <tr>
+				<td colspan="2">
+				   <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal payConfirmOk" style=" display:inline; float:left; margin-left:70px;">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+										
+				<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal JustCancel" style=" display:inline;float:left;margin-left:30px;">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">Cancel</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+				</td>
+				 
+			  </tr>
+			</table>
+
+			
+			</div>   
+			<div class="setp3" style="display:none;">
+			    <p style=" margin-bottom:50px;">Recharge successfully,<br/> 
+				the balance of your account now is <span id="curAmount" style="font-weight:bold;">662.02</span>$</p>
+				<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal setp3Close" style=" display:inline;float:left;margin-left:150px;">
+                                            <li class="btn_left"></li>
+                                            <li class="btn_center">Close</li>
+                                            <li class="btn_right"></li>
+                                            <li class="nofloat"></li>
+                                        </ul>
+			</div>
+	</div></td>
+    <td  height="180"><div class="rightCenter_pop" style="height:180px;"></div></td>
+  </tr>
+  <tr>
+    <td class="leftDown"></td>
+    <td class="centerDown"></td>
+    <td class="rightDown"></td>
+  </tr>
+</table>
+
+</div>
+
+  
+</div>
+
+<div class="pop_div_con" id="voipPop_out_div" style="display:none; margin-left:-165px" >
+<table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+  <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p>Call</p><img src="images/icon_closewin.gif" name="voipPop_out_div" /></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftCenter_pop"></div></td>
+    <td ><div class="center_center" ><div class="setmenu" id="voIPPop" style="display: block; width:280px; margin:5px;">
+			<div class="voIpDiv_input_bg">
+            	<input type="text" value="" class="vopInput" id="vop_input" maxlength="11"/>
+                <div class="voIpDiv_input_calling" style="display:none">
+                <img src="images/calling.gif"/>
+                <h4 style="width:150px; overflow:hidden">4334324324</h4><p>Calling...</p><input type="text" value="00:00" /></div>
+            </div>
+            
+            <div class="voIpDiv">
+            <table  border="0" cellpadding="0"  cellspacing="4" width="100%">
+              <tr>
+                <th width="110" height="43"><img src="images/commu_voip_call.gif" style="cursor:pointer;" id="call_person"/></th>
+                <th width="110" id="clear_num" class="commu_voip_c">C</th>
+                <th width="110"><img src="images/commu_voip_close.gif"  style="cursor:pointer;" id="hold_down"/></th>
+              </tr>
+              <tr>
+                <td><a href="#">1</a></td>
+                <td><a href="#">2</a></td>
+                <td><a href="#">3</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">4</a></td>
+                <td><a href="#">5</a></td>
+                <td><a href="#">6</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">7</a></td>
+                <td><a href="#">8</a></td>
+                <td><a href="#">9</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">*</a></td>
+                <td><a href="#">0</a></td>
+                <td><a href="#">#</a></td>
+              </tr>
+            </table></div>
+ 
+</div></div></td>
+    <td ><div class="rightCenter_pop"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+
+</div>
+
+
+<div class="pop_div_con" id="smsPop_out_div"  style="display:none; margin-left:-350px;">
+	  <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+          <tr>
+			<td ><div class="leftUp"></div></td>
+			<td ><div class="centerUp"><p id="smsDivP">Send SMS/MMS</p><img src="images/icon_closewin.gif" name="smsPop_out_div"/></div></td>
+			<td ><div class="rightUp"></div></td>
+		  </tr>
+		  <tr>
+				  <td ><div class="leftCenter_pop" style="height:410px;"></div></td>
+			<td>
+			<div class="center_center" style="width:670px; height:410px;">
+ 					 <div id="smsTabContent1">
+						 <table border="0" cellspacing="0" cellpadding="0"  id="first_table" style="margin-left:20px;">
+						<tr>
+							<td class="vlist_name" width="100">Receiver:</td>
+							<td class="vlist_txt" width="300"><input type="text"  id="receiver_mms_input" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td style="position:relative">
+								<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="address_book_mms" onmouseout="btnOut(this);" class="btn_div_normal">
+									<li class="btn_left"></li>
+									<li class="btn_center" >Address book</li>
+									<li class="btn_right"></li>
+								</ul>
+								<div class="tree"  id="mmsTree">
+									 <ul>
+									  <li><img src="images/btn_icon_sub.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />All(11)
+										 <ul class="person" style="display:block;">
+											 <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+											 <li><input type="checkbox" name="13569869999"/><a href="#none">Kethy</a></li>
+											 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+											 <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+											 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+											 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+											 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+											 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+											 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+											 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+											 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />DSM(3)
+										 <ul class="person">
+											<li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+											 <li><input type="checkbox" name="15234545612"/><a href="#none">Kethy</a></li>
+											 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Facebook(2)
+										 <ul class="person">
+													  <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+											 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />MSN(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+											 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+										   </ul>
+									  </li>
+									  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Twitter(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+											 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+										   </ul>
+									  </li>
+									  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />QQ(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+											 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+										   </ul>
+									  </li>
+									 </ul>
+								   <div class="tree_bottom"  >
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="mms_tree_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+										<li class="btn_left"></li>
+										<li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+										<li class="btn_right"></li>
+									</ul>
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="mms_tree_cancel" onmouseout="btnOut(this);" class="btn_div_normal">
+										<li class="btn_left"></li>
+										<li class="btn_center presentClose" >Cancel</li>
+										<li class="btn_right"></li>
+									</ul>
+									 </div> 
+								   </div>
+							  
+							</td>
+						</tr>
+						  <tr>
+							<td class="vlist_name">File:</td>
+							<td class="vlist_form"><input type="text" id="accessorie_mms" class="input_text_normal" size="22" style="width:220px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" readonly="readonly"  value=""/> <span class="uploadDiv"><input type="button" value="Upload" id="mms_uploadId" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/></span></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Content:</td>
+							<td class="vlist_form"><textarea style="width:300px; height:200px" class="msg_text"  id="content_mms" ></textarea></td>
+							<td></td>
+						</tr>
+		
+						<tr>
+							<td class="vlist_name"></td>
+							<td class="vlist_form">
+								<div class="btn_group">
+								<input type="button" value="Send"  class="top_search_btn"  id="mms_send" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								<input type="button" value="Reset"  class="top_search_btn"  id="mms_reset" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+							   
+								</div> 
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						</table>
+					 </div>
+  			</div>
+		 </td>
+			<td ><div class="rightCenter_pop" style="height:410px;"></div></td>
+		  </tr>
+		  <tr>
+			<td ><div class="leftDown"></div></td>
+			<td ><div class="centerDown"></div></td>
+			<td ><div class="rightDown"></div></td>
+		  </tr>
+		</table>
+	</div>
+	
+ <div class="pop_div_con" id="emailPop_out_div"  style="display:none; margin-left:-350px;">
+	  <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+          <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p id="smsDivP">Send E-mail</p><img src="images/icon_closewin.gif" name="emailPop_out_div"/></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+          <td ><div class="leftCenter_pop" style="height:410px;"></div></td>
+    <td >
+			<div class="center_center" style="width:670px; height:410px;">
+			 
+						 <table border="0" cellspacing="0" cellpadding="0"  id="first_table" style="margin-left:20px;">
+						<tr>
+							<td class="vlist_name" width="100">To:</td>
+							<td class="vlist_txt" width="300"><input type="text" id="receiver_email_input" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td style="position:relative">
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="address_book_email" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center" >Address book</li>
+											<li class="btn_right"></li>
+										</ul>
+								
+										 <div class="tree"  id="emailTree" style="top:74px;*top:38px;" id="emailTree">
+											  <ul>
+												   <li><img src="images/btn_icon_sub.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />All(11)
+													 <ul class="person" style="display:block;">
+														 <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+														 <li><input type="checkbox" name="13569869999"/><a href="#none">Kethy</a></li>
+														 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+														 <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+														 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+														 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+														 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+														 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+														 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+														 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+														 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />DSM(3)
+													 <ul class="person">
+														<li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+														 <li><input type="checkbox" name="15234545612"/><a href="#none">Kethy</a></li>
+														 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Facebook(2)
+													 <ul class="person">
+																  <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+														 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />MSN(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+														 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+													   </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Twitter(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+														 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+													   </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />QQ(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+														 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+													   </ul>
+												  </li>
+											 </ul>
+									  <div class="tree_bottom"  >
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="email_tree_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+											<li class="btn_right"></li>
+										</ul>
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="email_tree_cancel" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center presentClose" >Cancel</li>
+											<li class="btn_right"></li>
+										</ul>
+									  </div>   
+								   </div>
+									
+							</td>        
+					  </tr>
+						
+						<tr>
+						  <td class="vlist_name" width="100">Cc:</td>
+							<td class="vlist_txt" width="300"><input type="text" id="" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+						
+						</tr>
+						
+						<tr>
+							<td class="vlist_name">Subject:</td>
+							<td class="vlist_form"><input type="text" id="email_sub_input"  class="input_text_normal rece_input" size="22" style="width:300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Attachment:</td>
+							<td class="vlist_form"><input type="text" id="accessories" value="" class="input_text_normal rece_input" size="22" style="width:220px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" readonly="readonly" /> <span class="uploadDiv"><input type="button" value="Upload" id="attach_id"  class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/></span></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Content:</td>
+							<td class="vlist_form"><textarea style="width:300px; height:150px" class="msg_text"  id="email_content" ></textarea></td>
+							<td></td>
+						</tr>
+		
+						<tr>
+							<td class="vlist_name"></td>
+							<td class="vlist_form">
+								<div class="btn_group">
+								 <input type="button" value="Send"  class="top_search_btn"  id="email_send" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								  <input type="button" value="Reset"  class="top_search_btn"  id="email_reset" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								   
+								</div> 
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						</table>
+					     
+			
+			</div>
+	</td>
+    <td ><div class="rightCenter_pop" style="height:410px;"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/downList.js"></script>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.draggable.js"></script>
+
+ <script type="text/javascript">
+
+   	getRightHeight();
+	switchLeftmenu(0);
+	registeSelfService();
+	
+		$(function(){
+	
+	  $('.bottomIcon a:eq(0)').click(function(){
+ 	      $('#voipPop_out_div').show();
+	  })
+	  
+	  if(readCookie(currentUser+'chageNum')!=''){
+	    $('#curCharge').text(readCookie(currentUser+'chageNum'))
+	  }
+	 
+	  
+	  //rechargeOk
+	  $('.rechargeOk').click(function(){
+		  $('.setp1,.setp3').hide();
+		  $('.setp2').show();
+	  })
+	  
+	  //payConfirmOk
+	  $('.payConfirmOk').click(function(){
+		  $('.setp1,.setp2').hide();
+		  $('.setp3').show();
+		  //rechargeMoney
+		  $('#curCharge').text(''+(parseFloat($('#curCharge').text())+parseFloat($('#rechargeMoney').val())))
+		  writeCookie(currentUser+'chageNum',$('#curCharge').text())
+ 	      $('#rechageNum').text($('#rechargeMoney').val());
+		  $('#curAmount').text($('#curCharge').text());
+
+	  })
+	  
+	  //setp3Close
+	  $('.setp3Close').click(function(){
+	      $('#account').hide();
+		  
+	  })
+	  
+	  $('.accountRecharge').click(function(){
+	       $('.setp2,.setp3').hide();
+		   $('.setp1').show();
+	       $('#account').show();
+	  })
+	  
+	  $("#accountImg,.JustCancel").click(function(){
+	   $('#account').hide();
+	  })
+	  
+	 registerEmailSmsVoipChatEvent(connect,demoPersonName1,demoPersonName2,myPhone1,myPhone2)
+})
+	
+</script>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>

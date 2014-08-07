@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<photos path="images/">
+<photo id="photo1" name="End users can personalize theme, color, layout, style, channel 
+etc for their login in the portal." url="1.PNG" link="CXO_demo/shopping/MyWorld.html" ></photo>	
+<photo id="photo2" name="Aggregate content from local and global resources and manage 
+the end to end content life cycle." url="2.PNG" author="test" link="CXO_demo/mdsp/3_2.html"></photo>	
+<photo id="photo3" name="Users can easily browse and experience Innovative services or content such as Music,
+ Video, Games, Applications, Mobile Newspaper and many more." url="3.PNG" link="CXO_demo/shopping/MyWorld.html" ></photo>
+<photo id="photo4" name="Open for every one to convert their innovative ideas to real time services by using interactive 
+tools like Hierarichal SCE, Standard API's, Visual IDE and Configurable Templates."  url="4.PNG" author="test" link="CXO_demo/service/service.html"></photo>
+<photo id="photo5" name="Promote the content & services using proper channels and advertisements 
+to reach targeted subscribers based on end user behavior." url="5.PNG" author="test" link="CXO_demo/mdsp/2_25.html"></photo>
+</photos>

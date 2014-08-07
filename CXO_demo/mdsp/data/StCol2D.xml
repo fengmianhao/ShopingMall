@@ -1,0 +1,24 @@
+<chart   numberSuffix='%' decimals='0' useRoundEdges='1'  bgColor='FFFFFF' bgAlpha='0' showBorder='0'  >
+<categories>
+<category label='' />
+</categories>
+<dataset seriesName='Jazz' color='AFD8F8' showValues='1'>
+<set value='20' />
+</dataset>
+<dataset seriesName='Rock' color='00FF0F' showValues='1'>
+<set value='25' />
+</dataset>
+<dataset seriesName='Blue' color='FF0000' showValues='1'>
+<set value='22' />
+</dataset>
+
+<dataset seriesName='RAP' color='FEEA00' showValues='1'>
+<set value='18' />
+</dataset>
+
+<dataset seriesName='POP Slow' color='8BBA00' showValues='1'>
+<set value='15' />
+
+</dataset>
+
+</chart>

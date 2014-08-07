@@ -1,0 +1,14 @@
+<chart   showValues='0' decimals='0' formatNumberScale='0' numberSuffix='K'>
+<set label='Jan' value='33'/>
+<set label='Feb' value='37' />
+<set label='Mar' value='48' />
+<set label='Apr' value='59'/>
+<set label='May' value='60' />
+<set label='Jun' value='71' />
+<set label='Jul' value='86'/>
+<set label='Aug' value='88'/>
+<set label='Sep' value='99' />
+<set label='Oct' value='106' />
+<set label='Nov' value='111' />
+<set label='Dec' value='108' />
+</chart>	

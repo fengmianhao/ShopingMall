@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*======Dev-Mode Selection======*/
+.content_right{ float:right; width:810px}
+.content_right h1{ color:#666; font-size:18px; padding:2px 0 15px 10px}
+
+.dev_left_nav{ width:153px; border:1px solid #e1e1e1; background:#f3f3f3; float:left; margin:0 15px 4px 2px; height:565px}
+.nav_current{ background:#e9e9e9; color:#ac0000; text-decoration:none}
+.dev_left_nav h5{ font-size:14px; text-indent:8px;height:26px; line-height:26px;}
+.dev_left_nav li{ width:145px; height:26px; line-height:26px; text-indent:10px; padding:0 0 0 4px}
+.dev_left_nav li a{ display:block; width:145px; height:18px;}
+.dev_left_nav li a:hover{ background:#e9e9e9; color:#ac0000; text-decoration:none}
+
+.dev_center{ float:left; width:400px;}
+.dev_center h2{ font-size:16px; padding:5px 0 15px 0}
+.dev_center h5{ font-size:14px;height:26px; line-height:26px;}
+.dev_center p{ padding-bottom:14px; line-height:22px; color:#666666}
+
+.dev_right{ width:197px; float:left; margin:0 0 0 15px}
+.dev_right_top{ height:6px; width:197px;background: url(../images/dev_circle.gif) left top no-repeat; overflow:hidden}
+.dev_right_bottom{ height:6px; width:197px;background: url(../images/dev_circle.gif) left -6px no-repeat; overflow:hidden}
+.dev_right_center{ width:183px;background: url(../images/dev_circle_bg.gif) repeat-y; padding:0 7px 20px}
+.dev_right h5{ border-bottom:1px solid #cfaca0; text-indent:10px; height:20px}
+.dev_right h6{ padding:6px 0; text-indent:10px}
+.dev_right p{ text-indent:10px; padding:2px 0}
+.dev_right p a{ color:#de7d15; }
+.dev_right a:hover{ color:#000}
+
+/*======register======*/
+#registerDiv{ float:left; width:750px}
+#registerDiv h2{font-size:18px;margin-bottom:20px; padding:10px 0 0 20px; color:#666}
+.reg_input{ width:250px; height:18px; margin-left:10px;  border:#ccc 1px solid; line-height:18px}
+.reg_table td{ line-height:35px; }
+.reg_table span{ color:red}
+.reg_table_div{ padding:0 0 0 50px}
+.but_group_div{ position:relative; left:200px; top:5px;}
+
+.top_search_btn ,.top_search_btnover{ position: relative; top: 0; *top: -1px; _top: -1px; padding-bottom: 3px; width: 74px; height: 26px; background: url(../images/top_search_btn.png) left top no-repeat; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src='images/top_search_btn.png', sizingMethod='scale'); *background: transparent !important; border: none; text-align: center; color: #666666; font-weight: bold; cursor: pointer; overflow: hidden;}
+.top_search_btnover {  background: url(../images/top_search_btn_over.png) left top no-repeat; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src='images/top_search_btn_over.png', sizingMethod='scale'); *background: transparent !important; }
+
+/*======My API Subscription======*/
+.my_modules{ padding:0 8px 10px}
+.my_modules table{ border:1px solid #ccc; border-width:1px 1px 0 1px; margin-bottom:15px; text-align:center;}
+.my_modules th{ background:#e7e7e7; height:24px; border-bottom:1px solid #ccc;}
+.my_modules table td{ border-bottom:1px solid #ccc; border-right:1px solid #ccc; height:35px; text-align:left; padding-left:8px; }
+
+/*======new_service======*/
+.new_service{ padding:8px 15px 0 30px}
+.new_service table{ margin-top:20px}
+.new_service input{margin-left:0}
+.new_service textarea{ width:410px; height:110px; border:1px solid #ccc; overflow:auto; vertical-align:top; padding:5px; line-height:1.8em}
+
+.step_1_normal_green p { background: url(../images/step_num_green.gif) no-repeat -30px 0px !important; }
+.step_2_normal_green p { background: url(../images/step_num_green.gif) no-repeat -30px -30px !important; }
+.step_3_normal_green p { background: url(../images/step_num_green.gif) no-repeat -30px -60px !important; }
+
+/*======new_service_charge======*/
+.set_rule{ border-bottom:1px solid #ccc; height:22px; margin-top:15px}
+.set_rule h3{ float:left;color:#de7d15; font-size:14px}
+.add_rule{ float:right; width:80px; height:18px}
+.set_rule_con{ padding:10px 0 10px 20px}
+
+.interface_name{ height:28px;text-indent:30px; font-weight:bold; display:block; line-height:28px; text-decoration:none !important; margin-top:10px}
+.interface_name_1{border:1px solid #b9a791; background:#eae3d2 url(../images/show_hidden.gif) 8px 0 no-repeat; }
+.interface_name_2{ border:1px solid #b9a791; background:#eae3d2 url(../images/show_hidden.gif) 8px -28px no-repeat; }
+.interface_name_3{border:1px solid #ccc; background:#f0efef url(../images/show_hidden.gif) 8px -56px no-repeat; color:#666}
+.interface_name_4{ border:1px solid #ccc; background:#f0efef url(../images/show_hidden.gif) 8px -84px no-repeat;  color:#666}
+
+a:hover.interface_name{border:1px solid #b9a791; background:#eae3d2 url(../images/show_hidden.gif) 8px 0 no-repeat; }
+a:hover.interface_name_2{ border:1px solid #b9a791; background:#eae3d2 url(../images/show_hidden.gif) 8px -28px no-repeat; }
+a:hover.interface_name_4{ border:1px solid #b9a791; background:#eae3d2 url(../images/show_hidden.gif) 8px -28px no-repeat; }
+
+
+/*======download tools======*/
+.download_tools{ border-bottom:1px solid #ededed; margin:0 15px 15px; padding-bottom:15px}
+.tools{ padding:6px 10px 10px 14px; height:143px; overflow:hidden}
+.tools span img{ float:left; padding:15px; width:55px; background:url(../images/tools_bg.gif) no-repeat; margin-right:14px;}
+.tools img.img_61{padding:11px; width:61px;}
+.tools_right{ border-left:1px solid #ccc; padding-left:20px;float:left;}
+.tools_right h4{ font-size:14px; color:#ac0000; height:24px;}
+.tools_bg{ background:#f5f5f5; border:1px solid #e3e3e3; border-width:1px 0 0 1px}
+.tools_info{ width:600px;padding:8px 0; line-height:1.6em; white-space:normal}
+/*======FAQ======*/
+.faq_div{ border-bottom:1px solid #ededed; margin:0 15px 15px; padding-bottom:15px}
+.faq_div h4{ color:#b71818; font-size:14px; padding:10px 0; border-top:1px solid #ddd;}
+.faq_div li{ padding:10px 15px; line-height:2em;}
+.faq_div li.bgcolor{ background:#f4f4f4}
+.faq_div li span{ color:#b71818}
+
+/*======my service======*/
+.service_top{ height:40px; padding:6px 20px 0}
+.service_top h4{ color:#ac0000}
+.service_top table{ float:right;}
+.input_text{ width:96px; height:18px; border:1px solid #ccc; line-height:18px}
+.input_btn{ color:#fff; background:#9d1711;width:96px; height:30px; border:1px solid #ccc; line-height:26px; font-weight:bold; cursor:pointer}
+
+/*======Ä£Äâfile¿Ø¼þ======*/
+.pos_re { position: relative; }
+.uploadDiv div { position: absolute; left: 0; top: 0; width: 55px; height: 16px; overflow: hidden; z-index:1000; filter: alpha(opacity=0); opacity: 0.0 }
+.uploadDiv input { margin-left: -155px; font-size: 14px; cursor: pointer; }
+.fun_bold {color: #b71818;font-weight: bold;text-decoration: none;}
+
+/*************
+.my_service ul{ height:33px; margin-top:6px}
+.my_service li{ width:83px; height:33px; text-align:center; float:left; margin-right:15px; font-weight:bold; cursor:pointer}
+.my_service li a{ display:block; width:83px; height:33px; line-height:30px; color:#b51616; background: url(../images/my_service_btn.png) left top no-repeat; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src='images/my_service_btn.png', sizingMethod='scale'); *background: transparent !important; cursor:pointer}
+.my_service li a:hover,.my_service li.current a{ color:#fff; background: url(../images/my_service_btn_over.png) left top no-repeat; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src='images/my_service_btn_over.png', sizingMethod='scale'); *background: transparent !important; text-decoration:none }
+**********/

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<setting>
+  <connect>0</connect>
+  <console>1</console>
+  
+  <web_contactor>
+    <phone>13875521001</phone>
+    <name>vance</name>
+  </web_contactor> 
+  
+  <web_contactor>
+    <phone>13875521002</phone>
+    <name>philip</name>
+  </web_contactor> 
+  
+    <mobile_contactor>
+    <phone>13569869999</phone>
+    <name>Kethy</name>
+  </mobile_contactor> 
+  
+  <mobile_contactor>
+    <phone>13214541781</phone>
+    <name>Frank</name>
+  </mobile_contactor>
+  
+  
+ </setting>
+

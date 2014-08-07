@@ -1,0 +1,11 @@
+<chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="Music" value="17" /> 
+  <set label="Game" value="13" /> 
+  <set label="Video" value="8" /> 
+  <set label="eReading" value="7" /> 
+  <set label="Application" value="12"  /> 
+  <set label="Mobile Newspaper" value="3" /> 
+  <set label="Picture" value="5" /> 
+  <set label="Social Network" value="15"  /> 
+  <set label="Cartoon" value="20" /> 
+ </chart>

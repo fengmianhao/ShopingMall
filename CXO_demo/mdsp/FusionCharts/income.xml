@@ -1,0 +1,23 @@
+<graph caption='Income Information of HuaJun' PYAxisName='FEE' SYAxisName='Trend of SP Income'
+ numberPrefix='$' showvalues='0'  numDivLines='4' formatNumberScale='0' decimalPrecision='0'
+anchorSides='10' anchorRadius='3' anchorBorderColor='009900'>
+<categories>
+<category name='May' />
+<category name='June' />
+<category name='July' />
+<category name='August' />
+</categories>
+<dataset seriesName='FEE' color='D0F850' showValues='0'>
+<set value='70000' />
+<set value='80000' />
+<set value='60000' />
+<set value='90000' />
+</dataset>
+
+<dataset seriesName='TrendOfIncome' color='FF000F' showValues='0' parentYAxis='S' >
+<set value='70000' />
+<set value='80000' />
+<set value='60000' />
+<set value='91000' />
+</dataset>
+</graph>

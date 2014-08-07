@@ -1,0 +1,10 @@
+<chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="Nokia" value="18" /> 
+  <set label="Apple" value="8" /> 
+  <set label="Htc" value="12" /> 
+  <set label="Samsung" value="19" /> 
+  <set label="Company" value="11"  /> 
+  <set label="LG" value="7" /> 
+  <set label="Blackberry" value="13" /> 
+  <set label="Motorola" value="12" /> 
+ </chart>

@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ');
+</script>
+<![endif]-->
+<title>Digital Shopping Mall</title>
+<style type="text/css">
+.music_list{ width:440px; margin-left:14px;}
+.music_list li { height:137px; width:75px; padding:9px 20px 0 15px; text-align:center; margin:0}
+.music_list li img{ width:73px; height:100px; }
+/* video banner  */
+#adBox{ height:276px; width:756px; position:relative; border:1px solid #ccc; padding:0; margin:0 0 6px 3px; overflow:hidden}
+#adLeftContent{z-index:40; position:absolute; left:0; top:0}
+#adRightImage { position: absolute; left:228px; top: 0; z-index: 10;}
+#adRightImage_info{ position:absolute; z-index:12; bottom:0; zoom:1; left:228px; width:528px}
+#adRightImage_info li{ padding:7px 20px; height:72px; width:488px; text-align:right;}
+#adRightImage_info li p{ color:#fff}
+#adRightImage_info li p.red{ color:#f00}
+#adRightImage_info li h4{ font-size:16px; color:#f4d391}
+#adRightImage_info li a{ padding:12px 16px; border-left:1px solid #ccc; display:block; width:65px; height:41px; float:right; margin-left:12px}
+#adRightImage_info_bg{ position:absolute; z-index:11; bottom:0; zoom:1; left:228px; width:528px; height:92px; border-top:1px solid #ccc; filter: alpha(opacity=50);-moz-opacity:0.5; opacity: 0.5; background:#000}
+.ad_right_items li { height: 276px; overflow: hidden; }
+.ad_left_items{ width:227px;}
+.ad_left_items li{ float:left; width:100%;height:69px; overflow:hidden; font-weight:bold; font-size:14px}
+.ad_left_items li img{ width:52px; height:52px; margin-right:10px; float:left}
+.ad_left_items a{ width:200px;height: 53px;display:block; padding:8px 9px 8px 18px; color:#333;}
+.ad_left_items a:hover{background: url(skin/default/images/video_banner_b2.jpg); text-decoration:none;color:#ac0000}
+.ad_left_items a p{ float:left; width:135px; padding-top:8px;}
+.ad_current{background: url(skin/default/images/video_banner_b3.jpg); cursor: pointer;}
+.ad_current a p{color:#ac0000 !important;}
+.ad_normal{background: url(skin/default/images/video_banner_b1.jpg); cursor: pointer; }
+
+div.fl{ width:165px !important}
+.item_detail .fl p img{ border:0; padding:0; margin:4px 1px 0 0;}
+.info_current{ display:block}
+.info_normal{ display:none}
+
+.icon_hot{ width:auto !important; height:auto !important; border:0 !important; display:inline !important; margin-right:3px !important}
+
+</style>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html" class="focus">Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+    	<div class="sub_nav">
+ 
+            <div class="nofloat"></div>
+        </div>
+        
+		<div id="leftColumnSmall">
+            <!--Video row-->
+            
+            <div class="circle_yellow">
+                <div class="circle_yellow_top">
+                    <div class="circle_yellow_top_left"></div>
+                    <div class="circle_yellow_top_right"></div>
+                </div>
+                <div class="circle_yellow_center" style="width:217px;">
+                    <div class="circle_yellow_center_bg" style="padding-bottom:1px;">
+                        <div class="normal_title"><h1>Category</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul list_point">
+                                <li><a href="#" class="limit_width">Action/Adventure</a></li>
+                                <li><a href="#" class="limit_width">Animation</a></li>
+                                <li><a href="#" class="limit_width">Documentary</a></li>
+                                <li><a href="#" class="limit_width">Drama</a></li>
+                                <li><a href="#" class="limit_width">Family</a></li>
+                                <li><a href="#" class="limit_width">Fantasy</a></li>
+                                <li><a href="#" class="limit_width">Horror</a></li>
+                                <li><a href="#" class="limit_width">Mystery/Thriller</a></li>
+                                <li><a href="#" class="limit_width">Musical</a></li>
+                                <li><a href="#" class="limit_width">Romance</a></li>
+                                <li><a href="#" class="limit_width">Science Fiction</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle_yellow_bottom">
+                    <div class="circle_yellow_bottom_left"></div>
+                    <div class="circle_yellow_bottom_right"></div>
+                </div>
+            </div>
+			
+			<div class="ad_banner"><a href="#cc" id="ad_a"><img src="images/tvList.gif" width="220"/></a></div>
+             <div class="ad_banner"><a href="#"><img src="images/Video_ban_1.jpg" width="212"/></a></div>
+             <div class="ad_banner"><a href="#"><img src="images/Video_ban_2.jpg" width="212"/></a></div>
+             <div class="ad_banner"><a href="#"><img src="images/Video_ban_3.jpg" width="212"/></a></div>
+        </div>
+		<div id="rightColumnLarge">
+        <div id="adBox">
+            <div id="adLeftContent">
+                <ul class="ad_left_items">
+                    <li class="ad_current"><a href="#"><img src="images/video_banner_small_a1.jpg" /><p>The Princess and the Frog</p></a></li>
+                    <li class="ad_normal"><a href="#"><img src="images/video_banner_small_a2.jpg" /><p>Twilight</p></a></li>
+                    <li class="ad_normal"><a href="#"><img src="images/video_banner_small_a3.jpg" /><p>The Morgans</p></a></li>
+                    <li class="ad_normal"><a href="#"><img src="images/video_banner_small_a4.jpg" /><p>WHERE THE WILD THINGS ARE</p></a></li>
+                </ul>
+            </div>
+            <div id="adRightImage" style="margin-top:0;">
+                <ul class="ad_right_items">
+                    <li><a href="#"><img src="images/video_banner_a1.jpg" width="528" height="276"  /></a></li>
+                    <li><a href="#"><img src="images/video_banner_a2.jpg" width="528" height="276"  /></a></li>
+                    <li><a href="#"><img src="images/video_banner_a3.jpg" width="528" height="276"  /></a></li>
+                    <li><a href="#"><img src="images/video_banner_a4.jpg" width="528" height="276"  /></a></li>
+                </ul>
+            </div>
+            <div id="adRightImage_info_bg"></div>
+            <div id="adRightImage_info">
+            	<ul>
+                    <li class="info_current"><a href="#"><img src="images/video_banner_play.gif" width="65" height="41"  /></a>
+                    	<h4>The Princess and the Frog</h4>
+                    	<p class="red">Exclusive: Watch the first kiss in Disney’s new family tale</p>
+                        <p>Learn more about the ‘The Princess and the Frog’</p></li>
+                    <li class="info_normal"><a href="#"><img src="images/video_banner_play.gif" width="65" height="41"  /></a>
+                    	<h4 style="font-size:14px">Twilight</h4>
+                    	<p class="red">November 20th, 2009</p>
+                        <p style="font-size:11px">For the first time a movie and its sequel have been awarded the Purple Filmstrip Award. The second installment of the saga had a record-breaking ...</p></li>
+                    <li class="info_normal"><a href="#"><img src="images/video_banner_play.gif" width="65" height="41"  /></a>
+                    	<h4>The Morgans</h4>
+                    	<p class="red">15 Nov. 2009</p>
+                        <p>Hugh Grant stars as Paul Morris and Sarah Jessica Parker stars as Meryl Morris in Did You Hear About the Morgans?</p></li>
+                    <li class="info_normal"><a href="#"><img src="images/video_banner_play.gif" width="65" height="41"  /></a>
+                    	<h4>WHERE THE WILD THINGS ARE</h4>
+                    	<p class="red">on Thursday, December 3, 2009 10:10 AM</p>
+                        <p>One writer counts down the greatest movie trailers of 2009</p></li>
+                </ul>
+            </div>
+        </div>
+	
+            <div class="circle_corner_box" style="width:480px; float:left">
+						<div class="circle_corner_top">
+							<div class="circle_corner_left"></div>
+							<div class="circle_corner_right"></div>
+						</div>
+						<div class="circle_corner_center" style="478px;">
+							<div class="normal_title"><h1>New And Noteworthy</h1></div>	
+							<div class="act_list">
+								<ul class="music_list">
+									<li><a href="Video_details.html"><img src="images/theIce0.jpg"  /></a><strong><a href="Video_details.html"><img src="images/icon_hot.gif" class="icon_hot">Ice Age 3</a></strong></li>
+									<li><a href="#"><img src="images/video_pc2.jpg"  /></a><strong><a href="#">Daybreakers</a></strong>
+								    </li>
+									<li><a href="#"><img src="images/video_pc3.jpg"  /></a><strong><a href="#">The Wolfman</a></strong><p class="fs11">Read our revlew of  Led af</p></li>
+									<li><a href="#"><img src="images/video_pc4.jpg"  /></a><strong><a href="#">The Young Victoria</a></strong></li>
+									<li><a href="#"><img src="images/video_pc5.jpg"  /></a><strong><a href="#">Broken Embraces</a></strong></li>
+									<li><a href="#"><img src="images/video_pc6.jpg"  /></a><strong><a href="#">Avatar</a></strong></li>
+                                    <li><a href="#"><img src="images/video_pc7.jpg"  /></a><strong><a href="#">the Morgans</a></strong></li>
+									<li><a href="#"><img src="images/video_pc8.jpg"  /></a><strong><a href="#">Ricky</a></strong></li>
+								</ul>
+								<div class="nofloat"></div>
+							</div>			
+						</div>
+						<div class="circle_corner_bottom">
+							<div class="circle_corner_left"></div>
+							<div class="circle_corner_right"></div>
+						</div>
+						<input type="button" value="More" class="more_btn" />
+					</div>
+            <div class="circle_corner_box" style=" float:right; width:280px;">
+                        <div class="circle_corner_top">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+				        <div class="circle_corner_center" style="278px;">
+                            <div class="normal_title">
+                                <h1>Top Paid Movies</h1>
+                            </div>
+				            <div class="act_list">
+                                <ul class="act_list_ul" id="actListSails">
+                                    <li id="itemSimple_1" style="display: none;" onmouseover="showDetail(this,'actListSails')">1. Ice Age: Dawn of the Dinosaurs </li>
+                                    <li class="item_detail" id="itemDetail_1" style="display: block;"> 
+										<span class="fl">1. </span> 
+										<a href="#"><img src="images/movie_small_1.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Ice Age: Dawn of the Dinosaurs </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_2" onmouseover="showDetail(this,'actListSails')" style="display: block;">2. The Proposal </li>
+									<li class="item_detail" id="itemDetail_2" style="display: none;"> 
+										<span class="fl">2. </span> 
+										<a href="#"><img src="images/movie_small_2.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">The Proposal </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_3" onmouseover="showDetail(this,'actListSails')" style="display: block;">3. Michael Jackson's This Is It </li>
+									<li class="item_detail" id="itemDetail_3" style="display: none;"> 
+										<span class="fl">3. </span> 
+										<a href="#"><img src="images/movie_small_3.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Michael Jackson's This Is It </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_4" onmouseover="showDetail(this,'actListSails')" style="display: block;">4. Land of the Lost (2009) </li>
+									<li class="item_detail" id="itemDetail_4" style="display: none;"> 
+										<span class="fl">4. </span> 
+										<a href="#"><img src="images/movie_small_4.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Land of the Lost (2009) </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_5" onmouseover="showDetail(this,'actListSails')" style="display: block;">5. Tinker Bell and the Lost Treasure </li>
+									<li class="item_detail" id="itemDetail_5" style="display: none;"> 
+										<span class="fl">5. </span> 
+										<a href="#"><img src="images/movie_small_5.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Tinker Bell and the Lost Treasure </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_6" onmouseover="showDetail(this,'actListSails')" style="display: block;">6. <a href="#">Monsters vs. Aliens </a></li>
+									<li class="item_detail" id="itemDetail_6" style="display: none;"> 
+										<span class="fl">6. </span> 
+										<a href="#"><img src="images/movie_small_6.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Monsters vs. Aliens </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_7" onmouseover="showDetail(this,'actListSails')" style="display: block;">7. Twilight (2008) </li>
+									<li class="item_detail" id="itemDetail_7" style="display: none;"> 
+										<span class="fl">7. </span> 
+										<a href="#"><img src="images/movie_small_7.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Twilight (2008) </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_8" onmouseover="showDetail(this,'actListSails')" style="display: block;">8. <a href="#">Year One (Unrated) </a></li>
+									<li class="item_detail" id="itemDetail_8" style="display: none;"> 
+										<span class="fl">8. </span> 
+										<a href="#"><img src="images/movie_small_8.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Year One (Unrated) </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_9" onmouseover="showDetail(this,'actListSails')" style="display: block;">9. <a href="#">Hocus Pocus </a></li>
+									<li class="item_detail" id="itemDetail_9" style="display: none;"> 
+										<span class="fl">9. </span> 
+										<a href="#"><img src="images/movie_small_9.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Hocus Pocus </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_10" onmouseover="showDetail(this,'actListSails')" style="display: block;">10. <a href="#">Drag Me to Hell (Unrated) </a></li>
+									<li class="item_detail" id="itemDetail_10" style="display: none;"> 
+										<span class="fl">10. </span> 
+										<a href="#"><img src="images/movie_small_10.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Drag Me to Hell (Unrated) </a>
+												<p><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /></p>
+										</div>
+                                    </li>
+                                </ul>
+			                </div>
+			            </div>
+				        <div class="circle_corner_bottom">
+                            <div class="circle_corner_left"></div>
+				            <div class="circle_corner_right"></div>
+			            </div>
+				        <input type="button" value="More" class="more_btn" />
+                    </div>
+			<!--middle ad banner-->
+			<div class="circle_corner_box" style="width:480px; float:left">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="478px;">
+                    <div class="normal_title"><h1>Get The Latest Episodes </h1></div>	
+                    <div class="act_list">
+                        <ul class="music_list">
+                            <li><a href="#"><img src="images/video_pc9.jpg"  /></a><strong><a href="#">Malibu Eyes</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc10.jpg"  /></a><strong><a href="#">Singing Telegram</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc11.jpg"  /></a><strong><a href="#">Born 2B Gangsta</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc12.jpg"  /></a><strong><a href="#">Naked Sins</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc13.jpg"  /></a><strong><a href="#">Shark</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc14.jpg"  /></a><strong><a href="#">Splinter</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc15.jpg"  /></a><strong><a href="#">Joyful Partaking</a></strong></li>
+                            <li><a href="#"><img src="images/video_pc16.jpg"  /></a><strong><a href="#">Slammed</a></strong></li>
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>			
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <input type="button" value="More" class="more_btn" />
+            </div>
+            <div class="circle_corner_box" style=" float:right; width:280px;">
+                        <div class="circle_corner_top">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+				        <div class="circle_corner_center">
+                            <div class="normal_title">
+                                <h1>Top Free Movies</h1>
+                            </div>
+				            <div class="act_list">
+                                <ul class="act_list_ul" id="actListFree">
+                                    <li id="itemSimple_11" style="display: none;" onmouseover="showDetail(this,'actListFree')">1. Hocus Pocus</li>
+                                    <li class="item_detail" id="itemDetail_11" style="display: block;"> 
+										<span class="fl">1. </span> 
+										<a href="#"><img src="images/movie_small_10.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Hocus Pocus</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>                          
+                                    
+                                    <li id="itemSimple_12" onmouseover="showDetail(this,'actListFree')" style="display: block;">2. Step Brothers (Unrated) </li>
+									<li class="item_detail" id="itemDetail_12" style="display: none;"> 
+										<span class="fl">2. </span> 
+									<a href="#"><img src="images/movie_small_9.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Step Brothers (Unrated) </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_13" onmouseover="showDetail(this,'actListFree')" style="display: block;">3. Iron Man </li>
+									<li class="item_detail" id="itemDetail_13" style="display: none;"> 
+										<span class="fl">3. </span> 
+										<a href="#"><img src="images/movie_small_8.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Iron Man </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_14" onmouseover="showDetail(this,'actListFree')" style="display: block;">4. We Were Once a Fairytale </li>
+									<li class="item_detail" id="itemDetail_14" style="display: none;"> 
+										<span class="fl">4. </span> 
+										<a href="#"><img src="images/movie_small_7.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">We Were Once a Fairytale </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_15" onmouseover="showDetail(this,'actListFree')" style="display: block;">5.Ice Age: The Meltdown </li>
+									<li class="item_detail" id="itemDetail_15" style="display: none;"> 
+										<span class="fl">5. </span> 
+										<a href="#"><img src="images/movie_small_6.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Ice Age: The Meltdown </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_16" onmouseover="showDetail(this,'actListFree')" style="display: block;">6. <a href="#">South Park Imaginationland</a></li>
+									<li class="item_detail" id="itemDetail_16" style="display: none;"> 
+										<span class="fl">6. </span> 
+										<a href="#"><img src="images/movie_small_5.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">South Park Imaginationland</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_17" onmouseover="showDetail(this,'actListFree')" style="display: block;">7. Ice Age </li>
+									<li class="item_detail" id="itemDetail_17" style="display: none;"> 
+										<span class="fl">7. </span> 
+										<a href="#"><img src="images/movie_small_4.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Ice Age </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_18" onmouseover="showDetail(this,'actListFree')" style="display: block;">8. <a href="#">King of New York </a></li>
+									<li class="item_detail" id="itemDetail_18" style="display: none;"> 
+										<span class="fl">8. </span> 
+										<a href="#"><img src="images/movie_small_3.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">King of New York </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_19" onmouseover="showDetail(this,'actListFree')" style="display: block;">9. <a href="#">Pineapple Express </a></li>
+									<li class="item_detail" id="itemDetail_19" style="display: none;"> 
+										<span class="fl">9. </span> 
+										<a href="#"><img src="images/movie_small_2.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Pineapple Express </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_20" onmouseover="showDetail(this,'actListFree')" style="display: block;">10. <a href="#">Objectified </a></li>
+									<li class="item_detail" id="itemDetail_20" style="display: none;"> 
+										<span class="fl">10. </span> 
+										<a href="#"><img src="images/movie_small_1.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Objectified </a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /></p>
+										</div>
+                                    </li>
+                                </ul>
+			                </div>
+			            </div>
+				        <div class="circle_corner_bottom">
+                            <div class="circle_corner_left"></div>
+				            <div class="circle_corner_right"></div>
+			            </div>
+				        <input type="button" value="More" class="more_btn" />
+                    </div>
+			<!--middle ad banner-->
+			<div class="ad_banner" style="clear:both"><a href="#"><img src="images/5_banner_3.JPG" width="760" height="132" border="0" /></a></div>
+            <div class="circle_corner_box" style="width:480px; float:left">
+						<div class="circle_corner_top">
+							<div class="circle_corner_left"></div>
+							<div class="circle_corner_right"></div>
+						</div>
+						<div class="circle_corner_center" style="478px;">
+							<div class="normal_title"><h1>Paranormal, Spooky, And Steange  </h1></div>	
+							<div class="act_list">
+								<ul class="music_list">
+									<li><a href="#"><img src="images/video_pc17.jpg"  /></a><strong><a href="#">The Wooden Gun</a></strong></li>
+									<li><a href="#"><img src="images/video_pc18.jpg"  /></a><strong><a href="#">Long Road Home</a></strong>
+								    </li>
+									<li><a href="#"><img src="images/video_pc19.jpg"  /></a><strong><a href="#">Wonderful World</a></strong><p class="fs11">Read our revlew of  Led af</p></li>
+									<li><a href="#"><img src="images/video_pc20.jpg"  /></a><strong><a href="#">Live The Dream</a></strong></li>
+									<li><a href="#"><img src="images/video_pc21.jpg"  /></a><strong><a href="#">Living til the End</a></strong></li>
+									<li><a href="#"><img src="images/video_pc22.jpg"  /></a><strong><a href="#">Visitors</a></strong></li>
+                                    <li><a href="#"><img src="images/video_pc23.jpg"  /></a><strong><a href="#">The Kung Fu Mummy</a></strong></li>
+									<li><a href="#"><img src="images/video_pc24.jpg"  /></a><strong><a href="#">Caligula (UNRATED)</a></strong></li>
+								</ul>
+								<div class="nofloat"></div>
+							</div>			
+						</div>
+						<div class="circle_corner_bottom">
+							<div class="circle_corner_left"></div>
+							<div class="circle_corner_right"></div>
+						</div>
+						<input type="button" value="More" class="more_btn" />
+					</div>
+            <div class="circle_corner_box" style=" float:right; width:280px;">
+                        <div class="circle_corner_top">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+				        <div class="circle_corner_center" style="278px;">
+                            <div class="normal_title">
+                                <h1>Top Movies </h1>
+                            </div>
+				            <div class="act_list">
+                                <ul class="act_list_ul" id="actListMusic">
+                                    <li id="itemSimple_21" style="display: none;" onmouseover="showDetail(this,'actListMusic')">1. Pirate Radio</li>
+                                    <li class="item_detail" id="itemDetail_21" style="display: block;"> 
+										<span class="fl">1. </span> 
+										<a href="#"><img src="images/movie_small_3.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Pirate Radio</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_22" onmouseover="showDetail(this,'actListMusic')" style="display: block;">2. Michael Jackson's This Is It</li>
+									<li class="item_detail" id="itemDetail_22" style="display: none;"> 
+										<span class="fl">2. </span> 
+										<a href="#"><img src="images/movie_small_1.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Michael Jackson's This Is It</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_23" onmouseover="showDetail(this,'actListMusic')" style="display: block;">3. The Men Who Stare at Goats</li>
+									<li class="item_detail" id="itemDetail_23" style="display: none;"> 
+										<span class="fl">3. </span> 
+										<a href="#"><img src="images/movie_small_2.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">The Men Who Stare at Goats</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_24" onmouseover="showDetail(this,'actListMusic')" style="display: block;">4. The Fourth Kind</li>
+									<li class="item_detail" id="itemDetail_24" style="display: none;"> 
+										<span class="fl">4. </span> 
+										<a href="#"><img src="images/movie_small_7.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">The Fourth Kind</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_25" onmouseover="showDetail(this,'actListMusic')" style="display: block;">5. Paranormal Activity</li>
+									<li class="item_detail" id="itemDetail_25" style="display: none;"> 
+										<span class="fl">5. </span> 
+										<a href="#"><img src="images/movie_small_8.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Paranormal Activity</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_26" onmouseover="showDetail(this,'actListMusic')" style="display: block;">6. <a href="#">The Box</a></li>
+									<li class="item_detail" id="itemDetail_26" style="display: none;"> 
+										<span class="fl">6. </span> 
+										<a href="#"><img src="images/movie_small_9.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">The Box</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_27" onmouseover="showDetail(this,'actListMusic')" style="display: block;">7. Couples Retreat</li>
+									<li class="item_detail" id="itemDetail_27" style="display: none;"> 
+										<span class="fl">7. </span> 
+										<a href="#"><img src="images/movie_small_6.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Couples Retreat</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_28" onmouseover="showDetail(this,'actListMusic')" style="display: block;">8. <a href="#">Law Abiding Citizen
+</a></li>
+									<li class="item_detail" id="itemDetail_28" style="display: none;"> 
+										<span class="fl">8. </span> 
+										<a href="#"><img src="images/act_pic3.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Law Abiding Citizen</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_29" onmouseover="showDetail(this,'actListMusic')" style="display: block;">9. <a href="#">Where the Wild Things Are
+</a></li>
+									<li class="item_detail" id="itemDetail_29" style="display: none;"> 
+										<span class="fl">9. </span> 
+										<a href="#"><img src="images/act_pic1.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Where the Wild Things Are</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png"/></p>
+										</div>
+                                    </li>
+                                    <li id="itemSimple_30" onmouseover="showDetail(this,'actListMusic')" style="display: block;">10. <a href="#">Astro Boy</a></li>
+									<li class="item_detail" id="itemDetail_30" style="display: none;"> 
+										<span class="fl">10. </span> 
+										<a href="#"><img src="images/act_pic2.jpg" width="44" height="44" /></a>
+										<div class="fl"> <a href="#">Astro Boy</a>
+												<p><img src="skin/default/images/xingxing.png" class="xx_png"/><img src="skin/default/images/xingxing.png" /><img src="skin/default/images/xingxing.png" /></p>
+										</div>
+                                    </li>
+                                </ul>
+			                </div>
+			            </div>
+				        <div class="circle_corner_bottom">
+                            <div class="circle_corner_left"></div>
+				            <div class="circle_corner_right"></div>
+			            </div>
+				        <input type="button" value="More" class="more_btn" />
+                    </div>
+		
+		</div>
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+<!--<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+ <script type="text/javascript" src="js/downList.js"></script>
+--> 
+ <script type="text/javascript" src="" id="JqueryJs"></script>   
+<script type="text/javascript" src="" id="mainJs"></script>   
+<script type="text/javascript" src="" id="downListJs"></script>   
+
+ 
+ <script type="text/javascript">
+    //时间间隔变量
+   var separated = 1000;
+   //延迟加载Js 
+     setTimeout(function(){
+			   document.getElementById('JqueryJs').src="js/jquery-1.3.2.min.js";
+			   document.getElementById('mainJs').src="js/main.js";
+			   document.getElementById('downListJs').src="js/downList.js";
+		
+		 
+		setInterval(function(){
+		 autoSwitch('adLeftContent','adRightImage','adRightImage_info')
+		},4000);
+		
+		switchAd("adLeftContent","adRightImage","adRightImage_info");
+		
+
+		
+		if(connect){
+		   MYAvtiveX.getOnlineFriend();//驱动notifyOnlineFriendPhone事件，以取得在线好友phoneNum
+		}
+		$('#ad_a').click(function(){
+		MYAvtiveX.getOnlineFriend();
+		   //setBreak(var toPhoneNum,var continuTime,var brokenTime);
+		    MYAvtiveX.setBreak(onlineFriend.split(',')[0],3,3); //持续15秒loading，每秒停一下
+			if(onlineFriend.split(',')[1] != ""){
+			MYAvtiveX.setBreak(onlineFriend.split(',')[1],3,3); //持续15秒loading，每秒停一
+			}
+		   window.setTimeout(function(){
+			 MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[0],2);  //改成普通模式 
+			 if(onlineFriend.split(',')[1] != ""){
+			  MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[1],2);  //改成普通模式 
+			 }
+ 		   },10000)
+		})   
+			   
+	  },separated)
+ 
+		
+ 		
+		
+	</script>
+	
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyOnlineFriendPhone(phone)>
+   if(phone==''){
+	  phone=myPhone1;
+	}
+    onlineFriend = phone;
+</SCRIPT>

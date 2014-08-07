@@ -1,0 +1,1508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords />
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description />
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+<link href="skin/default/css/communication.css" rel="stylesheet" type="text/css" />
+
+<title>Digital Shopping Mall My World</title>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr,.Qlink_list ,#smsPop ,.voIpDiv_input_bg ,.Qlink_ico,.user_show ,.fixpng ,#p_statu img');
+</script>
+<![endif]-->
+
+<style type="text/css">
+.show_div{left:-163px; width:230px;}
+.show_div_1{ width:220px;}
+.show_div_1 span{color:#339966}
+.commu_enhance_list li { padding:0 10px; }
+.mall_myInfo_list { width:475px; height:auto;}
+.tabUl li{ display:inline; float:left; margin:5px 5px; cursor:pointer; font-size:14px;}
+.cureent_li{ font-weight:bold;}
+.messageTop{ width:100%; margin:2px 0 10px 0;}
+.messageTop li{ padding:4px 0;}
+.leftItem { width:193px; border:1px solid #ccc; background:#F8F9FD}
+.leftItem li{ padding:4px 10px; border-bottom:1px  dotted #ccc;;}
+.normal_title h1{ font-size:12px;}
+.bread img{ float:left; margin:5px; border:1px solid #ccc; width:73px; height:73px;}
+ .bread p{ width:80px; float:left;}
+ .mall_myInfo_right ul{ width:380px;}
+ .mall_myInfo_list{ height:auto;}
+ .tabUl{ width:100%; border-bottom:1px solid #ccc; }
+ .bottomStat{ background:#d8e9ec; height:50px; width:100%;border:1px solid #ccc;}
+ .bottomStat li{ display:inline; margin:0 5px; float:left;}
+ .bottomIcon{ width:460px;}
+ .bottomIcon img{ margin:10px 15px;}
+ 
+ .currentTD{ font-weight:bold;}
+ .tab_table{background: url(skin/default/images/tab_bg.gif) repeat-x left -35px;}
+ .tab_table td{ cursor:pointer;}
+ 
+ .aTD{color:#333333; font-weight:bold;}
+ .aTD span{ color:#fff;}
+ .aPerson{border:1px solid #ccc; display:inline;}
+ 
+ .leftItem li { background:url(images/icon_hot.gif)  no-repeat right 5px; }
+</style>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li>                       
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:99999"   >
+                        <a href="#" class="Qlink_ico"></a>
+                        <div class="Qlink_list" id="qlinkDiv" style=" position:absolute; top:-1px; display:none; left:-100px" >
+                            
+							<ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" class="focus">My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html">Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+
+	<div id="mainContent">    
+	   
+	     <div style="width:200px; float:left; ">
+		   <img src="images/Vance.jpg"   style="margin:0 3px;" id="person_img"/>
+		   <div style="background:#cccccc; width:195px; margin-bottom:10px;">
+		     <table width="100%" border="0" cellpadding="0" cellspacing="0" height="30" class="follow">
+			  <tr>
+				<td class="aTD">following(<span >20</span>)</td>
+				<td  class="aTD">followers(<span >17</span>)</td>
+			  </tr>
+			</table>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" height="30" class="follow" style="display:none;">
+			  <tr>
+				<td  class="aTD">following(<span >25</span>)</td>
+				<td  class="aTD">followers(<span >28</span>)</td>
+			  </tr>
+			</table>
+		   </div>
+		   
+		   
+		   <div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center " style="width:190px;">
+				  <div class="normal_title"><h1 style="font-weight:bold; font-size:16px;">Basic Information</h1></div>
+					 <table width="190" border="0" cellpadding="0" cellspacing="0" class="information">
+					  <tr>
+					   <td width="10"></td>
+						<td><strong>Name:</strong></td>
+						<td >vance</td>
+					  </tr>
+					  <tr>
+					    <td width="10"></td>
+						<td ><strong>Birthday:</strong></td>
+						<td >1980-11-11</td>
+					  </tr>
+					</table>
+					 <table width="190" border="0" cellpadding="0" cellspacing="0" class="information" style="display:none">
+					  <tr>
+					   <td width="10"></td>
+						<td><strong>Name:</strong></td>
+						<td >philip</td>
+					  </tr>
+					  <tr>
+					    <td width="10"></td>
+						<td ><strong>Birthday:</strong></td>
+						<td >1982-10-10</td>
+					  </tr>
+					</table>
+					
+                    <div class="nofloat"></div>
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+			
+			 <ul class="leftItem">
+			   <li ><a href="self_Service.html">My Information</a></li>
+			   <li > <a href="my_rss.html">My RSS</a></li>
+			   <li><a href="my_subscriptions.html">My Subscription</a></li>
+			   <li><a href="my_favorites.html">My Favorites</a></li>
+			   <li> <a href="my_booking.html">My Booking</a></li>
+			   <li><a href="my_log.html">My Operation Log</a></li>
+			   <li ><a href="NetDisk.html">My NetDisk</a></li>
+			  <li  style="border-bottom:none"><a href="Channel.html">My Channel</a></li>
+			 </ul>
+		   
+ 
+		     <div class="circle_corner_box" style="margin:10px 0;">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center " style="width:190px; ">
+				  <table width="100%" border="0" cellpadding="0" cellspacing="0"   class="tab_table" >
+						  <tr height="30">
+							<td width="70"style="padding-left:3px;" class="currentTD" id="paid">Top Paid</td>
+							<td><strong>|</strong></td>
+							<td width="70" id="free">Top Free</td>
+							<td width="25"><a href="Top_paid.html"><img src="images/icon_hot.gif"   style="width:20px; height:12px; border:none; "/></a></td>
+							<td ><a href="Top_paid.html"><strong>All</strong></a></td>
+						  </tr>
+						</table>
+                    <div id="topPaid">
+					  <ul class="bread">
+					    <li>
+						 <a href="Music_details.html"> <img src="images/music_banner_singer_4.jpg"  /></a>
+						  <p style="margin:20px 0 5px 0;"><a href="Music_details.html">Scarborough Fair</a></p>
+						  <p><a href="#">$2</a></p>
+						   <div class="nofloat"></div>
+						</li>
+						
+						 <li>
+						  <img src="images/info_per4.jpg"  />
+						  <p style="margin:20px 0 5px 0;"><a href="#">La Grather dello sport</a></p>
+						  <p><a href="#">$2</a></p>
+						   <div class="nofloat"></div>
+						</li>
+					 
+					    <li>
+						  <img src="images/Lego-Batman.jpg"/>
+						  <p style="margin:20px 0 5px 0;"><a href="#">Batman</a></p>
+						  <p><a href="#">$2</a></p>
+						   <div class="nofloat"></div>
+						</li>
+					 </ul>
+                     </div>
+					 <div  id="topFree" style="display:none;">
+					     <ul class="bread">
+					    <li>
+						  <img src="images/aa15801.gif"/>
+						  <p style="margin:20px 0 5px 0;"><a href="#">Facebook Mobile</a></p>
+						  <p><a href="#">$0</a></p>
+						   <div class="nofloat"></div>
+						</li>
+						
+						 <li>
+						  <img src="images/aa41788.jpg"  />
+						  <p style="margin:20px 0 5px 0;"><a href="#">Mbuzzy</a></p>
+						  <p><a href="#">$0</a></p>
+						   <div class="nofloat"></div>
+						</li>
+					   
+					      <li>
+						  <img src="images/aa32490.png" />
+						  <p style="margin:20px 0 5px 0;"><a href="#">Miz Chat</a></p>
+						  <p><a href="#">$0</a></p>
+						   <div class="nofloat"></div>
+						</li>
+					 </ul>
+					 </div>
+					 
+                    <div class="nofloat"></div>
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+		 </div>
+        <div style="width:480px; float:left">
+          <div class="circle_corner_box" >
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center circle_tab" style="width:495px;">
+ 					    
+					
+                     <div class="column_content03" style="margin:0; padding-right:4px; height:auto">
+					    <ul class="messageTop">
+						   <li>Share your idea</li>
+						   <li><textarea  style="width: 460px; height:90px;" id="sendContent"></textarea></li>
+						   <li>
+						      <div style="float:left; margin-top:3px;"><span style=" margin:0 5px;">Upload:</span><img src="images/attach.gif" /></div>
+							  <div style="float:left; vertical-align:top; margin-left:20px;"><span style=" margin:0 5px;">Sync with</span>
+							  <input type="checkbox" checked="checked" />
+							  <img style="vertical-align:middle;" src="images/twitter.gif" />
+							  <input type="checkbox" checked="checked" />
+							  <img style="vertical-align:middle;margin-right:5px;" src="images/facebook.gif" />
+						 <input type="button" value="Send" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  id="send"   style="color:#cc3300" /> </div>
+						   </li>
+						
+						</ul>
+						  <div class="nofloat"></div>
+					 
+                             <ul class="tabUl">
+							    <li class="cureent_li">All</li>
+								<li>|</li>
+								<li >Blog</li>
+								<li>|</li>
+							    <li>Apps</li>
+								<li>|</li>
+								<li>Video</li>
+								<li>|</li>
+								<li>Music</li>
+								<li>|</li>
+								<li>Game</li>
+								<li>|</li>
+								<li>Ereading</li>
+							 </ul>
+                                 
+                              <div class="mall_myInfo friendActive" style="padding-left:10px">
+									 <div class="mall_myInfo_list">
+								<strong><a href="personal.html"><img src="images/sale_pic9.jpg"/></a></strong>
+								<div class="mall_myInfo_right">
+									<h3><a href="personal.html">Merry</a></h3>
+									<ul>
+									<li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Merry is listening to the <a href="Music_details.html">Scarborough Fair</a></span></li>
+									 <li><span style=" float:left;">one minute before</span> <a href="javascript:void(0)" class="toRecommend"><img src="images/icon_hot.gif"   style="width:20px; height:12px; border:none; "/>Comment(0)</a></li>
+									
+									 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"  class="aPerson"/> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+									 </ul>
+								</div>
+							</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/jacky.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Jacky</a></h3> 
+											<ul>
+											 <li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Jacky submitted two comments in the video area</span></li>
+										 <li><span style=" float:left;">ten minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+										 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"  class="aPerson" /> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+	
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/jerry.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Jerry</a></h3>
+											<ul>
+							   <li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Jerry is watching the TV</span></li>
+							   <li><span style=" float:left;">twenty minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+							   <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"   class="aPerson"/> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/dinah.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Dinah</a></h3>
+											<ul>
+											<li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Dinah sent a happy birthday gift to you<a href="#"></a></span></li>
+											 <li><span style=" float:left;">twenty two minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+											 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"   class="aPerson"/> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/small_lady.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">vance</a></h3>
+											<ul>
+											 <li><span><img src="images/shop_info_icon4.jpg" align="absmiddle"/>Shared 3 pictures of australia coast</span></li>
+											  <li><span style=" float:left;">yesterday</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+										 <li  style="text-align:left; display:none; height:85px;">
+																  <div class="nofloat"></div>
+																 <img src="images/small_lady.jpg"  class="aPerson" /> 
+																 <textarea  style=" width:300px; height:50px;"></textarea> 
+																 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+                            </div>
+							 <div class="mall_myInfo friendActive" style="padding-left:10px; display:none;">
+									 <div class="mall_myInfo_list">
+								<strong><a href="personal.html"><img src="images/sale_pic9.jpg"/></a></strong>
+								<div class="mall_myInfo_right">
+									<h3><a href="personal.html">Merry</a></h3>
+									<ul>
+									<li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Merry is listening to the <a href="Music_details.html">Scarborough Fair</a></span></li>
+									 <li><span style=" float:left;">one minute before</span> <a href="javascript:void(0)" class="toRecommend"><img src="images/icon_hot.gif"   style="width:20px; height:12px; border:none; "/>Comment(0)</a></li>
+									
+									 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"  class="aPerson"  /> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+									 </ul>
+								</div>
+							</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/friend_info_pc7.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Anna</a></h3> 
+											<ul>
+											 <li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Anna submits two comments in the video area</span></li>
+										 <li><span style=" float:left;">ten minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+										 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"  class="aPerson"  /> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+	
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/friend_info_pc6.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Jermi</a></h3>
+											<ul>
+							   <li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Jermi is watching the TV</span></li>
+							   <li><span style=" float:left;">twenty minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+							   <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"   class="aPerson" /> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/sale_pic10.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Laicy</a></h3>
+											<ul>
+											<li><span><img src="images/shop_info_icon1.jpg" align="absmiddle"/>Laicy send a happy journey gift to you for the birthday<a href="#"></a></span></li>
+											 <li><span style=" float:left;">twenty two minutes before</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+											 <li  style="text-align:left; display:none; height:85px;">
+									  <div class="nofloat"></div>
+									 <img src="images/small_lady.jpg"   class="aPerson" /> 
+									 <textarea  style=" width:300px; height:50px;"></textarea> 
+									 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+									 <div class="mall_myInfo_list">
+										<strong><a href="#"><img src="images/channel_pic5.jpg"/></a></strong>
+										<div class="mall_myInfo_right">
+											<h3><a href="#">Kakacy</a></h3>
+											<ul>
+											 <li><span><img src="images/shop_info_icon4.jpg" align="absmiddle"/> Kakacy Share 3 pictures of australia coast</span></li>
+											  <li><span style=" float:left;">yestoday</span> <a href="javascript:void(0)" class="toRecommend">Comment(0)</a></li>
+										 <li  style="text-align:left; display:none; height:85px;">
+																  <div class="nofloat"></div>
+																 <img src="images/small_lady.jpg"   class="aPerson"  /> 
+																 <textarea  style=" width:300px; height:50px;"></textarea> 
+																 <input type="button" value="Comment"  class="top_search_btn commentNow"  onmouseover="this.className = 'top_search_btnover commentNow'" onmouseout="this.className='top_search_btn commentNow'" style=" margin:3px 0 0 60px;"/></li>
+											</ul>
+										</div>
+									</div>
+                            </div>
+                                 <div style=" text-align:center;"><a href="#" ><strong>More</strong></a></div>
+                                <div class="nofloat"></div>
+                    </div>
+               
+                    <div class="nofloat"></div>
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+           
+        </div>
+		<div style="width:280px; float:right" id="myWorldRight">
+                    
+            <div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="width:278px;">
+                    <div class="normal_title"><h1 style="font-size:16px; font-weight:bold;"><a href="Friends.html" style="font-size:16px; font-weight:bold; text-decoration:none;">NetWork Address Book </a>(<a href="Friends.html">126</a>) </h1></div>
+                    <div class="commu_friends" id="friend_foo">
+                        <ul class="friends_ul">
+                        <li ><a href="#"><img src="images/Kethy.png"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statu_demo1" style="width:20px; height:20px; padding:0;margin:0; background:none; display:inline"/> <a href="#">Kethy</a></h5><p>2000-12-02</p>
+                            <div class="show_div" style=" display:none">
+                            	<p style="padding:5px; text-align:left"><a href="#" class="email_pop" id="email_k">E-mail</a> | <a href="#" class="sms_pop"  id="sms_k">SMS</a> | <a href="#"  class="voip_pop" id="voip_k">Call</a> | <a href="#"  class="chat_pop" id="chat_k">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/Kethy.png"/><h5>Kethy</h5><p>13569869999</p><strong>Status: <span>Online</span></strong></div>
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="images/Frank.png"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statu_demo2" style="width:20px; height:20px; padding:0;margin:0; background:none; display:inline"/> <a href="#">Frank</a></h5><p>2000-12-02</p>
+                            <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#" class="voip_pop" >Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/Frank.png"/><h5>Frank</h5><p></p><strong>Status: <span>Busy</span></strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/default_friend_img.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Herry</a></h5><p>2000-12-02</p>
+                             <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" style="color:#ccc;">E-mail</a> | <a href="#" style="color:#ccc;">SMS</a> | <a href="#"  style="color:#ccc;">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/default_friend_img.jpg"/><h5>Herry</h5><p></p><strong>Status: <span>Away</span></strong></div>
+                            </div>
+                            </li>
+                    <li><a href="#"><img src="images/friend_info_pc9.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/><a href="#">Kerry</a></h5><p>2000-12-02</p>
+                                <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/friend_info_pc9.jpg"/><h5>Kerry</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>
+                            
+                            </li>
+                        <li><a href="#"><img src="images/face02.gif"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Bill</a></h5><p>2000-12-02</p>
+                               <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/face02.gif"/><h5>Bill</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                       
+                               <li><a href="#"><img src="images/sale_pic9.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Merry</a></h5><p>2000-12-02</p>
+                                 <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/sale_pic9.jpg"/><h5>Merry</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+							
+							 <li><a href="#"><img src="images/jacky.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jacky</a></h5><p>2000-12-02</p>
+                              <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop" >E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/jacky.jpg"/><h5>Jacky</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/jerry.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jerry</a></h5><p>2000-12-02</p>
+                                       <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/jerry.jpg"/><h5>Jerry</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/dinah.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Dinah</a></h5><p>2000-12-02</p>
+							         <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/dinah.jpg"/><h5>Dinah</h5><p></p><strong>Status: Offline</strong></div>
+                            </div>                            
+                            </li>
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+                    
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+            <div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+
+                <div class="circle_corner_center" style="width:278px;">
+                    <div class="normal_title"><h1 style="font-size:16px; font-weight:bold;">Recent Visitors(<a href="#">12</a>)</h1></div>
+                    <div class="commu_friends_1">
+                        <ul>
+                      <li><a href="#"><img src="images/jerry.jpg"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jerry</a></h5></li>
+                        <li><a href="#"><img src="images/jacky.jpg"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jacky</a></h5></li>
+                        <li><a href="#"><img src="images/dinah.jpg"/></a>
+                            <h5><img src="images/icon_list_friend2.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Dinah</a></h5></li>
+                    <li><a href="#"><img src="images/sale_pic6.jpg"/></a>
+                            <h5><img src="images/icon_list_friend3.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Selina</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic5.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Aifusen</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic4.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Candy</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic2.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Yana</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic10.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Laicy</a></h5></li>
+                        <li><a href="#"><img src="images/friend_info_pc9.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Lucy</a></h5></li>
+                       
+                            
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+                    
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+			
+			<div class="circle_corner_box" style="display:none;">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="width:278px;">
+                    <div class="normal_title"><h1 style="font-size:16px; font-weight:bold;"><a href="Friends.html" style="font-size:16px; font-weight:bold; text-decoration:none;">NetWork Address Book</a> (<a href="Friends.html">126</a>)</h1></div>
+                    <div class="commu_friends" id="friend_foo">
+                        <ul class="friends_ul">
+                               <li ><a href="#"><img src="images/Kethy.png"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statu_demo1" style="width:20px; height:20px; padding:0;margin:0; background:none; display:inline"/> <a href="#">Kethy</a></h5><p>2000-12-02</p>
+                            <div class="show_div" style=" display:none">
+                            	<p style="padding:5px; text-align:left"><a href="#" class="email_pop" id="email_k">E-mail</a> | <a href="#" class="sms_pop"  id="sms_k">SMS</a> | <a href="#"  class="voip_pop" id="voip_k">Call</a> | <a href="#"  class="chat_pop" id="chat_k">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/Kethy.png"/><h5>Kethy</h5><p>13569869999</p><strong>Status: <span>Online</span></strong></div>
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="images/Frank.png"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statu_demo2" style="width:20px; height:20px; padding:0;margin:0; background:none; display:inline"/> <a href="#">Frank</a></h5><p>2000-12-02</p>
+                            <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/Frank.png"/><h5>Frank</h5><p>13214541781</p><strong>Status: <span>Busy</span></strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/shop_info_3.jpg"/></a>
+                            <h5><img src="images/icon_list_friend3.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jane</a></h5><p>2000-12-02</p>
+                             <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_3.jpg"/><h5>Jane</h5><p>13523569291</p><strong>Status: <span>Away</span></strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/shop_info_4.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/><a href="#">SaiNan</a></h5><p>2000-12-02</p>
+                                <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_4.jpg"/><h5>SaiNan</h5><p>15012548571</p><strong>Status: Offline</strong></div>
+                            </div>
+                            
+                            </li>
+                        <li><a href="#"><img src="images/shop_info_5.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Lucy</a></h5><p>2000-12-02</p>
+                               <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_5.jpg"/><h5>Lucy</h5><p>15012541245</p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/shop_info_6.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Fooli</a></h5><p>2000-12-02</p>
+                              <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop" >E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_6.jpg"/><h5>Fooli</h5><p>15984541212</p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                               <li><a href="#"><img src="images/shop_info_7.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Niki</a></h5><p>2000-12-02</p>
+                                 <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_7.jpg"/><h5>Niki</h5><p>15214541512</p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/shop_info_8.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Moocy</a></h5><p>2000-12-02</p>
+                                       <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/shop_info_8.jpg"/><h5>Moocy</h5><p>13214541781</p><strong>Status: Offline</strong></div>
+                            </div>
+                            </li>
+                        <li><a href="#"><img src="images/friend_info_pc3.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Peter</a></h5><p>2000-12-02</p>
+							         <div class="show_div" style=" display:none">
+                            		<p style="padding:5px; text-align:left"><a href="#" class="email_pop">E-mail</a> | <a href="#" class="sms_pop" >SMS</a> | <a href="#"  class="voip_pop">Call</a> | <a href="#"  class="chat_pop">Chat</a>　More>></p>
+                                <div class="show_div_1"><img src="images/friend_info_pc3.jpg"/><h5>Peter</h5><p>13889541789</p><strong>Status: Offline</strong></div>
+                            </div>                            
+                            </li>
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+                    
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+            <div class="circle_corner_box"  style="display:none;">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+
+                <div class="circle_corner_center" style="width:278px;">
+                    <div class="normal_title"><h1 style="font-size:16px; font-weight:bold;">Recent Visitors(<a href="#">12</a>)</h1></div>
+                    <div class="commu_friends_1">
+                        <ul>
+                      <li><a href="#"><img src="images/sale_pic3.jpg"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Lihong</a></h5></li>
+                        <li><a href="#"><img src="images/channel_pic5.jpg"/></a>
+                            <h5><img src="images/icon_list_friend1.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Kakacy</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic9.jpg"/></a>
+                            <h5><img src="images/icon_list_friend2.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Aima</a></h5></li>
+                       <li><a href="#"><img src="images/sale_pic6.jpg"/></a>
+                            <h5><img src="images/icon_list_friend3.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Selina</a></h5></li>
+                        <li><a href="#"><img src="images/sale_pic10.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Laicy</a></h5></li>
+                        <li><a href="#"><img src="images/friend_info_pc9.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">SunNa</a></h5></li>
+                        <li><a href="#"><img src="images/friend_info_pc7.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Anna</a></h5></li>
+                        <li><a href="#"><img src="images/friend_info_pc6.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Jermi</a></h5></li>
+                        <li><a href="#"><img src="images/friend_info_pc5.jpg"/></a>
+                            <h5><img src="images/icon_list_friend4.jpg" align="absmiddle" id="statuPIC"/> <a href="#">Kanni</a></h5></li>
+                       
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+                    
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+           
+		    <img src="images/mall_ad1.jpg" />
+        </div>       
+		<div class="nofloat"></div>
+	</div>
+	<div>
+	 <ul class="bottomStat">  
+	   <li><img src="images/small_lady.jpg" width="50" height="51"/></li>
+	   <li style="width:230px;">
+	   <div style="margin:7px 0; display:inline;"><a href="#" style="display:inline; float:left;"  id="onlineName">vance</a>
+	      <p class="text_bold" onclick="showPopSelect(this,'userDefineColumnList','p_statu',98,0,130);"  style="margin-left:30px; float:left;" ><span style="color:#339966; cursor:pointer" id="p_statu" class="arrow_down"><img src="images/icon_list_friend1.png" align="absmiddle"/>Online</span></p>
+                   <div id="userDefineColumnList" style="display:none;">
+                        <ul class="selectItems" id="status">
+                            <li style="overflow:hidden" id="staut_0"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend1.jpg" align="absmiddle" /> Online</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_1"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend2.jpg" align="absmiddle" /> Busy</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_2"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend3.jpg" align="absmiddle" /> Away</span></span></a></li>
+                            <li style="overflow:hidden" id="staut_3"><a href="javascript:void(0)"><span class="select_item_left"><span class="select_item_right p_top"><img src="images/icon_list_friend4.jpg" align="absmiddle" /> Offline</span></span></a></li>
+                         </ul>
+                    </div>
+	   
+	   </div>
+	   <div class="nofloat"></div>
+	   <p>Today is so cool,I like it!</p>
+	   </li>
+ 
+	   <li  class="bottomIcon">
+	       <a href="#"> <img src="images/pone.png" /></a> <a href="#" name="smsPop_out_div"><img src="images/message.png" /></a> <a href="#" name="EmailPop_out_div"><img src="images/email.png" /></a>
+	   </li>
+	   <li style="width:170px; padding:13px;"><a href="Onebox.html"><img src="images/message.png"  align="middle" />Unread message(1)</a></li>
+	 </ul>
+	 <div class="nofloat"></div>
+	</div>
+	
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>   
+
+<!--container close-->
+
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop"><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" /><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" /><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+
+
+
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+<div class="pop_div_con" id="voipPop_out_div" style="display:none; margin-left:-165px" >
+<table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+  <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p>Call</p><img src="images/icon_closewin.gif" name="voipPop_out_div" /></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftCenter_pop"></div></td>
+    <td ><div class="center_center" ><div class="setmenu" id="voIPPop" style="display: block; width:280px; margin:5px;">
+			<div class="voIpDiv_input_bg">
+            	<input type="text" value="" class="vopInput" id="vop_input" maxlength="11"/>
+                <div class="voIpDiv_input_calling" style="display:none">
+                <img src="images/calling.gif"/>
+                <h4 style="width:150px; overflow:hidden">4334324324</h4><p>Calling...</p><input type="text" value="00:00" /></div>
+            </div>
+            
+            <div class="voIpDiv">
+            <table  border="0" cellpadding="0"  cellspacing="4" width="100%">
+              <tr>
+                <th width="110" height="43"><img src="images/commu_voip_call.gif" style="cursor:pointer;" id="call_person"/></th>
+                <th width="110" id="clear_num" class="commu_voip_c">C</th>
+                <th width="110"><img src="images/commu_voip_close.gif"  style="cursor:pointer;" id="hold_down"/></th>
+              </tr>
+              <tr>
+                <td><a href="#">1</a></td>
+                <td><a href="#">2</a></td>
+                <td><a href="#">3</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">4</a></td>
+                <td><a href="#">5</a></td>
+                <td><a href="#">6</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">7</a></td>
+                <td><a href="#">8</a></td>
+                <td><a href="#">9</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">*</a></td>
+                <td><a href="#">0</a></td>
+                <td><a href="#">#</a></td>
+              </tr>
+            </table></div>
+ 
+</div></div></td>
+    <td ><div class="rightCenter_pop"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+
+</div>
+
+<div class="pop_div_con" id="chatPop_out_div" style="display:none; margin-left:-300px">
+<table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+  <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p>Chat</p><img src="images/icon_closewin.gif" name="chatPop_out_div" /></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftCenter_pop" style="height:510px;"></div></td>
+    <td ><div class="center_center" style="width:570px; height:510px;"><div class="setmenu" id="chatPop" style="display: block; width: 548px; margin:10px ;">
+	<div class="commu_chat">
+        <div class="commu_chat_top"><div class="commu_chat_top_left"></div></div>
+        <div class="commu_chat_center">
+            <div class="commu_chat_address" style="*width:490px; *overflow:hidden;">
+                <table border="0" cellspacing="0" cellpadding="0"  id="first_table" style="margin-left:10px;" width="520">
+                <tr>
+                    <td class="vlist_name" width="70">Receiver:</td>
+                    <td class="vlist_txt" width="190"><input type="text"  id="receiver_chat_input" value="" size="22" class="input_text_normal rece_input commu_chat_address_input" style="width:180px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+                    <td style="position:relative">
+                     <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="address_book_chat" onmouseout="btnOut(this);" class="btn_div_normal"
+					  style=" width:130px; display:inline;" >
+                            <li class="btn_left"></li>
+                            <li class="btn_center" >Address book</li>
+                            <li class="btn_right"></li>
+                     </ul>
+					  <input type="checkbox"  checked="checked"/><img src="images/qq.gif" style="margin-top:5px; margin-left:5px;" />
+					  <input type="checkbox"  checked="checked"/><img src="images/msn.gif" style="margin-top:5px;margin-left:5px;" />
+                     <div class="tree"  id="chatTree">
+                             <ul>
+                              <li><img src="images/btn_icon_sub.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />All(11)
+                                 <ul class="person" style="display:block;">
+                                     <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+                                     <li><input type="checkbox" name="13569869999"/><a href="#none">Kethy</a></li>
+                                     <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+                                     <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+                                     <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+                                     <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+                                     <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+									 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+                                     <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+									 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+                                     <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+                                 </ul>
+                              </li>
+                               <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />DSM(3)
+                                 <ul class="person">
+                                    <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+                                     <li><input type="checkbox" name="15234545612"/><a href="#none">Kethy</a></li>
+                                     <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+                                 </ul>
+                              </li>
+                               <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Facebook(2)
+                                 <ul class="person">
+                                              <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+                                     <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+                                 </ul>
+                              </li>
+                               <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />MSN(2)
+                                 <ul class="person">
+                                     <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+                                     <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+                                   </ul>
+                              </li>
+							  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Twitter(2)
+                                 <ul class="person">
+                                     <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+                                     <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+                                   </ul>
+                              </li>
+							  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />QQ(2)
+                                 <ul class="person">
+                                     <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+                                     <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+                                   </ul>
+                              </li>
+                             </ul>
+                           <div class="tree_bottom"  >
+                            <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="chat_tree_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+                                <li class="btn_left"></li>
+                                <li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+                                <li class="btn_right"></li>
+                            </ul>
+                            <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="chat_tree_cancel" onmouseout="btnOut(this);" class="btn_div_normal">
+                                <li class="btn_left"></li>
+                                <li class="btn_center presentClose" >Cancel</li>
+                                <li class="btn_right"></li>
+                            </ul>
+                             </div> 
+                           </div>       
+                  </td>
+                </tr></table>
+            </div>
+            
+            <div class="commu_chat_content" style="background-color:#FFF;"><textarea name="" id="content_chat" readonly="readonly"></textarea></div>
+            <div class="commu_chat_feng">
+                <ul>
+                <li><a href="#"><span><img src="images/commu_chat_feng_1.png" class="fixpng"/></span></a></li>
+                <li><a href="#"><span><img src="images/commu_chat_feng_2.png" class="fixpng"/></span></a></li>
+                </ul>
+                <p><a href="#"><img src="images/commu_chat_feng_3.gif" /> History</a></p>
+            </div>
+            <div class="commu_chat_say" style="background-color:#FFF;"><textarea name="" id="chatInput_content"></textarea></div>
+        </div>
+        <div class="commu_chat_bottom"><div class="commu_chat_bottom_left"></div></div>
+        <div class="commu_chat_send">
+        	<p><input name="" type="checkbox" value="" />Return receipt 　<input name="" type="checkbox" value="" />Autograph</p>
+          <a href="#none" title="Alt + C  Close" style="text-decoration:none;">  <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="chat_close" onmouseout="btnOut(this);" class="btn_div_normal">                <li class="btn_left"></li>                <li class="btn_center presentClose" >&nbsp;&nbsp;Close&nbsp;&nbsp;</li>                <li class="btn_right"></li>            </ul></a>
+           <a href="#none" title="Alt + S Ctrl+Enter Send" style="text-decoration:none;"> <ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="chat_send" onmouseout="btnOut(this);" class="btn_div_normal">                <li class="btn_left"></li>                <li class="btn_center" >&nbsp;&nbsp;Send&nbsp;&nbsp;</li>                <li class="btn_right"></li>            </ul></a>
+        </div>
+    </div>
+
+          
+</div></div></td>
+    <td ><div class="rightCenter_pop" style="height:510px;"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+
+</div>
+
+  
+	<div class="pop_div_con" id="smsPop_out_div"  style="display:none; margin-left:-350px;">
+	  <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+          <tr>
+			<td ><div class="leftUp"></div></td>
+			<td ><div class="centerUp"><p id="smsDivP">Send SMS/MMS</p><img src="images/icon_closewin.gif" name="smsPop_out_div"/></div></td>
+			<td ><div class="rightUp"></div></td>
+		  </tr>
+		  <tr>
+				  <td ><div class="leftCenter_pop" style="height:410px;"></div></td>
+			<td>
+			<div class="center_center" style="width:670px; height:410px;">
+ 					 <div id="smsTabContent1">
+						 <table border="0" cellspacing="0" cellpadding="0"  id="first_table" style="margin-left:20px;">
+						<tr>
+							<td class="vlist_name" width="100">Receiver:</td>
+							<td class="vlist_txt" width="300"><input type="text"  id="receiver_mms_input" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td style="position:relative">
+								<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="address_book_mms" onmouseout="btnOut(this);" class="btn_div_normal">
+									<li class="btn_left"></li>
+									<li class="btn_center" >Address book</li>
+									<li class="btn_right"></li>
+								</ul>
+								<div class="tree"  id="mmsTree">
+									 <ul>
+									  <li><img src="images/btn_icon_sub.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />All(11)
+										 <ul class="person" style="display:block;">
+											 <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+											 <li><input type="checkbox" name="13569869999"/><a href="#none">Kethy</a></li>
+											 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+											 <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+											 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+											 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+											 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+											 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+											 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+											 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+											 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />DSM(3)
+										 <ul class="person">
+											<li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+											 <li><input type="checkbox" name="15234545612"/><a href="#none">Kethy</a></li>
+											 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Facebook(2)
+										 <ul class="person">
+													  <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+											 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+										 </ul>
+									  </li>
+									   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />MSN(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+											 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+										   </ul>
+									  </li>
+									  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Twitter(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+											 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+										   </ul>
+									  </li>
+									  <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />QQ(2)
+										 <ul class="person">
+											 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+											 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+										   </ul>
+									  </li>
+									 </ul>
+								   <div class="tree_bottom"  >
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="mms_tree_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+										<li class="btn_left"></li>
+										<li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+										<li class="btn_right"></li>
+									</ul>
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="mms_tree_cancel" onmouseout="btnOut(this);" class="btn_div_normal">
+										<li class="btn_left"></li>
+										<li class="btn_center presentClose" >Cancel</li>
+										<li class="btn_right"></li>
+									</ul>
+									 </div> 
+								   </div>
+							  
+							</td>
+						</tr>
+						  <tr>
+							<td class="vlist_name">File:</td>
+							<td class="vlist_form"><input type="text" id="accessorie_mms" class="input_text_normal" size="22" style="width:220px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" readonly="readonly"  value=""/> <span class="uploadDiv"><input type="button" value="Upload" id="mms_uploadId" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/></span></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Content:</td>
+							<td class="vlist_form"><textarea style="width:300px; height:200px" class="msg_text"  id="content_mms" ></textarea></td>
+							<td></td>
+						</tr>
+		
+						<tr>
+							<td class="vlist_name"></td>
+							<td class="vlist_form">
+								<div class="btn_group">
+								<input type="button" value="Send"  class="top_search_btn"  id="mms_send" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								<input type="button" value="Reset"  class="top_search_btn"  id="mms_reset" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+							   
+								</div> 
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						</table>
+					 </div>
+  			</div>
+		 </td>
+			<td ><div class="rightCenter_pop" style="height:410px;"></div></td>
+		  </tr>
+		  <tr>
+			<td ><div class="leftDown"></div></td>
+			<td ><div class="centerDown"></div></td>
+			<td ><div class="rightDown"></div></td>
+		  </tr>
+		</table>
+	</div>
+ 	<div class="pop_div_con" id="emailPop_out_div"  style="display:none; margin-left:-350px;">
+	  <table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+          <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p id="smsDivP">Send E-mail</p><img src="images/icon_closewin.gif" name="emailPop_out_div"/></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+          <td ><div class="leftCenter_pop" style="height:410px;"></div></td>
+    <td >
+			<div class="center_center" style="width:670px; height:410px;">
+			 
+						 <table border="0" cellspacing="0" cellpadding="0"  id="first_table" style="margin-left:20px;">
+						<tr>
+							<td class="vlist_name" width="100">To:</td>
+							<td class="vlist_txt" width="300"><input type="text" id="receiver_email_input" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td style="position:relative">
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="address_book_email" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center" >Address book</li>
+											<li class="btn_right"></li>
+										</ul>
+								
+										 <div class="tree"  id="emailTree"  style="top:74px;*top:38px;" id="emailTree">
+											  <ul>
+												   <li><img src="images/btn_icon_sub.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />All(11)
+													 <ul class="person" style="display:block;">
+														 <li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+														 <li><input type="checkbox" name="13569869999"/><a href="#none">Kethy</a></li>
+														 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+														 <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+														 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+														 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+														 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+														 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+														 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+														 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+														 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />DSM(3)
+													 <ul class="person">
+														<li><input type="checkbox" name="15612345610"/><a href="#none">Frank</a></li>
+														 <li><input type="checkbox" name="15234545612"/><a href="#none">Kethy</a></li>
+														 <li><input type="checkbox" name="13734345613"/><a href="#none">Jerry</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Facebook(2)
+													 <ul class="person">
+																  <li><input type="checkbox" name="15912345623"/><a href="#none">Dinah</a></li>
+														 <li><input type="checkbox" name="13022345453"/><a href="#none">vance</a></li>
+													 </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />MSN(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="13312345123"/><a href="#none">Emma</a></li>
+														 <li><input type="checkbox" name="13112345231"/><a href="#none">Lucy</a></li>
+													   </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />Twitter(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="13312345220"/><a href="#none">philip</a></li>
+														 <li><input type="checkbox" name="13112345211"/><a href="#none">Long</a></li>
+													   </ul>
+												  </li>
+												   <li><img src="images/btn_icon_add.gif" align="absmiddle" class="switch_img"/><input type="checkbox" class="parent_checkbox" />QQ(2)
+													 <ul class="person">
+														 <li><input type="checkbox" name="15852345220"/><a href="#none">Sunna</a></li>
+														 <li><input type="checkbox" name="15902345211"/><a href="#none">Jacy</a></li>
+													   </ul>
+												  </li>
+											 </ul>
+									  <div class="tree_bottom"  >
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="email_tree_ok" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center" >&nbsp;&nbsp;&nbsp;OK&nbsp;&nbsp;&nbsp;</li>
+											<li class="btn_right"></li>
+										</ul>
+										<ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="email_tree_cancel" onmouseout="btnOut(this);" class="btn_div_normal">
+											<li class="btn_left"></li>
+											<li class="btn_center presentClose" >Cancel</li>
+											<li class="btn_right"></li>
+										</ul>
+									  </div>   
+								   </div>
+									
+							</td>        
+					  </tr>
+						
+						<tr>
+						  <td class="vlist_name" width="100">Cc:</td>
+							<td class="vlist_txt" width="300"><input type="text" id="" value="" size="22" class="input_text_normal rece_input " style="width: 300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+						
+						</tr>
+						
+						<tr>
+							<td class="vlist_name">Subject:</td>
+							<td class="vlist_form"><input type="text" id="email_sub_input"  class="input_text_normal rece_input" size="22" style="width:300px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Attachment:</td>
+							<td class="vlist_form"><input type="text" id="accessories" value="" class="input_text_normal rece_input" size="22" style="width:220px;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" readonly="readonly" /> <span class="uploadDiv"><input type="button" value="Upload" id="attach_id"  class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/></span></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="vlist_name">Content:</td>
+							<td class="vlist_form"><textarea style="width:300px; height:150px" class="msg_text"  id="email_content" ></textarea></td>
+							<td></td>
+						</tr>
+		
+						<tr>
+							<td class="vlist_name"></td>
+							<td class="vlist_form">
+								<div class="btn_group">
+								 <input type="button" value="Send"  class="top_search_btn"  id="email_send" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								  <input type="button" value="Reset"  class="top_search_btn"  id="email_reset" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+								   
+								</div> 
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						</table>
+					     
+			
+			</div>
+	</td>
+    <td ><div class="rightCenter_pop" style="height:410px;"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+ </div>
+ 
+ 
+</body>
+
+
+</html>
+
+<!--<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/downList.js"></script>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.draggable.js"></script>-->
+
+<script type="text/javascript" src="" id="JqueryJs"></script>   
+<script type="text/javascript" src="" id="mainJs"></script>   
+<script type="text/javascript" src="" id="downListJs"></script>   
+<script type="text/javascript" src="" id="uiCoreJs"></script>
+<script type="text/javascript" src="" id="uiDraggableJs"></script>
+
+<script type="text/javascript">
+    
+   //时间间隔变量
+   var separated = 1000;
+   
+   //延迟加载Js   
+   setTimeout(function(){
+       document.getElementById('JqueryJs').src="js/jquery-1.3.2.min.js";
+	   document.getElementById('mainJs').src="js/main.js";
+	   document.getElementById('downListJs').src="js/downList.js";
+	   document.getElementById('uiCoreJs').src="js/ui.core.js";
+	   document.getElementById('uiDraggableJs').src="js/ui.draggable.js";
+    
+	
+	if(connect){
+	  MYAvtiveX.login(readCookie('user_phone','Welcome,'+webPersonPhone1).split(',')[1]);
+	 
+	}
+   
+			  
+
+	var zindex =4;		   
+	  $(".commu_friends li").hover(function(){
+				$(this).css("position","relative"); 							
+				$(this).find(".show_div").show();
+				$(this).css("z-index",zindex);
+				zindex +=1;
+					 },function(){
+				 $(".show_div").hide();	
+				// $(this).css("position","static");
+				});			   
+			   
+	 $(".show_div").hover(function(){
+				$(this).attr("mouseOver","yes");					 
+									 },
+						   function(){
+				$(this).removeAttr("mouseOver");	
+				$(".show_div").hide();
+							   });	
+							   
+		//对Hot Friends弹出的框的人物的事件 start
+		   $('.email_pop').click(function(){
+				$(this).parent().parent().hide();		
+				$(this).parent().parent().parent().css("z-index",0);	
+				$(".bottomIcon a:eq(2)").click();
+				//$("#smsPop_out_div").show();
+				$("#receiver_email_input").val($(this).parent().next(".show_div_1").find("h5").text());
+				$("#receiver_mms_input").val($(this).parent().next(".show_div_1").find("h5").text());
+										  })
+			$(".sms_pop").click(function(){
+				$(this).parent().parent().hide();		
+				$(this).parent().parent().parent().css("z-index",0);	
+				$(".bottomIcon a:eq(1)").click();
+			//	$("#smsPop_out_div").show();
+				$("#receiver_email_input").val($(this).parent().next(".show_div_1").find("h5").text());
+				$("#receiver_mms_input").val($(this).parent().next(".show_div_1").find("h5").text());
+												  });
+			$(".voip_pop").click(function(){
+				$(this).parent().parent().hide();		
+				$(this).parent().parent().parent().css("z-index",0);	
+				//$(".bottomIcon a:eq(0)").click();
+				$("#voipPop_out_div").show();
+				$('#vop_input').val($(this).parent().parent().find('div.show_div_1').find('p').text());//把相应的用户的电话号码写上去
+				$("#call_person").click();	
+										  });
+			
+			$(".chat_pop").click(function(){
+				$(this).parent().parent().hide();		
+				$(this).parent().parent().parent().css("z-index",0);	
+				$("#chatPop_out_div").show();
+				$("#receiver_chat_input").val($(this).parent().next(".show_div_1").find("h5").text());
+												  });
+	
+	//person_img
+		$('.user_show li:eq(0)').click(function(){
+					$('#person_img').attr('src','images/Vance.jpg');
+					$('.bottomStat li:eq(0) img,.mall_myInfo_right ul li:(2)>img').attr('src','images/small_lady.jpg');
+					$('#onlineName').text('vance')
+	
+														})
+				
+				$('.user_show li:eq(1)').click(function(){
+					$('#person_img').attr('src','images/theBoy.gif');
+					$('.bottomStat li:eq(0) img,.mall_myInfo_right ul li:(2)>img').attr('src','images/philip.jpg');
+					$('#onlineName').text('philip')
+														})
+	
+	  $('.bottomIcon a:eq(0)').click(function(){
+			  $('#voipPop_out_div').show();
+		  })
+		  registerEmailSmsVoipChatEvent(connect,demoPersonName1,demoPersonName2,myPhone1,myPhone2)
+	
+	//点击comment按钮事件
+	   $('.toRecommend').live('click',function(){
+		  $(this).parent().parent().find('li:last').fadeIn();
+	   })
+	//tab paid
+	$('#paid').click(function(){
+	   $('.tab_table td').removeClass('currentTD');
+	   $(this).addClass('currentTD');
+	   $('#topFree').hide();
+	   $('#topPaid').show();
+	})
+	$('#free').click(function(){
+	   $('.tab_table td').removeClass('currentTD');
+	   $(this).addClass('currentTD');  
+	   $('#topPaid').hide();
+		$('#topFree').show();
+	})
+	
+	$('#send').live('click',function(){
+	  var content=$('#sendContent').text();
+	  if(content!=''){
+		 if($('#person_img').attr('src')=='images/Vance.jpg'){
+			$('.mall_myInfo_list:eq(0)').before(getDiv(content,'images/small_lady.jpg','vance'))
+		 }else{
+			$('.mall_myInfo_list:eq(0)').before(getDiv(content,'images/philip.jpg','philip'))
+		 }
+	  }
+	})
+	
+	 $('.commentNow').live('click',function(){
+		 var text=$(this).parent().find('textarea').text();
+		 if(text!=''){
+			 if($('#person_img').attr('src')=='images/Vance.jpg'){
+			   $(this).parent().before(getLi(text,'images/small_lady.jpg','vance'));
+			 }else{
+				$(this).parent().before(getLi(text,'images/philip.jpg','philip'));
+			 }
+		   
+		 }
+		 $(this).parent().hide();
+		
+		  var num=$(this).parent().parent().find('li').size();
+		  var str='Comment('+(num-3)+')';
+		  $(this).parent().parent().find('li:eq(1)').find('a').text(str)
+	 })
+   },separated)
+ 		
+
+
+
+</script>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+	var who=demoPersonName2;
+	if(phone==myPhone1){
+		who=demoPersonName1;
+	 }
+
+   if(kind==0){//sms
+	   $('#smsNum').text(parseInt($('#smsNum').text())+1)
+  	   writeCookie(currentUser+'sms','0|'+info+'|'+who)
+   }else if(kind==3){//email
+       $('#emailNum').text(parseInt($('#emailNum').text())+1)
+	   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+       var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+	   var con=b.substr(6,b.indexOf('</body>')-6)
+ 	    writeCookie(currentUser+'email','3|'+sub+'|'+con+'|'+who)
+   }else if(kind==5){//present
+      $("#presentNum").text((parseInt($('#presentNum').text())+1));//更改页面上礼物数
+      writeCookie(currentUser+'present',info+'|'+who)
+   }else if(kind==6){//recommend      
+	   $("#recommendNum").text((parseInt($('#recommendNum').text())+1));//更改页面上的推荐数
+        writeCookie(currentUser+'recommend',info+'|'+who) 
+   }else {//chat
+	   if(phone==myPhone1){
+		    $("#content_chat").val($("#content_chat").text()+"\n"+getDates()+demoPersonName1+':'+info+"\n\n");// Chat接收来自phonePortal的信息
+		}else{
+			$("#content_chat").val($("#content_chat").text()+"\n"+getDates()+demoPersonName2+':'+info+"\n\n");// Chat接收来自phonePortal的信息
+			}
+   }	 
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyOnlineFriendPhone(phone)>
+    if(phone==''){
+	  phone=myPhone1;
+	}
+    onlineFriend = phone;   
+	//让当前手机用户的号码显示在present和recommend接收人的输入框中
+ 	$('#present2phone,#recommend2phone').val(phone);
+</SCRIPT>
+

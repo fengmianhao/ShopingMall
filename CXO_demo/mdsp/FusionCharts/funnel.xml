@@ -1,0 +1,6 @@
+<chart isSliced='1' slicingDistance='4' decimalPrecision='0'>
+	<set name='MAY' value='4100' color='99CC00' alpha='85'/>
+	<set name='JUN' value='8400' color='333333' alpha='85'/>
+	<set name='JUL' value='12600' color='99CC00'  alpha='85'/>
+	<set name='Aug' value='18000' color='333333' alpha='85'/>
+</chart>

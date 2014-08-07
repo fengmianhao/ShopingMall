@@ -1,0 +1,5 @@
+<chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="WAP" value="45" /> 
+  <set label="Web" value="35" /> 
+  <set label="SMS" value="20" /> 
+ </chart>

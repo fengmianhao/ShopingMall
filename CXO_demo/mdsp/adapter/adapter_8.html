@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="../js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="../js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="../js/source/tree_component.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="../js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center, .list_item_help ,.Qlink_list ,.Qlink_ico');
+</script>
+<![endif]-->
+
+<title>MDSP</title>
+</head>
+<style type="text/css">
+.item_stauts{ padding:5px 0 10px 20px; width:739px; height:127px;}
+.item_stauts h5{margin:8px 0 15px 0; color:#1C6693}
+.item_stauts div{ margin:15px 0 10px 0;}
+.item_stauts p{ margin-top:5px;}
+.item_stauts div a{color:#347CA5}
+
+.pagenation { height: 30px; margin-top: 8px; line-height: 30px; text-align: center; }
+.pagenation a{color:#33A792 }
+.pagenation a.num, .pagenation a.num_on, .pagenation a.num_on:hover { padding: 14px 8px; text-align: center; }
+.pagenation a.num_on:link, .pagenation a.num_on:hover, .pagenation a.num_on:visited { background:url(../images/pageno_on.gif) no-repeat center; color: #666666; font-weight: bold; text-decoration: none; }
+
+.blueA{ color:#1E6591;}
+
+.btn_div .btn_left_normal img {
+	background-image: url(../../images/btn_left_normal.png);
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn_left_normal.png', sizingMethod='scale');
+	*background: transparent !important;
+}
+
+.btn_div .btn_left_over img {
+	background-image: url(../../images/btn_left_over.png);
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn_left_over.png', sizingMethod='scale');
+	*background: transparent !important;
+}
+.btn_div .btn_right_normal img {
+	background-image: url(../../images/btn_right_normal.png);
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn_right_normal.png', sizingMethod='scale');
+	*background: transparent !important;
+}
+.btn_div .btn_right_over img {
+	background-image: url(../../images/btn_right_over.png);
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/btn_right_over.png', sizingMethod='scale');
+	*background: transparent !important;
+}
+
+</style>
+<body>
+<div id="top">
+	<div class="top_left"></div>
+    <div class="top_center">
+    	<div class="logo"><a href="#"><img src="../images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+        	<div id="topmenuContainer">
+            	<!-- 菜单保持Status -->
+            	<ul id="topmenuOn">
+                	<li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                	<li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../../service/service.html">Service Innovation</a></li>
+                        <li><a href="../3_2.html">Admin(CP/SP)</a></li>                      
+                        <li><a href="../2_25.html">Admin(Operator)</a></li>
+						<li><a href="../3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo">Welcome! Manager!</div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+             <ul>
+                <li><a href="../4_3_new.html">Target User Management</a></li>
+                <li><a href="../4_3.html">Campaign Management </a></li>
+                <li><a href="../3_25_new.html">Advertisement Management</a></li>
+                <li><a href="../3_28.html">CP/SP Management </a></li>
+                <li><a href="../4_9.html">Promotion</a></li>
+                <li><a href="../5_10.html">Portal Management</a></li> 
+				 <li><a href="adapter1.html">Network Abstraction</a></li> 
+				 <li><a href="../policyManagement.html">Service Policy Management</a></li><li><a href="../packageManagement.html">Package Management</a></li> 
+             </ul>
+        </div>
+    </div><span class="currentPage">Home</span></div>
+<div id="mainContainer">
+    <div id="rightColumn">
+    	<div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+                 <div class="title_text">New Adapter</div>
+				 <div class="step">
+                        <div class="step_left"></div>
+                        <div class="step_right"></div>
+                        <div class="step_center">
+                            <div class="step_1_normal">
+                                <p></p>
+                               Develop Adapter</div>
+                            <div class="step_2_normal" style=" width:200px">
+                                <p></p>
+                               Test Adapter</div>
+							 <div class="step_3_on" style=" width:200px">
+                                <p></p>
+                               Deploy Adapter</div>  
+							   
+							 <div class="step_4_normal" style=" width:200px">
+                                <p></p>
+                               Expose Adapter Capability</div>
+                        </div>
+                    </div>
+					
+				<div style="margin: 10px 0px 0px 0px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dlist_table" id="dlistTable">
+                            <tr class="dlist_header">
+                                <td width="5%"><input type="checkbox" name="allCBox" id="allCBox" onclick="selectAll('dlistTable', this);listTrChange('dlistTable', this.checked);" /></td>
+                                <td width="15%">Adapter Name</td>
+                                <td width="11%">Module</td>
+                                <td width="15%">Version Number</td>
+                                <td width="16%">State</td>                               
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">HTTP Adapter</a></td>
+                                <td>SCF</td>
+                                <td>SericeLayerModule1</td>
+                                <td><a href="#" class="blueA">Active</a></td>                               
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">SIP Adapter</a></td>
+                                <td>SCF</td>
+                                <td>SericeLayerModule1</td>
+                                <td><a href="#" class="blueA">Active</a></td>                                
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Diameter Adapter</a></td>
+                                <td>SCF</td>
+                                <td>SericeLayerModule1</td>
+                                <td><a href="#" class="blueA">Active</a></td>                                
+                            </tr>
+							<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Soap Adapter</a></td>
+                                <td>SCF</td>
+                                <td>SericeLayerModule1</td>
+                                <td><a href="#" class="blueA">Active</a></td>                               
+                            </tr>
+                        </table>
+                    </div>
+					
+					 <div class="pagenation">
+                                    <a href="#">Prev</a>
+                                    <a href="#" class="num_on">1</a>
+                                    <a href="#" class="num">2</a>
+                                    <a href="#" class="num">3</a>
+                                    <a href="#" class="num">4</a>
+                                    <a href="#" class="num">5</a>
+                                    <a href="#">Next</a>
+                                </div>
+
+				 <table width="400" border="0" cellpadding="10" cellspacing="0" style="margin-top:10px;">
+					  <tr>
+						<td><ul onclick="btnAct(0);location.href='adapter_9.html'" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_small" style=" float:right;">
+                                    	<li class="btn_left_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="btn_center_normal" >Install</li>
+                                        <li class="btn_right_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="nofloat"></li>
+                                	</ul></td>
+						
+						<td>	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_small" style=" float:right;">
+                                    	<li class="btn_left_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="btn_center_normal" style="color:#666666">Active</li>
+                                        <li class="btn_right_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="nofloat"></li>
+                                	</ul></td>
+						<td>	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_small" style=" float:right;">
+                                    	<li class="btn_left_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="btn_center_normal" style="width:60px; color:#666666">DeActive</li>
+                                        <li class="btn_right_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="nofloat"></li>
+                                	</ul></td>
+						<td>	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_small" style=" float:right;">
+                                    	<li class="btn_left_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="btn_center_normal" style="color:#666666">Delete</li>
+                                        <li class="btn_right_normal"><img src="../images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="nofloat"></li>
+                                	</ul></td>
+					  </tr>
+					</table>
+		
+                </div>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+	<div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div class="leftmenu" id="leftMenu">
+				<div class="common_box">
+					<div class="common_title"><h2>Common Bulletin</h2></div>
+					<div class="common_content">
+						<p>SDP acts as a catalyst in generating revenue from innovative services enabling 
+
+multiple business models within the telecom marketplace.</p>
+					</div>
+					<div class="common_bottom"></div>
+				</div>
+				<div class="common_box">
+					<div class="content_title"></div>
+					<div class="content_content" id="listItems">
+						<ul>
+							<li class="list_title"><span style="float:right; padding:4px 5px 0 0"><a href="#" class="fun">Setting</a></span>Quick Links</li>
+                            <li class="list_item"><a href="../4_3_new.html" class="lnk_normal"><span>Target User Management</span></a></li>
+							<li class="list_item"><a href="../4_3.html" class="lnk_normal"><span>Campaign Management</span></a></li>
+                            <li class="list_item"><a href="../3_25_new.html" class="lnk_normal"><span>Advertisement Management</span></a></li>
+							<li class="list_item"><a href="../3_28.html" class="lnk_normal"><span>CP/SP Management </span></a></li>
+							<li class="list_item"><a href="../4_9.html" class="lnk_normal"><span>Promotion</span></a></li>
+							<li class="list_item"><a href="../5_10.html" class="lnk_normal"><span>Portal  Management</span></a></li>
+                            <li class="list_item"><a href="adapter1.html" class="lnk_normal"><span>Network Abstraction</span></a></li>
+							 <li class="list_item"  id="only" ><a href="#" class="lnk_normal"><img src="../images/arrow_hide.gif" id="direct"  style="display:inline; margin:0 3px 0 -10px;"/><span>Service Business</span></a>
+							  <ul style=" margin:0 0 0 15px; display:none;">
+							    <li class="list_item" ><a href="/..packageManagement.html" class="lnk_normal"><span>Package Management</span></a></li>
+							   <li class="list_item"><a href="../policyManagement.html" class="lnk_normal"><span>Service Policy Management</span></a></li>
+							  </ul>
+							</li>
+                            
+						</ul>
+					</div>
+					<div class="content_bottom"></div>
+				</div>
+				
+				
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+    <div class="nofloat"></div>
+</div>
+<div id="bottom">Company SDP</div>
+
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List',this);"></div>
+</div>
+<!--第二个弹出菜单-->
+<div id="popMenu_List2" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List2_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List2_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List2',this);"></div>
+</div>
+<!--第三个弹出菜单-->
+<div id="popMenu_List3" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+	</ul>
+</div>
+<!--第四个弹出菜单-->
+<div id="popMenu_List4" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+	<div id="popMenu_List4_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List4_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List4',this);"></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+	<ul class="nav_menu_items">
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+</div>
+<!--主导航二级菜单结束-->
+</body>
+<script>
+getRightHeight();
+
+			//only
+$('#only').click(function(){
+   if($(this).find('ul').css('display')=="none"){
+		$(this).height(80);
+	   //$('#direct').attr('src','images/showitem.gif')
+	   $(this).find('ul').show();
+   }else{
+        $(this).height(23);
+	  // $('#direct').attr('src','images/arrow_hide.gif')
+	   $(this).find('ul').hide();
+   }
+  
+})
+
+</script>
+</html>

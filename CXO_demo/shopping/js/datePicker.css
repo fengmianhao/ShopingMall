@@ -1,0 +1,31 @@
+table.jCalendar {background: #fff;BORDER-COLLAPSE: separate; border-spacing: 2px}
+table.jCalendar TH {padding:3px 5px;FONT-WEIGHT: bold; background: #fff; color: #000;}
+table.jCalendar td {padding:3px 5px; color: #000; EXT-ALIGN: center; background:#fff;}
+table.jCalendar td.other-month {background: #fff !important; color: #fff !important}
+table.jCalendar td.today {background: #cc3300; color: #fff}
+table.jCalendar td.selected { background:#F60; color: #fff }
+table.jCalendar TR.activeWeekHover td { background: #fff; color: #000 }
+table.jCalendar TR.selectedWeek td { background: #f66; color: #fff }
+table.jCalendar td.disabled { background: #fff; color: #999 }
+table.jCalendar td.dp-hover { background: #bbb; color: #888 }
+table.jCalendar td.unselectable { background: #bbb; color: #888 }
+table.jCalendar td.unselectable:hover { background: #bbb; color: #888 }
+table.jCalendar td.dp-hover { background: #cc3300; color: #fff }
+div.dp-popup { padding-RIGHT: 2px; padding-LEFT: 2px; FONT-SIZE: 10px; background: #ccc; padding-BOTTOM: 2px; WIDTH: 171px; LINE-HEIGHT: 1.2em; padding-TOP: 2px; FONT-FAMILY: arial, sans-serif; POSITION: relative
+}
+div#dp-popup { Z-INDEX: 199; POSITION: absolute; background:#fff; }
+div.dp-popup H2 { padding-RIGHT: 0px; padding-LEFT: 0px; FONT-SIZE: 12px; padding-BOTTOM: 0px; MARGIN: 2px 0px; padding-TOP: 0px; TEXT-ALIGN: center }
+A#dp-close { padding-RIGHT: 0px; DISPLAY: block; padding-LEFT: 0px; FONT-SIZE: 11px; padding-BOTTOM: 4px; padding-TOP: 4px; TEXT-ALIGN: center }
+A#dp-close:hover { TEXT-DECORATION: underline }
+div.dp-popup A { padding-RIGHT: 2px; padding-LEFT: 2px; padding-BOTTOM: 0px; color: #000; padding-TOP: 3px; TEXT-DECORATION: none }
+div.dp-popup div.dp-nav-prev { LEFT: 4px; WIDTH: 100px; POSITION: absolute; TOP: 2px }
+div.dp-popup div.dp-nav-prev A { FLOAT: left }
+div.dp-popup div.dp-nav-prev A { CURSOR: pointer }
+div.dp-popup div.dp-nav-next A { CURSOR: pointer }
+div.dp-popup div.dp-nav-prev A.disabled { CURSOR: default }
+div.dp-popup div.dp-nav-next A.disabled { CURSOR: default }
+div.dp-popup div.dp-nav-next { RIGHT: 4px; WIDTH: 100px; POSITION: absolute; TOP: 2px }
+div.dp-popup div.dp-nav-next A { FLOAT: right }
+div.dp-popup A.disabled { CURSOR: default; color: #aaa }
+div.dp-popup td { CURSOR: pointer }
+div.dp-popup td.disabled { CURSOR: default }

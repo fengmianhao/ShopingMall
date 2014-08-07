@@ -1,0 +1,144 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://192.168.10.10:18080/simplecms/contentAction.do?method=listContents -->
+<HTML><HEAD><TITLE>Content</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="css/cds.css" type=text/css rel=stylesheet>
+<script type="text/javascript" src="css/jquery-1.3.2.min.js"></script>
+<SCRIPT type=text/javascript> 
+
+//go to add Content page
+function addContent()
+{
+    this.location.href = "/simplecms/contentAction.do?method=preCreateContent";
+}
+
+//delete content
+function deleteContent(contentID)
+{
+    if(confirm("are you sure to delete the content?")) 
+    {
+        this.location.href = "/simplecms/contentAction.do?method=deleteContent&contentID=" + contentID;
+    }
+}
+
+//reset form
+function resetForm()
+{
+	document.getElementById("contentName").value = "";
+    document.getElementById("contentType").value = ""; 
+}
+
+//给题头的checkbox增加事件
+$(function(){
+		   $("#headCheckBox").click(function(){
+			   if($(this).attr("checked")){
+				$("#CMS_table").find("input[type=checkbox]").attr("checked",true);	
+				}else{
+				$("#CMS_table").find("input[type=checkbox]").removeAttr("checked");	
+					}								 
+			});	   
+});
+
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2912" name=GENERATOR></HEAD>
+<BODY class=body_space>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=17 height=29><IMG height=9 
+      src="images/triangle.gif" width=5></TD>
+    <TD class=text_title>Content List</TD></TR>
+  <TR>
+    <TD class=brokenline_bg colSpan=2><IMG height=1 
+      src="images/space.gif" width=1></TD></TR></TBODY></TABLE>
+<FORM name=contentForm action=/simplecms/contentAction.do?method=listContents 
+method=post>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><SPAN style="PADDING-RIGHT: 4px"><INPUT class=btn_normal  type=button value="Add Content" name=Submit4> 
+      </SPAN></TD></TR></TBODY></TABLE>
+<TABLE height=5 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=1 src="images/space.gif" 
+  width=1></TD></TR></TBODY></TABLE>
+<TABLE class=hr_list_table height=40 cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD>Content Name:</TD>
+    <TD><INPUT class=input_text2 id=contentName name=contentName> </TD>
+    <TD>Content Type:</TD>
+    <TD><LABEL><SELECT id=contentType name=contentType> <OPTION value="" 
+        selected>All</OPTION> <OPTION value=1>Download</OPTION> <OPTION 
+        value=6>StreamMedia</OPTION></SELECT></LABEL>
+      <SCRIPT language=JavaScript>
+		document.getElementById("contentType").value = "";
+		</SCRIPT>
+       </TD>
+    <TD><SPAN style="PADDING-RIGHT: 4px"><INPUT class=btn_normal type=submit value=Search name=Submit> 
+      </SPAN></TD>
+    <TD><SPAN style="PADDING-RIGHT: 4px"><INPUT class=btn_normal onclick=resetForm(); type=button value=Reset name=Reset> 
+      </SPAN></TD></TR></TBODY></TABLE>
+<TABLE height=5 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=1 src="images/space.gif" width=1></TD>
+  </TR>
+ </TBODY>
+</TABLE>
+<TABLE class=list03_table cellSpacing=0 cellPadding=0 width="100%" border=0 id="CMS_table">
+  <TBODY>
+  <TR>
+    <TD class=list03_title width="5%"><input name="" type="checkbox" value="" id="headCheckBox"></TD>
+    <TD class=list03_title width="27%">Content Name</TD>
+    <TD class=list03_title width="19%">Content Type</TD>
+    <TD class=list03_title width="38%">Description</TD>
+    <TD class=list03_title width="16%">Operation</TD></TR>
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value=""  checked="checked"></TD>
+    <TD class=list03_td width="27%">Straight Through My Heart</TD>
+    <TD class=list03_td width="19%">Music </TD>
+    <TD class=list03_td width="38%">Christmas for music</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('71')">Delete</A></TD></TR>
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value="" checked="checked"></TD>
+    <TD class=list03_td width="27%">Boom Boom Pow</TD>
+    <TD class=list03_td width="19%">Music </TD>
+    <TD class=list03_td width="38%">Christmas for music</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('68')">Delete</A></TD></TR>
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value="" checked="checked"></TD>
+    <TD class=list03_td width="27%">Betcha Gon'Know</TD>
+    <TD class=list03_td width="19%">Music </TD>
+    <TD class=list03_td width="38%">Christmas for music</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('67')">Delete</A></TD></TR>
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value=""></TD>
+    <TD class=list03_td width="27%">Stille Nacht</TD>
+    <TD class=list03_td width="19%">Ring Tone </TD>
+    <TD class=list03_td width="38%">&nbsp;&nbsp;</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('66')">Delete</A></TD></TR>  
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value=""></TD>
+    <TD class=list03_td width="27%">Joy To The World</TD>
+    <TD class=list03_td width="19%">Video </TD>
+    <TD class=list03_td width="38%">&nbsp;&nbsp;</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('64')">Delete</A></TD></TR>
+  <TR>
+    <TD class=list03_td width="5%" align="center"><input name="" type="checkbox" value=""></TD>
+    <TD class=list03_td width="27%">Mary’s Boy Child</TD>
+    <TD class=list03_td width="19%">Game </TD>
+    <TD class=list03_td width="38%">&nbsp;&nbsp;</TD>
+    <TD class=list03_td align=middle width="16%"><A 
+      href="javascript:deleteContent('52')">Delete</A></TD></TR>
+</TBODY></TABLE>
+<div align="right" style="padding:30px 10px 0 0"><input name="" type="button" value="Synchronize content to SDP" onClick="location.href='contentAction_success.htm'"></div>
+</FORM>
+</BODY></HTML>

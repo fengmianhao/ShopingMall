@@ -1,0 +1,45 @@
+<chart shownames='1' showvalues='0' decimals='0' numberPrefix='$' bgAlpha='0' bgColor='ffffff'>
+<categories>
+<category label='Jan' />
+<category label='Feb' />
+<category label='Mar' />
+<category label='Apr' />
+<category label='May' />
+<category label='Jun' />
+<category label='Jul' />
+<category label='Aug' />
+<category label='Sep' />
+<category label='Oct' />
+<category label='Nov' />
+<category label='Dec' />
+</categories>
+
+<dataset seriesName='Earnings' color='F6BD0F' showValues='0'>
+<set value='46700' />
+<set value='29421' />
+<set value='35263' />
+<set value='18516' />
+<set value='64845' />
+<set value='72352' />
+<set value='41941' />
+<set value='26423' />
+<set value='27320' />
+<set value='57612' />
+<set value='87320' />
+<set value='55012' />
+</dataset>
+<dataset seriesName='Payments' color='8BBA00' showValues='0'>
+<set value='29421' />
+<set value='18535' />
+<set value='22215' />
+<set value='11665' />
+<set value='40852' />
+<set value='45581' />
+<set value='26422' />
+<set value='16646' />
+<set value='17221' />
+<set value='36296' />
+<set value='55011' />
+<set value='34657' />
+</dataset>
+</chart>

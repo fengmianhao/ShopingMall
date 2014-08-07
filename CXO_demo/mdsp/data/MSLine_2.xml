@@ -1,0 +1,57 @@
+<chart  lineThickness='1' showValues='0' formatNumberScale='1' anchorRadius='2'   divLineAlpha='20' divLineColor='CC3300' divLineIsDashed='0' showAlternateHGridColor='1' alternateHGridAlpha='5' alternateHGridColor='CC3300' shadowAlpha='40' labelStep="1" numvdivlines='12' chartRightMargin="35" bgColor='FFFFFF' bgAngle='270' bgAlpha='10,10' showBorder='0'>
+<categories >
+<category label='Jan' />
+<category label='Feb' />
+<category label='Mar' />
+<category label='Apr' />
+<category label='May' />
+<category label='Jun' />
+<category label='Jul' />
+<category label='Aug' />
+<category label='Sep' />
+<category label='Oct' />
+<category label='Nov' />
+<category label='Dec' />
+</categories>
+<dataset seriesName='Number of Page View' color='1D8BD1' anchorBorderColor='1D8BD1' anchorBgColor='1D8BD1'>
+	<set value='1007000' />
+	<set value='1536000' />
+	<set value='1229000' />
+	<set value='1811000' />
+	<set value='1504000' />
+	<set value='1357000' />
+	<set value='1896000' />
+	<set value='2099000' />
+	<set value='1011000' />
+	<set value='1404000' />
+	<set value='3057000' />
+	<set value='1096000' />
+	</dataset>
+
+<dataset seriesName='Number of User View' color='F1683C' anchorBorderColor='F1683C' anchorBgColor='F1683C'>
+	<set value='150420' />
+	<set value='192100' />
+	<set value='139940' />
+	<set value='111500' />
+	<set value='188440' />
+	<set value='207600' />
+	<set value='106200' />
+	<set value='209400' />
+	<set value='331500' />
+	<set value='204400' />
+	<set value='307600' />
+	<set value='106200' />
+</dataset>
+
+	<styles>                
+		<definition>
+                         
+			<style name='CaptionFont' type='font' size='12'/>
+		</definition>
+		<application>
+			<apply toObject='CAPTION' styles='CaptionFont' />
+			<apply toObject='SUBCAPTION' styles='CaptionFont' />
+		</application>
+	</styles>
+
+</chart>

@@ -1,0 +1,45 @@
+<chart palette='1'  shownames='1' showvalues='0' numberPrefix='$' sYAxisValuesDecimals='2' connectNullData='0'  numDivLines='4' formatNumberScale='0'>
+<categories>
+<category label='Jan' />
+<category label='Feb' />
+<category label='Mar' />
+<category label='Apr' />
+<category label='May' />
+<category label='Jun' />
+<category label='Jul' />
+<category label='Aug' />
+<category label='Sep' />
+<category label='Oct' />
+<category label='Nov' />
+<category label='Dec' />
+</categories>
+
+<dataset seriesName='Revenue' color='F6BD0F' showValues='0' >
+<set value='97401.85' /> 
+<set value='81941.19' />
+<set value='115263.37' />
+<set value='127320.16' />
+<set value='92401.85' /> 
+<set value='102941.19' />
+<set value='130263.37' />
+<set value='162020.16' />
+<set value='150401.85' /> 
+<set value='161684.19' />
+<set value='187192.37' />
+<set value='182120.16' />
+</dataset>
+<dataset seriesName='Growth Rate' color='8BBA00' showValues='0' parentYAxis='S' >
+<set value='' />
+<set value='-15' />
+<set value='40' />
+<set value='10' />
+<set value='-27' />
+<set value='11' />
+<set value='26' />
+<set value='-7' />
+<set value='24' /> 
+<set value='7' />
+<set value='15' />
+<set value='-2' />
+</dataset>
+</chart>

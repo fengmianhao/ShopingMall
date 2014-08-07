@@ -1,0 +1,18 @@
+<graph xaxisname='' yaxisname='' hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' yAxisMaxValue='100000' numdivlines='9' divLineColor='CCCCCC' divLineAlpha='80' decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='30' AlternateHGridColor='CCCCCC' caption='Global Export' subcaption='' >
+   <categories font='Arial' fontSize='11' fontColor='000000'>
+      <category name='WAP Push' hoverText='North America'/>
+      <category name='SMS' />
+      <category name='MMS' />
+      <category name='IVR' />
+      <category name='USSD' />
+   </categories>
+    <dataset seriesname='Brazil' color='56B9F9'>
+    <set value='23000' />
+      <set value='30000' />
+      <set value='35000' />
+      <set value='30000' />
+      <set value='37000' />
+   </dataset>
+    <dataset>
+   </dataset>
+</graph>

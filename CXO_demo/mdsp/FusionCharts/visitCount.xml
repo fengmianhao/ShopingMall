@@ -1,0 +1,35 @@
+<graph xaxisname='Date' yaxisname='Number' hovercapbg='DEDEBE' hovercapborder='889E6D' rotateNames='0' yAxisMaxValue='140' numdivlines='9' divLineColor='CCCCCC' divLineAlpha='80' decimalPrecision='0' showAlternateHGridColor='1' AlternateHGridAlpha='30' AlternateHGridColor='CCCCCC' caption='VisitCount of SP&Products' subcaption='' >
+   <categories font='Arial' fontSize='11' fontColor='000000'>
+      <category name='sina' />
+      <category name='yahoo' />
+      <category name='huajun' />
+    </categories>
+
+    <dataset seriesname='mms' color='00B9F9'>
+      <set value='10' />
+      <set value='0' />
+      <set value='0' />
+    </dataset>
+	   <dataset seriesname='wap' color='FDC12E'>
+      <set value='21' />
+      <set value='0' />
+      <set value='100' />
+    </dataset>
+	
+    <dataset seriesname='sms' color='C00FFD' >
+      <set value='30' />
+      <set value='150' />
+      <set value='240' />
+    </dataset>
+	    <dataset seriesname='music' color='FF198D' >
+      <set value='0' />
+      <set value='70' />
+      <set value='120' />
+    </dataset>
+	
+	 <dataset seriesname='vedio' color='C9EE80' >
+      <set value='0' />
+      <set value='80' />
+      <set value='0' />
+    </dataset>
+</graph>

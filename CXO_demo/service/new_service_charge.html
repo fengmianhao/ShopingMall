@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><META content=portalONE,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=portalONE name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="css/base.css" rel="stylesheet" type="text/css" fortheme="yes" />
+<link href="css/content.css" rel="stylesheet" type="text/css" fortheme="yes" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr,.leftmenuOn_mouse  ,.Qlink_list ,.Qlink_ico ');
+</script>
+<![endif]-->
+<title>new Service change</title>
+
+<script type="text/javascript">
+$(function(){		   
+		//注册左导航事件		   
+        rigesterLeftNav();
+		   
+		    $(".interface_name").click(function(){
+			//恢复
+			if($(".interface_name").hasClass("interface_name_1")){
+				$(".interface_name").removeClass("interface_name_1");
+				$(".interface_name").addClass("interface_name_3");
+			}
+			if($(".interface_name").hasClass("interface_name_2")){
+				$(".interface_name").removeClass("interface_name_2");
+				$(".interface_name").addClass("interface_name_4");
+			}
+				if($(this).next().css("display")=="none"){
+					$(this).next().slideDown();//展开
+						$(this).removeClass("interface_name_1")
+						$(this).removeClass("interface_name_3")
+						$(this).removeClass("interface_name_4")
+					$(this).addClass("interface_name_2");
+				}else{
+					$(this).next().slideUp();//收起
+						$(this).removeClass("interface_name_2")
+						$(this).removeClass("interface_name_3")
+						$(this).removeClass("interface_name_4")
+					$(this).addClass("interface_name_1");
+					}				
+			});			
+		   
+});
+ 
+function hidd_accumulation(){
+	var leiji = document.getElementById("leiji");
+	var shijian = document.getElementById("shijian");
+	if(leiji.style.display =="none"){
+		leiji.style.display = "block";
+		shijian.style.display = "none"
+		}
+	}
+function hidd_time(){
+	var leiji = document.getElementById("leiji");
+	var shijian = document.getElementById("shijian");
+	if(shijian.style.display =="none"){
+		leiji.style.display = "none";
+		shijian.style.display = "block"
+		}
+	}	
+	
+	  
+	
+</script>
+</head>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo"><a href="service.html"><img src="images/top_left.jpg" alt=""/></a></div>
+        <div class="header_right"><span class="logo_name">Welcome, Kethy</span> [ <a href="#">Logout</a> ]</div>
+        <div style="position:absolute; top:8px; right:10px;width:50px" id="Qlink">
+            <div style="position:relative; z-index:44">
+                <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-108px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="service.html">Service Innovation</a></li>
+                        <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                        <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li><li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+	</div>
+	<div id="mainContent">
+        <div id="selfServiceLeft">
+        	<div id="selfServiceLeftInner" class="left_content">
+            	<ul id="leftmenu" class="leftmenu_ul">
+                  <li class="split"><a href="service.html" class="over">Index</a><a href="service.html">Index</a></li>
+                  <li class="split"><a href="Dev_Mode_Selection.html" class="over">APIS</a><a href="#" >APIS</a></li>
+                  <li class="split"><a href="download_1.html" class="over">Downloads</a><a href="#" >Downloads</a></li>
+                  <li><a href="download_1.html" class="over">Tools</a><a href="#" >Tools</a></li>  
+                  <li><a href="download_2.html" class="over">Documents</a><a href="#" >Documents</a></li>  
+     			  <li><a href="download_3.html" class="over">Examples</a><a href="#" >Examples</a></li>  
+                  <li class="split"><a href="new_service.html" class="over">My Space</a><a href="#">My Space</a></li>
+                  <li><a href="new_service.html" class="over">New Service</a><a href="#"class="leftmenuOn"  >New Service</a></li>
+				  <li><a href="my_service.html" class="over">My Services</a><a href="#" >My Services</a></li>
+                  <li><a href="My_Modules.html" class="over">My API Subscription</a><a href="#" >My API Subscription</a></li>
+				  
+				  <li class="split"><a href="faq.html" class="over">Support</a><a href="#" >Support</a></li>
+                  <li><a href="faq.html" class="over">FAQ</a><a href="#" >FAQ</a></li>
+				  <li><a href="forum.html" class="over" target="_blank">Forum</a><a href="forum.html" target="_blank">Forum</a></li>
+                  <li class="split" style="height:14px; overflow:hidden"></li>
+        	    </ul>
+             </div>
+             
+            
+        	<div id="leftFooter" class="left_footer"></div>
+        </div>
+      
+        <div class="content_right"> 
+        	<div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center">
+                  	<h1>New Service</h1>
+                    <div class="new_service">
+                        <div class="step">
+                            <div class="step_left"></div>
+                            <div class="step_right"></div>
+                            <div class="step_center">
+                                <div class="step_1_normal">
+                                    <p></p>
+                                    Create Service 
+                                </div>
+                                <div class="step_2_normal">
+                                    <p></p>
+                                    Develop online
+                                </div>
+                                 <div class="step_3_normal">
+                                    <p></p>
+                                    Fill  Issue Information
+                                </div>
+                                 <div class="step_4_on">
+                                    <p></p>
+                                    Charge
+                                </div>
+                            </div>
+                        </div>
+                   	  <div class="set_rule blue_link"><h3>Set Rule &gt;&gt;</h3><a href="#" class="add_rule"><img src="images/icon_tools_add.gif"  align="absmiddle"/> Add Rule</a></div>
+                      <div class="set_rule_con">
+                        <p style="padding:10px 0">Select the User Group: <input name="" type="checkbox" value="" checked="checked" />Mobile Zone    <input name="" type="checkbox" value="" checked="checked" />Easy Own    <input name="" type="checkbox" value="" />Go Tone</p>
+                          <a href="#" class="interface_name interface_name_2">Fee</a>
+                          <div style="padding-bottom:15px">
+                            <table width="300" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td width="100" height="30">Tarrif Mode:</td>
+                                <td width="200"><select style="width:130px;"> 
+                                  <option>Time</option>
+                                  <option>volume</option>
+                                  <option selected="selected">Times</option>
+                                  </select></td>
+                              </tr>
+                              <tr>
+                                <td height="30">Tarrif Unit:</td>
+                                <td><select style="width:130px;"> 
+                                  <option>Dollar</option>
+                                  </select></td>
+                              </tr>
+                              <tr>
+                                <td height="30">Price:</td>
+                                <td><input name="textfield" type="text" class="input_text" style="width:126px;" onfocus="selectRow(20, this);" onblur="clearSelectRow(20,this);" value="0.5" /></td>
+                              </tr>
+                            </table>
+                          </div>
+<a href="#" class="interface_name interface_name_4 ">Discount</a>
+                        <div class="my_modules" style="padding:10px 0 0 20px">
+                        <p style="padding:6px 0">Discount Type</p>
+                        <p><input name="radio22" type="radio" value="" checked="checked" onclick="hidd_accumulation()" />Accumulation　　<input name="radio22" type="radio" value="" onclick="hidd_time()" />Time</p>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="leiji" style="display:block">
+                          <tr>
+                            <th width="15" height="26px">&nbsp;</th>
+                            <th width="125">APIs Name</th>
+                            <th width="105">Type</th>
+                            <th width="165">Summary</th>
+                            <th width="115">Status</th>
+                            <th>Operation</th>
+                          </tr>
+                          <tr>
+                            <td height="36px">&nbsp;</td>
+                            <td class="red_link"><a href="#">Weather Report</a></td>
+                            <td>Java</td>
+                            <td>PortalONE</td>
+                            <td>$2.0/month</td>
+                            <td class="red_link"><a href="#">View</a> | <a href="#">Unsubscribe</a></td>
+                          </tr>
+                          <tr>
+                            <td height="36px">&nbsp;</td>
+                            <td class="red_link"><a href="#">Weather Report</a></td>
+                            <td>Java</td>
+                            <td>PortalONE</td>
+                            <td>$2.0/month</td>
+                            <td class="red_link"><a href="#">View</a> | <a href="#">Unsubscribe</a></td>
+                          </tr>
+                          </table>
+                          
+                          <table width="650" border="0" cellspacing="0" cellpadding="0" id="shijian" style="display:none">
+                              <tr>
+                                <td width="76" height="30">　时间方案1</td>
+                                <td width="200"><select style="width:170px;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>请选择</option>
+                        </select></td>
+                                <td width="50">折扣率</td>
+                                <td><input name="textfield" type="text" class="input_text" style="width:124px;" onfocus="selectRow(20, this);" onblur="clearSelectRow(20,this);" /></td>
+                              </tr>
+                              <tr>
+                                <td height="30">　时间方案2</td>
+                                <td><select style="width:170px;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>请选择</option>
+                        </select></td>
+                                <td>折扣率</td>
+                                <td><input name="textfield" type="text" class="input_text" style="width:124px;" onfocus="selectRow(20, this);" onblur="clearSelectRow(20,this);" /></td>
+                              </tr>
+                              <tr>
+                                <td height="30">　时间方案3</td>
+                                <td><select style="width:170px;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>请选择</option>
+                        </select></td>
+                                <td>折扣率</td>
+                                <td><input name="textfield" type="text" class="input_text" style="width:124px;" onfocus="selectRow(20, this);" onblur="clearSelectRow(20,this);" /></td>
+                              </tr>
+                            </table>
+                        </div>
+                      </div>
+                       <div class="set_rule blue_link"><h3>Set Rule &gt;&gt;</h3><a href="#" class="add_rule"><img src="images/icon_tools_add.gif"  align="absmiddle"/> Add Rule</a></div>
+                       
+                       <div style="padding:60px 0 20px 10px">
+            	<input type="button" value="Finish" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='success_22.html'"/>
+                <input type="button" value="Previous" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+                <input type="button" value="Cancel" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"/>
+                </div>
+                      
+                    </div>
+	            </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+
+</body>
+</html>

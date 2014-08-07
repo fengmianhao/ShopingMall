@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=portalONE,portal name=Keywords>
+<META content=portalONE name=Description>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+ <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.music_player,.music_lrc ');
+</script>
+<![endif]-->
+<style>
+body {background-color: #ffffff; font-size:12px; font-family: "Verdana","Tahoma","Arial"; color: #333333; }
+body,img,td,th,p,div,a,form,ul,li,input,select,textarea,h2{ margin:0;padding: 0;line-height: 130%; }
+ul, li {list-style: none;}
+select, textarea {  background-color: #fff; }
+a img {	border: none; }
+a {	color: #cc3300;	text-decoration: none; }
+a:hover { color: #cc3300; text-decoration: underline; }
+:focus{ outline:0}
+
+.music_box{}
+.music_player{ width:456px; height:528px; background-image: url(skin/default/images/player/music_player_bg.png); position:relative; float:left; z-index:2}
+.music_player a { outline: none; blr:expression(this.onFocus=this.blur()); }
+.music_player_ctrl{ float:left; width:120px; margin:0 10px; display:inline}
+.music_player_ctrl_prev,
+.music_player_ctrl_next{ float:left; display:block; width:33px; height:29px; margin-top:32px;background: url(skin/default/images/player/music_player_more.gif) 0 -27px;}
+.music_player_ctrl_next{background-position:-33px -27px}
+.music_player_ctrl_prev:hover{background-position:0 -56px}
+.music_player_ctrl_next:hover{background-position:-33px -56px}
+.music_player_ctrl_play{ float:left; width:53px; height:53px; margin-top:20px}
+.music_player_ctrl_play a{ display:block; width:53px; height:53px; background-image: url(skin/default/images/player/music_player_more.gif); }
+.music_player_play{ background-position: 0 -85px; }
+.music_player_play:hover { background-position: 0 -138px; }
+.music_player_pause { background-position: -53px -85px; }
+.music_player_pause:hover { background-position: -53px -138px; }
+
+.music_player_top_right{ float:left; width:291px; padding-top:16px}
+.music_player_title{ width:291px; height:29px; border-bottom:1px solid #ccc; margin-bottom:15px}
+.music_player_title h2{ color:#D43030; font-size:14px; float:left; width:200px; overflow:hidden; white-space:nowrap}
+.music_player_time{float:left; width:91px; padding-top:3px; text-align:right;}
+
+#bigPlayerLoadingBar { position: relative; width: 291px; height: 14px; overflow:hidden}
+.music_slider_normal , .music_slider_focus { position: absolute; left: 0; top:0; width: 5px; height: 14px;overflow:hidden; background: url(skin/default/images/player/music_player_more.gif) -83px -27px no-repeat; cursor: pointer; z-index:10 }
+.music_slider_focus { background-position: -83px -27px }
+#bigPlayerSliderBarDefault , #bigPlayerSliderBarCurrent { position: absolute; left: 0; top: 4px; width: 291px; height: 6px; background: url(skin/default/images/player/music_player_bar.gif) left top no-repeat; overflow: hidden; }
+#bigPlayerSliderBarCurrent { width: 0; background-position: left -6px; }
+.music_player_center{ clear:both; padding-top:20px; padding-left:20px; height:47px}
+.music_player_volumn,.music_player_silence { margin-top: 3px; width: 13px; height: 13px; background: url(skin/default/images/player/music_player_more.gif) -66px -27px no-repeat; overflow: hidden; cursor: pointer; float: left; }
+.music_player_silence { background-position:-66px -40px}
+#bigPlayerVolumnAuto { float: left; margin-left:2px}
+#bigPlayerVolumnAuto .volumnWrapper { margin-top: 2px; width: 107px; height:10px; padding:4px 0 0 2px; overflow:hidden;background: url(skin/default/images/player/music_player_more.gif) 0 -13px no-repeat; }
+#bigPlayerVolumnAuto .volumnWrapper img { display: inline; margin-left: 4px; cursor: pointer; }
+.music_player_mode{ float:right; margin-top: 2px;margin-right: 5px; width: 91px; height:13px; overflow:hidden;background: url(skin/default/images/player/music_player_more.gif) 0 0 no-repeat; }
+.music_player_mode a{ width:13px; height:13px; overflow:hidden; margin-right:10px; float:left; display:inline}
+
+.music_player_table{ padding:0px 0 0 41px; width:376px}
+.music_player_table table{ width:376px; table-layout:fixed}
+.music_player_table td,.music_player_table th{ height:29px; height:28px\9; border-bottom:1px solid #ccc; text-align:left; }
+.music_player_table td{ white-space:nowrap; overflow:hidden;font-size:11px; color:#818181;}
+.music_player_table th{ color:#4a4a4a}
+.music_player_table .color_red{ color:#B71818}
+
+.music_lrc{ float:left; width:313px; height:386px; margin:115px 0 0 -10px;background-image: url(skin/default/images/player/music_lrc_bg.png); }
+.lrc_box { margin: 5px auto 5px; width: 240px; height: 360px; overflow: hidden; }
+.lrc_content_box { margin: 3px auto 0; width: 240px; height: 360px; overflow: hidden; }
+.lrc_box li { width: 100%; line-height: 22px; text-align: center; font-size: 11px; color: #626363; }
+.lrc_box .cur_lrc { color: #991B1B; }
+
+.music_radio{ padding:10px 0 0 25px; width:266px}
+.music_radio table{ width:266px; table-layout:fixed}
+.music_radio td,.music_radio th{ height:30px; height:29px\9; border-bottom:1px dotted #BEADA6; text-align:left; }
+.music_radio td{ white-space:nowrap; overflow:hidden;font-size:11px; color:#818181;}
+.music_radio th{ color:#333333}
+.music_radio .color_red_blod{ color:#B71818; font-weight:bold}
+
+.download_1,.download_2,.download_3{height:16px;display:inline; float:left; margin-right:10px;background: url(images/music_player_icon.gif)}
+.download_1{ width:14px}
+.download_1:hover{background-position:0 -16px}
+.download_2{ width:15px; height:16px;background-position:-23px 0 }
+.download_2:hover{background-position:-23px -16px}
+.download_3{ width:13px; height:16px; background-position:-47px 0; margin-right:0px;}
+.download_3:hover{background-position:-47px -16px}
+#MediaPlayer{ display:none;}
+
+</style>
+<title>PortalONE</title>
+</head>
+
+
+<body>
+<div class="music_box">
+	<div class="music_player">
+		<div class="music_player_ctrl">
+			<a href="#" class="music_player_ctrl_prev"></a>
+			<div class="music_player_ctrl_play"><a href="#none" class="music_player_pause" id="bigPlayerPlayBtn" onclick="playPauseMeida(this);"></a></div>
+			<a href="#" class="music_player_ctrl_next"></a>
+		</div>
+		<div class="music_player_top_right">
+			<div class="music_player_title">
+				<h2>Channel Music</h2><div class="music_player_time">--/--</div>
+			</div>
+			<div id="bigPlayerLoadingBar">
+				<!--进度条，可拉动控制媒体插件-->
+			<!--	onmouseover="this.className='music_slider_focus'" onmouseout="this.className='music_slider_normal'" onmouseup="this.className='music_slider_normal'" onmousedown="loadingSlider(event,this,'bigPlayerSliderBarCurrent','bigPlayerSliderBarDefault');"-->
+				<div id="bigPlayerSliderBlock" class="music_slider_normal" ></div>
+				<div id="bigPlayerSliderBarDefault"></div>
+				<div id="bigPlayerSliderBarCurrent"></div>
+			</div>
+		</div>
+		<div class="music_player_center">
+			<div id="bigPlayerVolumnControl" class="music_player_silence" onclick="silenceVolumn(this,'bigPlayerVolumnAuto');"></div>
+			<!--静音放音按钮-->
+			<div id="bigPlayerVolumnAuto">
+				<!--手动调节音量按钮-->
+				<p class="volumnWrapper" onclick="volumnControl(this,event,'bigPlayerVolumnControl')"><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /><img src="skin/default/images/player/music_volumn_grey.gif" /></p>
+			</div>
+			
+			<div class="music_player_mode"><a href="#" style="margin-right:8px"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+		</div>
+		<div class="music_player_table">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<th width="55%">Song</th>
+				<th width="27%">Time</th>
+				<th width="18%">Download</th>
+			  </tr>
+			  <tr>
+				<td class="color_red">Channel Music<img src="images/icon_hot.gif" class="icon_hot" style="margin-left:20px;"></td>
+				<td>--:--</td>
+				<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>
+			  </tr>
+			  <tr>
+				<td>Pop</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>			
+          </tr>
+			  <tr>
+				<td>JAZZ</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>			
+        </tr>
+			  <tr>
+				<td>Rock</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>		
+     	  </tr>
+			  <tr>
+				<td>Classical</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>		
+     	  </tr>
+			  <tr>
+				<td>Michael Jackson</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>		
+	  </tr>
+			  <tr>
+				<td>Celine Dion</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>		
+	  </tr>
+			  <tr>
+				<td>BBC</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>		
+	  </tr>
+			  <tr>
+				<td>CNR</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>
+			  </tr>
+			  <tr>
+				<td>PANDORA</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>	
+			  </tr>
+			  <tr>
+				<td>LIVE365</td>
+				<td>--:--</td>
+<td><a href="#" class="download_1" title="Full track"></a><a href="#" class="download_2" title="RBT"></a><a href="#" class="download_3" title="RT"></a></td>	
+			  </tr>
+			</table>
+		</div>
+	</div>
+	<div class="music_lrc">
+		<div class="music_radio">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<th width="21%">Time</th>
+					<th width="79%">Program</th>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">03:25</td>
+					<td>Channel Music</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">03:30</td>
+					<td>My First Kiss</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">04:20</td>
+					<td>You And Me</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">05:00</td>
+					<td>Stand By Me</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">05:30</td>
+					<td>Addicted To Love</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">06:15</td>
+					<td>Extreme Makeover.Home Edition</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">07:00</td>
+					<td>Brothers & Sisters</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">07:35</td>
+					<td>American ldol Rewind</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">08:15</td>
+					<td>Cops</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">09:00</td>
+					<td>Kiss the Bride</td>
+				  </tr>
+				  <tr>
+					<td class="color_red_blod">09:50</td>
+					<td>Holiday of Stars</td>
+				  </tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+   var url="Scarborough Fair.mp3";
+	$("body").append('<object id="MediaPlayer" height="0" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject"><param name="URL" value="'+url+'"></param><param name="AutoStart" value="1"></object>');
+	 
+    var Player=document.getElementById("MediaPlayer");
+	
+	//离开本页就关闭音乐
+	 $(document).unload(function(){Player.controls.stopPlay()});
+	 
+ 	$("#bigPlayerPlayBtn").click(function(){//暂停 播放控制
+						if($(this).hasClass("music_player_pause")){
+				        Player.controls.play();	
+ 						}else{
+						Player.controls.pause();	
+						}});	
+						
+    var current_volume = Player.settings.volume=0;//当前的音量				
+				$("#bigPlayerVolumnControl").click(function(){       //音量控制
+					if($(this).hasClass("music_player_silence")){  //如果它当前为静音
+					Player.settings.volume = 0;	
+					}else{ //有音量时                             
+					Player.settings.volume =current_volume;
+					}});		
+					
+		//手动控制音量
+				$(".volumnWrapper").click(function(){
+				    	var yellowNums = 0;							   
+						$(this).find("img").each(function(){
+							if(this.src.indexOf("yellow")>=0){
+							yellowNums +=1;	
+						}});
+						Player.settings.volume=yellowNums*10;
+					});								
+	
+})
+</script>

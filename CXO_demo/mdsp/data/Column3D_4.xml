@@ -1,0 +1,8 @@
+<chart caption='' xAxisName=''  showValues='0' decimals='0' formatNumberScale='0'  numberSuffix='%'>
+<set label='WAP' value='24'/>
+<set label='Web' value='16'/>
+<set label='Soft Client' value='22'/>
+<set label='PC Client' value='18'/>
+<set label='SMS' value='12'/>
+<set label='IVR' value='8'/>
+</chart>	

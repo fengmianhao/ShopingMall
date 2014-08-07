@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr,.Qlink_list ,.tv_channel_list img,.Qlink_list,.Qlink_ico,.user_show  ');
+</script>
+<![endif]-->
+<title>Digital Shopping Mall</title>
+<style>
+.tv_channel{width:255px; float:left; margin-right:5px}
+.tv_channel_center_bg h4{ font-size:14px; padding:10px 0 10px 7px; border-bottom:1px dashed #ccc}
+.tv_channel_list li{ height:50px;border-bottom:1px dashed #ccc; line-height:22px}
+.tv_channel_list em{ height:50; width:52px; float:left; margin-right:8px; text-align:center}
+.tv_channel_list a{ display:block; height:40px;padding:5px 0px 5px 5px;background:url(images/icon_try_normal.gif) no-repeat 200px center;}
+.tv_channel_list a:hover{ background:#fff url(images/icon_try_over.gif) no-repeat 200px center; text-decoration:none}
+.tv_channel_list a:hover .brown{ color:#999}
+.tv_channel_list li a.tv_channel_list_current{ background:#fff url(images/icon_try_over.gif) no-repeat 200px center;}
+
+
+#bigPlayerControlBox,.player_big_box{ width:470px}
+#bigPlayerControlBox{ background-image:url(skin/default/images/player/big_player_bg2.gif);}
+
+.mall_playbill{ padding:6px}
+.mall_playbill table{ border:1px solid #ccc; border-width:1px 1px 0 1px; margin-top:10px}
+.mall_playbill td{ border:1px solid #ccc; border-width:0 0px 1px 0; height:38px}
+.mall_playbill th{ background:#9a1414; height:25px; color:#eee;}
+.mall_playbill .tr_bg{ background:#e7e7e7}
+#MediaPlayer{ display:none}
+
+.dba{ background:url(images/dba.jpg) no-repeat; width:249px; height:45px; margin-top:2px; cursor:pointer;}
+</style>
+</head>
+
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                     <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        <li><a href="#none">DIY RBT</a></li>
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#none"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#none">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#none" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html" class="focus">Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+    	<div class="sub_nav">
+         
+            <div class="nofloat"></div>
+        </div>
+        <div style="padding:0 0 8px 2px">
+        	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="984" height="182">
+                    <param name="allowScriptAccess" value="sameDomain">
+                    <param name="movie" value="flash/tv_flash.swf">
+                    <param name="quality" value="high">
+					<param name="play" value="true">
+                    <param name="wmode" value="transparent">
+                    <embed src="flash/tv_flash.swf" wmode="transparent" quality="high" bgcolor="#ffffff" width="984" height="182" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> 
+</object></div>
+
+
+        <div class="tv_channel">
+            <div class="tv_channel_top"></div>
+            <div class="tv_channel_center">
+                <div class="tv_channel_center_bg">
+                    <h4>Playing: <a href="#none">Hunan TV</a></h4>
+                    <ul class="tv_channel_list">
+                    <li><a href="#none"   name="tv_online_pc1-videoTv1"><em><img src="skin/default/images/tv_channel_1.png"  /></em>
+                        <span style="color:#333; font-weight:bold">MTV</span><br /><span class="brown">G-Force</span></a></li>
+                    <li><a href="#none" name="tv_online_pc2-videoTv2"><em><img src="skin/default/images/tv_channel_2.png"  /></em>
+                        <span style="color:#333; font-weight:bold">Nick TV</span><br /><span class="brown">Ice Age</span></a></li>
+                    <li><a href="#none" name="tv_online_pc3-videoTv3"><em><img src="skin/default/images/tv_channel_3.png"  /></em>
+                        <span style="color:#333; font-weight:bold">A&E TV</span><br /><span class="brown">Cars</span></a></li>
+                    <li><a href="#none" name="tv_online_pc4-videoTv4"><em><img src="skin/default/images/tv_channel_4.png"  /></em>
+                        <span style="color:#333; font-weight:bold">Cheel V</span><br /><span class="brown">Wall.E</span></a></li>
+                    <li><a href="#none" name="tv_online_pc5-videoTv5"><em><img src="skin/default/images/tv_channel_5.png"  /></em>
+                        <span style="color:#333; font-weight:bold">Hubei TV</span><br /><span class="brown">Discovery</span></a></li>
+                    <li><a href="#none" class="tv_channel_list_current" name="tv_online_pc6-videoTv6"><em><img src="skin/default/images/tv_channel_6.png"  /></em>
+                        <span style="color:#333; font-weight:bold">HunanTv</span><br /><span class="brown">Kongfu Panda!</span></a></li>
+                    <li><a href="#none" name="tv_online_pc7-videoTv7"><em><img src="skin/default/images/tv_channel_7.png"  /></em>
+                        <span style="color:#333; font-weight:bold">Jiangsu TV</span><br /><span class="brown">Love Apartment</span></a></li>
+                    <li><a href="#none" name="tv_online_pc8-videoTv8"><em><img src="skin/default/images/tv_channel_8.png"  /></em>
+                        <span style="color:#333; font-weight:bold">Anhui TV</span><br /><span class="brown">Happy Valley</span></a></li>
+                    </ul>
+					<div class="dba"><p style="font-weight:bold; color:red; font-size:14px; margin:27px 0 2px 16px;">DBA</p></div>
+                </div>
+            </div>
+            <div class="tv_channel_bottom"></div>
+        </div>
+
+			
+		<div style="width:495px; float:left">
+            
+            <div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center">
+                	<h3 style="padding:10px 5px 15px; font-size:20px;" class="brown">Playing Online</h3>
+                	<!--大播放器代码开始-->
+                            <div id="bigPlayer" class="player_big_box">
+                                <div id="bigPlayerVideoBox"><img src="images/tv_online_pc6.jpg" width="470" height="351" /></div>
+                                <!--这里放视频插件，如果是音频，可以把插件高度设为0-->
+                                <div id="bigPlayerControlBox">
+                                    <a href="#none" class="big_player_play" id="bigPlayerPlayBtn" ></a> <a href="#none" class="big_player_stop" id="bigPlayerStopBtn"></a>
+                                <!--播放暂停按钮及停止播放按钮-->
+                                    <div id="bigPlayerNowTime"><span id="bigPlayerNowTimeText" style=" visibility:hidden">01:10:00</span></div>
+                                    <!--播放的当前进度时间-->
+                                    <div id="bigPlayerLoadingBar" style=" display:none">
+                                        <!--进度条，可拉动控制媒体插件-->
+                                        <div id="bigPlayerSliderBlock" class="big_slider_normal" onmouseover="this.className='big_slider_focus'" onmouseout="this.className='big_slider_normal'" onmouseup="this.className='big_slider_normal'" onmousedown="loadingSlider(event,this,'bigPlayerSliderBarCurrent','bigPlayerSliderBarDefault');" style="left:0; margin-left:-2px"></div>
+                                        <div id="bigPlayerSliderBarDefault"></div>
+                                        <div id="bigPlayerSliderBarCurrent"></div>
+                                    </div>
+                                    <span id="bigPlayerTotalTime" class="big_player_total" style=" visibility:hidden; width:240px"></span>
+                                    <div class="big_player_right">
+                                        <div id="bigPlayerVolumnControl" class="big_player_volumn" onclick="silenceVolumn(this,'bigPlayerVolumnAuto');"></div>
+                                        <!--静音放音按钮-->
+                                        <div id="bigPlayerVolumnAuto">
+                                            <!--手动调节音量按钮-->
+                                            <p class="volumnWrapper" onclick="volumnControl(this,event,'bigPlayerVolumnControl')"><img src="skin/default/images/player/big_volumn_yellow_1.gif" /><img src="skin/default/images/player/big_volumn_yellow_2.gif" /><img src="skin/default/images/player/big_volumn_yellow_3.gif" /><img src="skin/default/images/player/big_volumn_grey_4.gif" /><img src="skin/default/images/player/big_volumn_grey_5.gif" /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--大播放器代码结束-->
+                            <div style="padding:10px 200px 8px 5px; overflow:hidden"><ul onclick="btnAct(0);" onmouseover="btnOver(this);" id="sms_reset" onmouseout="btnOut(this);" class="btn_div_normal" style=" float:right; width:130px">
+            <li class="btn_left"></li>
+            <li class="btn_center presentClose" >Subscribe</li>
+            <li class="btn_right"></li>
+        </ul> <strong>Price</strong>: $2.0/Month </div>
+                	
+                </div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>
+		</div>
+        
+        <div style="float:right; width:225px">
+            <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center">
+                    	<div class="mall_playbill">
+                            <p><strong style="font-size:14px">Play list:</strong><select name="" style="width:130px"><option id="playListTime">Feb 26,2010 </option></select></p>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <th width="25%">Time</th>
+                                <th>Content</th>
+                              </tr>
+                              <tr>
+                                <td align="center" class="brown">7:30</td><td>America s Funiest Home Videos</td>
+                              </tr>
+                              <tr class="tr_bg">
+                                <td align="center" class="brown">8:00</td><td>Extreme Makeover.Home Edition</td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="brown">9:00</td><td>Brothers & Sisters</td>
+                              </tr>
+                              <tr class="tr_bg">
+                                <td align="center" class="brown">10:00</td><td>American ldol Rewind</td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="brown">11:30</td><td>Cops</td>
+                              </tr>
+                              <tr class="tr_bg">
+                               <td align="center" class="brown">12:00</td><td>NFL Football(CC) HDTV</td>
+                              </tr>
+                              <tr>
+                               <td align="center" class="brown">14:10</td><td>Kiss the Bride</td>
+                              </tr>
+                              <tr class="tr_bg">
+                                <td align="center" class="brown">15:20</td><td>Holiday of Stars</td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="brown">16:30</td><td>Local Programming</td>
+                              </tr>
+                              <tr class="tr_bg">
+                                <td align="center" class="brown">17:30</td><td>Ensuite</td>
+                              </tr>
+                            </table>
+						</div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                </div>
+        </div>
+        
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#none">About SDP</a> | <a href="#none">Help</a> | <a href="#none">Legal</a> | <a href="#none">Links</a> | <a href="#none">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div> 
+<!--container close-->
+
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+ <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/downList.js"></script>
+<script type="text/javascript">
+
+	
+
+ 	$(function(){
+ 		//对tv_channel_listgh 下的li进行事件
+		$(".tv_channel_list a").click(function(){
+			if(!$(this).hasClass("tv_channel_list_current")){
+				$(".tv_channel_list a").removeClass("tv_channel_list_current");
+				$(this).addClass("tv_channel_list_current");
+		       $("#bigPlayerVideoBox").find("img").attr("src","images/"+this.name.split("-")[0]+".jpg");	
+ 			}
+		});
+  
+//设置playList当天的时间
+document.getElementById("playListTime").innerHTML=getCurrentTime();
+
+		if(connect){
+		   MYAvtiveX.getOnlineFriend();//驱动notifyOnlineFriendPhone事件，以取得在线好友phoneNum
+		}
+		
+   $('.dba').click(function(){
+   MYAvtiveX.getOnlineFriend();
+       MYAvtiveX.setBreak(onlineFriend.split(',')[0],10,10); //持续2秒loading，每秒停一下
+	   if(onlineFriend.split(',')[1] != ""){
+	    MYAvtiveX.setBreak(onlineFriend.split(',')[1],10,10);
+	   }
+	   window.setTimeout(function(){
+	     MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[0],2);  //改成普通模式 
+		 if(onlineFriend.split(',')[1] !=""){
+		  MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[1],2);  //改成普通模式 
+		 }
+	//	 doAgain();
+	   },15000)
+      })
+   });
+   
+  function doAgain(){
+         MYAvtiveX.setBreak(onlineFriend.split(',')[0],3,1); //持续3秒loading，每秒停一下
+		 MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[0],2); //改成普通模式 
+		
+		if(MYAvtiveX.setBreak(onlineFriend.split(',')[1] !=""){
+		 MYAvtiveX.setBreak(onlineFriend.split(',')[1],3,1); //持续3秒loading，每秒停一下
+		 MYAvtiveX.setOnlineTVMode(onlineFriend.split(',')[1],2); //改成普通模式  
+		}
+		
+		 
+  }
+
+
+		   function getCurrentTime(){
+			   var date = new Date();
+			   var month='';
+			   switch(date.getMonth()){
+				   case 0:month='Jan'; break;
+				   case 1:month='Feb'; break;
+				   case 2:month='Mar'; break;
+				   case 3:month='Apr'; break;
+				   case 4:month='May'; break;
+				   case 5:month='Jun'; break;
+				   case 6:month='Jul'; break;
+				   case 7:month='Aug'; break;
+				   case 8:month='Sep'; break;
+				   case 9:month='Oct'; break;
+				   case 10:month='Nov'; break;
+				   case 11:month='Dec'; break;
+				   }
+			   return month+" "+date.getDate()+","+date.getFullYear();   
+			   }
+			   
+		
+    </script>
+	
+	<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyOnlineFriendPhone(phone)>
+   if(phone==''){
+	  phone=myPhone1;
+	}
+    onlineFriend = phone;
+</SCRIPT>

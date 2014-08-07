@@ -1,0 +1,9 @@
+<chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="Symbian" value="20" /> 
+  <set label="iOS" value="11" /> 
+  <set label="Android" value="19" /> 
+  <set label="RIM" value="15" /> 
+  <set label="Java" value="12"  /> 
+  <set label="WebOS" value="15" /> 
+  <set label="Mobile Phone 7" value="8" /> 
+ </chart>

@@ -1,0 +1,11 @@
+<chart   showValues='0' decimals='0' formatNumberScale='0' numberSuffix='K'>
+<set label='Jazz' value='32'/>
+<set label='Strategy Game' value='27' />
+<set label='Action Movie' value='24' />
+<set label='Myth Cartoon' value='21'/>
+<set label='Pop Slow' value='18' />
+<set label='Racing Game' value='13' />
+<set label='Life Tool' value='10'/>
+<set label='Love Story' value='8'/>
+<set label='Rock' value='6' />
+</chart>	

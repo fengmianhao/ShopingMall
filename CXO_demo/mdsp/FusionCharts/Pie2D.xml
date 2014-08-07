@@ -1,0 +1,9 @@
+<graph showNames='1'  decimalPrecision='0'  >
+	<set name='11~15 years' value='17'  />
+    <set name='16~20 years' value='25' isSliced='1'/>
+    <set name='21~25 years' value='18' />
+	<set name='26~30 years' value='15' />
+    <set name='31~ 35 years' value='15'/>
+    <set name='36~50 years' value='10'/>
+
+</graph>

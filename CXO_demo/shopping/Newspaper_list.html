@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ');
+</script>
+<![endif]-->
+<title>Digital Shopping Mall</title>
+
+<style type="text/css">
+.leftSmallMNS{ width:247px; float:left}
+.rightBigMNS{ width:730px; float:right}
+.column_music{ padding:1px; border:1px solid #C8CDDA;background:#ffffff; margin-bottom:10px}
+.column_title{ height:41px; line-height:39px; padding-left:16px; font-size:16px; font-weight:bold; color:#4a4a4a; background: url(images/title_music_bg.gif) repeat-x; margin:0}
+.imgStyle{ float:left; width:54px; height:72px; padding:2px; border:1px solid #d2d2d2; margin-right:7px; background:#ffffff}
+.clearfix:after{ visibility:hidden; clear:both; height:0; display:block; content:''}
+.clearfix{ *zoom:1}
+.mns_pop_ul{padding:4px 9px 0;}
+.mns_pop_ul li{width:225px; border-bottom:1px solid #e2e2e2; clear:both}
+.mns_pop_ul em{ float:left; width:18px; height:17px; margin:6px; text-align:center; line-height:17px; color:#ffffff;background:url(images/mns_list_bg.gif) no-repeat; font-size:11px;font-family:Tahoma, Verdana, sans-serif;}
+.mns_pop_ul strong a{ color:#2971a7}
+.mns_pop_ul strong a:hover{ color:#ff6600; text-decoration:none}
+.mns_pop_li_1{ height:29px; line-height:29px; width:225px; white-space:nowrap; overflow:hidden;}
+.mns_pop_li_2{ display:none; float:left; width:225px}
+.mns_pop_li_2 strong{ white-space:normal; width:115px;}
+.mns_pop_li_2 p{ height:35px; padding-top:5px; overflow:hidden; white-space:nowrap}
+.mns_pop_on .mns_pop_li_2{ display:block}
+.mns_pop_on .mns_pop_li_1{ display:none}
+li.mns_pop_on{ padding:4px 0 7px; height:76px;}
+.pb{ padding-bottom:9px}
+.app_li_price{ padding:9px 0 1px; color:#ff6600; font-weight:bold}
+.mns_pop_ul .grade_empty{ float:left; margin-right:5px; margin-top:2px}
+
+.mns_acti_ul{margin:9px; height:384px; overflow:hidden}
+
+.mns_acti_ul li{width:225px;padding:10px 0;border-bottom:1px solid #e2e2e2; line-height:20px; height:56px; overflow:hidden}
+.mns_acti_ul img{ width:50px; height:50px;}
+.mns_con{ padding:8px 12px; line-height:1.8em}
+.mns_promote{ padding:16px 12px; width:702px; overflow:hidden}
+.mns_promote li{ float:left; width:225px; height:78px; padding-right:9px;}
+.mns_promote strong{ display:block; line-height:1.5em; margin-bottom:5px}
+.mns_promote p{ line-height:1.4em}
+.price_line{ text-decoration:line-through}
+.mns_promote a:hover,.mns_paper a:hover{ color:#ff5b01}
+.mns_paper{ padding:13px; width:700px}
+.mns_paper li{ float:left; overflow:hidden; height:140px; width:350px; padding:8px 0; border-bottom:1px dotted #999999}
+.mns_paper_div{ float:left; width:220px}
+.mns_paper em{ font-style:normal}
+.mns_paper a{ color:#333333}
+.mns_paper li .imgStyle{ width:99px; padding:3px; height:132px; margin-right:10px}
+.mns_paper strong{ display:block; line-height:1.3em; font-size:14px}
+.mns_paper_month{color:#ff5b01; padding:7px 0 4px; font-weight:bold}
+.mns_paper_p{ height:45px; line-height:1.3em; overflow:hidden; margin-bottom:8px; font-size:11px; color:#999999}
+.mns_paper_p span{ color:#333333}
+.mns_btn{ float:left; height:25px; line-height:22px; padding-right:12px; background: url(images/mns_btn.gif) no-repeat right 0; text-align:center; font-weight:bold; color:#ededed}
+.mns_btn em{ float:left; width:12px; height:25px; background: url(images/mns_btn.gif) no-repeat }
+a.mns_btn:hover{color:#ededed; text-decoration:none}
+.mns_btn2{ float:left; height:44px; line-height:40px; padding-right:14px; background: url(images/mns_btn2.gif) no-repeat right 0; text-align:center; font-weight:bold; color:#ededed}
+.mns_btn2 em{ float:left; width:10px; height:44px; background: url(images/mns_btn2.gif) no-repeat }
+a.mns_btn2:hover{color:#ededed; text-decoration:none}
+
+.mns_range{margin:7px 10px 0 0; font-weight:normal;line-height:25px;}
+.mns_range li{ float:left; height:25px; padding-right:12px; margin-right:10px; text-align:center; font-size:11px}
+.mns_range em{ float:left; width:10px; height:25px}
+.mns_range a{ float:left; height:25px; line-height:25px; padding-left:12px; background: url(images/icon_arrow_down.gif) no-repeat 0 8px; color:#333333; font-size:11px}
+.mns_range_on{background: url(images/mns_btn.gif) no-repeat right bottom}
+.mns_range_on em{background: url(images/mns_btn.gif) no-repeat left bottom}
+.mns_range_on a{background: url(images/icon_arrow_up.gif) no-repeat 0 8px}
+</style>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html" >Music</a></li>
+                    <li><a href="Video.html" >Video</a></li>
+					<li><a href="Ereading.html" class="focus">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html" >Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+	<div class="sub_nav_left" style="margin:5px 0 10px 0;">Position: <a href="Ereading.html">Ereading</a>&nbsp;&gt;&nbsp;<strong>Moblie NewsPaper List</strong></div>
+        <div class="leftSmallMNS">
+            <div class="column_music pb">
+            	<h5 class="column_title">News</h5>
+                <ul class="mns_pop_ul" id="mns_pop_ul_1">
+                <li class="mns_pop_on"><div class="mns_pop_li_1"><em>1</em>L'Essor Sarladais</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per9.jpg" class="imgStyle" /></a><strong><a href="#">L'Essor Sarladais</a></strong><p>Price: <span class="orange font_bold">2.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>2</em>La Vanguarda</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a><strong><a href="#">La Vanguarda</a></strong><p>Price: <span class="orange font_bold">2.50</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>3</em>Beijing Daily</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a><strong><a href="#">Beijing Daily</a></strong><p>Price: <span class="orange font_bold">1.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>4</em>La Grather dello sport</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a><strong><a href="#">La Grather dello sport</a></strong><p>Price: <span class="orange font_bold">1.50</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>5</em>Global News</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a><strong><a href="#">Global News</a></strong><p>Price: <span class="orange font_bold">1.00</span></p></div></li>
+                </ul>
+            </div>
+            <div class="column_music pb">
+            	<h5 class="column_title">Top 10</h5>
+                <ul class="mns_pop_ul clearfix" id="mns_pop_ul_2">
+				<li class="mns_pop_on"><div class="mns_pop_li_1"><em>1</em>Beijing Daily</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a><strong><a href="#">Beijing Daily</a></strong><p>Price: <span class="orange font_bold">1.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>2</em>LE PAIS</div>
+                	<div class="mns_pop_li_2"><a href="Newspaper_details.html"><img src="images/info_per1.jpg" class="imgStyle" /></a><strong><a href="#">LE PAIS</a></strong><p>Price: <span class="orange font_bold">2.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>3</em>Xinhua Daily</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/details_phonenews.jpg" class="imgStyle" /></a><strong><a href="#">Xinhua Daily</a></strong><p>Price: <span class="orange font_bold">2.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>4</em>La Vanguarda</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a><strong><a href="#">La Vanguarda</a></strong><p>Price: <span class="orange font_bold">2.50</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>5</em>La Grather dello sport</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a><strong><a href="#">La Grather dello sport</a></strong><p>Price: <span class="orange font_bold">1.50</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>6</em>Global News</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a><strong><a href="#">Global News</a></strong><p>Price: <span class="orange font_bold">1.80</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>7</em>L'Essor Sarladais</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per10.jpg" class="imgStyle" /></a><strong><a href="#">L'Essor Sarladais</a></strong><p>Price: <span class="orange font_bold">1.50</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>8</em>DNA</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/details_phonenews.jpg" class="imgStyle" /></a><strong><a href="#">DNA</a></strong><p>Price: <span class="orange font_bold">3.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>9</em>Fa Zhi Ri Bao</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per6.jpg" class="imgStyle" /></a><strong><a href="#">Fa Zhi Ri Bao</a></strong><p>Price: <span class="orange font_bold">2.00</span></p></div></li>
+                <li><div class="mns_pop_li_1"><em>10</em>Affari Italiani</div>
+                	<div class="mns_pop_li_2"><a href="#"><img src="images/info_per8.jpg" class="imgStyle" /></a><strong><a href="#">Affari Italiani</a></strong><p>Price: <span class="orange font_bold">1.50</span></p></div></li>
+                </ul>
+            </div>
+		</div>
+		<div class="rightBigMNS">
+            <div class="column_music">
+               <h5 class="column_title">Promotes sales the special area</h5>
+               <div class="mns_promote">
+                   <ul class="clearfix" id="ISL_Cont_1">
+                   <li><a href="Newspaper_details.html"><img src="images/info_per1.jpg" class="imgStyle" /></a><strong><a href="#">LE PAIS <img src="images/icon_hot.gif" class="icon_hot"  align="absmiddle"></a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$2.00</span></p></li>
+                   <li><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a><strong><a href="#">La Vanguarda</a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$2.50</span></p></li>
+                   <li><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a><strong><a href="#">Beijing Daily</a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$3.00</span></p></li>
+                   <li><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a><strong><a href="#">La Grather dello sport</a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$3.00</span></p></li>
+                   <li><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a><strong><a href="#">Global News</a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$2.50</span></p></li>
+                   <li><a href="#"><img src="images/info_per6.jpg" class="imgStyle" /></a><strong><a href="#">Fa Zhi Ri Bao</a></strong><p>$<span class="price_line">5.00</span></p><p>Price: <span class="orange font_bold">$3.00</span></p></li>
+                   </ul>
+               </div>
+            </div>
+            <div class="column_music">
+               <div class="column_title">
+               	   <ul class="mns_range fr">
+                   <li id="mns_range1" class="mns_range_on"><em></em><a href="javascript:void(0)" onclick="cTab('mns_range','mns_range_info','mns_range_on',3,1)">Hot</a></li>
+                   <li id="mns_range2"><em></em><a href="javascript:void(0)" onclick="cTab('mns_range','mns_range_info','mns_range_on',3,2)">Time</a></li>
+                   <li id="mns_range3"><em></em><a href="javascript:void(0)" onclick="cTab('mns_range','mns_range_info','mns_range_on',3,3)">Price</a></li>
+                   </ul>
+               	   <strong>Mobile Newspaper</strong></div>
+               <div class="mns_paper">
+                   <ul class="clearfix" id="mns_range_info1" style="display:block">
+                   <li><a href="Newspaper_details.html"><img src="images/info_per1.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="Newspaper_details.html">LE PAIS <img src="images/icon_hot.gif" class="icon_hot"  align="absmiddle"></a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Entomologists want your help finding them. A relative to the stink bug</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Grather dello sport</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Byng students Brandon Carder, left, and Nick Kelley, help unload props and costumes donated to the Byng High School drama department Monday. </p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Global News</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Most of the “firsts” in Monday’s opening game at the new Latta softball complex were registered by the Lady Panthers.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Vanguarda</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Concert pianist Petronel Malan, a multiple Grammy nominee and gold medal winner of several international piano competitions</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Beijing Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>President Obama can rail all he wants about George Bush causing our current financial mess, but a trip down memory lane proves otherwise.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per9.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">L'Essor Sarladais</a></strong><p class="mns_paper_month">$4.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>South Carolina's Supreme Court on Monday upheld death sentences for three men, including one convicted of killing two police officers in a dispute over a highway widening project.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per8.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Affari Italiani</a></strong><p class="mns_paper_month">$2.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Pontotoc County 4-H members Adeline Daniel, Emily Taylor and Amanda Daniel are pictured with staff members from the Stratford Senior Nutrition Center.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per6.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Fa Zhi Ri Bao</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Bennie Cope, Ada, has been appointed to the Pontotoc County Conservation District Board of Directors, according to Mike Thralls</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+				   <li><a href="#"><img src="images/details_phonenews.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Xinhua Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>The most reliable indicator of fruit and pecan tree fertility needs is chemical analysis of the foliage, commonly called leaf analysis.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per10.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">DNA</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Abundant forage growth is always a wonderful thing to see in pastures.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   </ul>
+				   
+                   <ul class="clearfix" id="mns_range_info2" style="display:none">
+                   <li><a href="Newspaper_details.html"><img src="images/info_per1.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="Newspaper_details.html">LE PAIS <img src="images/icon_hot.gif" class="icon_hot"  align="absmiddle"></a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Entomologists want your help finding them. A relative to the stink bug</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Vanguarda</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Concert pianist Petronel Malan, a multiple Grammy nominee and gold medal winner of several international piano competitions</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Grather dello sport</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Byng students Brandon Carder, left, and Nick Kelley, help unload props and costumes donated to the Byng High School drama department Monday. </p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+				   <li><a href="#"><img src="images/details_phonenews.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Xinhua Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>The most reliable indicator of fruit and pecan tree fertility needs is chemical analysis of the foliage, commonly called leaf analysis.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per10.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">DNA</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Abundant forage growth is always a wonderful thing to see in pastures.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Beijing Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>President Obama can rail all he wants about George Bush causing our current financial mess, but a trip down memory lane proves otherwise.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Global News</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Most of the “firsts” in Monday’s opening game at the new Latta softball complex were registered by the Lady Panthers.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per9.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">L'Essor Sarladais</a></strong><p class="mns_paper_month">$4.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>South Carolina's Supreme Court on Monday upheld death sentences for three men, including one convicted of killing two police officers in a dispute over a highway widening project.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per8.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Affari Italiani</a></strong><p class="mns_paper_month">$2.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Pontotoc County 4-H members Adeline Daniel, Emily Taylor and Amanda Daniel are pictured with staff members from the Stratford Senior Nutrition Center.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per6.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Fa Zhi Ri Bao</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Bennie Cope, Ada, has been appointed to the Pontotoc County Conservation District Board of Directors, according to Mike Thralls</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   </ul>
+				   
+                   <ul class="clearfix" id="mns_range_info3" style="display:none">
+                   <li><a href="#"><img src="images/info_per5.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Global News</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Most of the “firsts” in Monday’s opening game at the new Latta softball complex were registered by the Lady Panthers.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per6.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Fa Zhi Ri Bao</a></strong><p class="mns_paper_month">$5.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Bennie Cope, Ada, has been appointed to the Pontotoc County Conservation District Board of Directors, according to Mike Thralls</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="Newspaper_details.html"><img src="images/info_per1.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="Newspaper_details.html">LE PAIS <img src="images/icon_hot.gif" class="icon_hot"  align="absmiddle"></a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Entomologists want your help finding them. A relative to the stink bug</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per10.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">DNA</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Abundant forage growth is always a wonderful thing to see in pastures.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per2.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Vanguarda</a></strong><p class="mns_paper_month">$4.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Concert pianist Petronel Malan, a multiple Grammy nominee and gold medal winner of several international piano competitions</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per9.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">L'Essor Sarladais</a></strong><p class="mns_paper_month">$4.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>South Carolina's Supreme Court on Monday upheld death sentences for three men, including one convicted of killing two police officers in a dispute over a highway widening project.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per4.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">La Grather dello sport</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Byng students Brandon Carder, left, and Nick Kelley, help unload props and costumes donated to the Byng High School drama department Monday. </p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per3.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Beijing Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>President Obama can rail all he wants about George Bush causing our current financial mess, but a trip down memory lane proves otherwise.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+				   <li><a href="#"><img src="images/details_phonenews.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Xinhua Daily</a></strong><p class="mns_paper_month">$3.00 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>The most reliable indicator of fruit and pecan tree fertility needs is chemical analysis of the foliage, commonly called leaf analysis.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   <li><a href="#"><img src="images/info_per8.jpg" class="imgStyle" /></a>
+                   	   <div class="mns_paper_div"><strong><a href="#">Affari Italiani</a></strong><p class="mns_paper_month">$2.50 / Month</p><p class="mns_paper_p"><span class="font_bold">Content: </span>Pontotoc County 4-H members Adeline Daniel, Emily Taylor and Amanda Daniel are pictured with staff members from the Stratford Senior Nutrition Center.</p>
+					   <div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal" style="width:128px; height:26px">
+							<em class="btn_left"></em>
+							<em class="btn_center"><img src="images/btn_icon_download.gif" width="16" height="16" border="0" align="absmiddle" />Subscribe&nbsp;&nbsp;</em>
+							<em class="btn_right"></em>
+						</div>
+				   </div></li>
+                   </ul>
+                   <div class="pagenation">
+						<a href="#">Prev</a>
+						<a href="#" class="num_on">1</a>
+						<a href="#" class="num">2</a>
+						<a href="#" class="num">3</a>
+						<a href="#" class="num">4</a>
+						<a href="#" class="num">5</a>
+						<a href="#">Next</a>
+					</div>
+               </div>
+            </div>
+        </div>
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+ <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+ <script src="js/main.js" type="text/javascript"></script>
+ <script type="text/javascript" src="js/ScrollPic.js"></script>
+ <script type="text/javascript" src="js/downList.js"></script>
+	<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId   = "ISL_Cont_1"; //内容容器ID
+	scrollPic_02.arrLeftId      = "LeftArr";//左箭头ID
+	scrollPic_02.arrRightId     = "RightArr"; //右箭头ID
+	scrollPic_02.frameWidth     = 702;//显示框宽度
+	scrollPic_02.pageWidth      = 702; //翻页宽度   
+	scrollPic_02.speed          = 5; //移动速度(单位毫秒，越小越快)
+	scrollPic_02.space          = 30; //每次移动像素(单位px，越大越快)
+	scrollPic_02.autoPlay       = true; //自动播放
+	scrollPic_02.autoPlayTime   = 5; //自动播放间隔时间(秒)
+	scrollPic_02.initialize(); //初始化                 
+	//--><!]]>
+	
+/*************切换Tab页****************/
+function cTab(liID,infoID,cName,number,index){
+  for(var i=1; i<=number; i++){
+	  document.getElementById(liID+i).className = ""
+	  document.getElementById(infoID+i).style.display = "none" 
+	  }
+	document.getElementById(liID+index).className = cName
+	document.getElementById(infoID+index).style.display = "block"
+}
+//列表的显示隐藏
+function switch_ul(ulID,currendClass){
+	var search_li = document.getElementById(ulID).getElementsByTagName("li");
+    for(var i=0; i<search_li.length; i++){
+		search_li[i].onmouseover = function(){
+			for(var i=0; i<search_li.length; i++){
+				search_li[i].className = ''
+			}
+			this.className = currendClass;
+		}
+	}
+}
+switch_ul("mns_pop_ul_1","mns_pop_on");
+switch_ul("mns_pop_ul_2","mns_pop_on");
+</script>
+ <SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>

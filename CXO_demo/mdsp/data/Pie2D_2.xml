@@ -1,0 +1,8 @@
+ <chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="Action" value="15" /> 
+  <set label="Racing" value="12" /> 
+  <set label="Fighting" value="10"  /> 
+  <set label="Puzzle" value="25" /> 
+  <set label="Card" value="18" /> 
+  <set label="Strategy" value="20"  /> 
+ </chart>

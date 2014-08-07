@@ -1,0 +1,850 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ');
+</script>
+<![endif]-->
+
+<title>Digital Shopping Mall</title>
+<style type="text/css">
+
+.act_list_ul .item_detail img{ margin-right:10px}
+.ereader_cate{padding:0 8px 5px 12px}
+.ereader_cate h4{ font-size:12px; height:22px}
+.ereader_cate_div{padding:0 0 12px 0; color:#cccccc; line-height:1.8em}
+.ereader_cate_div_tit{ height:22px; margin-top:12px; padding-right:10px}
+.ereader_rec li{ height:136px; margin:15px 0 }
+.ereader_rec img{ float:left; margin-right:12px; width:102px; height:136px;}
+.ereader_rec div{ float:left;}
+.ereader_rec p{ line-height:20px}
+.ereader_rec span{ font-weight:bold}
+.fl_348{ float:left; width:348px}
+.fr_348{ float:right; width:348px}
+.ereader_rec_cate{ height:160px; padding-top:8px}
+.ereader_rec_cate li{ float:left; width:160px; height:160px; text-align:center;}
+.ereader_rec_cate img{ width:90px; height:120px; margin-bottom:5px}
+.ereader_column{ padding:8px 0 0 8px}
+.ereader_column div{ height:110px; margin-bottom:8px; overflow:hidden}
+.ereader_column img{ width:75px; height:100px; float:left; margin-right:10px}
+.ereader_column h3{ height:22px;}
+.ereader_column p{ line-height:1.8em}
+.ereader_column ul{padding-bottom:22px}
+.ereader_column li{white-space:nowrap; width:320px; overflow:hidden; height:22px; line-height:22px; }
+.ereader_column li a{ margin-right:5px}
+
+.desP{word-break:break-all; white-space:normal; width:285px;}</style>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                        <!--<li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html" >Music</a></li>
+                    <li><a href="Video.html" >Video</a></li>
+					<li><a href="Ereading.html" class="focus">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html" >Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+    	<div class="sub_nav">
+ 
+            <div class="nofloat"></div>
+        </div>
+        <div class="ad_banner"><img src="images/ereader_ad.jpg" width="979" alt="" /></div>
+		<div id="leftColumn">
+			<div class="circle_yellow" style="float:left; width:260px">
+                <div class="circle_yellow_top">
+                    <div class="circle_yellow_top_left"></div>
+                    <div class="circle_yellow_top_right"></div>
+                </div>
+                <div class="circle_yellow_center">
+                    <div class="circle_yellow_center_bg">
+                        <div class="normal_title"><h1>Category</h1></div>
+                        <div class="act_list ereader_cate" style="height:320px;">
+							<h4>Books</h4>
+							<div><a href="Ereading_list.html">Romance</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Humor</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Martial Arts</a><br /><a href="#">Education</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Hot</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Games</a><br /><a href="#">Social</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Learning</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Sports</a><br /><a href="#">Fashion</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Life</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Literature</a></div>
+							
+							<div class="ereader_cate_div_tit"><h4 class="fl">Newspapers</h4><a href="Newspaper_list.html" class="fr"><img src="images/icon_hot.gif" class="icon_hot" align="absmiddle" > All <img src="images/icon_arrow_1.gif" /></a></div>
+							<ul class="act_list_ul list_point">
+								<li><a href="Newspaper_details.html">LE PAIS <img src="images/icon_hot.gif" class="icon_hot" style="padding:5px 0" align="absmiddle" ></a></li>
+								<li><a href="#">La Vanguarda</a></li>
+								<li><a href="#">Beijing Daily</a></li>
+								<li><a href="#">a Grather dello sport</a></li>
+								<li><a href="#">Global News</a></li>
+								<li><a href="#">L'Essor Sarladais</a></li>
+								<li><a href="#">Fa Zhi Ri Bao</a></li>
+							 </ul>
+							<!--<h4>Magazine</h4>
+							<div><a href="#">Sports</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Life</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Fashion</a><br /><a href="#">Literature</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Games</a></div>-->
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="circle_yellow_bottom">
+                    <div class="circle_yellow_bottom_left"></div>
+                    <div class="circle_yellow_bottom_right"></div>
+                </div>
+            </div>
+			<div class="circle_corner_box" style="width:436px; float:right">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:432px;">
+					<div class="normal_title"><h1>Recommends</h1></div>
+					<div class="act_list">
+						<ul class="act_list_ul ereader_rec">
+							<li><a href="Ereading_details.html"><img src="images/The Orange Fairy Book.jpg" alt="" /></a>
+								<div><p><span>Category: book-</span><a href="#">Romance</a></p><p><span>Name: </span><a href="Ereading_details.html">《The Orange Fairy Book》</a></p><p><span>Author: </span>Andrew Lang</p><p class="desP"><span>Description: </span>In this volume there are stories from the natives of Rhodesia, collected by Mr. Fairbridge</p>
+								</div></li>
+							<li><a href="#"><img src="images/The Life and Adventures of Santa Claus.jpg" alt="" /></a>
+								<div><p><span>Category: book-</span><a href="#">Romance</a></p><p><span>Name: </span><a href="#">《The Life  of Santa Claus》</a></p><p><span>Author: </span>Lyman Frank Baum</p><p class="desP"><span>Description: </span>Draw close to the fire, all you who believe in the spirit of Christmas, whether you call it Santa Claus, or simply good will to men</p>
+								</div></li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn"  onclick="location.href='Ereading_list.html'"/>
+			</div>
+			<div  style="clear:both;"></div>
+			<div class="circle_corner_box fl_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Books Recommended</h1></div>
+					<div class="act_list">
+						<ul class="ereader_rec_cate">
+							<li><a href="#"><img src="images/Aladdin and the Magic Lamp.jpg" alt="" /></a>
+								<p><a href="#">《Aladdin and the Magic Lamp》</a></p></li>
+							<li><a href="#"><img src="images/Operation Haystack.jpg" alt="" /></a>
+								<p><a href="#">《Operation Haystack》</a></p></li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+			<div class="circle_corner_box fr_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Magazines Recommended</h1></div>
+					<div class="act_list">
+						<ul class="ereader_rec_cate">
+							<li><a href="#"><img src="images/Beauty and The Beast.jpg" alt="" /></a>
+								<p><a href="#">《Beauty and The Beast》</a></p></li>
+							<li><a href="#"><img src="images/The Green Fairy Book.jpg" alt="" /></a>
+								<p><a href="#">《The Green Fairy Book》</a></p></li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+			<div class="circle_corner_box fl_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Books of Military</h1></div>
+					<div class="act_list ereader_column">
+						<div><a href="#"><img src="images/The Time Machine.jpg" alt="" /></a>
+							 <h3><a href="#">《The Time Machine》</a></h3>
+							 <p>by <a  href="#"style="color:#DD9000;">Herbert George Wells</a></p>
+							 <p>Published in 1908</p>
+							 <p>Language: English</p>
+						</div>
+						<ul>
+							<li><a href="#"></a><a href="#" >《Cinderella》</a> Author: <span style="color:#DD9000;">Hewet</span>   </li>
+							<li><a href="#"></a><a href="#">《All Cats Are Gray》</a> Author: <span style="color:#DD9000;">Norton</span>   </li>
+							<li><a href="#"></a><a href="#">《Memoirs of Sherlock Holmes》</a> Author: <span style="color:#DD9000;">Doyle</span>    </li>
+							<li><a href="#"></a><a href="#">《Soldiers Three》</a> Author: <span style="color:#DD9000;">Kipling</span>  </li>
+							<li><a href="#"></a><a href="#">《Flappers and Philosophers》</a> Author:<span style="color:#DD9000;">Fitzgerald</span> </li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+			<div class="circle_corner_box fr_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Books of Games</h1></div>
+					<div class="act_list ereader_column">
+						<div><a href="#"><img src="images/Around the World in 80 Days.jpg" alt="" /></a>
+							 <h3><a href="#">《Around the World in 80 Days》</a></h3>
+							 <p>by <a  href="#"style="color:#DD9000;">Jules Verne</a></p>
+							 <p>Published in 1925</p>
+							 <p>Language: English</p>
+						</div>
+						<ul>
+							<li><a href="#"></a><a href="#" >《A Kidnapped Santa Claus》</a> Author: <span style="color:#DD9000;">Baum</span>   </li>
+							<li><a href="#"></a><a href="#">《The Pink Fairy Book》</a> Author: <span style="color:#DD9000;">Lang</span>   </li>
+							<li><a href="#"></a><a href="#">《Brother Jacob》</a> Author: <span style="color:#DD9000;">Eliot</span>    </li>
+							<li><a href="#"></a><a href="#">《Dracula's Guest》</a> Author: <span style="color:#DD9000;">Stoker</span>  </li>
+							<li><a href="#"></a><a href="#">《Jungle Tales of Tarzan》</a> Author:<span style="color:#DD9000;">Burroughs</span> </li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+			<div class="circle_corner_box fl_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Books of Humor</h1></div>
+					<div class="act_list ereader_column">
+						<div><a href="#"><img src="images/The Master of Ballantrae.jpg" alt="" /></a>
+							 <h3><a href="#">《The Master of Ballantrae》</a></h3>
+							 <p>by <a  href="#"style="color:#DD9000;">Robert Louis Stevenson</a></p>
+							 <p>Published in 1988</p>
+							 <p>Language: English</p>
+						</div>
+						<ul>
+								<li><a href="#"></a><a href="#" >《Colonel Chabert》</a> Author: <span style="color:#DD9000;">Balzac</span>   </li>
+							<li><a href="#"></a><a href="#">《Gulliver's Travels》</a> Author: <span style="color:#DD9000;">Swift</span>   </li>
+							<li><a href="#"></a><a href="#">《The Monster Men》</a> Author: <span style="color:#DD9000;">Burroughs</span>    </li>
+							<li><a href="#"></a><a href="#">《Twenty Years After》</a> Author: <span style="color:#DD9000;">Dumas</span>  </li>
+							<li><a href="#"></a><a href="#">《Flatland》</a> Author:<span style="color:#DD9000;">Abbott</span> </li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+			<div class="circle_corner_box fr_348">
+				<div class="circle_corner_top">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<div class="circle_corner_center" style="width:345px;">
+					<div class="normal_title"><h1>Books of Education</h1></div>
+					<div class="act_list ereader_column">
+						<div><a href="#"><img src="images/Treasure Island.jpg" alt="" /></a>
+							 <h3><a href="#">《Treasure Island》</a></h3>
+							 <p>by <a  href="#"style="color:#DD9000;">Robert Louis Stevenson</a></p>
+							 <p>Published in 1936</p>
+							 <p>Language: English</p>
+						</div>
+						<ul>
+							<li><a href="#"></a><a href="#" >《Skylark Three》</a> Author: <span style="color:#DD9000;">Smith</span>   </li>
+							<li><a href="#"></a><a href="#">《The Last Man》</a> Author: <span style="color:#DD9000;">Shelley</span>   </li>
+							<li><a href="#"></a><a href="#">《Key Out of Time》</a> Author: <span style="color:#DD9000;">Norton</span>    </li>
+							<li><a href="#"></a><a href="#">《Robur the Conqueror》</a> Author: <span style="color:#DD9000;">Verne</span>  </li>
+							<li><a href="#"></a><a href="#">《The Skylark of Space》</a> Author:<span style="color:#DD9000;">Smith</a></span> </li>
+						 </ul>
+					</div>
+				</div>
+				<div class="circle_corner_bottom">
+					<div class="circle_corner_left"></div>
+					<div class="circle_corner_right"></div>
+				</div>
+				<input type="button" value="More" class="more_btn" />
+			</div>
+			
+		</div>
+		<div id="rightColumn">
+			<div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style="width:280px;">
+                        <div class="normal_title"><h1>Top Download</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul" id="actDownload">
+                                <li id="itemSimple_31" style="display: none;" onmouseover="showDetail(this,'actDownload');"><span class="fl">1.《White Fang》</span><span class="fr normalgrey">12345</span><div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_31" style="display: block;">
+                                    <a href="#"><img src="images/White Fang.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《White Fang》</a>
+                                        <p class="fs11">
+                                           Author: Jack London<br />Downloads:<span class="greenblue">12345</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_32" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">2.《Facing the Flag》</span><span class="fr normalgrey">11345</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_32" style="display: none;">
+                                    <a href="#"><img src="images/Facing the Flag.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Facing the Flag》</a>
+                                        <p class="fs11">Author:Jules Verne<br />Downloads:<span class="greenblue">11345</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_33" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">3.《Louise de la Valliere》 </span><span class="fr normalgrey">9712</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_33" style="display: none;">
+                                   <a href="#"> <img src="images/Louise de la Valliere.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Louise de la Valliere》</a>
+                                        <p class="fs11">Author: Alexandre Dumas<br />Downloads:<span class="greenblue">9712</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_34" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">4.《The Return of Tarzan》</span><span class="fr normalgrey">8654</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_34" style="display: none;">
+                                   <a href="#"> <img src="images/The Return of Tarzan.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Return of Tarzan》</a>
+                                        <p class="fs11">Author:Edgar Rice Burroughs<br />Downloads:<span class="greenblue">8654</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_35" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">5.《Three Short Works》 </span><span class="fr normalgrey">7015</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_35" style="display: none;">
+                                  <a href="#">  <img src="images/Three Short Works.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Three Short Works》</a>
+                                        <p class="fs11">Author:Gustave Flaubert<br />Downloads:<span class="greenblue">7015</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_36" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">6.《The Violet Fairy Book》 </span><span class="fr normalgrey">6945</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_36" style="display: none;">
+                                    <a href="#"><img src="images/The Violet Fairy Book.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Violet Fairy Book》</a>
+                                        <p class="fs11">Author: Andrew Lang<br />Downloads:<span class="greenblue">6945</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_37" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">7.《A Tale of Two Cities》 </span><span class="fr normalgrey">5645</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_37" style="display: none;">
+                                   <a href="#"> <img src="images/A Tale of Two Cities.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《A Tale of Two Cities》</a>
+                                        <p class="fs11">Author:Charles Dickens<br />Downloads:<span class="greenblue">5645</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_38" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">8.《Out on the Pampas》 </span><span class="fr normalgrey">3056</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_38" style="display: none;">
+                                   <a href="#"> <img src="images/Out on the Pampas.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Out on the Pampas》</a>
+                                        <p class="fs11">Author:George Alfred Henty<br />Downloads:<span class="greenblue">3056</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_39" style="display: block;" onmouseover="showDetail(this,'actDownload');"><span class="fl">9.《Kidnapped》 </span><span class="fr normalgrey">2248</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_39" style="display: none;">
+                                   <a href="#"> <img src="images/Kidnapped.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Kidnapped》 </a>
+                                        <p class="fs11">Author:Robert Louis Stevenson<br />Downloads:<span class="greenblue">2248</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn" />
+                </div>
+			
+			<div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style="width:280px;">
+                        <div class="normal_title"><h1>Top Subscription</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul" id="actOrder">
+                                <li id="itemSimple_41" style="display: none;" onmouseover="showDetail(this,'actOrder');"><span class="fl">1.《The Adventures Of Ulysses》</span><span class="fr normalgrey">10345</span><div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_41" style="display: block;">
+                                    <a href="#"><img src="images/The Adventures Of Ulysses.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Adventures Of Ulysses》</a>
+                                        <p class="fs11">
+                                           Author:Charles Lamb<br />Subscribers:<span class="greenblue">10345</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_42" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">2.《At the Earth's Core》</span><span class="fr normalgrey">10062</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_42" style="display: none;">
+                                    <a href="#"><img src="images/At the Earth's Core.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《At the Earth's Core》</a>
+                                        <p class="fs11">Author:Edgar Rice Burroughs<br />Subscribers:<span class="greenblue">10062</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_43" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">3.《A Connecticut Yankee》 </span><span class="fr normalgrey">9712</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_43" style="display: none;">
+                                   <a href="#"> <img src="images/A Connecticut Yankee.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《A Connecticut Yankee》</a>
+                                        <p class="fs11">Author:Mark Twain<br />Subscribers:<span class="greenblue">9712</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_44" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">4.《The Pink Fairy Book》</span><span class="fr normalgrey">8654</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_44" style="display: none;">
+                                   <a href="#"> <img src="images/The Pink Fairy Book.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Pink Fairy Book》</a>
+                                        <p class="fs11">Author:Andrew Lang<br />Subscribers:<span class="greenblue">8654</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_45" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">5.《The War of the Worlds》 </span><span class="fr normalgrey">6015</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_45" style="display: none;">
+                                  <a href="#">  <img src="images/The War of the Worlds.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The War of the Worlds》</a>
+                                        <p class="fs11">Author:Herbert George Wells<br />Subscribers:<span class="greenblue">6015</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_46" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">6.《The Mysterious Island》 </span><span class="fr normalgrey">5345</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_46" style="display: none;">
+                                    <a href="#"><img src="images/The Mysterious Island.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Mysterious Island》</a>
+                                        <p class="fs11">Author:Jules Verne<br />Subscribers:<span class="greenblue">5345</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_47" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">7.《Micromegas》 </span><span class="fr normalgrey">3645</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_47" style="display: none;">
+                                   <a href="#"> <img src="images/Micromegas.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Micromegas》</a>
+                                        <p class="fs11">Author:Voltaire<br />Subscribers:<span class="greenblue">3645</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_48" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">8.《The Brown Fairy Book》 </span><span class="fr normalgrey">2256</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_48" style="display: none;">
+                                   <a href="#"> <img src="images/The Brown Fairy Book.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Brown Fairy Book》</a>
+                                        <p class="fs11">Author:Andrew Lang<br />Subscribers:<span class="greenblue">2256</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_49" style="display: block;" onmouseover="showDetail(this,'actOrder');"><span class="fl">9.《Grimms' Fairy Tales》 </span><span class="fr normalgrey">2208</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_49" style="display: none;">
+                                   <a href="#"> <img src="images/Grimms' Fairy Tales.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Grimms' Fairy Tales》 </a>
+                                        <p class="fs11">Author:Brothers Grimm<br />Subscribers:<span class="greenblue">2208</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn" />
+                </div>
+			
+			<div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style="width:280px;">
+                        <div class="normal_title"><h1>Top Click</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul" id="actClick">
+                                <li id="itemSimple_51" style="display: none;" onmouseover="showDetail(this,'actClick');"><span class="fl">1.《Grimm's Household Tales1》</span><span class="fr normalgrey">10045</span><div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_51" style="display: block;">
+                                    <a href="#"><img src="images/Grimm's Household Tales.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Grimm's Household Tales》</a>
+                                        <p class="fs11">
+                                           Author: Brothers Grimm<br />Clicks:<span class="greenblue">10045</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_52" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">2.《The Pied Piper of Hamelin》</span><span class="fr normalgrey">9562</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_52" style="display: none;">
+                                    <a href="#"><img src="images/The Pied Piper of Hamelin.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Pied Piper of Hamelin》</a>
+                                        <p class="fs11">Author: Robert Browning<br />Clicks:<span class="greenblue">9562</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_53" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">3.《A House of Pomegranates》 </span><span class="fr normalgrey">8012</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_53" style="display: none;">
+                                   <a href="#"> <img src="images/A House of Pomegranates.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《A House of Pomegranates》</a>
+                                        <p class="fs11">Author: Oscar Wilde<br />Clicks:<span class="greenblue">8012</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_54" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">4.《The Olive Fairy Book》</span><span class="fr normalgrey">7654</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_54" style="display: none;">
+                                   <a href="#"> <img src="images/The Olive Fairy Book.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Olive Fairy Book》</a>
+                                        <p class="fs11">Author:Andrew Lang<br />Clicks:<span class="greenblue">7654</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_55" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">5.《Dream Days》 </span><span class="fr normalgrey">6715</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_55" style="display: none;">
+                                  <a href="#">  <img src="images/Dream Days.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Dream Days》</a>
+                                        <p class="fs11">Author:Kenneth Grahame<br />Clicks:<span class="greenblue">6715</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_56" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">6.《Ralestone Luck》 </span><span class="fr normalgrey">5345</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_56" style="display: none;">
+                                    <a href="#"><img src="images/Ralestone Luck.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Ralestone Luck》</a>
+                                        <p class="fs11">Author:Andre Alice Norton<br />Clicks:<span class="greenblue">5345</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_57" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">7.《William Tell Told Again》 </span><span class="fr normalgrey">4645</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_57" style="display: none;">
+                                   <a href="#"> <img src="images/William Tell Told Again.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《William Tell Told Again》</a>
+                                        <p class="fs11">Author:Pelham Grenville<br />Clicks:<span class="greenblue">4645</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_58" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">8.《Anne Of The Island》 </span><span class="fr normalgrey">3456</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_58" style="display: none;">
+                                   <a href="#"> <img src="images/Anne Of The Island.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Anne Of The Island》</a>
+                                        <p class="fs11">Author:Lucy Maud Montgomery<br />Clicks:<span class="greenblue">3456</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_59" style="display: block;" onmouseover="showDetail(this,'actClick');"><span class="fl">9.《Moll Flanders》 </span><span class="fr normalgrey">3248</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_59" style="display: none;">
+                                   <a href="#"> <img src="images/Moll Flanders.jpg" width="45" height="60" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Moll Flanders》 </a>
+                                        <p class="fs11">Author:Daniel Defoe<br />Clicks:<span class="greenblue">3248</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn" />
+                </div>
+			
+			<div class="ad_banner"><img src="images/ereader_ad_rb.gif" width="279" alt="" /></div>
+		</div>
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+<!--<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+ <script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/downList.js"></script>-->
+
+ <script type="text/javascript" src="" id="JqueryJs"></script>   
+<script type="text/javascript" src="" id="mainJs"></script>   
+<script type="text/javascript" src="" id="downListJs"></script>   
+
+<script type="text/javascript">
+ //时间间隔变量
+   var separated = 1000;
+   //延迟加载Js   
+   setTimeout(function(){
+       document.getElementById('JqueryJs').src="js/jquery-1.3.2.min.js";
+	   document.getElementById('mainJs').src="js/main.js";
+	   document.getElementById('downListJs').src="js/downList.js";
+	 },separated)   
+</script>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>

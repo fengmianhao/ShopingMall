@@ -1,0 +1,40 @@
+<chart palette='1' caption='Please estimate product sales for 2010' subcaption='' showvalues='0' xAxisName='Year' yAxisName='Units' restoreBtnBorderColor='A2A3A0' formBtnBorderColor='A2A3A0' canvasPadding='20' dragBorderColor='666666' dragBorderThickness='3' formAction='DataHandler.html' >
+	<categories>
+		<category name='7 (Actuals)' />
+		<category name='8 (Actuals)' />
+		<category name='9(Predicted)' />
+		<category name='10 (Predicted)' />
+		<category name='11(Predicted)' />
+	</categories>
+	<dataset id='IJ' seriesName='Game' dragBorderColor='0099FF'>
+		<set id='IJ7' value='25601' allowDrag='0'/>
+		<set id='IJ8' value='20148' allowDrag='0'/>
+		<set id='IJ9' value='17372' dashed='1'/>
+		<set id='IJ10' value='35407' dashed='1'/>
+		<set id='IJ11' value='38105' dashed='1'/>
+	</dataset>
+	<dataset id='LJ' seriesName='Video' showValues='0' dragBorderColor='CC9900'>
+		<set id='LJ7' value='57401' allowDrag='0'/>
+		<set id='LJ8' value='41941' allowDrag='0'/>
+		<set id='LJ9' value='45263' dashed='1'/>
+		<set id='LJ10' value='117320' dashed='1'/>
+		<set id='LJ11' value='114845' dashed='1'/>
+	</dataset>
+	<dataset id='CR' seriesName='Music' showValues='0' dragBorderColor='D1E78F'>
+		<set id='CR7' value='45000' allowDrag='0'/>
+		<set id='CR8' value='35835' allowDrag='0'/>
+		<set id='CR9' value='20722' dashed='1'/>
+		<set id='CR10' value='77557' dashed='1'/>
+		<set id='CR11' value='92633' dashed='1'/>
+	</dataset>
+	<styles>
+		<definition>
+			<style name="myCaptionFont" type="font" font="Arial" size="14" bold="1" /> 
+			<style name="mySubCaptionFont" type="font" font="Arial" size="10" bold="0" /> 
+		</definition>
+		<application>
+			<apply toObject="Caption" styles="myCaptionFont" /> 
+			<apply toObject="SubCaption" styles="mySubCaptionFont" /> 
+		</application>
+	</styles>
+</chart> 

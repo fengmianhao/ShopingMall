@@ -1,0 +1,7 @@
+<chart bgColor='FFFFF' bgAlpha='0' showBorder='0' numberSuffix='%' >
+  <set label="Jazz" value="20" /> 
+  <set label="Rock" value="25" /> 
+  <set label="Blue" value="10" /> 
+  <set label="RAP" value="20" /> 
+  <set label="POP Slow" value="25"  /> 
+ </chart>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://192.168.10.10:18080/simplecms/contentAction.do?method=listContents -->
+<HTML><HEAD><TITLE>Content</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="css/cds.css" type=text/css rel=stylesheet>
+<script type="text/javascript" src="css/jquery-1.3.2.min.js"></script>
+<SCRIPT type=text/javascript> 
+
+//go to add Content page
+function addContent()
+{
+    this.location.href = "/simplecms/contentAction.do?method=preCreateContent";
+}
+
+//delete content
+function deleteContent(contentID)
+{
+    if(confirm("are you sure to delete the content?")) 
+    {
+        this.location.href = "/simplecms/contentAction.do?method=deleteContent&contentID=" + contentID;
+    }
+}
+
+//reset form
+function resetForm()
+{
+	document.getElementById("contentName").value = "";
+    document.getElementById("contentType").value = ""; 
+}
+
+//给题头的checkbox增加事件
+$(function(){
+		   $("#headCheckBox").click(function(){
+			   if($(this).attr("checked")){
+				$("#CMS_table").find("input[type=checkbox]").attr("checked",true);	
+				}else{
+				$("#CMS_table").find("input[type=checkbox]").removeAttr("checked");	
+					}								 
+			});	   
+		   
+});
+
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2912" name=GENERATOR></HEAD>
+<BODY class=body_space>
+<div style="padding:70px 0 0 150px"><img src="images/success.jpg" align="absmiddle"><span style="font-weight:bold; margin-left:10px">Synchronization is complete</span><p><a href="contentAction.htm" id="closeWina">Back to List &gt;&gt;</a></p></div>
+</BODY></HTML>

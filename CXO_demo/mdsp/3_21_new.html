@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/login.css" type="text/css" rel="stylesheet" />
+<title>MDMC</title>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+<!--
+ // *** Writer Cookies ***
+function writeCookie(name, value) { 
+	exp = new Date(); 
+	exp.setTime(exp.getTime() + (86400 * 1000 * 30));
+	document.cookie = name + "=" + escape(value) + "; expires=" + exp.toGMTString() + "; path=/"; 
+}
+ $(function(){
+	   //点击Login之后就开始存cookie
+	  $('#login_btn').click(function(){
+			writeCookie('money_unit',$('#money_sel').val());
+			});
+  });
+
+
+
+ //-->
+ 
+ 
+ 
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="center" valign="middle">
+			<table width="602" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="10" height="10" nowrap><img src="images/leftTop.gif" width="10" height="10" /></td>
+								<td height="10" class="topbg"></td>
+								<td width="10" height="10" nowrap><img src="images/rightTop.gif" width="10" height="10" /></td>
+							</tr>
+							<tr>
+								<td width="10" nowrap class="leftbg">&nbsp;</td>
+								<td><img src="images/login.jpg" width="583" height="98" /></td>
+								<td width="10" nowrap class="rightbg">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="10" nowrap class="leftbg">&nbsp;</td>
+								<td class="captionBox"><span class="caption">Admin login </span></td>
+								<td width="10" nowrap class="rightbg">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="10" nowrap class="leftbg">&nbsp;</td>
+								<td class="formDiv">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="90" height="20" nowrap>&nbsp;</td>
+											<td colspan="2">&nbsp;</td>
+</tr>
+										<tr>
+											<td width="90" height="30" nowrap>User Name:</td>
+										<td width="250"><input type="text" class="textInput w240" id="account" value="Admin Manager001" /></td>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="90" height="30" nowrap>Password:</td>
+											<td width="250"><input type="password" class="textInput w240" value="*********" /></td>
+											<td>&nbsp;</td>
+										</tr>
+
+										<tr>
+											<td width="90" height="30" nowrap>Validate Code:</td>
+											<td width="250"><input type="text" class="textInput w70 fl" value="K6Ug"  /> <img src="images/vcode.gif" width="61" height="17" class="vcode" /></td>
+											<td><a href="#">Refresh</a></td>
+										</tr>
+										<tr>
+											<td height="40">&nbsp;</td>
+											<td align="left" valign="bottom" class="btnBox"><input type="button" value="Login" class="btn110" onMouseOver="this.className='btn110o'" onMouseOut="this.className='btn110'" onClick="location.href='3_22_new.html'"  id="login_btn"/> 
+<input type="reset" value="Reset" class="btn110" onMouseOver="this.className='btn110o'" onMouseOut="this.className='btn110'" /></td>
+											<td>&nbsp;</td>
+										</tr>
+								</table>
+								</td>
+								<td width="10" nowrap class="rightbg">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="10" height="10" nowrap><img src="images/leftBottom.gif" width="10" height="10" /></td>
+								<td height="10" nowrap class="bottombg"></td>
+								<td width="10" height="10" nowrap><img src="images/rightBottom.gif" width="10" height="10" /></td>
+							</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="20" align="right" class="pr6">Company SDP</td>
+				</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+<script>
+document.getElementById("account").focus();
+</script>

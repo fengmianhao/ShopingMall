@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="js/source/tree_component.js"></script>
+
+<!--FusionCharts-->
+<script type="text/javascript" src="FusionCharts/FusionCharts.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center ,.list_item_help ,.Qlink_list ,.Qlink_ico');
+</script>
+<![endif]-->
+
+<title>MDSP</title>
+</head>
+<body bgcolor="transparent">
+<div id="top">
+    <div class="top_left"></div>
+    <div class="top_center">
+        <div class="logo"><a href="#"><img src="images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+            <div id="topmenuContainer">
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOn">
+                    <li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                    <li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../service/service.html">Service Innovation</a></li>
+                        <li><a href="3_2.html">Admin(CP/SP)</a></li>                        <li><a href="2_25.html">Admin(Operator)</a></li><li><a href="3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo">Welcome! Manager!</div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+            <ul>
+                <li><a href="4_3_new.html">Target User Management</a></li>
+                <li><a href="4_3.html">Campaign Management </a></li>
+                <li><a href="3_25_new.html">Advertisement Management</a></li>
+                <li><a href="3_28.html">CP/SP Management </a></li>
+                <li><a href="4_9.html">Promotion</a></li>
+                <li><a href="5_10.html">Portal Management</a></li> 
+				 <li><a href="adapter/adapter1.html">Network Abstraction</a></li> 
+				</ul>
+        </div>
+    </div><a href="2_26.html" class="fun">Home</a> >> <a href="#" class="fun">Campaign</a> >> <span class="currentPage">Web/WAP Campaign</span></div>
+<!--展开左侧栏按钮-->
+<div class="leftbar">
+    <div id="leftBarhide" class="leftbar_hide_normal" onmouseover="this.className='leftbar_hide_over';" onmouseout="this.className='leftbar_hide_normal'" onclick="showhideLeftColumn('show');" style="display:none;position: absolute;">
+        <div class="leftbar_top"></div>
+        <div class="leftbar_bottom"></div>
+    </div>
+</div>
+<div id="mainContainer">
+    <div id="rightColumn">
+        <div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+                  <a href="4_9.html" style="float:right; padding:10px 10px 0 0" class="fun"><img src="images/icon_tools_back.png" align="absmiddle"/> Back to list</a>
+
+                   	<div class="title_text">Promotion</div>
+                    
+                    <div style="margin:40px 0 0 -5px; border:1px solid #ccc; width:600px;">
+                        <div style=" background:#f2f2f2; padding:10px 0 10px 30px;position:relative; z-index:4000; ">
+                            <table width="550" border="0" cellspacing="0" cellpadding="0" style="margin:10px auto;">
+                              <tr>
+                                <td width="80">Category:</td>
+                                <td width="130"><select style="width:120px;" id="ChangeReport">
+                                		<option value="Video">All</option>
+                                        <option value="Music">Music </option>
+                                        <option value="Game">Game</option>
+                                    </select></td>
+                                <td width="70">Date:</td>
+                                <td width="130"><select style="width:120px;" id="dateSel">
+                                		<option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                    </select></td>
+                                <td width="70">Type:</td>
+                                <td>
+                                     <select style="width:120px;" id="typeSel">
+                                		<option value="Column">Column</option>
+                                        <option value="Pie">Pie</option>
+                                    </select></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <div id="chartdiv" style=" position:relative; z-index:1; top:-18px">
+          
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+    <div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div id="leftBarShow" class="leftbar_show_normal" onmouseover="this.className='leftbar_show_over';" onmouseout="this.className='leftbar_show_normal'" onclick="showhideLeftColumn('hide');"></div>
+        	<div class="leftmenu" id="leftMenu">
+            	<ul class="leftmenu_title">
+                	<li class="leftmenu_title_text">Web/WAP Campaign</li>
+                    <li class="leftmenu_title_lnk"></li>
+                </ul>
+                <ul class="leftmenu_list" id="leftmenuList">
+                	<li class="leftmenu_list_item_on" onmousemove="leftmenuOver(this);" onmouseout="leftmenuOut(this)" onclick="leftmenuAct('4_9.html');">Promotion </li>
+                </ul>
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+    <div class="nofloat"></div>
+</div>
+<div id="bottom">Company SDP</div>
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+    <ul>
+        <li><a href="#">Content Management</a></li>
+        <li><a href="#">Content</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Content Management</a></li>
+    </ul>
+    <div class="bottomLink"><a href="#" class="fun">Setting</a></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+    <ul class="nav_menu_items">
+        <li><a href="#">Advertisement</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Advertisement asdfasdfasdfasd </a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+</div>
+<!--主导航二级菜单结束-->
+<!-- 弹出窗口代码开始 -->
+<!-- 1 弹出窗口框架代码-->
+<div id="lightBox" style="display:none;">
+    <div id="lightBoxMask">
+        <iframe id="lightBoxIfra" name="lightBoxIfra" frameborder="0" border="0"></iframe>
+    </div>
+    <div id="lightBoxBg"></div>
+    <div id="lightBoxContainer">
+        <div id="lightBoxHeader">
+            <div id="lightBoxHeaderLeft">
+                <div id="popwinTitle">Title</div>
+                <img src="images/space.gif" width="16" height="37" border="0" /></div>
+            <div id="lightBoxHeaderCenter"><img src="images/space.gif" width="100%" height="37" border="0" /></div>
+            <div id="lightBoxHeaderRight">
+                <div id="popwinTools">
+                    <div class="popwin_icon_close"><img src="images/icon_closewin.gif" width="19" height="19" border="0" onclick="lightBoxOff();" /></div>
+                </div>
+                <img src="images/space.gif" width="16" height="37" border="0" /></div>
+        </div>
+        <div id="lightBoxBody">
+            <div id="lightBoxBodyLeft"><img src="images/space.gif" width="16" height="1" border="0" /></div>
+            <div id="lightBoxBodyCenter"></div>
+            <div id="lightBoxBodyRight"><img src="images/space.gif" width="16" height="1" border="0" /></div>
+        </div>
+        <div id="lightBoxFooter">
+            <div id="lightBoxFooterLeft"><img src="images/space.gif" width="16" height="16" border="0" /></div>
+            <div id="lightBoxFooterCenter"><img src="images/space.gif" width="100%" height="16" border="0" /></div>
+            <div id="lightBoxFooterRight"><img src="images/space.gif" width="16" height="16" border="0" /></div>
+        </div>
+    </div>
+</div>
+<!-- 
+2 弹出窗口Content代码
+  2.1 窗口Content可以是多个
+  2.2 每个Content代码分配一个ID，如:setting
+  2.3 调用lightBoxOn()时传入ContentID，如:lightBoxOn('setting');
+-->
+<div class="setmenu" id="presentPop" style="display: none;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mb10">
+		<tr>
+			<td class="flist_name02">SP Name:</td>
+			<td class="flist_content02" style="width:50%"><input type="text" name="textfield" id="textfield" class="input_text" style="width: 94%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+			<td class="flist_name02">Credit Level:</td>
+			<td class="flist_content02" style="width:50%"><input type="text" name="textfield1" id="textfield1" class="input_text" style="width: 94%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+			<td>
+				<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="width: 82px;">
+					<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+					<li class="btn_center_normal">Query</li>
+					<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+					<li class="nofloat"></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="dlist_table" id="dlistTablePop">
+			<tr class="dlist_header">
+				<td width="5%">&nbsp;</td>
+				<td width="20%">SP ID</td>
+				<td width="35%">SP Name</td>
+				<td width="40%">SP Description</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1001</td>
+				<td>Content展示</td>
+				<td>Web, WAP2.0, WAP1.X</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1002</td>
+				<td>排行榜</td>
+				<td>Web</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1003</td>
+				<td>search</td>
+				<td>WAP2.0, WAP1.X</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1004</td>
+				<td>Advertisement</td>
+				<td>WAP2.0</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1005</td>
+				<td>Content展示</td>
+				<td>Web, WAP2.0, WAP1.X</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1006</td>
+				<td>排行榜</td>
+				<td>Web</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1007</td>
+				<td>search</td>
+				<td>WAP2.0, WAP1.X</td>
+			</tr>
+			<tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+				<td><input type="radio" name="radio2" id="radio2" onclick="listTrOnRadio(this,'dlistTablePop');" /></td>
+				<td>1008</td>
+				<td>Advertisement</td>
+				<td>WAP2.0</td>
+			</tr>
+		</table>
+	</div>	
+	<div class="pageinfo">
+		<ul>
+			<li>
+				<select name="select3" id="select3">
+					<option>8</option>
+					<option>15</option>
+					<option>20</option>
+				</select>
+			</li>
+			<li>Per Page</li>
+			<li class="pageinfo_padding"><strong>Total:</strong> 2841</li>
+			<li class="pageinfo_padding"><strong>Page:</strong> 1/285</li>
+			<li class="pageinfo_padding"><a href="#" class="fun">First</a><a href="#" class="fun">Previous</a><a href="#" class="fun">Next</a><a href="#" class="fun">Last</a></li>
+			<li class="pageinfo_padding">Go to page</li>
+			<li>
+				<select name="select3" id="select4">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+			</li>
+		</ul>
+		<div class="nofloat"></div>
+	</div>
+	<div class="btn_group">
+        <div class="btn_group_aligncenter" style="width:220px;">
+            <ul onclick="lightBoxOff();" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div">
+                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                <li class="btn_center_normal" style="width:70px;">Cancel</li>
+                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+            </ul>
+            <ul onclick="btnAct(0);lightBoxOff();" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div">
+                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                <li class="btn_center_normal" style="width:70px;">OK</li>
+                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+            </ul>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+</div>
+<!-- 弹出窗口代码结束 -->
+</body>
+<script>
+getRightHeight();
+$(function(){
+		       //点击del Icon就Delete一行
+   $(".delImgCls").live("click",function(){
+			 $(this).parent().parent().remove();							 
+										 });
+		   
+		   });
+</script>
+              <script type="text/javascript">
+						$(function(){
+						   var chart = new FusionCharts("FusionCharts/FCF_MSColumn3D.swf", "ChartId", "600", "350", "0", "0");
+						   chart.setDataURL("FusionCharts/MSColumn3D_Video_July_Column.xml");		   
+						   chart.render("chartdiv");
+						   //对第一个下拉框进行的事件
+						    $("#ChangeReport").change(doit_sel);
+							$("#dateSel").change(doit_sel2);
+							$("#typeSel").change(doit_sel3);
+							
+						   })
+						
+						function doit_sel(){
+							if($("#typeSel").val()=='Pie'){
+			             	chart = new FusionCharts("FusionCharts/FCF_Pie3D.swf", "ChartId", "600", "350", "0", "0");								   
+							}else{
+			             	chart = new FusionCharts("FusionCharts/FCF_MSColumn3D.swf", "ChartId", "600", "350", "0", "0");							   
+								}                  
+							
+							if($(this).val()=='Video'){								
+								chart.setDataURL('FusionCharts/MSColumn3D_Video_'+$("#dateSel").val()+'_'+$("#typeSel").val()+'.xml');
+								chart.render("chartdiv");
+							}else if($(this).val()=='Music'){
+								chart.setDataURL('FusionCharts/MSColumn3D_Music_'+$("#dateSel").val()+'_'+$("#typeSel").val()+'.xml');
+								
+								chart.render("chartdiv");
+								
+							}else if($(this).val()=='Game'){
+								chart.setDataURL('FusionCharts/MSColumn3D_Game_'+$("#dateSel").val()+'_'+$("#typeSel").val()+'.xml');
+								chart.render("chartdiv");
+								}
+							}
+							
+							function doit_sel2(){
+							if($("#typeSel").val()=='Pie'){
+			             	chart = new FusionCharts("FusionCharts/FCF_Pie3D.swf", "ChartId", "600", "350", "0", "0");								   
+							}else{
+			             	chart = new FusionCharts("FusionCharts/FCF_MSColumn3D.swf", "ChartId", "600", "350", "0", "0");							   
+							}
+                          	if($(this).val()=='July'){		
+								chart.setDataURL('FusionCharts/MSColumn3D_'+$("#ChangeReport").val()+'_July_'+$("#typeSel").val()+'.xml');
+								chart.render("chartdiv");
+							}else if($(this).val()=='August'){
+								chart.setDataURL('FusionCharts/MSColumn3D_'+$("#ChangeReport").val()+'_August_'+$("#typeSel").val()+'.xml');
+								chart.render("chartdiv");
+								
+							}else if($(this).val()=='September'){
+								chart.setDataURL('FusionCharts/MSColumn3D_'+$("#ChangeReport").val()+'_September_'+$("#typeSel").val()+'.xml');
+								chart.render("chartdiv");
+								}
+							}
+						
+						
+						function doit_sel3(){
+							if($("#typeSel").val()=='Pie'){
+			             	chart = new FusionCharts("FusionCharts/FCF_Pie3D.swf", "ChartId", "600", "350", "0", "0");								   
+							}else{
+			             	chart = new FusionCharts("FusionCharts/FCF_MSColumn3D.swf", "ChartId", "600", "350", "0", "0");							   
+								}                          	if($(this).val()=='Column'){								
+								chart.setDataURL('FusionCharts/MSColumn3D_'+$("#ChangeReport").val()+'_'+$("#dateSel").val()+'_Column.xml');
+								chart.render("chartdiv");
+							}
+							else if($(this).val()=='Pie'){
+								chart.setDataURL('FusionCharts/MSColumn3D_'+$("#ChangeReport").val()+'_'+$("#dateSel").val()+'_Pie.xml');
+								chart.render("chartdiv");
+								}
+							}
+						</script>
+</html>

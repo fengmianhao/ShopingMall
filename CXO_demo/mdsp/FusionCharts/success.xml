@@ -1,0 +1,14 @@
+
+<graph bgcolor='e1f5ff' caption='Decline in Net Interest Margins of Asian Banks (2009-2010)' subCaption='(in Percentage %)' yaxismaxvalue="2" yaxisminvalue='-2.5' yaxisname='Points' xaxisname='Product' hovercapbg='FFFFDD' hovercapborder='000000' numdivlines='4' numberSuffix='%25'> 
+   <set name='WAP PUSH' value='0.33' color='F6BD0F'/> 
+   <set name='Report' value='-0.27' color='FF6600'/> 
+   <set name='MMS' value='0.40' color='8BBA00' alpha='70'/> 
+   <set name='SMS' value='0.6' color='F984A1'/> 
+   <set name='IVR' value='-0.8' color='A66EDD' alpha='70'/>
+   <set name='USSD' value='-1.2' color='B2FF66'/> 
+   <set name='3G' value='0.7' color='AFD8F8'/> 
+<trendlines>
+   <line startvalue='0.8' displayValue='Good' color='FF0000' thickness='1' isTrendZone='0'/>
+   <line startvalue='-0.4' displayValue='Bad' color='009999' thickness='1' isTrendZone='0'/>
+</trendlines>
+</graph>

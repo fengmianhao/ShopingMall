@@ -1,0 +1,7 @@
+<graph showNames='1'  decimalPrecision='0'  >
+    <set name='WAP Push' value='16' />
+    <set name='SMS' value='20' />
+    <set name='MMS' value='22' />
+	 <set name='IVR' value='16' />
+    <set name='USSD' value='26' />
+</graph>

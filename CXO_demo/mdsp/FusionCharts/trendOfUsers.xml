@@ -1,0 +1,35 @@
+<graph caption='Development and Trend of Users' PYAxisName='NormalCount' SYAxisName='LogoutCount'
+ numberPrefix='' showvalues='0'  numDivLines='4' formatNumberScale='0' decimalPrecision='0'
+anchorSides='10' anchorRadius='3' anchorBorderColor='009900'>
+<categories>
+<category name='Mon' />
+<category name='Tue' />
+<category name='Wed' />
+<category name='Thu' />
+<category name='Fri' />
+</categories>
+<dataset seriesName='NormalCount' color='03F8F8' showValues='0'>
+<set value='400' />
+<set value='200' />
+<set value='300' />
+<set value='400' />
+<set value='490' />
+</dataset>
+
+<dataset seriesName='LogoutCount' color='EDDF00' showValues='0'>
+<set value='50' />
+<set value='80' />
+<set value='100' />
+<set value='150' />
+<set value='280' />
+</dataset>
+
+
+<dataset seriesName='Trend of Users' color='FF1100' showValues='0' parentYAxis='S' >
+<set value='250' />
+<set value='120'/>
+<set value='200' />
+<set value='250' />
+<set value='210' />
+</dataset>
+</graph>

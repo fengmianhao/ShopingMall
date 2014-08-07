@@ -1,0 +1,31 @@
+#mall_nav {
+	OVERFLOW: hidden; WIDTH: 983px; POSITION: relative; HEIGHT: 430px; z-index:2
+}
+#mall_nav ul {
+	Z-INDEX: 9999; POSITION: absolute; left:0px; width:150%; top:317px ; margin-left:0;height:83px;
+}
+#mall_nav li {
+	 FLOAT: left;position:relative
+	
+}
+#mall_nav li img {
+	 FILTER: alpha(opacity=100); WIDTH: 146px; CURSOR: pointer;HEIGHT: 83px; moz-opacity: 1;top:0;position:relative
+}
+#frontText {
+	FONT-WEIGHT: 900; FONT-SIZE: 48px; Z-INDEX: 999; LEFT: 50px; WIDTH: 100%; COLOR: #fff; FONT-FAMILY: Verdana; POSITION: absolute; TOP: 125px
+}
+#frontTextBack {
+	FONT-WEIGHT: 900; LEFT: 10px; WIDTH: 500px; COLOR: #b71818; FONT-FAMILY: Verdana; POSITION: absolute; TOP: 120px; background:#b71818; height:135px
+}
+#frontTextSub {
+	FONT-SIZE: 24px; LEFT: 50px; WIDTH: 100%; COLOR: #ffeb9a; FONT-FAMILY: Verdana; POSITION: absolute; TOP: 186px; width:400px
+}
+#mask {
+	Z-INDEX: 990; BACKGROUND:url(../images/mall_ad/shop_index_big_1.jpg) no-repeat; LEFT: 0px; WIDTH:100%; POSITION: absolute; TOP: 0px; HEIGHT: 100%;FILTER: alpha(opacity=0); moz-opacity: 0;opacity:0; z-index:3
+}
+#back {
+	TEXT-ALIGN: center;
+}
+.gray {
+	FILTER: Gray()
+}

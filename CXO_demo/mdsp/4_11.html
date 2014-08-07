@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="js/source/tree_component.js"></script>
+<script type="text/javascript" src="js/jquery.date_input.js"></script><!--日期控件-->
+<link rel="stylesheet" type="text/css" href="js/date_input.css"/>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center ,.list_item_help ,.Qlink_list ,.Qlink_ico');
+</script>
+<![endif]-->
+
+<title>MDSP</title>
+</head>
+<body>
+<div id="top">
+    <div class="top_left"></div>
+    <div class="top_center">
+        <div class="logo"><a href="#"><img src="images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+            <div id="topmenuContainer">
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOn">
+                    <li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                    <li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../service/service.html">Service Innovation</a></li>
+                        <li><a href="3_2.html">Admin(CP/SP)</a></li>                        
+                        <li><a href="2_25.html">Admin(Operator)</a></li><li><a href="3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo"></div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+            <ul>
+                <li><a href="4_3_new.html">Target User Management</a></li>
+                <li><a href="4_3.html">Campaign Management </a></li>
+                <li><a href="3_25_new.html">Advertisement Management</a></li>
+                <li><a href="3_28.html">CP/SP Management </a></li>
+                <li><a href="4_9.html">Promotion</a></li>
+                <li><a href="5_10.html">Portal Management</a></li> 
+				 <li><a href="adapter/adapter1.html">Network Abstraction</a></li> 
+				</ul>
+        </div>
+    </div><a href="2_26.html" class="fun">Home</a> >> <a href="#" class="fun">Promotion</a> >>  <span class="currentPage">Web/WAP Campaign</span></div>
+<!--展开左侧栏按钮-->
+<div class="leftbar">
+    <div id="leftBarhide" class="leftbar_hide_normal" onmouseover="this.className='leftbar_hide_over';" onmouseout="this.className='leftbar_hide_normal'" onclick="showhideLeftColumn('show');" style="display:none;position: absolute;">
+        <div class="leftbar_top"></div>
+        <div class="leftbar_bottom"></div>
+    </div>
+</div>
+<div id="mainContainer">
+    <div id="rightColumn">
+        <div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+                	<div class="title_text">Task Infomation</div>
+                    
+                         <div class="step">
+                        <div class="step_left"></div>
+                        <div class="step_right"></div>
+                        <div class="step_center">
+                            <div class="step_1_normal">
+                                <p></p>
+                               Select Product </div>
+                            <div class="step_2_on">
+                                <p></p>
+                                Select Channel</div>
+                            
+                        </div>
+                    </div>  
+                    
+                     <div>
+                     <table width="60%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="80" height="30">Task Name:</td>
+                        <td><input type="text" value="Christmas promotion activity" style="width:98%;"/></td>
+                      </tr>
+                      <tr id="flistTr18">
+                        <td height="30">Launch Date:</td>
+						<td>
+                            <table border="0" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                    <td width="130" style="padding-right: 35px; border:0">
+                                        <ul class="datechooser">
+                                            <li class="datechooser_input">
+                                                <div class="datachooser_inner"><input type="text" id="my_specific_input1" name="textfield3" value="22/12/2009" onfocus="selectRow(18, this);" onblur="clearSelectRow(18,this);" /></div>
+                                            </li>
+                                            <li class="datechooser_icon " id="dateChooseBegin" ></li>
+                                        </ul>
+                                    </td>
+                                    <td width="80">Expire Date:</td>
+                                    <td width="130">
+                                        <ul class="datechooser">
+                                            <li class="datechooser_input">
+                                                <div class="datachooser_inner"><input type="text" id="my_specific_input2" value="24/05/2010" name="textfield3"  onfocus="selectRow(18, this);" onblur="clearSelectRow(18,this);" /></div>
+                                            </li>
+                                            <li class="datechooser_icon" id="dateChooseEnd"></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="30">Channel:</td>
+                        <td>                     
+                        <table width="380" border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td><input type="radio" name="SMSR" checked="checked"/><strong>WAP Push</strong> </td>
+                                <td><input type="radio" name="SMSR"/><strong>SMS</strong></td>
+                                <td><input type="radio" name="SMSR"/><strong>MMS</strong> </td>
+                                <td> <input type="radio" name="SMSR"/><strong>IVR</strong></td>
+                                <td> <input type="radio" name="SMSR"/><strong>USSD</strong></td>
+                              </tr>
+                            </table>
+                         </td>
+                      </tr>
+                    </table>
+
+                     </div>
+                         <div style="padding:10px 0;font-weight:bold">Target Group:</div>
+                         <div style=" width:589px">
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="flist_name02" width="74" style="padding-left:0">Group Name:</td>
+                                        <td class="flist_content02" style="width:150px"><input type="text" name="textfield" id="textfield" class="input_text" style="width: 90%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+                                        <td class="flist_name02" width="40">Rule:</td>
+                                        <td class="flist_content02" style="width:150px"><input type="text" name="textfield" id="textfield" class="input_text" style="width: 90%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+                                         
+                                        <td width="70">
+                                            <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="width: 65px;">
+                                                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                                <li class="btn_center_normal">Reset</li>
+                                                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                                <li class="nofloat"></li>
+                                            </ul>
+                                        </td>
+                                        <td width="70">
+                                            <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="width: 65px;">
+                                                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                                <li class="btn_center_normal">Query</li>
+                                                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                                <li class="nofloat"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <div style="margin: 10px 0px 0px 0px; height:224px; width:580px; overflow:auto">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dlist_table" id="groupRule" style="width:563px">
+                                <tr class="dlist_header">
+                                    <td width="4%"><input name="" type="checkbox" value="" disabled="disabled" /></td>
+                                    <td width="24%">Group Name</td>
+                                    <td width="60%">User Rules</td>
+                                    <td width="12%">Number</td>
+                                </tr>
+                                 <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" checked="checked" /></td>
+                                    <td>Scarborough Fair  Fans</td>
+                                    <td>Behavior Keyword matches Scarborough Fair  Content<br/> User age between 18 and 32</td>
+                                    <td>2585454</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" checked="checked" /></td>
+                                    <td>Music Fans</td>
+                                    <td>Behavior Keyword matches Music  <br/> User age between 18 and 32</td>
+                                    <td>4545454</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Game Fans</td>
+                                    <td>Behavior Keyword matches Game <br/> User age between 18 and 32</td>
+                                    <td>4545489</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Michael Jackson Fans</td>
+                                    <td>Behavior Keyword matches Michael Jackson‘ Music  <br/> User age between 18 and 32</td>
+                                    <td>8945454</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Sports Fans</td>
+                                    <td>Behavior Keyword matches Sports  <br/> User age more than 16</td>
+                                    <td>5784454</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Pictures Fans</td>
+                                    <td>Behavior Keyword matches Pictures <br/> User age more than 16</td>
+                                    <td>7865454</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>MTV Fans</td>
+                                    <td>Behavior Keyword matches MTV <br/> User age more than 24</td>
+                                    <td>8976554</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>TV Fans</td>
+                                    <td>Behavior Keyword matches TV  <br/> User age more than 24</td>
+                                    <td>4545998</td>
+                                </tr>
+                                <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Game Fans</td>
+                                    <td>Behavior Keyword matches Game <br/> User age between 18 and 32</td>
+                                    <td>4545325</td>
+                                </tr>
+                                       <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                    <td><input name="" type="checkbox" value="" /></td>
+                                    <td>Michael Jackson Fans</td>
+                                    <td>Behavior Keyword matches Michael Jackson‘ Music  <br/> User age between 18 and 32</td>
+                                    <td>8945670</td>
+                                </tr>
+                            </table>
+                            </div>
+                         </div>
+                      <div style="padding:10px 0; font-weight:bold">Message:</div>
+                     <div style="border:#CCC 1px solid; width:540px; height:100px;; padding:6px 10px">
+                    All loyal users can download music at half-price on national holidays
+                     </div>
+                     
+                    </div>
+					
+                    
+                   
+         <div class="btn_group_aligncenter" style="width:400px; padding:15px 0 0 4px">
+         
+            <ul onclick="btnAct(0);location.href='4_12.html'" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="margin-right:10px; float:left">
+                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                <li class="btn_center_normal" style="width:50px;">Send</li>
+                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+            </ul>
+        
+            <ul onclick="location.href='4_10.html'" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="margin-right:10px; float:left">
+                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                <li class="btn_center_normal" style="width:50px;">Back</li>
+               
+                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+            </ul>
+            
+            <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="margin-right:10px; float:left">
+                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                
+                <li class="btn_center_normal" style="width:50px;">Cancel</li>
+                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                
+                
+                
+            </ul>
+            <div class="nofloat"></div>
+        </div>  
+                    
+              
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+    <div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div id="leftBarShow" class="leftbar_show_normal" onmouseover="this.className='leftbar_show_over';" onmouseout="this.className='leftbar_show_normal'" onclick="showhideLeftColumn('hide');"></div>
+        	<div class="leftmenu" id="leftMenu">
+            	<ul class="leftmenu_title">
+                	<li class="leftmenu_title_text">Promotion</li>
+                    <li class="leftmenu_title_lnk"></li>
+                </ul>
+                <ul class="leftmenu_list" id="leftmenuList">
+                	<li class="leftmenu_list_item_on" onmousemove="leftmenuOver(this);" onmouseout="leftmenuOut(this)" > Web/WAP Campaign</li>
+                </ul>
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+    <div class="nofloat"></div>
+</div>
+<div id="bottom">Company SDP</div>
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+    <ul>
+        <li><a href="#">Content Management</a></li>
+        <li><a href="#">Content</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Content Management</a></li>
+    </ul>
+    <div class="bottomLink"><a href="#" class="fun">Setting</a></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+    <ul class="nav_menu_items">
+        <li><a href="#">Advertisement</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Advertisement asdfasdfasdfasd </a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+</div>
+<!--主导航二级菜单结束-->
+
+</body>
+<script>
+getRightHeight();
+$(function(){
+
+    //点击del Icon就Delete一行
+   $(".delImgCls").live("click",function(){
+			 $(this).parent().remove();							 
+										 });
+   
+   //点击add按钮时的事件
+   $("#addItemBut").click(function(){
+		$("#ruleDivCon").append('<li style="height:24px"><a href="###" style="float:right" class="delImgCls fun">Delete</a>'+$("#firstSel").val()+"&nbsp;"+$("#secondSel").val()+"&nbsp;"+$("#theInput").val()+'</li>');				   
+								   });
+   
+               //注册时间控件
+		    registerDate("my_specific_input1","dateChooseBegin");
+		    registerDate("my_specific_input2","dateChooseEnd");	
+	
+			   //给第一个下拉框增加事件
+		   $("#firstSel").change(function(){
+			  if($(this).val()=='Age'){//年龄
+				$("#secondSel").find("option").remove();
+				$("#secondSel").append('<option value=">"> > </option> <option value="="> = </option><option value="<">&nbsp;<&nbsp;</option>');
+				  $("#thirdDivCon").children().remove();
+				   $("#thirdDivCon").append(' <input type="text" value="18" style="width:134px; height:16px"  id="theInput"/>');
+				}else{
+			select2Change();
+					 if($(this).val()=='Account'){//帐号
+					    $("#thirdDivCon").children().remove();
+						$("#thirdDivCon").append('<input type="text" value="86139*" style="width:140px; height:16px"  id="theInput"/>')	
+					 }else if($(this).val()=='Group'){//群组
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="Music">Music</option> <option value="Sport">Sport</option><option value="Shopping">Shopping</option></select>');
+					 }else  if($(this).val()=='Habit'){//爱好
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="News">News</option> <option value="Sport">Sport</option><option value="Music">Music</option></select>');
+					 }else if($(this).val()=='Behavior Keyword'){//行为关键字
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="News">News</option> <option value="Love">Love</option><option value="Music">Music</option></select>');
+					 }else  if($(this).val()=='Gender'){//性别
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="male">male</option> <option value="female">female</option></select>');
+					 }else  if($(this).val()=='Brand'){//品牌
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="Nike">Nike</option> <option value="361">361</option><option value="Lining">Lining</option></select>');
+					 }else if($(this).val()=='Terminal Type'){//终端Type
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="PC">PC</option> <option value="mobile">mobile</option></select>');
+					 } else if($(this).val()=='FullName'){//姓名
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <input type="text" value="filostrato" style="width:140px; height:16px"  id="theInput"/>');
+					 }else  if($(this).val()=='Nationality'){//国家
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="China">China</option> <option value="USA">USA</option><option value="England">England</option></select>');
+					 }else  if($(this).val()=='Occupation'){//职业
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="Programmer">Programmer</option> <option value="Singger">Singger</option><option value="SportsPlayer">SportsPlayer</option></select>');
+					 }else  if($(this).val()=='Language'){//语言
+						  $("#thirdDivCon").children().remove();
+						  $("#thirdDivCon").append(' <select style="width:140px; height:24px" id="theInput" ><option value="Chinese">Chinese</option> <option value="English">English</option><option value="France">France</option></select>');
+					 }			
+		
+		}	
+				
+				
+ });
+
+		   //Delete第2个select框里的东西，加option的value为matches
+		   var select2Change=function(){$("#secondSel").find("option").remove();
+			$("#secondSel").append('<option value="matches">matches</option>');}
+	
+		   });
+
+</script>
+
+
+</html>

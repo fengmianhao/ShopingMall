@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>Adapter</title>
+<style type="text/css">
+body,html{ height:100%; width:100%; _overflow:hidden}
+body{ text-align:center; padding:0; margin:0; background:#fff;}
+ul,li,img,div,p,td,tr,table{ margin:0; padding:0}
+img{ border:0}
+.ada_3top{background: url(img/ada_9.gif) repeat-x; height:124px;}
+.ada_3top_left{background: url(img/ada_1.gif) no-repeat; height:124px; width:815px; float:left}
+.ada_3top_right{background: url(img/ada_2.gif) no-repeat; height:124px; width:54px; float:right}
+
+.ada_3bottom{background: url(img/ada_8.gif) repeat-x; height:88px;}
+.ada_3bottom_left{background: url(img/ada_6.gif) no-repeat; height:88px; width:461px; float:left}
+.ada_3bottom_right{background: url(img/ada_7.gif) no-repeat; height:88px; width:215px; float:right}
+
+.ada_3center_left{background: url(img/ada_4.gif) repeat-y; width:271px;height:100%}
+.ada_3center_right{background: url(img/ada_10.gif) repeat-y; width:20px; height:100%}
+.ada_3center_center{ overflow:auto;position:relative; height:100%; width:100%}
+.ada_3center_center img{ position:absolute; left:30px}
+
+.yahoosearch{ position:absolute; left:100px; top:364px; width:33px; height:32px; background:url(#);display:block; cursor:pointer}
+
+.ada_4top_left{background: url(img/ada_14.gif) no-repeat; height:124px; width:815px; float:left}
+.ada_4center_center{ overflow:auto; height:100%; position:relative}
+.ada_4center_center img{ position:absolute}
+#saveBtn{ position:relative; left:53px; top:47px;}
+
+.save_box{ background:url(img/save_sys.gif) no-repeat; position:absolute; left:30%; top:22%; width:565px; height:422px; display:none;}
+#confirm{ position:absolute; left:480px; top:358px;}
+#cancel{ position:absolute; left:480px; top:386px;}
+</style>
+</head>
+
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="124" class="ada_3top"><div class="ada_3top_left"><a href="#" id="saveBtn" ><img src="img/blueSave.gif"/></a></div><div class="ada_3top_right"></div></td>
+  </tr>
+  <tr>
+    <td valign="top" height="100%" width="100%">
+		<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="271" height="100%" valign="top" class="ada_3center_left"><img src="img/ada_3.gif"/></td>
+			<td height="100%" width="100%"><div class="ada_3center_center"><img src="img/ada_12.jpg"/><a href="adapter_4.html" class="yahoosearch"></a></div></td>
+			<td width="20" valign="top" class="ada_3center_right" ><img src="img/ada_11.gif"/></td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+  <tr>
+    <td height="88" class="ada_3bottom"><div class="ada_3bottom_left"></div><div class="ada_3bottom_right"></div></td>
+  </tr>
+</table>
+
+<div class="save_box">
+   <a href="adapter_5.html" id="confirm"><img src="img/sysSave.gif"/></a>
+   <a href="#" id="cancel"><img src="img/cancel.gif"/></a>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $('#saveBtn').click(function(){
+	    $('.save_box').show();
+	})
+    
+	$('#cancel').click(function(){
+	  $('.save_box').hide();
+	}) 
+	
+  })
+ 
+</script>

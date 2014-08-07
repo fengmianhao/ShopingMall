@@ -1,0 +1,14 @@
+<chart bgColor='FFFFFF' bgAlpha='0' showBorder='0' showValues='1' decimals='0' formatNumberScale='1' chartLeftMargin='1' numberScaleValue='1000,1000' numberScaleUnit='K,M'  >
+<set label='Jan' value='608500'  color='cccccc'/>
+<set label='Feb' value='358500' color='cccccc'/>
+<set label='Mar' value='698500' color='cccccc'/>
+<set label='Apr' value='808500' color='cccccc'/>
+<set label='May' value='758500' color='cccccc'/>
+<set label='Jun' value='728500' color='cccccc'/>
+<set label='Jul' value='898500' color='cccccc'/>
+<set label='Aug' value='804520' color='cccccc'/>
+<set label='Sep' value='675400' color='cccccc'/>
+<set label='Oct' value='668500' color='cccccc'/>
+<set label='Nov' value='584200' color='cccccc'/>
+<set label='Dec' value='708500' color='cccccc'/>
+</chart>

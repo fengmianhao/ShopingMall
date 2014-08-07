@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="js/source/tree_component.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center, .list_item_help ,.Qlink_list ,.Qlink_ico');
+</script>
+<![endif]-->
+
+<title>MDSP</title>
+</head>
+
+<body>
+<div id="top">
+	<div class="top_left"></div>
+    <div class="top_center">
+    	<div class="logo"><a href="#"><img src="images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+        	<div id="topmenuContainer">
+            	<!-- 菜单保持Status -->
+            	<ul id="topmenuOn">
+                	<li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                	<li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../service/service.html">Service Innovation</a></li>
+                        <li><a href="3_2.html">Admin(CP/SP)</a></li>                        <li><a href="2_25.html">Admin(Operator)</a></li><li><a href="3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo">Welcome! Manager!</div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+            <ul>
+            	<li><a href="4_3_new.html">Target User Management</a></li>
+                <li><a href="4_3.html">Campaign Management </a></li>
+                <li><a href="3_25_new.html">Advertisement Management</a></li>
+                <li><a href="3_28.html">CP/SP Management </a></li>
+                <li><a href="4_9.html">Promotion</a></li>
+                <li><a href="5_10.html">Portal Management</a></li> 
+				 <li><a href="adapter/adapter1.html">Network Abstraction</a></li> 
+				</ul>
+                      
+        </div>
+    </div><span class="currentPage">Home</span></div>
+<div id="mainContainer">
+    <div id="rightColumn">
+    	<div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+                	<div class="title_tools">
+						<div class="title_text">My ToDo List</div>
+						<div class="tools">
+							
+                            <ul>
+                            	<li><a href="#" class="fun"><img src="images/icon_tools_refresh.png" width="19" height="19" border="0" align="absmiddle" />Refresh List</a></li>
+							</ul>
+						</div>
+						<div class="nofloat"></div>
+					</div>
+                    <div id="searchModule">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                       		 <tr>
+                                <td width="40">Name:</td>
+                                <td width="140"><input type="text" name="textfield" id="textfield" class="input_text" style="width: 85%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+                                <td width="70">Partner ID:</td>
+                                <td width="140"><input type="text" name="textfield" id="textfield" class="input_text" style="width: 85%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" /></td>
+                                <td width="90">Partner Name:</td>
+                                <td width="140">
+                                <input type="text" name="textfield" id="textfield" class="input_text" style="width: 85%;" onfocus="formItemFocus(this);" onblur="formItemBlur(this);" />
+                                </td>
+                                <td>&nbsp; </td>
+                            </tr>
+                            <tr id="flistTr3">
+                                <td>Type:</td>
+                                <td><select style="width: 89%;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>All</option>
+                                    </select></td>
+                                <td>Apply Type:</td>
+                                <td><select style="width: 89%;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>All</option>
+                                    </select></td>
+                                <td>Status:</td>
+                                <td><select style="width: 89%;" onfocus="selectRow(3, this);" onblur="clearSelectRow(3,this);">                                        <option>All</option>
+                                    </select>
+                                </td>
+                                <td>
+                                	<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="width: 82px;">
+                                    	<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="btn_center_normal">Search</li>
+                                        <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                        <li class="nofloat"></li>
+                                	</ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="margin: 10px 0px 0px 0px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dlist_table" id="dlistTable">
+                            <tr class="dlist_header">
+                                <td width="5%"><input type="checkbox" name="allCBox" id="allCBox" onclick="selectAll('dlistTable', this);listTrChange('dlistTable', this.checked);" /></td>
+                                <td width="18%">Name</td>
+                                <td width="10%">Type</td>
+                                <td width="15%">Partner ID</td>
+                                <td width="16%">Partner Name</td>
+                                <td width="18%">Submit Date</td>
+                                <td width="8%">Apply Type</td>
+                                <td width="10%">Status</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Baby One More Time</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Comcast</td>
+                                <td>2009-11-19 17:30</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="3_10.html">Last Christmas</a></td>
+                                <td>Content</td>
+                                <td>001156135</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-19 17:30</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Weather Via SMS</a></td>
+                                <td>Service</td>
+                                <td>000016235</td>
+                                <td>Peter</td>
+                                <td>2009-11-19 17:28</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');"  checked="checked"/></td>
+                                <td><a href="#">White Christmas</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Comcast</td>
+                                <td>2009-11-19 16:28</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" checked="checked"/></td>
+                                <td><a href="#">In Notte Placida</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Comcast</td>
+                                <td>2009-11-19 16:28</td>
+                                <td>Modify</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" checked="checked"/></td>
+                                <td><a href="#">Stille Nacht</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Comcast</td>
+                                <td>2009-11-19 15:32</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" checked="checked"/></td>
+                                <td><a href="#">Cate</a></td>
+                                <td>Service</td>
+                                <td>001565138</td>
+                                <td>Comcast</td>
+                                <td>2009-11-18 15:26</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Joy To The World</a></td>
+                                <td>Content</td>
+                                <td>001565133</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-18 15:01</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Mary’s Boy Child</a></td>
+                                <td>Content</td>
+                                <td>001565134</td>
+                                <td>Time Warner</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Frosty The Snowman</a></td>
+                                <td>Content</td>
+                                <td>001156135</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-18 14:57</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Winter Wonderland</a></td>
+                                <td>Content</td>
+                                <td>001156135</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-17 14:52</td>
+                                <td>Modify</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Let Me Be</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-17 14:26</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Lonely</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Time Warner</td>
+                                <td>2009-11-17 14:22</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">Bombastic Love </a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Time Warner</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">I've Just Begun</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Lycos</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">My Prerogative</a></td>
+                                <td>Content</td>
+                                <td>001565138</td>
+                                <td>Lycos</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">God is girl</a></td>
+                                <td>Content</td>
+                                <td>001189451</td>
+                                <td>Lycos</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);">
+                                <td><input type="checkbox" name="checkbox2" id="checkbox2" onclick="listTrOn(this);checkSelectAll('dlistTable', 'allCBox');" /></td>
+                                <td><a href="#">MyLove</a></td>
+                                <td>Content</td>
+                                <td>001189451</td>
+                                <td>Lycos</td>
+                                <td>2009-08-19 10:11</td>
+                                <td>New</td>
+                                <td>Pending</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pageinfo">
+                        <ul>
+                        	<li>
+                        	    <select name="select3" id="select3">
+                        	        <option>10</option>
+                        	        <option>15</option>
+                        	        <option selected="selected">20</option>
+                    	        </select>
+                        	</li>
+                        	<li>Per Page</li>
+                            <li class="pageinfo_padding"><strong>Total:</strong> 2841</li>
+                            <li class="pageinfo_padding"><strong>Page:</strong> 1/285</li>
+                            <li class="pageinfo_padding"><a href="#" class="fun">First</a><a href="#" class="fun">Previous</a><a href="#" class="fun">Next</a><a href="#" class="fun">Last</a></li>
+                            <li class="pageinfo_padding">Go to page</li>
+                            <li>
+                                <select name="select3" id="select4">
+                        	        <option>1</option>
+                        	        <option>2</option>
+                        	        <option>3</option>
+                    	        </select>
+                            </li>
+                        </ul>
+                        <div class="nofloat"></div>
+                    </div>
+                    <div style="margin-top: 20px;">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="100">
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Approve</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+								<td width="135" valign="top" style="padding: 2px 0px 0px 0px;">
+                                	<div class="editable_list">
+                                    	<div class="editable_list_sel">
+                                        	<select name="editableSel" id="editableSel" onchange="editableSelect();">
+                                        	    <option value="Access code error">Access code error</option>
+                                                <option value="Information incorrect">Information incorrect</option>
+                                            </select>
+                                        </div>
+                                        <div class="editable_list_inp">
+                                        	<input name="editableInp" id="editableInp" type="text" />
+                                        </div>
+                                    </div>
+								</td>
+								<td>
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Reject</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+                    </div>
+                </div>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+	<div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div class="leftmenu" id="leftMenu">
+				<div class="common_box">
+					<div class="common_title"><h2>Common Bulletin</h2></div>
+					<div class="common_content">
+						<p>SDP acts as a catalyst in generating revenue from innovative services enabling 
+
+multiple business models within the telecom marketplace.</p>
+					</div>
+					<div class="common_bottom"></div>
+				</div>
+				<div class="common_box">
+					<div class="content_title"></div>
+					<div class="content_content" id="listItems">
+						<ul>
+							<li class="list_title"><span style="float:right; padding:4px 5px 0 0"><a href="#" class="fun">Setting</a></span>Quick Links</li>
+                            <li class="list_item"><a href="4_3_new.html" class="lnk_normal"><span>Target User Management</span></a></li>
+							<li class="list_item"><a href="4_3.html" class="lnk_normal"><span>Campaign Management</span></a></li>
+                            <li class="list_item"><a href="3_25_new.html" class="lnk_normal"><span>Advertisement Management</span></a></li>
+							<li class="list_item"><a href="3_28.html" class="lnk_normal"><span>CP/SP Management </span></a></li>
+							<li class="list_item"><a href="4_9.html" class="lnk_normal"><span>Promotion</span></a></li>
+							<li class="list_item"><a href="5_10.html" class="lnk_normal"><span>Portal  Management</span></a></li>
+                            <li class="list_item"><a href="adapter/adapter1.html" class="lnk_normal"><span>Network Abstraction</span></a></li>
+							 	
+						</ul>
+					</div>
+					<div class="content_bottom"></div>
+				</div>
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+    <div class="nofloat"></div>
+</div>
+<div id="bottom">Company SDP</div>
+
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List',this);"></div>
+</div>
+<!--第二个弹出菜单-->
+<div id="popMenu_List2" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List2_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List2_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List2',this);"></div>
+</div>
+<!--第三个弹出菜单-->
+<div id="popMenu_List3" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+	</ul>
+</div>
+<!--第四个弹出菜单-->
+<div id="popMenu_List4" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+	<div id="popMenu_List4_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List4_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List4',this);"></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+	<ul class="nav_menu_items">
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+</div>
+<!--主导航二级菜单结束-->
+</body>
+<script>
+getRightHeight();
+
+$(function(){
+	//only
+	
+
+})
+</script>
+</html>

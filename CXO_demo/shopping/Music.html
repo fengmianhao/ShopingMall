@@ -1,0 +1,1394 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=portalONE,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=portalONE name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+ <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div ,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ,.music_banner ,.jcarousel-next-horizontal ,.jcarousel-prev-horizontal ,.jcarousel-prev-disabled-horizontal ,.jcarousel-next-disabled-horizontal,.newPlay,.sea');
+</script>
+<![endif]-->
+ 
+<style>
+.limit_width{ display:inline; width:auto}
+.singer_shop{ color:#666;}
+.singer_shop:hover{ color:#000}
+#actListMusic li span{ color:#666;}
+
+.video_big_box{ position:relative}
+.video_big_box em{ display:none; width:93px; height:68px; background:url(skin/default/images/tv_play_icon.gif) no-repeat 16px 17px; filter:Alpha(opacity=70);-moz-opacity:.7; opacity:0.7}
+.video_big_box a:hover{ zoom:1}
+.video_big_box a:hover em{ display:block; position:absolute; left:0; top:0; cursor:pointer}
+.video_big_box:hover em{ display:block; position:absolute; left:0; top:0; cursor:pointer;}
+
+.music_ul{ width:190px; margin-left:10px; padding-top:5px}
+.music_ul li{ width:75px; text-align:center; padding:0 7px 4px; float:left}
+.music_ul li img{ width:55px; height:55px; display:block; margin:0 auto}
+
+.column_content04{ height:auto; padding-bottom:14px}
+
+/*music_banner*/
+.music_banner{ background:url(skin/default/images/music_banner_bg.png) no-repeat 2px; height:245px; width:984px; padding-bottom:4px; padding-top:67px;}
+.jcarousel-container {overflow: hidden; width: 648px; position: relative; height: 224px; padding:0 50px; margin-left:6px}
+.jcarousel-clip,.music_banner ul{z-index: 2;  width:648px; height: 224px; overflow:hidden}
+.jcarousel-list {overflow: hidden;}
+.jcarousel-list li,.music_banner li {float: left; width: 162px; height: 224px;}
+.jcarousel-list li a,.music_banner li a{ display:block; padding:14px 5px 0; width:152px; height:210px;}
+.jcarousel-list li a:hover{background:#121111; text-decoration:none}
+.jcarousel-list li img,.music_banner li img {border: #fff 5px solid; width: 142px; height: 142px}
+.jcarousel-list li img.icon_hot{ width:auto; height:auto; border:0}
+.jcarousel-list li a:hover img.icon_hot {border: #ffcc99 0px solid;}
+.jcarousel-list li a:hover img {border: #ffcc99 5px solid;}
+
+.jcarousel-list li P {color: #8c8c8c;}
+.jcarousel-list li P.p1 {color:#b5b5b5; font-weight:bold; padding:4px 0}
+.jcarousel-item {float: left; width: 162px}
+.jcarousel-container-horizontal {width: 648px;}
+.jcarousel-clip-horizontal {width: 648px; height: 224px}
+
+.jcarousel-next-horizontal{background: url(skin/default/images/music_banner_right.png) no-repeat; width: 50px; cursor: pointer; height: 83px; position:absolute; right:0; top:50px}
+.jcarousel-prev-horizontal{background: url(skin/default/images/music_banner_left.png) no-repeat; width: 50px; cursor: pointer; height: 83px; position:absolute; left:0; top:50px}
+.jcarousel-prev-disabled-horizontal{background: url(skin/default/images/music_banner_left.png) no-repeat 0px 0px; cursor: pointer}
+.jcarousel-next-disabled-horizontal{background: url(skin/default/images/music_banner_right.png) no-repeat 0px 0px; cursor: pointer}
+.jcarousel-clip,.jcarousel-list {position: relative}
+
+/*rbt div*/
+.mrbt_diy{ padding:10px 0}
+.mrbt_diy_1{ border-bottom:1px dashed #ccc; padding: 0 10px 10px;}
+.mrbt_diy_2{ padding:15px 20px; background:#fcf1f1}
+.mrbt_diy_3{ height:40px; line-height:40px; padding-top:12px}
+.mrbt_diy_3 p{ float:right; margin-right:10px; width:180px; text-align:right}
+.mrbt_diy_2_1{ background:url(skin/default/images/Music_MrbtDiy_bg.gif) repeat-x; height:117px; width:100%; padding-top:1px; position:relative; margin-bottom:15px; border-bottom:1px dashed #ccc}
+.mrbt_diy_2_1_1{ background:url(skin/default/images/Music_MrbtDiy_bg_1.gif) repeat-x; height:105px; width:100%; text-align:center; line-height:105px}
+.fenshu{ background:url(skin/default/images/music_fenshu.gif) repeat-x; color:#fff; padding:0 5px}
+.mrbt_diy_2_1_1 a{background:url(skin/default/images/Music_MrbtDiy_ctrl.gif)  no-repeat; width:7px; height:8px; overflow:hidden; display:block}
+.mrbt_diy_left{ position:absolute; left:50px; top:106px}
+.mrbt_diy_right{ position:absolute; left:150px; top:106px}
+.slide_p span{ width:100px;}
+
+.ui-slider{background:url(skin/default/images/music_rbt_bg_1.gif) no-repeat 0px 12px; height:47px; width:404px; position:relative; margin-bottom:15px; }
+.ui-slider-range{ background:url(skin/default/images/music_rbt_bg_4.gif) repeat-x 0px 12px; height:47px; width:404px; text-align:center; line-height:23px; position:absolute;}
+.ui-slider-handle {background:url(skin/default/images/Music_MrbtDiy_ctrl.gif)  no-repeat; width:13px; height:47px; display:block; position:absolute; margin-left:-6px}
+
+.slider_inputCls{border:0; color:#fff; font-weight:bold; width:35px; text-align:center; line-height:47px; background:url(skin/default/images/music_rbt_bg_3.gif) repeat-x 0 11px; height:47px;}
+
+<!--Music_MrbtDiy.html-->
+.pos_re { position: relative; }
+.uploadDiv div { position: absolute; left: 0; top: 0; width: 55px; height: 16px; overflow: hidden; z-index:1000; filter: alpha(opacity=0); opacity: 0.0 }
+.uploadDiv input { margin-left: -155px; font-size: 14px; cursor: pointer; }
+#MediaPlayer{ display:none}
+</style>
+
+<title>PortalONE</title>
+</head>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                      <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li> 
+                        
+                      
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:44">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html" >My World</a></li>
+					
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html" class="focus">Music</a></li>
+                    <li><a href="Video.html" >Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+        <div class="music_banner">
+        	<ul class="jcarousel-skin-tango" id="mycarousel">
+              <li><a href="#"><img src="images/music_banner_singer_6.jpg"> 
+                  <p class="p1">Beautiful for Words</p>
+                  <p>Artist: Christina Aguilera</P></A></li>
+              <li><a href="#"><img src="images/music_banner_singer_2.jpg"> 
+                  <p class="p1"> Run This Town</p>
+                  <p>Artist: Rihanna</P></A></li>
+              <li><a href="#"><img src="images/music_banner_singer_3.jpg"> 
+                  <p class="p1"> Christmas Time</p>
+                  <p>Artist: Backstreet Boys</P></A></li>
+              <li><a href="Music_details.html"><img src="images/music_banner_singer_4.jpg"> 
+                  <p class="p1"><img src="images/icon_hot.gif" class="icon_hot">Scarborough Fair</p>
+                  <p>Artist: Sarah Brightman</P></A></li>
+                 <li><a href="#"><img src="images/music_banner_singer_5.jpg"> 
+                  <p class="p1"> Baby One More Time</p>
+                  <p>Artist: Britney Spears</P></A></li>  
+               <li><a href="#"><img src="images/music_banner_singer_7.jpg"> 
+                  <p class="p1"> Beat of My Heart</p>
+                  <p>Artist: Hilary Duff</P></A></li>
+               <li><a href="#"><img src="images/music_banner_singer_8.jpg"> 
+                  <p class="p1"> When You Believe</p>
+                  <p>Artist: Mariah Carey</P></A></li>
+            </ul>
+        </div>
+		<div class="mall_new" style="width:980px;">
+        	<div class="mall_new_left"></div>
+            <div class="mall_new_center" id="scrollDiv"  style="width:800px;">
+            	<ul>
+                <li>Company Media Store has more than one million songs.Music partners occupy more than 60% of the market share.</li>
+              </ul>
+            </div>
+            <div class="mall_new_right"></div>
+        </div>
+        <div id="leftColumn" style="margin-bottom:3px;*margin-bottom:6px; ">
+                <!--music row-->
+          <div>
+                <div class="left_left_column">
+                	<div class="circle_corner_box">
+                        <div class="circle_corner_top">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+                        <div class="circle_corner_center" style="width:212px;">
+                            <div class="normal_title"><h1>New Function</h1></div>
+                            <div class="act_list">
+                                <ul class="act_list_ul music_ul">
+                               		<li><a href="#none" onclick="lightBoxOn('diy_rbt','DIY RBT');"><img src="images/music_icon3.gif" /><img src="images/icon_hot.gif" class="icon_hot" style="_padding-top:5px">RBT DIY</a></li>
+                                    <li><a href="#" onclick="lightBoxOn('fingerprint','Music Snap')"><img src="images/music_icon1.gif"/><img src="images/icon_hot.gif" class="icon_hot" style="_padding-top:5px">Music Snap</a></li>
+                                    <li><a href="#"onclick="lightBoxOn('musicSearch','Music Pick');" ><img src="images/music_icon2.gif" /><img src="images/icon_hot.gif" class="icon_hot" style="_padding-top:5px">Music Pick</a></li>
+                                    <li><a href="#" ><img src="images/music_icon4.gif" />Information RBT</a></li>
+                                </ul>
+                                <div class="nofloat"></div>
+                            </div>
+                        </div>
+                        <div class="circle_corner_bottom">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+                        <input type="button" value="More" class="more_btn" />
+                    </div>
+                    <div class="circle_yellow">
+                        <div class="circle_yellow_top">
+                            <div class="circle_yellow_top_left"></div>
+                            <div class="circle_yellow_top_right"></div>
+                        </div>
+                        <div class="circle_yellow_center" style="width:208px;">
+                            <div class="circle_yellow_center_bg" style="padding-bottom:1px;">
+                                <div class="normal_title"><h1 style="font-size:14px; font-weight:bold">Browse for Music Titles</h1></div>
+                                <div class="act_list">
+                                    <ul class="act_list_ul list_point">
+                                        <li><a href="#" class="limit_width">Alternative Rock</a> <span class="lightgrey">(68)</span></li>
+                                        <li><a href="#" class="limit_width">Blues</a> <span class="lightgrey">(58)</span></li>
+                                        <li><a href="#" class="limit_width">Children</a> <span class="lightgrey">(60)</span></li>
+                                        <li><a href="#" class="limit_width">Christian</a> <span class="lightgrey">(66)</span></li>
+                                        <li><a href="#" class="limit_width">Classical</a> <span class="lightgrey">(88)</span></li>
+                                        <li><a href="#" class="limit_width">Comedy</a> <span class="lightgrey">(88)</span></li>
+                                        <li><a href="#" class="limit_width">Country</a> <span class="lightgrey">(58)</span></li>
+                                        <li><a href="#" class="limit_width">Easy Listening</a> <span class="lightgrey">(33)</span></li>
+                                        <li><a href="#" class="limit_width">Electronic</a> <span class="lightgrey">(98)</span></li>
+                                        <li><a href="#" class="limit_width">Folk</a> <span class="lightgrey">(78)</span></li>
+                                        <li><a href="#" class="limit_width">Gospel</a> <span class="lightgrey">(75)</span></li>
+                                        <li><a href="#" class="limit_width">Instrumental</a> <span class="lightgrey">(58)</span></li>
+                                        <li><a href="#" class="limit_width">Jazz</a> <span class="lightgrey">(32)</span></li>
+                                        <li><a href="#" class="limit_width">Latin</a> <span class="lightgrey">(34)</span></li>
+                                        <li><a href="#" class="limit_width">Metal</a> <span class="lightgrey">(58)</span></li>
+                                        <li><a href="#" class="limit_width">Miscellaneous</a> <span class="lightgrey">(68)</span></li>
+                                        <li><a href="#" class="limit_width">Songal</a> <span class="lightgrey">(68)</span></li>
+                                        <li><a href="#" class="limit_width">New Age</a> <span class="lightgrey">(48)</span></li>
+                                        <li><a href="#" class="limit_width">Punk</a> <span class="lightgrey">(28)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circle_yellow_bottom">
+                            <div class="circle_yellow_bottom_left"></div>
+                            <div class="circle_yellow_bottom_right"></div>
+                        </div>
+                    </div>
+					
+					<div class="ad_banner"><a href="#"><img src="images/music_adImg.jpg" width="211" height="90" border="0" /></a></div>
+					
+                </div>
+                <div class="left_right_column">
+                    <div class="circle_corner_box">
+                        <div class="circle_corner_top">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+                       <div class="circle_corner_center" style="width:475px;">
+                        <div class="normal_title"><h1>New Music</h1></div>
+                        <div class="column_content04">
+							    <div id="secondTabContent1" >
+							        <table border="0" cellpadding="0" cellspacing="0" class="datagrid03">
+							<tr>
+								<td width="37" valign="top"><strong>01</strong></td>
+                                <td width="100" class="pl"><a href="Music_details.html"><img src="images/music_banner_singer_4.jpg" width="93" height="68" /></a></td>
+								 <td width="340" valign="top" style="padding:0 4px 0 3px"><a href="Music_details.html"><strong><img src="images/icon_hot.gif" class="icon_hot">Scarborough Fair</strong></a>
+									<p class="fs11">Singer: Sarah Brightman</p><p class="fs11">Album: LA LUNA</p>
+								</td>
+                                <td width="30" valign="bottom" style="padding:0 0px 0 16px; vertical-align:middle;"><a href="Music_details.html"  ><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td width="30" valign="bottom" style="padding:0 0px 0 19px; vertical-align:middle;"><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                <td width="30" valign="bottom" style="padding:0 0px 0 19px; vertical-align:middle;"><a href="#" ><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                                
+                            </tr>
+							</table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="datagrid02" >
+                            
+                            <tr>
+								<td width="5%">02</td>
+                                <td width="42%"><a href="#">Last Christmas</a></td>
+                                <td width="21%">Sweetbox</td>
+                                <td width="9%"><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td width="9%"><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td width="9%"><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>03</td>
+                                <td><a href="#">Straight Through My Heart</a></td>
+                                <td>Backstreet Boys</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>04</td>
+                                <td><a href="#">Boom Boom Pow</a></td>
+                                <td>Black Eyed Peas</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>05</td>
+                                <td><a href="#">Betcha Gon' Know</a></td>
+                                <td>Mariah Carey </td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>06</td>
+                                <td><a href="#">Obsessed</a></td>
+                                <td>Mariah Carey</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>07</td>
+                                <td><a href="#">I Gotta Feeling</a></td>
+                                <td>Black Eyed Peas</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>08</td>
+                                <td><a href="#">This Is Us</a></td>
+                                <td>Backstreet Boys</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>09</td>
+                                <td><a href="#">I Want To Know What Love Is</a></td>
+                                <td>Mariah Carey </td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>10</td>
+                                <td><a href="#">Everything Is Nothing</a></td>
+                                <td>Sweetbox</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                        </table>
+								</div>
+								 
+							</div>
+                        <div class="nofloat"></div>
+                    </div>
+                        <div class="circle_corner_bottom">
+                            <div class="circle_corner_left"></div>
+                            <div class="circle_corner_right"></div>
+                        </div>
+                      <input type="button" value="More" class="more_btn" />
+                      </div>
+                    
+                    <div class="ad_banner"><a href="#"><img src="images/music_adMid.jpg" width="476" height="177" border="0" /></a></div>
+                    
+                    <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style=" width:475px;">
+                        <div class="normal_title"><h1>Top Music</h1></div>
+                        <div class="column_content04" >
+							    <div id="secondTabContent1" >
+							        <table border="0" cellpadding="0" cellspacing="0" class="datagrid03">
+							<tr>
+								<td width="37" valign="top"><strong>01</strong></td>
+                                <td width="100" class="pl"><a href="#"><img src="images/video_pic2.jpg" width="93" height="68" /></a></td>
+								 <td width="340" valign="top" class="pl"><a href="#"><strong>Knock You Down</strong></a>
+									<p class="fs11">Singer: Kerl</p><p class="fs11">Album: Knock You Down</p>
+								</td>
+                                <td width="26" valign="bottom" style="padding:0 0px 0 16px; vertical-align:middle;"><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td width="30" valign="bottom" style="padding:0 0px 0 20px; vertical-align:middle;"><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                <td width="30" valign="bottom" style="padding:0 0px 0 20px; vertical-align:middle;"><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                                
+                            </tr>
+							</table>
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="datagrid02" >
+                            
+                            <tr>
+								<td width="5%">02</td>
+                                <td width="42%"><a href="#">Trouble is a friend</a></td>
+                                <td width="21%">Lenkai</td>
+                                <td width="9%"><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td width="9%"><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td width="9%"><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>03</td>
+                                <td><a href="#">I don’t give </a></td>
+                                <td>Avril</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>04</td>
+                                <td><a href="#">Girl Talk</a></td>
+                                <td>Lili</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>05</td>
+                                <td><a href="#">Six Mafia</a></td>
+                                <td>Super</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>06</td>
+                                <td><a href="#">Yelle</a></td>
+                                <td>Lady Gaga</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>07</td>
+                                <td><a href="#">Korean Music</a></td>
+                                <td>Lenkai</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>08</td>
+                                <td><a href="#">A & AbelBand </a></td>
+                                <td>Avril</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>09</td>
+                                <td><a href="#">Self Defence Required</a></td>
+                                <td>Lili</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                            <tr>
+								<td>10</td>
+                                <td><a href="#">Foals</a></td>
+                                <td>Super</td>
+                                <td><a href="#"><img src="images/icon_try_normal.gif" alt="Play" width="27" height="17" border="0" onmouseover="iconEffect(this, 'images/icon_try_over.gif');" onmouseout="iconEffect(this, 'images/icon_try_normal.gif');" /></a></td>
+                                <td><a href="#"><img src="images/icon_download_normal.gif" alt="Download" width="28" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_download_over.gif');" onmouseout="iconEffect(this, 'images/icon_download_normal.gif');" /></a></td>
+                                 <td><a href="#"><img src="images/icon_rbt_normal.gif" alt="Set as RBT" width="22" height="22" border="0" onmouseover="iconEffect(this, 'images/icon_rbt_over.gif');" onmouseout="iconEffect(this, 'images/icon_rbt_normal.gif');" /></a></td>
+                            </tr>
+                        </table>
+								</div>
+								 
+							</div>
+                        <div class="nofloat"></div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                   
+                    <input type="button" value="More" class="more_btn" />
+                </div>
+					
+						
+				</div>
+				<div class="nofloat"></div>
+            </div>
+        </div>
+		<div id="rightColumn">
+			<div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="width:280px;">
+                	<div class="normal_title"><h1>Recommended</h1></div>
+                    <div class="act_list ">
+                        <ul class="act_list_ul musicTarget">
+                            <li><span>1.</span><a href="#" > Shape of My Heart </a><span class="line_short">–</span><a href="#" class="singer_shop">Backstreet Boys</a></li>
+                            <li><span>2.</span><a href="#" > Remember The Time</a><span >–</span><a href="#" class="singer_shop">Michael Jackson</a></li>
+                            <li><span>3.</span><a href="#" > Smooth Criminal </a> <span>–</span><a href="#" class="singer_shop">Michael Jackson</a></li>
+                            <li><span>4.</span><a href="#" > Just Dance </a><span>–</span> <a href="#" class="singer_shop">Lady GaGa</a></li>
+                            <li><span>5.</span><a href="#" > Nocturne </a><span>–</span><a href="#" class="singer_shop">Secret Garden</a></li>
+                            <li><span>6.</span><a href="#"> All of Your Life</a><span>–</span> <a href="#" class="singer_shop">Backstreet Boys</a> </li>
+                            <li><span>7.</span><a href="#"> Black or White</a><span>–</span><a href="#" class="singer_shop">Michael Jackson</a></li>
+                            <li><span>8.</span><a href="#" > Brown Eyes </a><span>–</span> <a href="#" class="singer_shop">Lady GaGa</a></li>
+                            <li><span>9.</span><a href="#" > Uptown Girl  </a><span>–</span><a href="#" class="singer_shop">Westlife</a></li>
+                            <li><span>10.</span><a href="#" > Don't Know Why</a><span>–</span><a href="#" class="singer_shop">Norah Jones</a></li>
+                        </ul>
+						
+						<ul class="act_list_ul musicTarget" style="display:none;">
+                            <li><span>1.</span><a href="#" > (You drive me) crazy</a><span class="line_short">–</span><a href="#" class="singer_shop">Britney Spears</a></li>
+                            <li><span>2.</span><a href="#" > Bad Romance</a><span >–</span><a href="#" class="singer_shop">Lady GaGa</a></li>
+                            <li><span>3.</span><a href="#" > Beat It </a> <span>–</span><a href="#" class="singer_shop">Michael Jackson</a></li>
+                            <li><span>4.</span><a href="#" > Because Of You </a><span>–</span> <a href="#" class="singer_shop">Kelly Clarkson</a></li>
+                            <li><span>5.</span><a href="#" > Burning </a><span>–</span><a href="#" class="singer_shop">Maria Arredondo</a></li>
+                            <li><span>6.</span><a href="#"> Can you feel it</a><span>–</span> <a href="#" class="singer_shop">Jean Roch</a> </li>
+                            <li><span>7.</span><a href="#"> Candy Man</a><span>–</span><a href="#" class="singer_shop">Brown Eyed Girls</a></li>
+                            <li><span>8.</span><a href="#" > Love Story </a><span>–</span> <a href="#" class="singer_shop">Taylor Swift</a></li>
+                            <li><span>9.</span><a href="#" > My love  </a><span>–</span><a href="#" class="singer_shop">westlife</a></li>
+                            <li><span>10.</span><a href="#" > Nobody</a><span>–</span><a href="#" class="singer_shop">Wonder Girls</a></li>
+                        </ul>
+                    </div>
+        		</div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <input type="button" value="More" class="more_btn" />
+            </div>
+			<!--middle ad banner-->
+			
+            
+            <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center" style="width:280px;">
+                        <div class="normal_title"><h1>Recommended Albums</h1></div>
+                        <div class="act_list ">
+                            <ul class="act_list_ul musicTarget" id="actListSale1" >
+                                <li id="itemSimple_31" style="display: none;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">1.《King Of Pop CD1》</span><span class="fr normalgrey">12345</span><div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_31" style="display: block;">
+                                    <a href="#"><img src="images/sale_pic1.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《King Of Pop CD1》</a>
+                                        <p class="fs11">
+                                           Singer: Michael Jackson<br />Downloads:<span class="greenblue">12345</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_32" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">2.《Twelve Nights in Hollywood》</span><span class="fr normalgrey">562</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_32" style="display: none;">
+                                    <a href="#"><img src="images/sale_pic2.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Twelve Nights in Hollywood》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">562</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_33" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">3.《Live and Intermittent》 </span><span class="fr normalgrey">8712</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_33" style="display: none;">
+                                   <a href="#"> <img src="images/sale_pic3.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Live and Intermittent》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">8712</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_34" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">4.《Desperate Measures》</span><span class="fr normalgrey">3654</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_34" style="display: none;">
+                                   <a href="#"> <img src="images/sale_pic4.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Desperate Measures》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">3654</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_35" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">5.《House of Love》 </span><span class="fr normalgrey">2015</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_35" style="display: none;">
+                                  <a href="#">  <img src="images/sale_pic5.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《House of Love》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">2015</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_36" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">6.《Christmas Story [Rhino]》 </span><span class="fr normalgrey">2345</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_36" style="display: none;">
+                                    <a href="#"><img src="images/sale_pic6.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Christmas Story [Rhino]》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">2345</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_37" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">7.《The Royal Albert Hall》 </span><span class="fr normalgrey">2645</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_37" style="display: none;">
+                                   <a href="#"> <img src="images/sale_pic7.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Royal Albert Hall》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">2645</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_38" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">8.《Up the Downstair》 </span><span class="fr normalgrey">456</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_38" style="display: none;">
+                                   <a href="#"> <img src="images/sale_pic8.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Up the Downstair》</a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">456</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_39" style="display: block;" onmouseover="showDetail(this,'actListSale1');"><span class="fl">9.《Tarot Sport》 </span><span class="fr normalgrey">7248</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_39" style="display: none;">
+                                   <a href="#"> <img src="images/sale_pic9.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Tarot Sport》 </a>
+                                        <p class="fs11">Singer:Bob dylan<br />Downloads:<span class="greenblue">7248</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+							
+							<ul class="act_list_ul musicTarget" id="actListSale"  style="display:none;" >
+                                <li id="itemSimple_21" style="display: none;" onmouseover="showDetail(this,'actListSale');"><span class="fl">1.《All Things Bright And Beautiful》</span><span class="fr normalgrey">12345</span><div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_21" style="display: block;">
+                                    <a href="#"><img src="images/Owl City - All Things Bright And Beautiful.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《All Things Bright And Beautiful》</a>
+                                        <p class="fs11">
+                                           Singer: Owl City<br />Downloads:<span class="greenblue">12345</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_22" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">2.《I Love You 》</span><span class="fr normalgrey">562</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_22" style="display: none;">
+                                    <a href="#"><img src="images/Jadakiss I Love You (A Dedication To My Fans) small.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《I Love You 》</a>
+                                        <p class="fs11">Singer:Jadakiss<br />Downloads:<span class="greenblue">562</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_23" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">3.《Maybach Music Group 》 </span><span class="fr normalgrey">8712</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_23" style="display: none;">
+                                   <a href="#"> <img src="images/VA Maybach Music Group Presents Self Made Vol. 1 small.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Maybach Music Group 》</a>
+                                        <p class="fs11">Singer:VA<br />Downloads:<span class="greenblue">8712</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_24" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">4.《The Root Of Life》</span><span class="fr normalgrey">3654</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_24" style="display: none;">
+                                   <a href="#"> <img src="images/Stephen Marley - Revelation Pt. 1 The Root Of Life  (2).jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The Root Of Life》</a>
+                                        <p class="fs11">Singer:Stephen Marley<br />Downloads:<span class="greenblue">3654</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_25" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">5.《Born This Way》 </span><span class="fr normalgrey">2015</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_25" style="display: none;">
+                                  <a href="#">  <img src="images/lady gaga born this way small.jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Born This Way》</a>
+                                        <p class="fs11">Singer:Lady Gaga<br />Downloads:<span class="greenblue">2015</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_26" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">6.《Disc-Overy》 </span><span class="fr normalgrey">2345</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_26" style="display: none;">
+                                    <a href="#"><img src="images/Tinie Tempah - Disc-Overy (US Retail).jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Disc-Overy》</a>
+                                        <p class="fs11">Singer:Tinie Tempah<br />Downloads:<span class="greenblue">2345</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_27" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">7.《The 7th Letter》 </span><span class="fr normalgrey">2645</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_27" style="display: none;">
+                                   <a href="#"> <img src="images/Audio Push - The 7th Letter .jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《The 7th Letter》</a>
+                                        <p class="fs11">Singer: Audio Push<br />Downloads:<span class="greenblue">2645</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_28" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">8.《Too Cool To Care》 </span><span class="fr normalgrey">456</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_28" style="display: none;">
+                                   <a href="#"> <img src="images/New Boyz- Too Cool To Care (2).jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Too Cool To Care》</a>
+                                        <p class="fs11">Singer:New Boyz<br />Downloads:<span class="greenblue">456</span></p>
+                                    </div>
+                                </li>
+                                <li id="itemSimple_29" style="display: block;" onmouseover="showDetail(this,'actListSale');"><span class="fl">9.《Heart Of A Lion》 </span><span class="fr normalgrey">7248</span>
+                                    <div class="nofloat"></div></li>
+                                <li class="item_detail new_sale" id="itemDetail_29" style="display: none;">
+                                   <a href="#"> <img src="images/Chrishan - Heart Of A Lion (iTunes Version).jpg" width="59" height="59" /></a>
+                                    <div class="fl">
+                                        <a href="#">《Heart Of A Lion》 </a>
+                                        <p class="fs11">Singer:Chrishan<br />Downloads:<span class="greenblue">7248</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn" />
+                </div>
+			
+			<div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center"  style="width:280px;">
+                	<div class="normal_title"><h1>Music Radio</h1></div>
+                    <div class="act_list">
+                        <ul class="act_list_ul" id="actListMusic">
+                            <li><span>1.</span><a href="channelMusic.html" >Channel Music</a></li>
+                            <li><span>2.</span><a href="#" > Remember The Time</a></li>
+                            <li><span>3.</span><a href="#" > Smooth Criminal </a> <span></li>
+                            <li><span>4.</span><a href="#" > Just Dance </a></li>
+                            <li><span>5.</span><a href="#" > Nocturne </a></li>
+                            <li><span>6.</span><a href="#"> All of Your Life</a></li>
+                            <li><span>7.</span><a href="#"> Black or White</a></li>
+                            <li><span>8.</span><a href="#" > Brown Eyes </a></li>
+                            <li><span>9.</span><a href="#" > Uptown Girl  </a></li>
+                            
+                        </ul>
+                    </div>
+        		</div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <input type="button" value="More" class="more_btn" />
+            </div>
+		</div>
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+
+
+<!-- 弹出窗口代码开始 -->
+<!-- 1 弹出窗口框架代码-->
+<div id="lightBox" style="display:none;">
+    <div id="lightBoxMask">
+        <iframe id="lightBoxIfra" name="lightBoxIfra" frameborder="0" border="0"></iframe>
+    </div>
+    <div id="lightBoxBg"></div>
+    <div id="lightBoxContainer" style="">
+        <div id="lightBoxHeader">
+            <div id="lightBoxHeaderLeft">
+                <div id="popwinTitle">Title</div>
+            </div>
+            <div id="lightBoxHeaderCenter"></div>
+            <div id="lightBoxHeaderRight">
+                <div id="popwinTools">
+                    <div class="popwin_icon_close"><img src="images/icon_closewin.gif" width="19" height="19" border="0" onclick="lightBoxOff();" /></div>
+                </div>
+            </div>
+        </div>
+        <div id="lightBoxBody">
+            <div id="lightBoxBodyLeft"></div>
+            <div id="lightBoxBodyCenter"></div>
+            <div id="lightBoxBodyRight"></div>
+        </div>
+        <div id="lightBoxFooter">
+            <div id="lightBoxFooterLeft"></div>
+            <div id="lightBoxFooterCenter"></div>
+            <div id="lightBoxFooterRight"></div>
+        </div>
+    </div>
+</div>
+<!-- 
+2 弹出窗口内容代码
+  2.1 窗口内容可以是多个
+  2.2 每个内容代码分配一个ID，如：setting
+  2.3 调用lightBoxOn()时传入内容ID，如：lightBoxOn('setting');
+-->
+
+<div class="setmenu" id="diy_rbt" style="display: none; width: 510px; z-index:10000; background-color:#f3f3f3">
+    <div class="mrbt_diy">
+        <div class="mrbt_diy_1">
+            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="30" width="100">RBT name:</td>
+                <td width="250"><input type="text" value="SAY YOU SAY ME"  style="width:95%"/></td>
+                <td ><span style="color:#F00">*</span></td>
+              </tr>
+              <tr>
+                <td height="30">Upload Music:</td>
+                <td width="250"><input type="text" value="SAY YOU SAY ME.mp3"  style="width:95%" id="uploadUrl_1"/></td>
+                <td width="100"> 
+    
+    <div class="pos_re uploadDiv" ><a href="#" class="fun_bold" style="text-decoration:none;"><input type="button" value="Browse" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  style="margin-left:0px; font-weight:bold"/><span style="color:#F00; vertical-align:middle">*</span> </a> 
+                   <div>
+                    <input type="file" name="uploadFile" id="uploadFile"  onchange="document.getElementById('uploadUrl_1').value=this.value;"/>
+                </div>
+            </div>
+                              
+    </td>
+              </tr>
+            </table>
+        </div>
+        <div class="mrbt_diy_2" >
+            <p style="padding:10px 0">Editing RBT:  Music Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                  <div id="slider-range"></div>
+             
+               <p>00:00　　　01:00 　　　02:00　　　03:00　　　04:00　　　05:00</p>
+                  
+               
+                <div id="bigPlayerControlBox" style="width:83px; overflow:hidden; margin-top:18px;">
+                    <a href="#none" class="big_player_play" id="bigPlayerPlayBtn" onclick="playPauseMeida(this);"></a> <a href="#none" class="big_player_stop" id="bigPlayerStopBtn" style="width:36px"></a>
+                <!--播放暂停按钮及停止播放按钮-->
+                  </div>
+
+        </div>
+        <div class="mrbt_diy_3">
+            <p><input type="button" value="OK" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  id="mrb_ok" /> <input type="button" value="Cancel" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  id="mrb_cancel"/ ></p>
+            <input name="" type="checkbox" value="" checked="checked" /> Set as default RBT
+        </div>
+    </div>
+    
+ <style type="text/css">
+.pop_div_con{ position:absolute; left:20%; top:15%;}
+.leftUp{ background-image: url(../images/popwin_header_left.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:37px;}
+.rightUp{background-image: url(../images/popwin_header_right.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_right.png', sizingMethod='scale'); *background: transparent !important;width:16px; height:37px;}
+.centerUp{background: url(../images/popwin_header_center.png)  repeat-x; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_header_center.png', sizingMethod='scale'); *background: transparent !important; height:37px; overflow:hidden; 
+cursor:move; position:relative;}
+.leftCenter_pop{ background:url(images/popwin_body_left.png) repeat-y !important  ; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_body_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:80px; }
+.rightCenter_pop{background: url(images/popwin_body_right.png) repeat-y !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_body_right.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:80px; }
+.leftDown{background-image: url(../images/popwin_footer_left.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_left.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:16px;}
+.centerDown{background: url(../images/popwin_footer_center.png) repeat-x; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_center.png', sizingMethod='scale'); *background: transparent !important; height:16px;}
+.rightDown{background-image: url(../images/popwin_footer_right.png); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skin/default/images/popwin_footer_right.png', sizingMethod='scale'); *background: transparent !important; width:16px; height:16px;}
+.center_center{ background:#f3f3f3; width:300px; height:80px; position:relative;}
+.centerUp img{float:right;cursor:pointer; margin-top:10px; }
+.centerUp p{ color:#669; margin-top:10px; display:inline; float:left; font-size:15px; font-weight:bold; }
+</style>
+<div class="pop_div_con" id="voipPop_out_div" style="display:none;" >
+<table   border="0" cellpadding="0" cellspacing="0" class="pop_table">
+  <tr>
+    <td ><div class="leftUp"></div></td>
+    <td ><div class="centerUp"><p>RBT Setting</p><img src="images/icon_closewin.gif"  class="myself_imgClose" /></div></td>
+    <td ><div class="rightUp"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftCenter_pop"></div></td>
+    <td ><div class="center_center"  style="text-align:center;"> 
+      <p style="margin:10px 0 15px 0;"><strong>Operation successful!</strong></p>
+      <p style="margin:5px 0 10px 0"><input type="button" value="Close" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" id="ope_close"/>
+            </p>   
+      
+    </div></td>
+    <td ><div class="rightCenter_pop"></div></td>
+  </tr>
+  <tr>
+    <td ><div class="leftDown"></div></td>
+    <td ><div class="centerDown"></div></td>
+    <td ><div class="rightDown"></div></td>
+  </tr>
+</table>
+
+</div>
+	
+</div>
+
+<style type="text/css">
+.leftSea{ float:left; width:551px; height:367px; background:#FFFFFF; position:relative; border-right:1px solid #A6A6A6;}
+.leftSea p{ padding:3px 10px;}
+.leftSea h5{ margin:10px 0 3px 10px; font-size:12px;}
+.sea{ width:176px; height:95px;background:url(images/popBG.png) no-repeat ;padding:0; position:absolute;}
+.sea div{ width:172px; height:90px; margin:0; position:absolute; top:0; left:0; }
+.newPlay{ cursor:pointer;}
+
+.bottom_m{ position:absolute; left:15px; top:347px;}
+
+.rightSea{ float:right; width:285px; height:375px; background:url(images/findMusicBG.jpg) no-repeat top right ; z-index:9999; position:absolute; top:1px; right:17px}
+
+.con_slide{ position:relative; width:160px; height:16px;}
+.con_slide div{position:absolute; left:0; top:0;}
+.slide_div{ background:url(images/t_mBtn.gif) no-repeat; width:45px; height:16px; z-index:100; cursor:pointer;}
+.con_track{background: url(images/t_track.gif) no-repeat; width:160px;height:12px; padding-right:0px; }
+.track_l a{background:url(images/t_mBtn.gif) no-repeat; width:45px; height:16px;}
+.track_l{background: url(images/track_left.jpg) no-repeat; width:118px;height:12px;  }
+.track_r{background: url(images/track_right.jpg) no-repeat; width:42px;height:12px;}
+
+.right_tb{margin:17px 0 0 0; height:330px;}
+ .font_d{font-size:11px; color:#888888}
+ .theSel{ background: url(images/t_select.gif) no-repeat; width:166px; height:25px;padding:7px 0 0 12px;}
+ 
+ .eff_left{ position:relative; left:0; top:0; margin:0; width:540px; height:330px; float:left; z-index:99}
+ .upDown{ position:absolute; right:8px; top:300px; width:33px; height:72px; z-index:999;}
+  .upDown img{ cursor:pointer;z-index:999;}
+</style>
+<div class="setmenu" id="musicSearch" style="display: none; width:861px; z-index:10000; background-color:#f3f3f3">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="850" height="377"  style="z-index:200; margin-left:-150px;" id="music_flash">
+                    <param name="allowScriptAccess" value="sameDomain">
+                    <param name="movie" value="flash/findMusic_1.swf" id="movieVal">
+                    <param name="quality" value="high">
+					<param name="play" value="false">
+					<param name="loop" value="false">
+                    <param name="wmode" value="transparent">
+                    <embed src="flash/findMusic_1.swf"   wmode="transparent" quality="high" bgcolor="#ffffff" width="850" height="377" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"  loop="false"/> 
+</object>
+
+  <div class="rightSea">
+    <table width="275" border="0" cellpadding="0" cellspacing="0" class="right_tb">
+	  <tr height="20" >
+		<td width="70"><strong style="color:#767676">Rhythm</strong></td>
+		<td  width="170">
+		    <div class="con_slide" style=" width:170px; ">
+				<table width="160" border="0" cellpadding="0" cellspacing="0">
+				  <tr>
+					<td width="117"class="track_l"></td>
+					<td  width="43" class="track_r"></td>
+				  </tr>
+				</table>
+
+			</div>
+		</td>
+		<td width="20" ><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="12">
+		<td>&nbsp;</td>
+		<td><div><span style="float:left;" class="font_d">Ease</span><span style="float:right;margin-right:24px;" class="font_d">Strong</span></div>
+</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr height="20" >
+		<td width="48"><strong style="color:#767676">Tone</strong></td>
+		<td  width="160">
+		    <div class="con_slide">
+		       <div class="con_track" style="top:2px;"></div>
+			   <div class="slide_div" ></div>			   
+			</div>
+		</td>
+		<td width="20" ><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="12">
+		<td>&nbsp;</td>
+		<td><div><span style="float:left;" class="font_d">Low</span><span style="float:right;margin-right:24px;" class="font_d">Resounding</span></div>
+</td>
+		<td>&nbsp;</td>
+	  </tr>
+	   <tr height="20" >
+		<td width="48"><strong style="color:#767676">Timbre</strong></td>
+		<td  width="160">
+		    <div class="con_slide">
+		       <div class="con_track" style="top:2px;"></div>
+			   <div class="slide_div" ></div>			   
+			</div>
+		</td>
+		<td width="20" ><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="12">
+		<td>&nbsp;</td>
+		<td><div><span style="float:left;" class="font_d">Rich</span><span style="float:right;margin-right:24px;" class="font_d">Simple</span></div>
+</td>
+		<td>&nbsp;</td>
+	  </tr>
+	      <tr height="20" >
+		<td width="48"><strong style="color:#767676">Decade</strong></td>
+		<td  width="160">
+		    <div class="con_slide">
+		       <div class="con_track" style="top:2px;"></div>
+			   <div class="slide_div" ></div>			   
+			</div>
+		</td>
+		<td width="20" ><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="12">
+		<td>&nbsp;</td>
+		<td><div><span style="float:left;" class="font_d">Oldies</span><span style="float:right;margin-right:24px;" class="font_d">New Song</span></div>
+</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr height="35">
+		<td><strong style="color:#767676">Singer</strong></td>
+		<td><div class="theSel">All</div></td>
+		<td><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="35">
+		<td><strong style="color:#767676">School</strong></td>
+		<td><div class="theSel">All</div></td>
+		<td><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	   <tr height="35">
+		<td><strong style="color:#767676">Language</strong></td>
+		<td><div class="theSel">All</div></td>
+		<td><img  src="images/t_rIcon.gif" /></td>
+	  </tr>
+	</table>
+
+  </div>	
+</div>
+
+
+<!--音乐指纹-->
+<div class="setmenu" id="fingerprint" style="display: none; width:491px; z-index:10000; background-color:#f3f3f3">
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="50" style="color:#CB8E31;font-size:16px; font-weight:bold;">File:</td>
+                <td width="240"><input type="text" value=""  style="width:95%; height:18px;" id="uploadUrl_2"/></td>
+                <td width="80"> 
+    
+    <div class="pos_re uploadDiv" ><a href="#" class="fun_bold" style="text-decoration:none;"><input type="button" value="Browse" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  style="margin-left:0px; font-weight:bold"/><span style="color:#F00; vertical-align:middle">*</span> </a> 
+                   <div>
+                    <input type="file" name="uploadFile2" id="uploadFile2"  onchange="document.getElementById('uploadUrl_2').value=this.value;"/>
+                </div>
+            </div>
+       </td>
+	    <td width="10"><span style="color:red;">*</span></td>
+	    <td width="80"><input type="button" value="Upload" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  id="fingerUpload" />
+		</td>
+		<td width="10"><span style="color:red;">*</span></td>
+              </tr>
+            </table>
+    <div style="border:1px #C1C1C1 dotted;border-left:none;border-right:none;height:54px;width:100%;margin:8px 0;">
+     <table cellpadding="0" cellspacing="8" style="margin-top:9px;">
+    <tr>
+	   <td ><input type="button" value="Search" class="top_search_btn" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'"  style="color:#ABABAB" id="fingerSearch"/><span style="color:red;">*</span></td>
+	   <td style="color:#947A57" id="searchText">You have not uploaded a music file!Can't search</td>
+	 </tr>
+   </table>
+    </div>
+	<label style="color:#597491"><strong>Search Results</strong></label>&nbsp;&nbsp;<span style="color:#CC5A5A" id="resultText"><strong>0</strong></span>
+	<p id="result" style="height:20px; margin:10px 0 0 0;"><a href="Music_details.html" style="text-decoration:underline; display:none;">Scarborough Fair </a></p>
+</div>
+</div>
+
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+ <script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/downList.js"></script>
+ <SCRIPT src="js/jquery.jcarousel.pack.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.slider.js"></script>
+<script type="text/javascript" src="js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="js/jquery.effects.drop.js"></script>
+
+
+<script type="text/javascript">
+
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+$(function() {
+    $('#mycarousel').jcarousel({
+        auto: 4, 
+		scroll:1,
+		wrap:"last",
+        initCallback: mycarousel_initCallback
+    });
+});
+ 
+/*下面的是视频播放哭的js */
+    var url="SAY YOU SAY ME.wav";//音乐地址
+    if(typeof window.event=="undefined")
+    {
+    document.write('<embed id="MediaPlayer" height="0" src="'+url+'" type="application/x-mplayer2"></embed>');
+    }
+    else
+    {
+    document.write('<object id="MediaPlayer" height="0" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject"><param name="URL" value="'+url+'"><param name="AutoStart" value=0></object>');
+    }
+   
+	 var Player=document.getElementById("MediaPlayer");	
+	$(function(){
+ 			   	$(document).unload(function(){//离开本页就关闭音乐
+ 					//Player.stop();
+					 $("#bigPlayerStopBtn").click();
+			  
+							 });
+			   
+			       Player.controls.stop();
+			  		$("#bigPlayerPlayBtn").click(function(){//暂停 播放控制
+						if($(this).hasClass("big_player_pause")){
+						Player.controls.play();			
+						}else{
+						Player.controls.pause();	
+						}});
+				
+			    $("#bigPlayerStopBtn").click(function(){//停止控制
+					Player.controls.stop();
+					$("#bigPlayerPlayBtn").removeClass("big_player_pause");
+					$("#bigPlayerPlayBtn").addClass("big_player_play"); 
+ 					  });
+				
+				//拖动改变值		
+				 $("#slider-range").slider({
+					range: true,
+					min: 0,
+					max: 300,
+					values: [30, 90],
+					slide: function(event, ui) {
+					$("#amount").val(ui.values[1]-ui.values[0]+'s');
+					}
+				});
+				$("#amount").val($("#slider-range").slider("values", 1)-$("#slider-range").slider("values", 0)+'s');
+				 $(".ui-slider-range").append('<input type="text" id="amount" class="slider_inputCls"  value="60s" />');
+
+				//弹出的close按钮事件 
+				$("#mrb_cancel").click(function(){
+							$("#lightBox").hide();		
+							$("#diy_rbt").hide();
+						    $("#bigPlayerStopBtn").click();
+			  
+											   });
+				
+				 $("#mrb_ok").click(function(){
+							$("#voipPop_out_div").show();				 
+				  
+				  });
+				 //弹出的close按钮事件
+				 $(".myself_imgClose,#ope_close").click(function(){
+							$("#voipPop_out_div").hide(); 
+							$("#lightBox").hide();		
+							$("#diy_rbt").hide();
+							$("#bigPlayerStopBtn").click();
+			  
+													  });
+				  
+				$("a").focus(function(){
+							if(this.blur){ this.blur();}
+							})  ;
+				
+				//搜索歌曲
+				$('.track_l').slider();			
+				
+				$('.track_l a').attr('id','moveBtn')
+				$('.track_l a').mousedown(function(){
+				  // $('#music_flash').play();
+				  document.getElementById('moveBtn').setCapture();
+				  //document.getElementById('music_flash').play();
+				}).mouseup(function(event){
+				   document.getElementById('moveBtn').releaseCapture();  
+				   document.getElementById('music_flash').play();
+				   window.setTimeout(function(){
+					   var index=parseInt($('#movieVal').attr('value').split('_')[1]);
+						if(index==3){
+						 $('#music_flash').remove();	
+					  $('.rightSea').before('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="850" height="377"  style="z-index:200; margin-left:-150px;" id="music_flash"><param name="allowScriptAccess" value="sameDomain"><param name="movie" value="flash/findMusic_1.swf" id="movieVal"><param name="quality" value="high"><param name="play" value="false"><param name="loop" value="false"><param name="wmode" value="transparent"><embed src="flash/findMusic_1.swf"   wmode="transparent" quality="high" bgcolor="#ffffff" width="850" height="377" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"  loop="false"/></object>')
+						}else{
+						 $('#music_flash').remove();	
+						 index++;
+						$('.rightSea').before('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="850" height="377"  style="z-index:200; margin-left:-150px;" id="music_flash"><param name="allowScriptAccess" value="sameDomain"><param name="movie" value="flash/findMusic_'+index+'.swf" id="movieVal"><param name="quality" value="high"><param name="play" value="false"><param name="loop" value="false"><param name="wmode" value="transparent"><embed src="flash/findMusic_'+index+'.swf"   wmode="transparent" quality="high" bgcolor="#ffffff" width="850" height="377" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"  loop="false"/> </object>')
+						}
+						 
+			   },4000)
+				  
+				})
+				
+				
+				$('.right_tb img').click(function(){
+				   if($(this).attr('src')=="images/t_rIcon.gif"){
+				     $(this).attr('src',"images/t_noSelect.gif")
+				   }else{
+				     $(this).attr('src',"images/t_rIcon.gif")
+				   }
+				})
+				
+				//fingerUpload
+				$('#fingerUpload').click(function(){
+				   $(this).css('color','#ABABAB')
+				   $('#fingerSearch').css('color','#666666');
+				    $('#fingerSearch').attr('canSearch','yes')
+				   $('#searchText').text('You can Search now');
+				})
+				
+				 $('#fingerSearch').click(function(){
+				    if($(this).attr('canSearch')){
+					  $('#resultText').text('1');
+					  $('#searchText').text('The music upload successfully!');
+					  $('#result a').show();
+					}
+				 })
+				 
+				//初始化
+				$('.popwin_icon_close img').click(function(){
+				   $('#searchText').text("You have not upload a music file!Can't search");
+				   $('#uploadUrl_2').val('');
+				   $('#fingerSearch').css('color','#ababab');
+				   $('#resultText').text('0');
+				    $('#result a').hide();
+					$('#fingerUpload').css('color','#666666');
+				})
+
+	});
+
+</script>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>
+
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+</SCRIPT>

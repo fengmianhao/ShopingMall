@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*======Basic style 20090903-chengjuan======*/
+body { margin: 0; padding: 0; background-color: #ffffff; font-size: 12px; font-family: "Verdana","Tahoma","Arial"; color: #333333; z-index: 1; }
+td, p, div, a, form { margin: 0; padding: 0; font-size: 12px; font-family: "Verdana","Tahoma","Arial"; color: #333333; line-height: 130%; }
+ul, li , dl , dt, dd { margin: 0;	padding: 0; list-style: none;	font-size: 12px; font-family: "Verdana","Tahoma","Arial"; color: #333333; line-height: 130%; }
+input,select,textarea { margin: 0; padding: 0; font-size: 12px;	font-family: "Verdana","Tahoma","Arial"; color: #333333; }
+select, textarea {  background-color: #fff; }
+h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; font-family: "Verdana","Tahoma","Arial"; color: #333333; }
+img {	border: none; }
+a {	color: #ac0000;	text-decoration: none; }
+a:hover {text-decoration: underline; }
+table{ border-collapse:collapse; border-spacing:0}
+
+
+/*======Basic module style======*/
+#container { margin: 0 auto; width: 1003px; text-align:left;}
+#header { height: 59px; background: url(../images/forum_top_bg.gif) repeat-x; width: 1003px; margin-bottom:4px; position:relative}
+
+.logo{ float:left; height: 27px; width: 153px; background: url(../images/forum_logo.gif) no-repeat;  padding:10px 0 22px 40px; display:block}
+.header_right{ height: 59px; width:194px; background: url(../images/forum_top_right.gif) no-repeat; float:right;}
+.header_info{ position:absolute; right:20px; top:6px; color:#fff}
+.header_info img{ border:1px solid #fff; margin-right:10px}
+
+
+.state{ height:40px; width:1003px; padding:6px 0 0 0}
+.state_today{ float:right; width:390px; color:#999}
+.state_today span{ color:#333;}
+
+#mainContent { padding: 0 8px;}
+.content_box { margin-bottom: 10px; width:987px}
+.content_top{ background: url(../images/content_top_bg.gif) left top repeat-x; height:52px; width:987px}
+.content_top_left{ background: url(../images/content_top_lr.gif) -9px top no-repeat; height:52px; float:left; width:9px}
+.content_top_center{ float:left; padding:17px 0 0 10px; height:35px}
+.content_top_center a{ padding:0 0 0 22px;font-size:16px; font-weight:bold;}
+.content_top_center a:hover{ text-decoration:none}
+.content_top_center a.content_show{ background:url(../images/forum_show.gif) left bottom no-repeat;}
+.content_top_center a.content_hide{ background:url(../images/forum_show.gif) left top no-repeat;}
+.content_top_right{ background: url(../images/content_top_lr.gif) left top no-repeat; height:52px; float:right; width:9px}
+
+.content_center{ background: url(../images/content_center_right.gif) right top repeat-y;width:978px; padding:0 9px 0 0; color:333}
+.content_center_left{ background: url(../images/content_center_left.gif) left top repeat-y;width:969px; padding:0 0 0 9px}
+.content_center_left a{ font-size:14px; margin-bottom:5px}
+.content_center_left th{ font-size:14px; border-bottom:1px dashed #ccc}
+.content_center_left td{ border-bottom:1px dashed #ccc}
+.content_center_left tr{ margin:2px 0}
+.content_center_left tr.bgcolor{ background:#f7f7f7}
+.content_center_left h3{ font-size:16px; border-bottom:1px solid #ccc; padding:8px 0 8px 10px}
+.content_center_left ul{ padding:15px 0 0 10px; height:50px}
+.content_center_left li{ float:left; margin-right:25px;}
+
+.content_bottom{ background: url(../images/content_bottom_bg.gif) left top repeat-x; height:10px; width:987px; overflow:hidden}
+.content_bottom_left{ background: url(../images/content_bottom_lr.gif) -9px top no-repeat; height:10px; float:left; width:9px}
+.content_bottom_right{ background: url(../images/content_bottom_lr.gif) left top no-repeat; height:10px; float:right; width:9px}
+
+#footer { padding-left: 15px; padding-right: 15px; height: 40px; line-height: 40px; text-align: right; color: #666666; clear:both }
+#footer span { color: #cc3300; float:left}
+#footer span a { color: #cc3300; }

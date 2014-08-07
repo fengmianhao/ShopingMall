@@ -1,0 +1,14 @@
+<chart caption='Country Comparison' shownames='1' showvalues='0' decimals='0' numberPrefix='$' canvasBgAlpha ='80'>
+<categories><category label='Jan' /><category label='Feb' /><category label='Mar' /><category label='Apr' /></categories><dataset seriesName='NormalIncome' color='AFD8F8' showValues='0'>
+<set value='25601.34' />
+<set value='20148.82' />
+<set value='17372.76' />
+<set value='35407.15' />
+ </dataset>
+<dataset seriesName='Recommend income' color='F6BD0F' showValues='0'>
+<set value='57401.85' />
+<set value='41941.19' />
+<set value='45263.37' />
+<set value='117320.16' />
+ </dataset>
+</chart>

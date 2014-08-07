@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="js/source/tree_component.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center, .list_item_help ,.Qlink_list ,.Qlink_ico ,.fixpng');
+</script>
+<![endif]-->
+<script type="text/javascript">
+function hide_show(sID,aa){
+	var sIDD = document.getElementById(sID);
+	var aaa = document.getElementById(aa);
+	aaa.style.backgroundPosition = "99% top"
+	if(sIDD.style.display =="block"){
+		sIDD.style.display = "none";
+	    aaa.style.backgroundPosition = "99% bottom"
+		}
+	else{
+		sIDD.style.display = "block";
+		aaa.style.backgroundPosition = "99% top"
+		}
+	
+	}
+</script>
+<style type="text/css">
+
+.setRule{ padding:10px 0 0 15px}
+.setRule_One{ font-size:14px; font-weight:bold; float:left; width:145px; line-height:24px}
+.use_money{ display:block; width:660px; height:20px; line-height:20px; background:#d5e2e8 url(images/arrow_show_hide.gif) no-repeat 99% top; border:1px solid #bdc7cf; border-width:1px 0; text-indent:15px; font-weight:bold; margin:8px 0;}
+</style>
+<title>MDSP</title>
+</head>
+
+<body>
+<div id="top">
+	<div class="top_left"></div>
+    <div class="top_center">
+    	<div class="logo"><a href="#"><img src="images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+        	<div id="topmenuContainer">
+            	<!-- 菜单保持Status -->
+            	<ul id="topmenuOn">
+                	<li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                	<li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../service/service.html">Service Innovation</a></li>
+                        <li><a href="3_2.html">Admin(CP/SP)</a></li>
+                        <li><a href="2_25.html">Admin(Operator)</a></li><li><a href="3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo">Welcome! Manager!</div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+            <ul>
+                <li><a href="4_3_new.html">Target User Management</a></li>
+                <li><a href="4_3.html">Campaign Management </a></li>
+                <li><a href="3_25_new.html">Advertisement Management</a></li>
+                <li><a href="3_28.html">CP/SP Management </a></li>
+                <li><a href="4_9.html">Promotion</a></li>
+                <li><a href="5_10.html">Portal Management</a></li> 
+				 <li><a href="adapter/adapter1.html">Network Abstraction</a></li> 
+				</ul>
+        </div>
+    </div><a href="2_26.html" class="fun">Home</a></div>
+<div id="mainContainer">
+    <div id="rightColumn">
+    	<div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+					<div class="title_text">Detail</div>
+					<div class="tab">
+						<div class="tab_bg_left"></div>
+							<div class="tab_bg_right"></div>
+							<div class="tab_bg_center">
+								<ul id="tabTitle1" class="tab_title_normal" onclick="changeTab('tabTitle', 'tabContent',1, 2);getRightHeight();">
+									<li class="tab_title_left"></li>
+									<li class="tab_title_center">Basic Information</li>
+									<li class="tab_title_right"></li>
+								</ul>
+								<ul id="tabTitle2" class="tab_title_normal" onclick="changeTab('tabTitle', 'tabContent',2, 2);getRightHeight();">
+									<li class="tab_title_left"></li>
+									<li class="tab_title_center">Tarrif Information</li>
+									<li class="tab_title_right"></li>
+								</ul>
+							</div>
+				    </div>
+					<div id="tabContent1" style="display: block; padding-bottom:15px">
+						<div>
+							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="padding: 10px 0px 20px 0px;">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td width="110" class="flist_name">Service Name:</td>
+												<td width="5" class="flist_required">&nbsp;</td>
+												<td class="flist_content">Weather Report</td>
+											</tr>
+											 <tr>
+												<td class="flist_name">Access Code:</td>
+												<td width="5" class="flist_required">&nbsp;</td>
+												<td  class="flist_content">52145802</td>
+											</tr>
+											 <tr>
+												<td class="flist_name">Service Type:</td>
+												<td width="5" class="flist_required">&nbsp;</td>
+												<td  class="flist_content"><strong>SMS</strong></td>
+											</tr>
+                                            <tr>
+												<td valign="top" width="80" class="flist_name">Service icon:</td>
+												<td width="5" class="flist_required">&nbsp;</td>
+												<td  class="flist_content"><img src="images/netWork3.png"  alt=""/></td>
+											</tr>
+											 <tr>
+												<td valign="top" class="flist_name">Service Description:</td>
+												<td width="5" class="flist_required">&nbsp;</td>
+												<td valign="top" class="flist_content">Query the weather information of the city via the short message</td>
+											</tr>
+										</table>                               
+									</td>
+							   </tr>
+						</table>
+						</div>
+					</div>
+					<div id="tabContent2" style="display:none;padding-bottom:15px">
+                        <div class="setRule">
+                    <form name="" action="">
+                        <div>
+                        
+                        <ul onclick="btnAct(0); location.href='#'" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div" style="width:100%">
+                                <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                <li class="btn_center_normal" style="width:100px;">Add the Rule</li>
+                                <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                <li class="nofloat"></li>
+                            </ul>
+                            <span class="setRule_One">Set the Rule one &gt;&gt;</span>
+                        </div>
+                        <div style=" clear:left; padding:4px 0 0 0px">
+                            <div><span>Select the User Group:</span> 
+                              <span style=" margin-left:50px;">
+                                <input name="" type="checkbox" value="" checked="checked"  style="margin-left:20px;"/>
+                                Mobile Zone    <input name="" type="checkbox" value="" checked="checked" />Easy Own    <input name="" type="checkbox" value="" />Go Tone</span>
+                          </div>
+                            
+                            <a href="###" id="use_money1" class="use_money" onclick="hide_show('zhekou','use_money1')">Rent</a>
+                    <div id="zhekou" style="display:block; ">
+					<table width="300" cellspacing="0" cellpadding="0" border="0" style="margin-left:-15px;" >
+					  <tr id="flistTr11">
+					  <td width="15"></td>
+                      <td   width="100">
+                            <input name="typeSel" type="radio" value="" checked="checked" onfocus="selectRow(11, this);" onblur="clearSelectRow(11,this);"  id="subscribe" />Subscribe　　　　　
+                        </td>
+						<td width="100" style="text-align:center;"><input name="typeSel" type="radio" value="" onfocus="selectRow(11, this);" onblur="clearSelectRow(11,this);"   id="on_demand"/>On_demand</td>                   <td width="85"></td>
+                    </tr>
+					</table>
+					<div id="first_div">
+                    <table width="660" cellspacing="0" cellpadding="0" border="0" style="margin-left:-15px;" >
+                      
+                    
+					<tr id="flistTr40">
+                                <td class="flist_name">Subscription Relation Effective Rule:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(40, this);" onblur="clearSelectRow(40,this);">                                              <option>Immediately after subscription</option>
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>
+					<tr id="flistTr41">
+                                <td class="flist_name">Subscription Relation Expiration Rule:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(41, this);" onblur="clearSelectRow(41,this);">                                             
+                                             <option>Next cycle</option>
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>		
+					<tr id="flistTr42">
+                                <td class="flist_name">Period Type:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(42, this);" onblur="clearSelectRow(42,this);">                                              <option>Multiweek package</option>
+											                             <option>Weekly package</option>
+																		 <option>Bill cycle</option>
+																		 <option>Monthly package</option>
+																		 <option>Daily package</option>
+																		 <option>Multimonth package</option>
+                                     </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>
+					<tr id="flistTr43">
+                                <td class="flist_name">Period Start Type:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(43, this);" onblur="clearSelectRow(43,this);">                                              <option>Product subscription day</option>
+										                            	<option>Fixed day in a month</option>
+                                          
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>
+                    
+                    <tr id="flistTr8">
+                        <td class="flist_name">The way of collecting:</td>
+                        <td class="flist_content">
+                            <table height="24" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="140"><input name="ss" type="radio" value="" checked="checked" onfocus="selectRow(8, this);" onblur="clearSelectRow(8,this);"  />Collecting per week</td>
+                                    <td width="140"><input name="ss" type="radio" value="" onfocus="selectRow(8, this);" onblur="clearSelectRow(8,this);"  />Collecting per day</td>
+                                  
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                        </table>
+                    <div class="tab" style="width:660px;">
+						<div class="tab_bg_left"></div>
+							<div class="tab_bg_right"></div>
+							<div class="tab_bg_center">
+								<ul id="theTab1" class="tab_title_normal" onclick="changeTab('theTab', 'theTabContent',1, 1);getRightHeight();">
+									<li class="tab_title_left"></li>
+									<li class="tab_title_center">Defalut Group</li>
+									<li class="tab_title_right"></li>
+								</ul>
+ 							</div>
+				    </div>    
+					<div id="theTabContent1" >
+					  <table width="760" cellspacing="0" cellpadding="0" border="0" style="margin-left:-15px;" >
+                      
+                    <tr id="flistTr451">
+                                <td class="flist_name" width="255">Rental(Cent(CN)):</td>
+                                <td class="flist_content">
+									 <input  type="text" value="200" onfocus="selectRow(451, this);" onblur="clearSelectRow(451,this);"  style="width:300px;"/><span style="color:red;">*</span><img src="images/flist_right.gif" />
+								</td>
+                            </tr>
+					
+					<tr id="flistTr441">
+                                <td class="flist_name">First-Time Rental Collection Triggering Rule:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(441, this);" onblur="clearSelectRow(441,this);">                                              <option>Immediately after subscription</option>
+                                              
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>		
+					<tr id="flistTr442">
+                                <td class="flist_name">First-Period Rental Collection Rule:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(442, this);" onblur="clearSelectRow(442,this);">                                              <option>Deduct entire fee despite subscription day</option>
+                                             
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>
+					<tr id="flistTr443">
+                                <td class="flist_name">Unsubscription Refunding Rule:</td>
+                                <td class="flist_content">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="170"><select style="width:307px;" onfocus="selectRow(443, this);" onblur="clearSelectRow(443,this);">                                              <option>No refund</option>
+                                             
+                                    </select></td>
+											
+										</tr>
+									</table>
+								</td>
+                            </tr>
+                    
+                    <tr id="flistTr88">
+                        <td class="flist_name"  colspan="2">
+                            <table height="24" border="0" cellpadding="0" cellspacing="10">
+                                <tr>
+                                    <td width="80">Rate Mode:</td>
+                                    <td><input name="bb" type="radio" value="" onfocus="selectRow(88, this);" onblur="clearSelectRow(88,this);"  />Simple tariff</td>
+									<td ><input name="bb" type="radio"  value=""   onfocus="selectRow(88, this);" onblur="clearSelectRow(88,this);"/>Free of charge </td>
+                                  
+								   <td ><input name="bb" type="radio" value="" checked="checked" onfocus="selectRow(88, this);" onblur="clearSelectRow(88,this);"  />Grading Tariff</td>
+								  <td ><input name="bb" type="radio" value="" onfocus="selectRow(88, this);" onblur="clearSelectRow(88,this);"  />Complex Tariff</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                        </table>
+					
+					</div>
+					
+					</div>
+					<div id="second_div" style="display:none;">
+					<table width="760" cellspacing="0" cellpadding="0" border="0" style="margin-left:-15px;" >
+                     
+                    <tr id="flistTr78">
+                        <td class="flist_name" width="165">Measure Mode:</td>
+                        <td class="flist_content">
+                            <table height="24" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                   
+                                    <td width="140"><input name="aa" type="radio" value=""  checked="checked"onfocus="selectRow(78, this);" onblur="clearSelectRow(78,this);"  />By times</td>
+							       </tr>
+                            </table>
+                        </td>
+                    </tr>
+					<tr id="flistTr58">
+                        <td class="flist_name">Measure Unit:</td>
+                        <td class="flist_content">
+                            <table height="24" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                   
+                                    <td width="140"><input name="cc" type="radio"  checked="checked"value="" onfocus="selectRow(58, this);" onblur="clearSelectRow(58,this);"  />Times </tr>
+                            </table>
+                        </td>
+                    </tr>
+					<tr id="flistTr68">
+					   <td class="flist_name">Rate Mode:</td>
+                        <td >
+                             <table height="24" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  
+                                    <td width="100"><input name="ee" type="radio" value="" onfocus="selectRow(68, this);" onblur="clearSelectRow(68,this);"  />Simple tariff</td>
+									<td width="100"><input name="ee" type="radio" value="" onfocus="selectRow(68, this);" onblur="clearSelectRow(68,this);"  />Free of charge </td>
+                                  
+								    <td width="100"><input name="ee" type="radio" value="" checked="checked" onfocus="selectRow(68, this);" onblur="clearSelectRow(68,this);"  />Grading Tariff</td>
+								    <td width="100"><input name="ee" type="radio" value="" onfocus="selectRow(68, this);" onblur="clearSelectRow(68,this);"  />Complex Tariff</td>
+							     </tr>
+                            </table>
+                        </td>
+                    </tr>
+					<tr id="flistTr98">
+                        <td class="flist_name" >Be allotted the archives type:</td>
+                        <td class="flist_content">
+                            <table height="24" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                   
+                                    <td width="140"><input name="dd" type="radio" value="" onfocus="selectRow(98, this);" onblur="clearSelectRow(98,this);"  />Note accumulate</td>
+							       </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                        </table>
+					<table width="600" border="0" cellpadding="0" cellspacing="0">
+					  <tr>
+						<td><strong>Number</strong></td>
+						<td><strong>Grade starting point</strong></td>
+						<td><strong>Grade ending point</strong></td>
+						<td width="125"><strong>Rate</strong></td>
+						<td  style="color: #00CCCC">Add</td>
+ 					  </tr>
+					  <tr>
+ 						<td>1</td>
+						<td><input type="text" value="0" /></td>
+						<td><input type="text" value="100" /></td>
+						<td><input type="text" value="0" /></td>
+						<td style="color:red;">*</td>
+					  </tr>
+					  <tr>
+ 						<td>2</td>
+						<td><input type="text" value="101" /></td>
+						<td><input type="text" value="200" /></td>
+						<td><input type="text" value="10" /></td>
+						<td><span style="color:red;">*</span><span style=" color:#00CCCC">Delete</span></td>
+					  </tr>
+					</table>
+	                </td>
+					
+                    </div>
+                            
+                           
+                        </div>
+                    </form>
+                </div>
+                    </div>
+					
+					<script language="javascript" type="text/javascript">
+						changeTab('tabTitle', 'tabContent', 1, 2);
+						changeTab('theTab', 'theTabContent', 1, 1);
+					</script>
+					<div style="margin:10px;"  >
+						<table width="100%" border="0" cellspacing="0" cellpadding="0"  >
+							<tr>
+                                <td width="13"></td>
+								<td width="100">
+									<ul onclick="btnAct(0); location.href='2_28.html'"  onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Approve</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+								<td width="135" valign="top" style="padding: 2px 0px 0px 0px;">
+                                	<div class="editable_list">
+                                    	<div class="editable_list_sel">
+                                        	<select name="editableSel" id="editableSel" onchange="editableSelect();">
+                                                  <option value="Information incorrect" selected="selected">Access code error </option>
+                                              <option value="Access code error" >Information incorrect</option>
+                                            </select>
+                                        </div>
+                                        <div class="editable_list_inp">
+                                        	<input name="editableInp" id="editableInp" type="text" />
+                                        </div>
+                                    </div>
+								</td>
+								<td>
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Reject</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+                    </div>
+                </div>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+	<div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div class="leftmenu" id="leftMenu">
+				<div class="common_box">
+					<div class="common_title"><h2>Common Bulletin</h2></div>
+					<div class="common_content">
+						<p>SDP acts as a catalyst in generating revenue from innovative services enabling 
+
+multiple business models within the telecom marketplace.</p>
+					</div>
+					<div class="common_bottom"></div>
+				</div>
+				<div class="common_box">
+					<div class="content_title"></div>
+					<div class="content_content" id="listItems">
+						<ul>
+							<li class="list_title"><span style="float:right; padding:4px 5px 0 0"><a href="#" class="fun">Setting</a></span>Quick Links</li>
+                            <li class="list_item"><a href="4_3_new.html" class="lnk_normal"><span>Target User Management</span></a></li>
+							<li class="list_item"><a href="4_3.html" class="lnk_normal"><span>Campaign Management</span></a></li>
+                            <li class="list_item"><a href="3_25_new.html" class="lnk_normal"><span>Advertisement Management</span></a></li>
+							<li class="list_item"><a href="3_28.html" class="lnk_normal"><span>CP/SP Management </span></a></li>
+							<li class="list_item"><a href="4_9.html" class="lnk_normal"><span>Promotion</span></a></li>
+							<li class="list_item"><a href="5_10.html" class="lnk_normal"><span>Portal  Management</span></a></li>
+                            <li class="list_item"><a href="adapter/adapter1.html" class="lnk_normal"><span>Network Abstraction</span></a></li>
+							 
+						</ul>
+					</div>
+					<div class="content_bottom"></div>
+				</div>
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+   
+</div>
+ <div class="nofloat"></div>
+<div id="bottom">Company SDP</div>
+
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List',this);"></div>
+</div>
+<!--第二个弹出菜单-->
+<div id="popMenu_List2" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List2_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List2_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List2',this);"></div>
+</div>
+<!--第三个弹出菜单-->
+<div id="popMenu_List3" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+	</ul>
+</div>
+<!--第四个弹出菜单-->
+<div id="popMenu_List4" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+	<div id="popMenu_List4_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List4_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List4',this);"></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+	<ul class="nav_menu_items">
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+</div>
+<!--主导航二级菜单结束-->
+</body>
+<script type="text/javascript">
+getRightHeight();
+$(function(){
+ 
+ $('#subscribe').click(function(){
+      $('#second_div').hide();
+    $('#first_div').show();
+    
+ })
+ $('#on_demand').click(function(){
+ 
+	 $('#first_div').hide();
+    $('#second_div').show();
+ })
+
+           $("#add_R_show").click(function(){
+		   $("#add_R").hide();	
+		   $("#R_show").show();
+		   getRightHeight();
+										 });
+										 
+										 
+  //only
+$('#only').click(function(){
+   if($(this).find('ul').css('display')=="none"){
+		$(this).height(80);
+	   //$('#direct').attr('src','images/showitem.gif')
+	   $(this).find('ul').show();
+   }else{
+        $(this).height(23);
+	  // $('#direct').attr('src','images/arrow_hide.gif')
+	   $(this).find('ul').hide();
+   }
+  
+})										 
+		   });
+</script>
+</html>

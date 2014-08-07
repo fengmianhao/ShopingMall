@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<META content=Digital Shopping Mall,portal name=Keywords>
+<!--请资料部提供网页搜索关键字-->
+<META content=Digital Shopping Mall name=Description>
+<!--请资料部提供网页搜索简单描述-->
+<link href="skin/default/css/main.css" rel="stylesheet" type="text/css" fortheme="yes"  id="theMain"/>
+ <!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.top_search_btn,.play_big_icon,.themelist_left, .themelist_right, .themelist_center, #themeListTitle, span.top_lnk_theme, .moremenu div,.select_popdiv_left ,.select_popdiv_right ,.select_popdiv_bl,.select_popdiv_bc,.select_popdiv_br,.select_popdiv_tl ,.select_popdiv_tc ,.select_popdiv_tr ,.Qlink_list ,.Qlink_ico,.user_show ');
+</script>
+<![endif]-->
+ 
+<style type="text/css">
+/*======music list style======*/
+.music_list { margin-left: 30px; } 
+.music_list li {margin-right: 12px; margin-bottom:5px; width: 100px; height: 125px; text-align:center; overflow:hidden}
+
+.music_list li p { white-space: nowrap; overflow: hidden; }
+.music_list li img{ width:80px;height:80px; border:1px solid #ccc; padding:2px}
+.utilities_list{ margin-left:10px; margin-top:8px;}
+.utilities_list li{ height:35px; width:190px;line-height:35px; padding-bottom:10px;}
+.utilities_list li img{ float:left; margin-right:10px; margin-top:6px;}
+.fs11 img{ margin-right:2px !important; margin-top:6px}
+.limit_width{ width:130px}
+.text_right span img{ margin-top:8px}
+
+.clearfix:after{ visibility:hidden; clear:both; height:0; display:block; content:''}
+.clearfix{ *zoom:1}
+.top_paid{ padding:20px 0 20px 20px}
+.top_paid li{ float:left; width:320px; height:100px; margin: 0 20px 20px 0}
+.top_paid strong{ line-height:22px; display:block; margin-bottom:5px}
+.top_paid p{ line-height:22px}
+.top_paid img{ float:left; width:90px; height:90px; padding:4px; border:1px solid #d2d2d2; margin-right:10px; background:#ffffff}
+.top_paid_div{ float:left; width:200px; line-height:1.8em} 
+.top_paid_div div{ float:left; margin-top:3px; height:26px;}
+.top_paid_div em{ font-style:normal}
+
+.app_new_ul{ padding-left:10px; padding-bottom:0}
+.app_new_ul li{ width:240px; height:100px; margin: 0 10px 15px 0; display:inline}
+.app_new_ul img{ float:left; width:80px; height:80px; padding:2px; margin-right:8px; }
+.app_new_ul .top_paid_div{ float:left; width:146px; line-height:1.8em}
+
+.subChannel{ height:25px; background:url(images/subNavBG.jpg) repeat-x; border:1px solid #ccc; padding-top:5px;}
+.subChannel li{ display:inline; padding:3px 8px; }
+.currentSub{ font-weight:bold;}
+</style>
+<script type="text/javascript">
+function readCookie(name,defaultVal) { 
+	var search; 
+	search = name + "="; 
+	offset = document.cookie.indexOf(search); 
+	if (offset != -1) { 
+		offset += search.length; 
+		end = document.cookie.indexOf(";", offset); 
+		if (end == -1){
+			end = document.cookie.length;
+		}
+		return unescape(document.cookie.substring(offset, end)); 
+	}else{
+		return defaultVal;
+	}
+}
+		   //样式检验
+		   var aStyle=readCookie('theStyle','default');
+		   if(aStyle=='default'){
+			// $('#theMain').attr('href','skin/default/css/main.css');
+			document.getElementById('theMain').href = 'skin/default/css/main.css';
+ 			 }else{
+			//$('#theMain').attr('href','skin/purple/css/main.css');	 
+			document.getElementById('theMain').href = 'skin/purple/css/main.css';
+			}
+</script>
+<title>SDP Application list</title>
+</head>
+<body class="body_bg">
+<!--container start-->
+<div id="container">
+    <div id="header">
+        <div class="logo" onclick="self.location.href='MyWorld.html'"></div>
+        <div>
+            <div class="top_lnk" id="outDiv">
+                <div class="top_lnk_right"></div>
+                <div class="top_lnk_center">
+                    <div class="top_logininfo" style=" position:relative; z-index:5"><span class="brown arrow_down" style=" cursor:pointer" id="user_show">Welcome,13875521001</span><span>[ <a href="#">Logout</a> ]</span>
+                        <ul class="user_show" style="display:none; position:absolute">
+                        <li class="current_user"><a href="#">13875521001</a></li>
+                        <li><a href="#">13875521002</a></li>
+                        </ul>
+                    </div>
+                    <ul class="top_lnk_ul">
+                        <li onmouseover="showThemeList();" id="topLnkTheme"><span class="top_lnk_theme"><span class="arrow_down">Theme</span></span></li>                       
+                     <!--   <li onmouseover="showSelfServList();" id="topLnkSelfserv"><a href="#"><span class="arrow_down">Self-Service</span></a></li>
+                        <li><a href="#">Blog</a></li>-->
+                        <li id="Qlink" onmouseover="ShowLinkDiv()" onmouseout="CloseLinkDiv()" style="position:relative; padding-top:8px; padding-left:8px; height:22px; z-index:99999">
+                        <a href="#" class="Qlink_ico"></a>
+                       <div class="Qlink_list" id="qlinkDiv"style=" position:absolute; top:-1px; display:none; left:-100px">
+                            <ul class="Qlink_list_ul">
+                            	<li><a href="../../cxo_index.html">Demo Home</a></li>
+                                <li><a href="MyWorld.html">Digital Shopping Mall</a></li>
+                                <li><a href="../service/service.html">Service Innovation</a></li>
+                                <li><a href="../mdsp/3_2.html">Admin(CP/SP)</a></li>
+                                <li><a href="../mdsp/2_25.html">Admin(Operator)</a></li>
+                                <li><a href="../mdsp/3_30.html">Admin(MultiCountry)</a></li>
+                            </ul>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="top_lnk_left"></div>
+                <div class="nofloat"></div>
+            </div>
+            <div class="top_search">
+				<div class="top_search_box">
+                <a href="#" onmouseover="showPopSelect(this,'selectTopTypePop','typeContent',120,5,-22);"><span>All<span id="typeContent" style="display:none"></span></span></a>
+                <div class="top_search_input"> <input type="text" name="search" id="inner_search_input" value="Sarah Brightman" readonly="readonly" /></div>                
+<input type="button" value="Search"  class="top_search_btn"  id="inner_search" onmouseover="this.className = 'top_search_btnover'" onmouseout="this.className='top_search_btn'" onclick="location.href='search_list.html'"/>
+</div>
+				<ul class="top_search_ul">
+					<li><a href="worldCup.html">Sarah</a></li>
+					<li><a href="#">Plants vs Zombies</a></li>
+					<li><a href="#">War and Peace</a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="nofloat"></div>
+        <div id="mainNav">
+			<div class="main_nav_left"></div>
+			<div class="main_nav_center">
+				<ul class="main_nav_items">
+					<li><a href="MyWorld.html">My World</a></li>
+					<li><a href="Onebox.html">Messages</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                    <li><a href="Video.html">Video</a></li>
+					<li><a href="Ereading.html">eReading</a></li>
+					<li><a href="Utilities.html" class="focus">Apps</a></li>                    
+                    <li><a href="Game.html">Games</a></li>
+				</ul>
+			</div>
+			<div class="main_nav_right"></div>
+		</div>
+	</div>
+	<div id="mainContent">
+          <div>
+	     <ul class="subChannel">
+		 
+			   <li><a href="App_list.html" class="currentSub">Social Message</a></li>
+			    <li><a href="#">Entertainment</a></li>
+				 <li><a href="#">Productivity</a></li>
+				  <li><a href="#">News and Weather</a></li>
+				   <li><a href="#">Education</a></li>
+				    <li><a href="#">Others</a></li>
+		 </ul>
+	   </div>
+		<div id="leftColumnSmall">
+            <!--RBT row-->
+            
+            <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center">
+                        <div class="normal_title"><h1>Most popular</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul">
+                                <li class="news_detail" style="height:60px"><a href="#"><img src="images/EvanMP3Player.jpg" width="80" height="60"/></a>
+                                    <div class="fl" style="width:100px; ">
+                                        <p><a href="#">Evan-mp3-Player</a></p>
+                                        <p class="fs11"><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></p>
+                                    </div>
+                                </li>
+                                <li class="text_right"><a href="#" class="limit_width">2. MobileMaths</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif"/><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">3. Video Poker</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">4. Travelocity</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">5. Hangman</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">6. Backgammon</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">7. LabPixies TV</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">8. Marbles Game</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn"  flag="columnBtn" />
+                </div>
+            <div class="ad_banner"><a href="#"><img src="images/Utilities_ad1.jpg" width="213" height="91" border="0" /></a></div>
+            
+            <div class="circle_corner_box">
+                    <div class="circle_corner_top">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <div class="circle_corner_center">
+                        <div class="normal_title"><h1>Recommended</h1></div>
+                        <div class="act_list">
+                            <ul class="act_list_ul">
+                                <li class="news_detail" style="height:60px"><a href="#"><img src="images/u_network_1.jpg" width="80" height="60" /></a>
+                                    <div class="fl" style="width:100px"> <a href="#">PlanetWerks</a>
+                                        <p class="fs11"><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></p>
+                                    </div>
+                                </li>
+                                <li class="text_right"><a href="#" class="limit_width">2. Lyrics Now</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">3. Music downloads</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">4. RSS Checker</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">5. Radio Launcher</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">6. News Lenta.Ru</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">7. The Register</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                                <li class="text_right"><a href="#" class="limit_width">8. Digital Clock</a><span><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /><img src="skin/default/images/xingxing.gif" /></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle_corner_bottom">
+                        <div class="circle_corner_left"></div>
+                        <div class="circle_corner_right"></div>
+                    </div>
+                    <input type="button" value="More" class="more_btn"  flag="columnBtn" />
+                </div>
+            
+        </div>
+		<div id="rightColumnLarge">
+         	<div class="circle_corner_box">
+                <div class="circle_corner_top">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+                <div class="circle_corner_center" style="padding-bottom:20px">
+                	<div class="normal_title"><h1>New Apps</h1></div>
+					<div class="top_paid app_new_ul">
+						<ul class="clearfix">
+						<li><a href="application_detail.html"><img src="images/raceCarSmall.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="application_detail.html">Ferrari</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa16670.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Twitter</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa31627.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Orkut Mobile Google Social Networking</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa9870.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">Qeep</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa27652.png" /></a>
+							<div class="top_paid_div"><strong><a href="#">airG Chat</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa18377.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">Flirtomatic</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa43686.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Fashion By Keys</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa32490.png" /></a>
+							<div class="top_paid_div"><strong><a href="#">Miz Chat</a></strong><p>Price: <span class="orange_bold">0</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa28044.png" /></a>
+							<div class="top_paid_div"><strong><a href="#">Ip Chat</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa41788.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Mbuzzy</a></strong><p>Price: <span class="orange_bold">0</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa15801.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">Facebook Mobile</a></strong><p>Price: <span class="orange_bold">0</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa16350.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">EBuddy Lite Messenger</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa39095.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">ChinaIT</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa16418.png" /></a>
+							<div class="top_paid_div"><strong><a href="#">Palringo Instant Messenger</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa35375.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Foursquare Location Based Social Networking</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa5866.gif" /></a>
+							<div class="top_paid_div"><strong><a href="#">IMplus All-In-One Messenger Pro</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa17388.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Barablu</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						<li><a href="#"><img src="images/aa42313.jpg" /></a>
+							<div class="top_paid_div"><strong><a href="#">Zoosk Online Dating Your Way</a></strong><p>Price: <span class="orange_bold">2.00</span></p>
+								<div onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div_normal"><em class="btn_left"></em><em class="btn_center">Buy</em><em class="btn_right"></em></div>
+							</div></li>
+						</ul>
+					</div>
+					<div class="pagenation">
+						<a href="#">Prev</a>
+						<a href="#" class="num_on">1</a>
+						<a href="#" class="num">2</a>
+						<a href="#" class="num">3</a>
+						<a href="#" class="num">4</a>
+						<a href="#" class="num">5</a>
+						<a href="#">Next</a>
+					</div>
+				</div>
+                <div class="circle_corner_bottom">
+                    <div class="circle_corner_left"></div>
+                    <div class="circle_corner_right"></div>
+                </div>
+            </div>         
+		</div>
+		<div class="nofloat"></div>
+	</div>
+	<div id="footer"><span class="fl"><a href="#">About SDP</a> | <a href="#">Help</a> | <a href="#">Legal</a> | <a href="#">Links</a> | <a href="#">Site Map</a></span> Copyright © Company SDP. All rights reserved</div>
+</div>
+<!--container close-->
+<!--切换皮肤弹出层代码----开始-->
+<div id="theme" class="moremenu">
+    <div id="themeMasker" class="moremenu_masker">
+        <iframe name="themeIfra" id="themeIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+    <div id="themeContainer" class="moremenu_container">
+        <div id="themeBody" class="moremenu_body">
+            <div class="moremenu_top" id="themeTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="themeTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="themeMiddle">
+            	<div class="moremenu_ml" id="themeMiddleLeft"></div>
+                <div class="moremenu_mc" id="themeMiddleCenter">
+                	<ul>
+<li class="theme_btn_normal gray_skin_shop"><img src="images/skin_01.gif" width="63" height="37" border="0" /><br />Common</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_02.gif" width="63" height="37" border="0" /><br />China Red</li> 
+ <li class="theme_btn_normal theme_btn_on1" id="default"><img src="images/skin_05.gif" width="63" height="37" border="0" onclick='setStyleSheet("css0");'/><br />Space</li>
+ <li class="theme_btn_normal theme_btn_on2" id="purple"><img src="images/skin_06.gif" width="63" height="37" border="0" onclick='setStyleSheet("css1");'/><br />Nature</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_03.gif" width="63" height="37" border="0" /><br />Sky</li>
+<li class="theme_btn_normal gray_skin_shop" ><img src="images/skin_04.gif" width="63" height="37" border="0" /><br />Wave</li>
+                      </ul>
+                </div>
+                <div class="moremenu_mr" id="themeMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="themeBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="themeBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="themeTitle" class="moremenu_title">
+        	<div class="moremenu_title_left"></div>
+            <div class="moremenu_title_center" id="themeTitleCenter"><span class="top_lnk_theme"><span class="arrow_down"></span></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--切换皮肤弹出层代码----结束-->
+
+<!--自助服务弹出菜单代码----开始-->
+<div id="selfserv" class="moremenu">
+    <div id="selfservMasker" class="moremenu_masker">
+        <!--<iframe name="selfservIfra" id="selfservIfra" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>-->
+    </div>
+    <div id="selfservContainer" class="moremenu_container">
+        <div id="selfservBody" class="moremenu_body">
+            <div class="moremenu_top" id="selfservTop">
+            	<div class="moremenu_tl"></div>
+                <div class="moremenu_tc" id="selfservTopCenter"></div>
+                <div class="moremenu_tr"></div>
+            </div>
+            <div class="moremenu_middle" id="selfservMiddle">
+            	<div class="moremenu_ml" id="selfservMiddleLeft"></div>
+                <div class="moremenu_mc" id="selfservMiddleCenter">
+                	<ul class="moremenu_item_over" id="moremenuItemOver">
+                        <li class="item_over_center"></li>
+                        <li class="item_over_left"></li>
+                        <li class="item_over_right"></li>
+                    </ul>
+                	<ul id="selfservItem" style="padding-top: 6px;">
+                    	<li class="moremenu_item" onclick="location.href='self_Service.html'" style="color:#ac0000"><img src="images/selfserv_01.gif" width="12" height="12" border="0" align="absmiddle" />Self-Service</li>
+                        <li class="moremenu_item" onclick=" location.href='my_rss.html' " style="color:#ac0000"><img src="images/rss.gif" width="12" height="12" border="0" align="absmiddle" />My RSS</li>
+                        <li class="moremenu_item" onclick=" location.href='my_multimedia.html' " style="color:#ac0000"><img src="images/video.gif" width="12" height="12" border="0" align="absmiddle" />My Multimedia</li>
+                        <li class="moremenu_item" onclick="location.href='my_subscriptions.html'" style="color:#ac0000"><img src="images/app_finance.gif" width="13" height="12" border="0" align="absmiddle" />My Subscriptions</li>
+                        <li class="moremenu_item" onclick="location.href='my_favorites.html' " style="color:#ac0000"><img src="images/selfserv_02.gif" width="13" height="12" border="0" align="absmiddle" />My Favourite</li>
+                        <li class="moremenu_item" onclick="location.href='my_booking.html' " style="color:#ac0000"><img src="images/onlineTV.gif" width="12" height="12" border="0" align="absmiddle" />My Booking</li>
+                        <li class="moremenu_item" onclick="location.href='my_log.html' " style="color:#ac0000"><img src="images/commu_chat_feng_3.gif" width="12" height="14" border="0" align="absmiddle" />My Operation Log</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_05.gif" width="13" height="12" border="0" align="absmiddle" />My RBT/MRBT</li>
+                        <li class="moremenu_item" onclick="location.href='#'"><img src="images/selfserv_04.gif" width="13" height="12" border="0" align="absmiddle" />My Shopping Cart</li>
+                    </ul>
+                </div>
+                <div class="moremenu_mr" id="selfservMiddleRight"></div>
+            </div>
+            <div class="moremenu_bottom" id="selfservBottom">
+            	<div class="moremenu_bl"></div>
+                <div class="moremenu_bc" id="selfservBottomCenter"></div>
+                <div class="moremenu_br"></div>
+            </div>
+        </div>
+        <div id="selfservTitle" class="moremenu_title">
+        	<div class="moremenu_title_left2"></div>
+            <div class="moremenu_title_center" id="selfservTitleCenter"><span class="arrow_down"></span></div>
+            <div class="moremenu_title_right"></div>
+        </div>
+    </div>
+</div>
+<!--自助服务弹出菜单代码----结束-->
+<!--头部选择类型日期下拉弹出层----开始-->
+<div id="selectTopTypePop" style="display: none;">
+	<ul class="selectItems">
+		 <li><a href="#"><span class="select_item_left"><span class="select_item_right">All</span></span></a></li>
+ 		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Music</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Video</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Online TV</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Picture</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Game</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">News</span></span></a></li>
+		<li><a href="#"><span class="select_item_left"><span class="select_item_right">Communication</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Business</span></span></a></li>
+        <li><a href="#"><span class="select_item_left"><span class="select_item_right">Application</span></span></a></li>
+	</ul>
+</div>
+<!--头部选择类型日期下拉弹出层----结束-->
+<!--downList-->
+<div id="downList_search" class="downList_search">
+ <ul>
+ <li>Sarah Brightman</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Music</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Picture</li>
+ <li>Sarah Brightman&nbsp;&nbsp;&nbsp;Video</li>
+  </ul>
+</div>
+<!--downList end-->
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+ <script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/downList.js"></script>
+
+<SCRIPT FOR=MYAvtiveX EVENT= notifyComment(allcomment)>
+	var arr=allcomment.split('*-+');
+   writeCookie('comment'+currentUser,arr[arr.length-2].split('$*')[2]+'$%'+arr[arr.length-2].split('$*')[0]);
+</SCRIPT>
+<SCRIPT FOR=MYAvtiveX EVENT=notifyReciveMsg(phone,info,kind)>
+var who=demoPersonName2;
+if(phone==myPhone1){
+    who=demoPersonName1;
+ }
+//先做接收Email与SMS
+ if(kind==3){
+  //<title>****</title><body>***</body>  这是info参数的格式
+   var sub=info.substr(info.indexOf('<title>')+7,info.indexOf('</title>')-7)
+   var b=info.substr(info.indexOf('<body>'),info.indexOf('</body>'))
+   var con=b.substr(6,b.indexOf('</body>')-6)
+  // $('.mail_table:eq(1) tr:eq(0)').before(aNewMsg(sub,con,who));//增加email
+    writeCookie(currentUser,'3|'+sub+'|'+con+'|'+who)
+  }else if(kind==0){//sms
+	// $('.mail_table:eq(0) tr:eq(0)').before(aNewMsg(info,info,who));  
+	   writeCookie(currentUser,'0|'+info+'|'+who)
+  }else if(kind==5){//present
+       writeCookie(currentUser+'present',info+'|'+who)
+//	   $('.mail_table:eq(2) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }else if(kind==6){//recommend
+       writeCookie(currentUser+'recommend',info+'|'+who)  
+	//   $('.mail_table:eq(3) tr:eq(0)').before(aNewMsg(info,info,who));  
+  }
+  //$('.mail_table tr').css('background','#ffffff');
+  //$('.mail_table tr:even').css('background','#f7f7f7');
+</SCRIPT>

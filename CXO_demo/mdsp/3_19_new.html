@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="js/source/tree_component.css" />
+<script language="javascript" type="text/javascript" src="js/source/_lib.js"></script>
+<script language="javascript" type="text/javascript" src="js/source/tree_component.js"></script>
+<script type="text/javascript" src="js/jquery.date_input.js"></script><!--日期控件-->
+<link rel="stylesheet" type="text/css" href="js/date_input.css"/>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,#popMenu_Top_Left,#popMenu_Top_Right,#popMenu_Top_Center,#popMenu_Bottom_Left,#popMenu_Bottom_Center,#popMenu_Bottom_Right,#popMenu_Center_Left , #popMenu_Center_Right,.arrow_down ,.list_item a , .list_item a:hover,.nav_top_center,.nav_middle_left,.nav_middle_right,.nav_bottom_center,.nav_lnk,.nav_lnk_left,.nav_lnk_right,.nav_lnk_center, .list_item_help ,.Qlink_list ,.Qlink_ico');
+</script>
+<![endif]-->
+
+
+<title>MDSP</title>
+</head>
+
+<body>
+<div id="top">
+	<div class="top_left"></div>
+    <div class="top_center">
+    	<div class="logo"><a href="#"><img src="images/logo.gif" alt="LOGO" /></a></div>
+        <div class="topmenu">
+        	<div id="topmenuContainer">
+            	<!-- 菜单保持Status -->
+            	<ul id="topmenuOn">
+                	<li class="topmenu_on_left"></li>
+                    <li class="topmenu_on_right"></li>
+                </ul>
+                <!-- 菜单保持Status -->
+                <ul id="topmenuOver">
+                	<li class="topmenu_over_left"></li>
+                    <li class="topmenu_over_right"></li>
+                </ul>
+                <!-- 菜单项，包含菜单经过\保持Status\点击事件 -->
+                <ul class="topmenu_up">
+                    <li id="topmenuItem1" class="topmenu_item" onclick="location.href='#'">Home</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem2" class="topmenu_item" onclick="location.href='#'">Content</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem3" class="topmenu_item" onclick="location.href='#'">Service</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem4" class="topmenu_item" onclick="location.href='#'">Campaign</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem5" class="topmenu_item" onclick="location.href='#'">Portal</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem6" class="topmenu_item" onclick="location.href='#'">Report</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem7" class="topmenu_item" onclick="location.href='#'">Manage</li>
+                    <li class="topmenu_split"></li>
+                    <li id="topmenuItem8" class="topmenu_item" onclick="location.href='#'">Config</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_lnk" style="position:relative; z-index:99">
+        	<a href="#">Logout</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="position:absolute; top:8px; right:10px;width:100px" id="Qlink">
+            <a href="#" class="Qlink_ico"></a>
+                <div class="Qlink_list" style=" position:absolute; top:-9px; display:none; left:-40px">
+                    <ul class="Qlink_list_ul">
+                        <li><a href="../../cxo_index.html">Demo Home</a></li>
+                        <li><a href="../shopping/MyWorld.html">Digital Shopping Mall</a></li>
+                        <li><a href="../service/service.html">Service Innovation</a></li>
+                        <li><a href="3_2.html">Admin(CP/SP)</a></li>
+                        <li><a href="2_25.html">Admin(Operator)</a></li><li><a href="3_30.html">Admin(MultiCountry)</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="userinfo">Welcome! Manager!</div>
+        </div>
+    </div>
+    <div class="top_right"></div>
+</div>
+<div id="pathBox">
+	<div style="float:right"><a href="#" id="uploadMenu" onmouseover="showPopMenu(this,'popUpload',180);" class="fun" style="text-decoration:none"><span class="tools_arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Link</span></a>
+    	<div id="popUpload" class="popMenu_List" style="display: none;">
+             <ul>
+                <li><a href="3_3.html">Content Management</a></li>
+                <li><a href="3_3_new.html">Advertisement Management</a></li>
+                <li><a href="3_17.html">Service Management</a></li>
+                <li><a href="OpenCMS\OpenCMS.htm" target="_blank">Third Party Portal</a></li>
+             </ul>
+            
+        </div>
+</div><a href="3_2.html" class="fun">Home</a> >><span class="currentPage">Advertisement Management</span></div>
+<!--展开左侧栏按钮-->
+<div class="leftbar">
+    <div id="leftBarhide" class="leftbar_hide_normal" onmouseover="this.className='leftbar_hide_over';" onmouseout="this.className='leftbar_hide_normal'" onclick="showhideLeftColumn('show');" style="display:none;position: absolute;">
+        <div class="leftbar_top"></div>
+        <div class="leftbar_bottom"></div>
+    </div>
+</div>
+<div id="mainContainer">
+    <div id="rightColumn">
+    	<div id="rightColumnInner">
+            <div class="right_content">
+            	<div class="innerpadding">
+					<div class="title_text">Order Management</div>
+					<div class="tab">
+						<div class="tab_bg_left"></div>
+							<div class="tab_bg_right"></div>
+							<div class="tab_bg_center">
+								<ul id="tabTitle1" class="tab_title_normal" onclick="changeTab('tabTitle', 'tabContent',1, 2);getRightHeight();">
+									<li class="tab_title_left"></li>
+									<li class="tab_title_center">Basic Information</li>
+									<li class="tab_title_right"></li>
+								</ul>
+								<ul id="tabTitle2" class="tab_title_normal" onclick="changeTab('tabTitle', 'tabContent',2, 2);getRightHeight();" style="cursor:default;" >
+									<li class="tab_title_left"></li>
+									<li class="tab_title_center">Task</li>
+									<li class="tab_title_right"></li>
+								</ul>
+
+							</div>
+				    </div>
+					<div id="tabContent1" style="display: block;">
+						<div style="margin-top:-5px;">
+							<table width="70%" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="padding: 10px 0px 20px 0px;">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td width="25%" class="flist_name">Order name:</td>
+ 												<td class="flist_content">New dancing point </td>
+											</tr>
+											 <tr>
+												<td class="flist_name">Advertiser:</td>
+ 												<td  class="flist_content">Palm Entertainment</td>
+											</tr>
+											 <tr>
+												<td class="flist_name">Advertiser industry:</td>
+ 												<td  class="flist_content">Information and Media</td>
+											</tr>
+                                            	 <tr>
+												<td class="flist_name">Budget:</td>
+ 												<td  class="flist_content">$ 105800</td>
+											</tr>
+                                            	 <tr>
+												<td class="flist_name">Launch Date:</td>
+ 												<td  class="flist_content">2009-04-30</td>
+											</tr>
+                                            	 <tr>
+												<td class="flist_name">Expire Date:</td>
+ 												<td  class="flist_content">2099-05-10</td>
+											</tr>
+                                         
+											 <tr>
+												<td valign="top" class="flist_name">Ad intention description:</td>
+ 												<td valign="top" class="flist_content">Promotion activity for the coming labor holiday. I want to deliver the advertisement in the web portal to the music fans.</td>
+											</tr>
+                                            <tr >
+                                            <td class="flist_name">Brand:</td>
+                                            <td ><select style="width:150px;"><option>All</option> </select></td>
+                                          </tr>
+                                           <tr >
+                                            <td class="flist_name">Discount:</td>
+                                            <td ><select style="width:150px; margin-right:10px;"><option>All</option> </select><input type="text" value="10"/>%</td>
+                                          
+                                          </tr>
+										</table>                               
+									</td>
+							   </tr>
+						</table>
+						</div>
+                        <div style="margin-top: 20px;margin-left:16px">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="100">
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Approve</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+								<td width="135" valign="top" style="padding: 2px 0px 0px 0px;">
+                                	<div class="editable_list">
+                                    	<div class="editable_list_sel">
+                                        	<select name="editableSel" id="editableSel" onchange="editableSelect();">
+                                        	    <option value="Access code error">Access code error</option>
+                                                <option value="Information incorrect">Information incorrect</option>
+                                            </select>
+                                        </div>
+                                        <div class="editable_list_inp">
+                                        	<input name="editableInp" id="editableInp" type="text" />
+                                        </div>
+                                    </div>
+								</td>
+								<td>
+									<ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div btn_div_middle">
+										<li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="btn_center_normal">Reject</li>
+										<li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+										<li class="nofloat"></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+                    </div>
+                        
+					</div>
+					<div id="tabContent2" style="display: none;">
+                       <div style="margin:-5px 0 20px 0; "> 
+                         
+                     <table border="0" cellspacing="0" cellpadding="0" class="dlist_table" id="dlistTable" style="width:680px; margin:15px 0 0 20px;">
+                        <tr class="dlist_header">
+                            <td >Task No.</td>
+                            <td >Name</td>
+                            <td >Ad slot</td>
+                            <td >Cost</td>
+                            <td >State</td>
+                             <td>Operation</td>
+                        </tr>
+                          <tr class="dlist_tr_normal" onmouseover="listTrOver(this);" onmouseout="listTrOut(this);" >
+                            <td >454363</td>
+                            <td >Homepage banner</td>
+                            <td >Banner in home</td>
+                            <td >5800</td>
+                            <td >Wait for content upload</td>
+                              <td><a href="#" class="fun">View</a>  | <a href="#" class="fun" id="content_upload">Content Upload</a></td>
+                        </tr>
+                    </table>
+                   <p style="margin:50px 0 20px 20px">Budget: $105800.00　Cost: $5800.00</p>
+                    </div>
+                      <table width="200" border="0" style="margin-left:16px">
+                                  <tr>
+                                    <td><ul onclick="btnAct(0);location.href='3_20_new.html'" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div">
+                                    <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="btn_center_normal" style="width:40px;">Submit</li>
+                                    <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="nofloat"></li>
+                                </ul></td>
+                                    <td>
+                                     <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div">
+                                    <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="btn_center_normal" style="width:40px;">Cancel</li>
+                                    <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="nofloat"></li>
+                                </ul>
+                                    </td>
+                                  </tr>
+                                </table>
+                    
+                    </div>
+					
+					<script language="javascript" type="text/javascript">
+						changeTab('tabTitle', 'tabContent', 2, 2);
+					</script>
+                     
+                    
+                    
+                </div>
+            </div>
+            <div class="nofloat"></div>
+        </div>
+    </div>
+    <!---树菜单--->
+	<div id="leftColumn">
+    	<div id="leftColumnInner" class="left_content">
+        	<div id="leftBarShow" class="leftbar_show_normal" onmouseover="this.className='leftbar_show_over';" onmouseout="this.className='leftbar_show_normal'" onclick="showhideLeftColumn('hide');"></div>
+        	<div class="leftmenu" id="leftMenu">
+            	<ul class="leftmenu_title">
+                	<li class="leftmenu_title_text">Advertisement  Management</li>
+                    <li class="leftmenu_title_lnk"></li>
+                </ul>
+                <ul class="leftmenu_list" id="leftmenuList">
+                    <li class="leftmenu_list_item_on" onmousemove="leftmenuOver(this);" onmouseout="leftmenuOut(this)" onclick="leftmenuAct('3_3_new.html');">Order Management</li>                    
+                </ul>
+            </div>
+        </div>
+        <div id="leftFooter" class="left_footer"></div>
+    </div>
+    <div class="nofloat"></div>
+</div>
+<div id="bottom">Company SDP</div>
+
+<!-- 弹出菜单代码开始 -->
+<div id="popMenu_List" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List',this);"></div>
+</div>
+<!--第二个弹出菜单-->
+<div id="popMenu_List2" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+	</ul>
+	<div id="popMenu_List2_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List2_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List2',this);"></div>
+</div>
+<!--第三个弹出菜单-->
+<div id="popMenu_List3" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+	</ul>
+</div>
+<!--第四个弹出菜单-->
+<div id="popMenu_List4" class="popMenu_List" style="display: none;">
+	<ul>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+	<div id="popMenu_List4_hideMenu" style="display: none;">
+		<ul>
+			<li><a href="#">Advertisement</a></li>
+			<li><a href="#">Management</a></li>
+			<li><a href="#">Advertisement</a></li>
+		</ul>
+	</div>
+	<div class="bottom_show" id="popMenu_List4_bottomShow" onclick="showHideMenu('hideMenu','popMenu_List4',this);"></div>
+</div>
+<!-- 弹出菜单代码结束 -->
+
+<!--主导航二级菜单开始-->
+<div id="navPopsecLevel" style="display: none;">
+	<ul class="nav_menu_items">
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Advertisement</a></li>
+		<li><a href="#">Management</a></li>
+		<li><a href="#">Test</a></li>
+	</ul>
+</div>
+<!--主导航二级菜单结束-->
+
+<!-- 1 弹出窗口框架代码-->
+<div id="lightBox" style="display:none;">
+    <div id="lightBoxMask">
+        <iframe id="lightBoxIfra" name="lightBoxIfra" frameborder="0" border="0"></iframe>
+    </div>
+    <div id="lightBoxBg"></div>
+    <div id="lightBoxContainer">
+        <div id="lightBoxHeader">
+            <div id="lightBoxHeaderLeft">
+                <div id="popwinTitle">Title</div>
+                <img src="images/space.gif" width="16" height="37" border="0" /></div>
+            <div id="lightBoxHeaderCenter"><img src="images/space.gif" width="100%" height="37" border="0" /></div>
+            <div id="lightBoxHeaderRight">
+                <div id="popwinTools">
+                    <div class="popwin_icon_close"><img src="images/icon_closewin.gif" width="19" height="19" border="0" onclick="lightBoxOff();" /></div>
+                </div>
+                <img src="images/space.gif" width="16" height="37" border="0" /></div>
+        </div>
+        <div id="lightBoxBody">
+            <div id="lightBoxBodyLeft"><img src="images/space.gif" width="16" height="1" border="0" /></div>
+            <div id="lightBoxBodyCenter"></div>
+            <div id="lightBoxBodyRight"><img src="images/space.gif" width="16" height="1" border="0" /></div>
+        </div>
+        <div id="lightBoxFooter">
+            <div id="lightBoxFooterLeft"><img src="images/space.gif" width="16" height="16" border="0" /></div>
+            <div id="lightBoxFooterCenter"><img src="images/space.gif" width="100%" height="16" border="0" /></div>
+            <div id="lightBoxFooterRight"><img src="images/space.gif" width="16" height="16" border="0" /></div>
+        </div>
+    </div>
+</div>
+<!-- 
+2 弹出窗口Content代码
+  2.1 窗口Content可以是多个
+  2.2 每个Content代码分配一个ID，如:setting
+  2.3 调用lightBoxOn()时传入ContentID，如:lightBoxOn('setting');
+-->
+<div class="setmenu" id="contentUploadPop" style="display:none;">
+   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr style="height:28px;">
+                                <td width="100"  align="right" style="vertical-align:top">Content Name:</td>
+                                <td width="10">&nbsp;</td>
+                                <td valign="top" >
+ 								 <input type="text" value="Michael" style="width:180px; height:16px;" id="conName"/></td>
+                            </tr>
+                          
+                             <tr style="height:28px;">
+                                <td width="100"  align="right" style="vertical-align:top">Keyword:</td>
+                                <td width="10">&nbsp;</td>
+                                <td valign="top" >
+ 								 <input type="text" value="Music" style="width:180px; height:16px;"/></td>
+                            </tr>
+                            <tr style="height:28px;">
+                                <td align="right" style="vertical-align:top">Upload File:</td>
+                                <td >&nbsp;</td>
+                                <td valign="top">
+									<table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td style="padding-right: 4px;"><input type="text" name="textfield3" id="uploadUrl_1" class="input_text"  value="E:\music\michael.gif" style="width:180px;" /></td>
+                                            <td><div class="pos_re uploadDiv"><a href="#" class="fun_bold">Browse...</a>
+                                            		<div>
+                                                        <input type="file" name="uploadFile" id="uploadFile"  onchange="document.getElementById('uploadUrl_1').value=this.value;" />
+                                                    </div>
+                                                </div></td>
+                                              
+                                        </tr>
+                                    </table><span class="flist_explain">( 1200*300 pixels ，jpg, gif types limited.)</span></td>
+                            </tr>
+                           <tr style="height:28px;">
+                                <td width="100"  align="right" style="vertical-align:top">Link URL:</td>
+                                <td width="10">&nbsp;</td>
+                                <td valign="top" >
+ 								 <input type="text" value="http://" style="width:180px; height:16px;"/></td>
+                            </tr>
+                     
+                            <tr>
+                                <td >&nbsp;</td>
+                                <td >&nbsp;</td>
+                                <td valign="top" >
+                                    <table width="200" border="0">
+                                      <tr>
+                                        <td>
+                                        <ul onclick="btnAct(0); " onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div " id="uploadok" >
+                                    <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="btn_center_normal" style="width:40px;">OK</li>
+                                    <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="nofloat"></li>
+                                </ul></td>
+                                        <td> 
+                                        <ul onclick="btnAct(0);" onmouseover="btnOver(this);" onmouseout="btnOut(this);" class="btn_div closePop"  id="uploadcancel">
+                                    <li class="btn_left_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="btn_center_normal" style="width:40px;">Cancel</li>
+                                    <li class="btn_right_normal"><img src="images/btn_space.gif" width="6" height="23" border="0" /></li>
+                                    <li class="nofloat"></li>
+                                </ul></td>
+                                      </tr>
+                                    </table>
+
+							
+                              
+                                 </td>
+                            </tr>
+                        </table>
+
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+getRightHeight();
+  $(function(){
+			
+			 $('#content_upload').click(function(){
+			   lightBoxOn('contentUploadPop','Content Upload')									 
+												 })
+			 
+			 $('#uploadok').one('click',function(){
+					$("#lightBox,#contentUploadPop").hide();
+					$('#dlistTable tr:eq(0) td:eq(4)').after('<td>Content</td>')
+					$('#dlistTable tr:eq(1) td:eq(4)').after('<td>'+$("#conName").val()+'</td>')
+											  })
+			 $('#uploadcancel').click(function(){
+					$("#lightBox,#contentUploadPop").hide();						   
+											   })
+			 
+			 })
+
+</script>
+</html>
